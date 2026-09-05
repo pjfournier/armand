@@ -19,7 +19,8 @@ function New-NarrationPacket {
         [object]$PostActionState,
         [object]$EventState,
         [string[]]$NpcDiscloses = @(),
-        [string[]]$NpcWithholds = @()
+        [string[]]$NpcWithholds = @(),
+        [string]$AttemptDescription
     )
     if ($Facts.Count -eq 0) { throw 'A narration packet requires at least one resolved fact.' }
     if ($Visible.Count -eq 0) { throw 'A narration packet requires at least one visible item.' }
@@ -33,6 +34,7 @@ function New-NarrationPacket {
             Identity=$(if ($Actor -eq 'Armand') { @('adult male tiefling','occult investigator') } else { @('small capuchin monkey',"Armand's familiar",'communicates only through gestures') })
         }
         Action = [pscustomobject]@{ Type=$ActionType; Target=$Target }
+        Attempt = $AttemptDescription
         Resolution = [pscustomobject]@{ Degree=$Degree; Facts=@($Facts) }
         Visible = @($Visible)
         NotebookEntries = @($NotebookEntries)
@@ -83,8 +85,13 @@ function Format-NarrationPacket {
         [void]$builder.AppendLine("actor: $($Packet.Actor.Name)")
         [void]$builder.AppendLine('identity:')
         foreach ($identity in $Packet.Actor.Identity) { [void]$builder.AppendLine("- $identity") }
-        [void]$builder.AppendLine("action: $($Packet.Action.Type)")
-        [void]$builder.AppendLine("target: $($Packet.Action.Target)")
+        if([string]::IsNullOrWhiteSpace($Packet.Attempt)){
+            [void]$builder.AppendLine("action: $($Packet.Action.Type)")
+            [void]$builder.AppendLine("target: $($Packet.Action.Target)")
+        } else {
+            [void]$builder.AppendLine('ATTEMPT')
+            [void]$builder.AppendLine("description: $($Packet.Attempt)")
+        }
         [void]$builder.AppendLine("degree: $($Packet.Resolution.Degree)")
         Add-Lines $builder 'resolved:' $Packet.Resolution.Facts
         Add-StateFields $builder 'POST_ACTION_STATE' $Packet.PostActionState
@@ -111,7 +118,8 @@ function Format-NarrationPacket {
         [void]$builder.AppendLine("$($Packet.Actor.Name):")
         foreach ($identity in $Packet.Actor.Identity) { [void]$builder.AppendLine("- $identity") }
         [void]$builder.AppendLine()
-        [void]$builder.AppendLine("$($Packet.Actor.Name) $($Packet.Action.Type) $($Packet.Action.Target).")
+        if([string]::IsNullOrWhiteSpace($Packet.Attempt)){[void]$builder.AppendLine("$($Packet.Actor.Name) $($Packet.Action.Type) $($Packet.Action.Target).")}
+        else{[void]$builder.AppendLine("Attempt: $($Packet.Attempt)")}
         [void]$builder.AppendLine("The result is $($Packet.Resolution.Degree).")
         foreach ($fact in $Packet.Resolution.Facts) { [void]$builder.AppendLine("$fact.") }
         [void]$builder.AppendLine()
@@ -145,6 +153,7 @@ function ConvertTo-NarrationPacket {
     if ($Case.PSObject.Properties['event_state']) { $args.EventState=$Case.event_state }
     if ($Case.PSObject.Properties['npc_discloses']) { $args.NpcDiscloses=@($Case.npc_discloses) }
     if ($Case.PSObject.Properties['npc_withholds']) { $args.NpcWithholds=@($Case.npc_withholds) }
+    if ($Case.PSObject.Properties['attempt_description']) { $args.AttemptDescription=$Case.attempt_description }
     New-NarrationPacket @args
 }
 

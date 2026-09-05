@@ -1,0 +1,113 @@
+[
+  {
+    "id": "armand-investigation",
+    "intent": {
+      "Actor": "Armand",
+      "Action": "investigate",
+      "Target": "fireplace",
+      "Method": null,
+      "Area": null
+    },
+    "resolution": {
+      "Mode": "active",
+      "DC": 15,
+      "RollMode": "normal",
+      "Rolls": [
+        13
+      ],
+      "NaturalRoll": 13,
+      "SkillModifier": 4,
+      "SituationalModifier": 0,
+      "Total": 17,
+      "Margin": 2,
+      "Degree": "Success",
+      "Possible": true
+    },
+    "handoff": {
+      "Attempt": {
+        "Actor": "Armand",
+        "Description": "Armand examines fireplace."
+      },
+      "Outcome": {
+        "Degree": "Success"
+      },
+      "PostActionState": {
+        "scorch_marks_observed": true
+      },
+      "Events": [
+        "scorch marks are discovered"
+      ],
+      "Visible": [
+        "fireplace",
+        "extinguished grate",
+        "open window"
+      ],
+      "NpcDisclosure": {
+        "Discloses": [],
+        "Withholds": []
+      }
+    },
+    "raw_completion": "examine the fireplace. The grate is cold, but a few scorch marks show on its surface.\r\n\r\n\r\nFACTS",
+    "narration": "You examine the fireplace. The grate is cold, but a few scorch marks show on its surface.",
+    "elapsed_seconds": 3.781,
+    "tokens_per_second": 68.74,
+    "gpu_active": true
+  },
+  {
+    "id": "guillermo-failed-steal",
+    "intent": {
+      "Actor": "Guillermo",
+      "Action": "steal",
+      "Target": "brass key from the hook",
+      "Method": null,
+      "Area": null
+    },
+    "resolution": {
+      "Mode": "active",
+      "DC": 15,
+      "RollMode": "normal",
+      "Rolls": [
+        4
+      ],
+      "NaturalRoll": 4,
+      "SkillModifier": 5,
+      "SituationalModifier": 0,
+      "Total": 9,
+      "Margin": -6,
+      "Degree": "Failure",
+      "Possible": true
+    },
+    "handoff": {
+      "Attempt": {
+        "Actor": "Guillermo",
+        "Description": "Guillermo tries to take brass key from the hook."
+      },
+      "Outcome": {
+        "Degree": "Failure"
+      },
+      "PostActionState": {
+        "brass_key_location": "hook",
+        "Guillermo_has_key": false
+      },
+      "Events": [
+        "brass key rattles",
+        "Guillermo retreats"
+      ],
+      "Visible": [
+        "brick arch",
+        "standing water",
+        "chalk mark",
+        "brass key on hook"
+      ],
+      "NpcDisclosure": {
+        "Discloses": [],
+        "Withholds": []
+      }
+    },
+    "raw_completion": "see Guillermo try to take the brass key from its hook. The key rattles, and he retreats.\r\n\r\n\r\nFACTS",
+    "narration": "You see Guillermo try to take the brass key from its hook. The key rattles, and he retreats.",
+    "elapsed_seconds": 3.156,
+    "tokens_per_second": 70.21,
+    "gpu_active": true
+  }
+]
