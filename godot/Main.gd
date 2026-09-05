@@ -39,6 +39,7 @@ func build_ui() -> void:
 	time_label = Label.new(); time_label.text = "8:00 PM"; time_label.add_theme_color_override("font_color", Color("d8ccb2")); header.add_child(time_label)
 	var body := HSplitContainer.new(); body.size_flags_vertical = Control.SIZE_EXPAND_FILL; body.split_offset = 820; root.add_child(body)
 	history = RichTextLabel.new(); history.bbcode_enabled = true; history.fit_content = false; history.scroll_active = true; history.add_theme_color_override("default_color", Color("e9dfca")); history.add_theme_font_size_override("normal_font_size", 18); history.text = "[color=#d1ad68][b]Callum's Study[/b][/color]\nRain traces the window. The room has been disturbed, and Guillermo watches from the desk.\n\n"; body.add_child(history)
+	history.selection_enabled = true; history.context_menu_enabled = true; history.shortcut_keys_enabled = true
 	notebook_tabs = TabContainer.new(); notebook_tabs.custom_minimum_size.x = 390; body.add_child(notebook_tabs)
 	clue_text = make_rich_tab("Clues"); character_box = VBoxContainer.new(); character_box.name = "Characters"; notebook_tabs.add_child(character_box); location_text = make_rich_tab("Locations")
 	var theory_panel := VBoxContainer.new(); theory_panel.name = "Theories"; notebook_tabs.add_child(theory_panel)
@@ -52,6 +53,7 @@ func build_ui() -> void:
 	input = LineEdit.new(); input.placeholder_text = "Type what Armand does..."; input.size_flags_horizontal = Control.SIZE_EXPAND_FILL; input.text_submitted.connect(func(_t): submit_action()); controls.add_child(input)
 	submit = Button.new(); submit.text = "Act"; submit.pressed.connect(submit_action); controls.add_child(submit)
 	var restart := Button.new(); restart.text = "Restart"; restart.pressed.connect(func(): call_api("/session/reset", HTTPClient.METHOD_POST, {}, "reset")); controls.add_child(restart)
+	var copy_transcript := Button.new(); copy_transcript.text = "Copy Transcript"; copy_transcript.pressed.connect(_copy_transcript); controls.add_child(copy_transcript)
 	status_label = Label.new(); status_label.text = "Guillermo: nearby • Early gestures"; status_label.add_theme_color_override("font_color", Color("b89a67")); root.add_child(status_label)
 	end_panel = PanelContainer.new(); end_panel.visible = false; end_panel.position = Vector2(390, 260); end_panel.size = Vector2(500, 170); add_child(end_panel)
 	var end_box := VBoxContainer.new(); end_panel.add_child(end_box); end_label = Label.new(); end_label.horizontal_alignment = HORIZONTAL_ALIGNMENT_CENTER; end_label.add_theme_font_size_override("font_size", 24); end_box.add_child(end_label)
@@ -64,6 +66,8 @@ func make_rich_tab(title: String) -> RichTextLabel:
 func submit_action() -> void:
 	var text := input.text.strip_edges()
 	if text.is_empty() or request.get_http_client_status() != HTTPClient.STATUS_DISCONNECTED: return
+	history.append_text("\n[color=#d1ad68][b]> " + escape_bbcode(text) + "[/b][/color]\n")
+	history.scroll_to_line(history.get_line_count())
 	input.clear(); set_busy(true); call_api("/action", HTTPClient.METHOD_POST, {"text": text}, "action")
 
 func call_api(path: String, method: HTTPClient.Method, payload: Dictionary, kind: String) -> void:
@@ -112,3 +116,10 @@ func _save_theory() -> void:
 func _link_clue() -> void:
 	if theory_picker.item_count == 0 or clue_picker.item_count == 0: return
 	call_api("/notebook/theory/link", HTTPClient.METHOD_POST, {"theory_id": theory_picker.get_selected_metadata(), "entity_type": "clue", "entity_id": clue_picker.get_selected_metadata()}, "link")
+
+func _copy_transcript() -> void:
+	DisplayServer.clipboard_set(history.get_parsed_text())
+	status_label.text = "Transcript copied to clipboard"
+
+func escape_bbcode(value: String) -> String:
+	return value.replace("[", "[lb]")
