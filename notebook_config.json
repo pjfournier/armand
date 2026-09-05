@@ -1,0 +1,10 @@
+{
+  "relevance_max_entries": 4,
+  "scores": {
+    "exact_target": 100,
+    "explicit_related": 50,
+    "theory_link": 40,
+    "same_location": 25,
+    "search_term": 20
+  }
+}

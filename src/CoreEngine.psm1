@@ -3,6 +3,7 @@ Import-Module (Join-Path $PSScriptRoot 'Characters.psm1') -Force
 Import-Module (Join-Path $PSScriptRoot 'GameState.psm1') -Force
 Import-Module (Join-Path $PSScriptRoot 'Resolution.psm1') -Force
 Import-Module (Join-Path $PSScriptRoot 'NarratorHandoff.psm1') -Force
+Import-Module (Join-Path $PSScriptRoot 'Notebook.psm1') -Force -DisableNameChecking
 
 function Get-EngineActor { param($State,[string]$Actor) if($Actor-eq'Armand'){$State.Player}elseif($Actor-eq'Guillermo'){$State.Guillermo}else{throw "Unsupported actor: $Actor"} }
 function Get-EngineTargetDescription {param($State,[string]$Target,[string]$Action)if($State.Items.Contains($Target)){$item=$State.Items[$Target];if($Action-in@('take','steal')-and$item.Location-and$item.Location-ne'inventory'){return "$($item.DisplayName) from the $($item.Location)"};return $item.DisplayName};if($State.NPCs.Contains($Target)){return $State.NPCs[$Target].DisplayName};if($State.Locations.Contains($Target)){return $State.Locations[$Target].DisplayName};$Target}
@@ -22,7 +23,7 @@ function Resolve-StructuredIntent {
   [Parameter(Mandatory)]$State,[Parameter(Mandatory)]$Intent,[ValidateSet('active','passive','auto')][string]$Mode='active',
   [int]$DC=10,[string]$Skill='Investigation',[int]$SituationalModifier=0,[ValidateSet('normal','advantage','disadvantage')][string]$RollMode='normal',
   [Nullable[int]]$FixedRoll,[int[]]$FixedRolls=@(),[Nullable[int]]$Seed,[bool]$Possible=$true,[object[]]$Mutations=@(),[object]$PostActionState=[pscustomobject]@{},
-  [string[]]$Events=@(),[string[]]$Visible=@(),[string[]]$NpcDiscloses=@(),[string[]]$NpcWithholds=@(),[int]$Minutes=0
+  [string[]]$Events=@(),[string[]]$Visible=@(),[string[]]$NpcDiscloses=@(),[string[]]$NpcWithholds=@(),[int]$Minutes=0,[object]$NotebookQuery
  )
  $actor=Get-EngineActor $State $Intent.Actor;$modifier=Get-ActorSkillModifier $actor $Skill
  $passive=$null;if($Mode-eq'passive'-and$actor.Passive.Contains($Skill)){$passive=[int]$actor.Passive[$Skill]}
@@ -30,7 +31,8 @@ function Resolve-StructuredIntent {
  Invoke-StateMutations $State $Mutations $resolution.Degree
  if($Minutes-gt0){Add-GameTime $State $Minutes 1}
  $handoffIntent=[pscustomobject]@{Actor=$Intent.Actor;Action=$Intent.Action;Target=(Get-EngineTargetDescription $State $Intent.Target $Intent.Action);Method=$Intent.Method}
- $handoff=New-NarratorHandoff -Intent $handoffIntent -Resolution $resolution -PostActionState $PostActionState -Events $Events -Visible $Visible -NpcDiscloses $NpcDiscloses -NpcWithholds $NpcWithholds
+ $notebookLines=@();if($null-ne$NotebookQuery){$query=@{State=$State};foreach($name in @('CurrentLocation','TargetId','RelatedEntityIds','SearchTerms','MaxEntries')){if($NotebookQuery.PSObject.Properties[$name]){$query[$name]=$NotebookQuery.$name}};$notebookLines=ConvertTo-NarratorNotebookEntries (Get-NotebookRelevance @query)}
+ $handoff=New-NarratorHandoff -Intent $handoffIntent -Resolution $resolution -PostActionState $PostActionState -Events $Events -Visible $Visible -NpcDiscloses $NpcDiscloses -NpcWithholds $NpcWithholds -NotebookEntries $notebookLines
  [pscustomobject]@{Intent=$Intent;Resolution=$resolution;Handoff=$handoff}
 }
 

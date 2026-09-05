@@ -1,5 +1,7 @@
 Set-StrictMode -Version Latest
 Import-Module (Join-Path $PSScriptRoot 'Characters.psm1') -Force
+Import-Module (Join-Path $PSScriptRoot 'Notebook.psm1') -Force -DisableNameChecking
+Import-Module (Join-Path $PSScriptRoot 'IncidentLedger.psm1') -Force
 
 function New-GameState {
     param([datetime]$CaseTime=[datetime]'1890-01-01T20:00:00')
@@ -8,6 +10,8 @@ function New-GameState {
         NPCs=[ordered]@{};Locations=[ordered]@{};Items=[ordered]@{};Clues=[ordered]@{};Objectives=[ordered]@{}
         Time=[pscustomobject]@{Turn=0;ElapsedMinutes=0;CurrentCaseTime=$CaseTime}
         WorldChanges=[Collections.Generic.List[object]]::new()
+        Notebook=New-NotebookState
+        GuillermoIncidentLedger=New-GuillermoIncidentLedger
     }
 }
 

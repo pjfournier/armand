@@ -1,9 +1,10 @@
 Set-StrictMode -Version Latest
+Import-Module (Join-Path $PSScriptRoot 'Notebook.psm1') -Force -DisableNameChecking
 
 function Add-ClueState {
- param($State,[string]$Id,[string]$Location,[object[]]$Tiers)
+ param($State,[string]$Id,[string]$Location,[object[]]$Tiers,[string]$DisplayName=$Id,[string[]]$RelatedEntityIds=@())
  if($Tiers.Count-eq0){throw 'A clue needs at least one interpretation tier.'}
- $State.Clues[$Id]=[pscustomobject]@{Id=$Id;Location=$Location;Tiers=@($Tiers|Sort-Object DC);Discovered=$false;HighestTierReached=$null;KnownFacts=[Collections.Generic.List[string]]::new()}
+ $State.Clues[$Id]=[pscustomobject]@{Id=$Id;DisplayName=$DisplayName;Location=$Location;RelatedEntityIds=@($RelatedEntityIds);Tiers=@($Tiers|Sort-Object DC);Discovered=$false;HighestTierReached=$null;KnownFacts=[Collections.Generic.List[string]]::new()}
 }
 function Resolve-ClueInterpretation {
  param($State,[string]$ClueId,[string]$Skill,[int]$Score)
@@ -13,6 +14,7 @@ function Resolve-ClueInterpretation {
  $clue.Discovered=$true;$new=[Collections.Generic.List[string]]::new()
  foreach($tier in $reached){if(-not$clue.KnownFacts.Contains([string]$tier.Fact)){$clue.KnownFacts.Add([string]$tier.Fact);$new.Add([string]$tier.Fact)}}
  $clue.HighestTierReached=($reached|Measure-Object DC -Maximum).Maximum
+ Sync-NotebookClue -State $State -ClueId $ClueId -DisplayName $clue.DisplayName -RelatedEntityIds $clue.RelatedEntityIds|Out-Null
  [pscustomobject]@{ClueId=$ClueId;Discovered=$true;HighestTier=$clue.HighestTierReached;NewFacts=@($new);KnownFacts=@($clue.KnownFacts)}
 }
 
