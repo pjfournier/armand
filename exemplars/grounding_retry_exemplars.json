@@ -1,0 +1,39 @@
+[
+  {
+    "id": "failed_state_unchanged",
+    "category": "failed_action_unchanged_state",
+    "packet": {
+      "location": "solicitor's archive", "time": "11:40 p.m.", "weather": "rain",
+      "actor": "Armand", "action_type": "unlocks", "target": "black deed box", "degree": "failure",
+      "facts": ["the lockpick bends in the lock"],
+      "post_action_state": {"deed_box_state":"closed", "lock_state":"unchanged", "contents_access":"none"},
+      "visible": ["black deed box", "reading lamp", "filing shelves"]
+    },
+    "narration": "You work the pick inside the deed box lock until the metal bends. The box stays closed, its lock unchanged, and its contents remain beyond reach."
+  },
+  {
+    "id": "partial_success_limited_access",
+    "category": "partial_success_limited_access",
+    "packet": {
+      "location": "museum workroom", "time": "after midnight", "weather": "fog",
+      "actor": "Armand", "action_type": "searches", "target": "sealed specimen cabinet", "degree": "setback",
+      "facts": ["a paper inventory tag comes free from beneath the cabinet"],
+      "post_action_state": {"inventory_tag_access":"obtained", "cabinet_state":"sealed", "cabinet_contents_access":"unavailable"},
+      "visible": ["sealed specimen cabinet", "paper inventory tag", "worktable"]
+    },
+    "narration": "You draw a paper inventory tag from beneath the specimen cabinet. The tag is yours to examine, but the cabinet stays sealed and its contents remain inaccessible."
+  },
+  {
+    "id": "bounded_npc_disclosure_retry",
+    "category": "bounded_npc_disclosure",
+    "packet": {
+      "location": "night ferry kiosk", "time": "12:20 a.m.", "weather": "river mist",
+      "actor": "Armand", "action_type": "asks", "target": "clerk about a waiting passenger", "degree": "success",
+      "facts": ["Armand asks when the passenger arrived and who met her"],
+      "visible": ["ticket grille", "ferry timetable", "unlit landing"],
+      "npc_discloses": ["the clerk says the passenger arrived at midnight"],
+      "npc_withholds": ["the identity of the person who met the passenger"]
+    },
+    "narration": "You ask when the passenger arrived and who met her. ‘At midnight,’ the clerk says, then refuses only the second point: he will not identify the person who met her."
+  }
+]

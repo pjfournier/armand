@@ -15,7 +15,11 @@ function New-NarrationPacket {
         [string[]]$NotebookEntries = @(),
         [string[]]$RecentHistory = @(),
         [string]$GuillermoStageDirection,
-        [string[]]$NpcDisclosure = @()
+        [string[]]$NpcDisclosure = @(),
+        [object]$PostActionState,
+        [object]$EventState,
+        [string[]]$NpcDiscloses = @(),
+        [string[]]$NpcWithholds = @()
     )
     if ($Facts.Count -eq 0) { throw 'A narration packet requires at least one resolved fact.' }
     if ($Visible.Count -eq 0) { throw 'A narration packet requires at least one visible item.' }
@@ -34,8 +38,26 @@ function New-NarrationPacket {
         NotebookEntries = @($NotebookEntries)
         RecentHistory = @($RecentHistory)
         GuillermoStageDirection = $GuillermoStageDirection
-        NpcDisclosure = @($NpcDisclosure)
+        PostActionState = $PostActionState
+        EventState = $EventState
+        NpcDisclosure = [pscustomobject]@{
+            Discloses = @(if ($NpcDiscloses.Count) { $NpcDiscloses } else { $NpcDisclosure })
+            Withholds = @($NpcWithholds)
+        }
     }
+}
+
+function Add-StateFields {
+    param([Text.StringBuilder]$Builder,[string]$Heading,[object]$State)
+    if ($null -eq $State) { return }
+    $properties = @($State.PSObject.Properties)
+    if ($properties.Count -eq 0) { return }
+    [void]$Builder.AppendLine($Heading)
+    foreach ($property in $properties) {
+        $value = if ($property.Value -is [bool]) { $property.Value.ToString().ToLowerInvariant() } else { [string]$property.Value }
+        [void]$Builder.AppendLine("$($property.Name): $value")
+    }
+    [void]$Builder.AppendLine()
 }
 
 function Add-Lines {
@@ -65,11 +87,17 @@ function Format-NarrationPacket {
         [void]$builder.AppendLine("target: $($Packet.Action.Target)")
         [void]$builder.AppendLine("degree: $($Packet.Resolution.Degree)")
         Add-Lines $builder 'resolved:' $Packet.Resolution.Facts
+        Add-StateFields $builder 'POST_ACTION_STATE' $Packet.PostActionState
+        Add-StateFields $builder 'EVENT_STATE' $Packet.EventState
         Add-Lines $builder 'visible:' $Packet.Visible
         Add-Lines $builder 'known notebook entries:' $Packet.NotebookEntries
         Add-Lines $builder 'recent narration:' $Packet.RecentHistory
         if (-not [string]::IsNullOrWhiteSpace($Packet.GuillermoStageDirection)) { [void]$builder.AppendLine("Guillermo stage direction: $($Packet.GuillermoStageDirection)") }
-        Add-Lines $builder 'NPC disclosure:' $Packet.NpcDisclosure
+        if ($Packet.NpcDisclosure.Discloses.Count -or $Packet.NpcDisclosure.Withholds.Count) {
+            [void]$builder.AppendLine('NPC_DISCLOSURE')
+            Add-Lines $builder 'discloses:' $Packet.NpcDisclosure.Discloses
+            Add-Lines $builder 'withholds:' $Packet.NpcDisclosure.Withholds
+        }
         [void]$builder.AppendLine('NARRATION')
         [void]$builder.Append('You ')
     }
@@ -87,11 +115,14 @@ function Format-NarrationPacket {
         [void]$builder.AppendLine("The result is $($Packet.Resolution.Degree).")
         foreach ($fact in $Packet.Resolution.Facts) { [void]$builder.AppendLine("$fact.") }
         [void]$builder.AppendLine()
+        Add-StateFields $builder 'Post-action state:' $Packet.PostActionState
+        Add-StateFields $builder 'Event state:' $Packet.EventState
         Add-Lines $builder 'Visible:' $Packet.Visible
         Add-Lines $builder 'Known notebook entries:' $Packet.NotebookEntries
         Add-Lines $builder 'Recent narration:' $Packet.RecentHistory
         if (-not [string]::IsNullOrWhiteSpace($Packet.GuillermoStageDirection)) { [void]$builder.AppendLine("Guillermo: $($Packet.GuillermoStageDirection)") }
-        Add-Lines $builder 'NPC disclosure:' $Packet.NpcDisclosure
+        Add-Lines $builder 'NPC discloses:' $Packet.NpcDisclosure.Discloses
+        Add-Lines $builder 'NPC withholds:' $Packet.NpcDisclosure.Withholds
         [void]$builder.AppendLine('SCENE:')
         [void]$builder.Append('You ')
     }
@@ -110,6 +141,10 @@ function ConvertTo-NarrationPacket {
     if ($Case.PSObject.Properties['recent_history']) { $args.RecentHistory=@($Case.recent_history) }
     if ($Case.PSObject.Properties['guillermo_stage_direction']) { $args.GuillermoStageDirection=$Case.guillermo_stage_direction }
     if ($Case.PSObject.Properties['npc_disclosure']) { $args.NpcDisclosure=@($Case.npc_disclosure) }
+    if ($Case.PSObject.Properties['post_action_state']) { $args.PostActionState=$Case.post_action_state }
+    if ($Case.PSObject.Properties['event_state']) { $args.EventState=$Case.event_state }
+    if ($Case.PSObject.Properties['npc_discloses']) { $args.NpcDiscloses=@($Case.npc_discloses) }
+    if ($Case.PSObject.Properties['npc_withholds']) { $args.NpcWithholds=@($Case.npc_withholds) }
     New-NarrationPacket @args
 }
 

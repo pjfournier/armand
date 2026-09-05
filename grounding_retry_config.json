@@ -1,0 +1,11 @@
+{
+  "stage_a_temperatures": [0.15, 0.20],
+  "selected_temperature": 0.15,
+  "top_p": 0.95,
+  "top_k": 40,
+  "repeat_penalty": 1.1,
+  "max_tokens": 224,
+  "packet_format": "facts",
+  "exemplar_count": 11,
+  "validation_policy": "report_only"
+}

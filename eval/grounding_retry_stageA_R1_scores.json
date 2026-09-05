@@ -1,0 +1,182 @@
+[
+  {
+    "case_id": "gate-01",
+    "grounded": true,
+    "form": true,
+    "agency": true,
+    "register": true,
+    "identity": true,
+    "notes": ""
+  },
+  {
+    "case_id": "gate-02",
+    "grounded": true,
+    "form": true,
+    "agency": true,
+    "register": true,
+    "identity": true,
+    "notes": ""
+  },
+  {
+    "case_id": "gate-03",
+    "grounded": true,
+    "form": true,
+    "agency": true,
+    "register": true,
+    "identity": true,
+    "notes": ""
+  },
+  {
+    "case_id": "gate-04",
+    "grounded": false,
+    "form": true,
+    "agency": true,
+    "register": true,
+    "identity": true,
+    "notes": "Changes fresh blue ink into an unsupported ink trail."
+  },
+  {
+    "case_id": "gate-05",
+    "grounded": true,
+    "form": true,
+    "agency": true,
+    "register": true,
+    "identity": true,
+    "notes": ""
+  },
+  {
+    "case_id": "gate-06",
+    "grounded": true,
+    "form": true,
+    "agency": true,
+    "register": true,
+    "identity": true,
+    "notes": ""
+  },
+  {
+    "case_id": "gate-07",
+    "grounded": true,
+    "form": true,
+    "agency": true,
+    "register": true,
+    "identity": true,
+    "notes": ""
+  },
+  {
+    "case_id": "gate-08",
+    "grounded": true,
+    "form": true,
+    "agency": true,
+    "register": true,
+    "identity": true,
+    "notes": ""
+  },
+  {
+    "case_id": "gate-09",
+    "grounded": true,
+    "form": true,
+    "agency": true,
+    "register": true,
+    "identity": true,
+    "notes": ""
+  },
+  {
+    "case_id": "gate-10",
+    "grounded": true,
+    "form": true,
+    "agency": true,
+    "register": true,
+    "identity": true,
+    "notes": ""
+  },
+  {
+    "case_id": "gate-11",
+    "grounded": true,
+    "form": true,
+    "agency": true,
+    "register": true,
+    "identity": true,
+    "notes": ""
+  },
+  {
+    "case_id": "gate-12",
+    "grounded": true,
+    "form": true,
+    "agency": true,
+    "register": true,
+    "identity": true,
+    "notes": ""
+  },
+  {
+    "case_id": "gate-13",
+    "grounded": false,
+    "form": true,
+    "agency": false,
+    "register": true,
+    "identity": false,
+    "notes": "Addresses Armand as the returning scout although Guillermo performed the action. Assigns Guillermo scouting action to the player. Collapses Guillermo action into player/Armand action."
+  },
+  {
+    "case_id": "gate-14",
+    "grounded": true,
+    "form": true,
+    "agency": true,
+    "register": true,
+    "identity": true,
+    "notes": ""
+  },
+  {
+    "case_id": "gate-15",
+    "grounded": true,
+    "form": true,
+    "agency": true,
+    "register": true,
+    "identity": true,
+    "notes": ""
+  },
+  {
+    "case_id": "gate-16",
+    "grounded": false,
+    "form": true,
+    "agency": true,
+    "register": true,
+    "identity": true,
+    "notes": "Omits the constables and the specifically withheld ward, losing the disclosure boundary."
+  },
+  {
+    "case_id": "gate-17",
+    "grounded": false,
+    "form": true,
+    "agency": true,
+    "register": true,
+    "identity": true,
+    "notes": "Omits the specifically withheld consignee, losing the disclosure boundary."
+  },
+  {
+    "case_id": "gate-18",
+    "grounded": true,
+    "form": true,
+    "agency": true,
+    "register": true,
+    "identity": true,
+    "notes": ""
+  },
+  {
+    "case_id": "gate-19",
+    "grounded": false,
+    "form": true,
+    "agency": true,
+    "register": true,
+    "identity": true,
+    "notes": "Incorrectly calls all three observed states changes although the proof sheets are unchanged."
+  },
+  {
+    "case_id": "gate-20",
+    "grounded": true,
+    "form": true,
+    "agency": true,
+    "register": true,
+    "identity": true,
+    "notes": ""
+  }
+]

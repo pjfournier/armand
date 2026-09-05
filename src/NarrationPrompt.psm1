@@ -2,10 +2,10 @@ Set-StrictMode -Version Latest
 Import-Module (Join-Path $PSScriptRoot 'NarrationPacket.psm1') -Force
 
 function Read-NarrationExemplars {
-    param([Parameter(Mandatory)][string]$Path)
+    param([Parameter(Mandatory)][string]$Path,[int]$ExpectedCount=8)
     if (-not (Test-Path -LiteralPath $Path)) { throw "Exemplar file not found: $Path" }
     $items = @(Get-Content -Raw -LiteralPath $Path | ConvertFrom-Json)
-    if ($items.Count -ne 8) { throw "Exactly eight exemplars are required; found $($items.Count)." }
+    if ($items.Count -ne $ExpectedCount) { throw "Exactly $ExpectedCount exemplars are required; found $($items.Count)." }
     $items
 }
 

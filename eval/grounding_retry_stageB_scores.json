@@ -1,0 +1,182 @@
+[
+  {
+    "case_id": "confirm-01",
+    "grounded": true,
+    "form": true,
+    "agency": true,
+    "register": true,
+    "identity": true,
+    "notes": ""
+  },
+  {
+    "case_id": "confirm-02",
+    "grounded": true,
+    "form": true,
+    "agency": true,
+    "register": true,
+    "identity": true,
+    "notes": ""
+  },
+  {
+    "case_id": "confirm-03",
+    "grounded": true,
+    "form": true,
+    "agency": true,
+    "register": true,
+    "identity": true,
+    "notes": ""
+  },
+  {
+    "case_id": "confirm-04",
+    "grounded": false,
+    "form": true,
+    "agency": true,
+    "register": true,
+    "identity": true,
+    "notes": "Ambiguous pronoun makes the obtained receipt contents, rather than the escritoire contents, inaccessible."
+  },
+  {
+    "case_id": "confirm-05",
+    "grounded": true,
+    "form": true,
+    "agency": true,
+    "register": true,
+    "identity": true,
+    "notes": ""
+  },
+  {
+    "case_id": "confirm-06",
+    "grounded": true,
+    "form": true,
+    "agency": true,
+    "register": true,
+    "identity": true,
+    "notes": ""
+  },
+  {
+    "case_id": "confirm-07",
+    "grounded": true,
+    "form": true,
+    "agency": true,
+    "register": true,
+    "identity": true,
+    "notes": ""
+  },
+  {
+    "case_id": "confirm-08",
+    "grounded": true,
+    "form": true,
+    "agency": true,
+    "register": true,
+    "identity": true,
+    "notes": ""
+  },
+  {
+    "case_id": "confirm-09",
+    "grounded": true,
+    "form": true,
+    "agency": true,
+    "register": true,
+    "identity": true,
+    "notes": ""
+  },
+  {
+    "case_id": "confirm-10",
+    "grounded": true,
+    "form": true,
+    "agency": true,
+    "register": true,
+    "identity": true,
+    "notes": ""
+  },
+  {
+    "case_id": "confirm-11",
+    "grounded": true,
+    "form": true,
+    "agency": true,
+    "register": true,
+    "identity": true,
+    "notes": ""
+  },
+  {
+    "case_id": "confirm-12",
+    "grounded": true,
+    "form": true,
+    "agency": true,
+    "register": true,
+    "identity": true,
+    "notes": ""
+  },
+  {
+    "case_id": "confirm-13",
+    "grounded": false,
+    "form": true,
+    "agency": true,
+    "register": true,
+    "identity": true,
+    "notes": "Changes a closed reliquary state into a new lid-closing event."
+  },
+  {
+    "case_id": "confirm-14",
+    "grounded": true,
+    "form": true,
+    "agency": true,
+    "register": true,
+    "identity": true,
+    "notes": ""
+  },
+  {
+    "case_id": "confirm-15",
+    "grounded": true,
+    "form": true,
+    "agency": true,
+    "register": true,
+    "identity": true,
+    "notes": ""
+  },
+  {
+    "case_id": "confirm-16",
+    "grounded": true,
+    "form": true,
+    "agency": true,
+    "register": true,
+    "identity": true,
+    "notes": ""
+  },
+  {
+    "case_id": "confirm-17",
+    "grounded": true,
+    "form": true,
+    "agency": true,
+    "register": true,
+    "identity": true,
+    "notes": ""
+  },
+  {
+    "case_id": "confirm-18",
+    "grounded": true,
+    "form": true,
+    "agency": true,
+    "register": true,
+    "identity": true,
+    "notes": ""
+  },
+  {
+    "case_id": "confirm-19",
+    "grounded": false,
+    "form": true,
+    "agency": false,
+    "register": true,
+    "identity": true,
+    "notes": "Invents an attempt to open a door and omits the actual event that door three opened. Invents a player attempt to open a door."
+  },
+  {
+    "case_id": "confirm-20",
+    "grounded": true,
+    "form": true,
+    "agency": true,
+    "register": true,
+    "identity": true,
+    "notes": ""
+  }
+]

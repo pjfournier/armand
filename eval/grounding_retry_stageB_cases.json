@@ -1,0 +1,640 @@
+[
+  {
+    "id": "confirm-01",
+    "category": "failed_action_unchanged_state",
+    "seed": 6201,
+    "location": "chemist storeroom",
+    "time": "late night",
+    "weather": "rain",
+    "actor": "Armand",
+    "action_type": "unlocks",
+    "target": "blue cabinet",
+    "degree": "failure",
+    "facts": [
+      "the pick bends"
+    ],
+    "visible": [
+      "blue cabinet",
+      "gas lamp",
+      "packing bench"
+    ],
+    "forbidden_terms": [
+      "murder",
+      "culprit",
+      "secret society"
+    ],
+    "post_action_state": {
+      "contents_access": "unavailable",
+      "cabinet": "locked"
+    },
+    "event_state": {},
+    "npc_withholds": []
+  },
+  {
+    "id": "confirm-02",
+    "category": "failed_action_unchanged_state",
+    "seed": 6202,
+    "location": "magistrate robing room",
+    "time": "late night",
+    "weather": "rain",
+    "actor": "Armand",
+    "action_type": "opens",
+    "target": "sealed dispatch case",
+    "degree": "failure",
+    "facts": [
+      "the latch resists the key"
+    ],
+    "visible": [
+      "dispatch case",
+      "robe hooks",
+      "mirror"
+    ],
+    "forbidden_terms": [
+      "murder",
+      "culprit",
+      "secret society"
+    ],
+    "post_action_state": {
+      "dispatch_case": "closed",
+      "seal": "intact",
+      "contents_access": "unavailable"
+    },
+    "event_state": {},
+    "npc_withholds": []
+  },
+  {
+    "id": "confirm-03",
+    "category": "failed_action_unchanged_state",
+    "seed": 6203,
+    "location": "observatory archive",
+    "time": "late night",
+    "weather": "rain",
+    "actor": "Armand",
+    "action_type": "retrieves",
+    "target": "star ledger",
+    "degree": "failure",
+    "facts": [
+      "dust falls from the shelf"
+    ],
+    "visible": [
+      "high shelf",
+      "rolling ladder",
+      "desk"
+    ],
+    "forbidden_terms": [
+      "murder",
+      "culprit",
+      "secret society"
+    ],
+    "post_action_state": {
+      "ledger_location": "high shelf",
+      "ledger_access": "unavailable"
+    },
+    "event_state": {},
+    "npc_withholds": []
+  },
+  {
+    "id": "confirm-04",
+    "category": "partial_success_limited_access",
+    "seed": 6204,
+    "location": "undertaker office",
+    "time": "late night",
+    "weather": "rain",
+    "actor": "Armand",
+    "action_type": "searches",
+    "target": "locked escritoire",
+    "degree": "setback",
+    "facts": [
+      "a receipt is found beneath the escritoire"
+    ],
+    "visible": [
+      "escritoire",
+      "receipt",
+      "mourning drape"
+    ],
+    "forbidden_terms": [
+      "murder",
+      "culprit",
+      "secret society"
+    ],
+    "post_action_state": {
+      "escritoire": "locked",
+      "receipt_access": "obtained",
+      "contents_access": "unavailable"
+    },
+    "event_state": {},
+    "npc_withholds": []
+  },
+  {
+    "id": "confirm-05",
+    "category": "partial_success_limited_access",
+    "seed": 6205,
+    "location": "telegraph depot",
+    "time": "late night",
+    "weather": "rain",
+    "actor": "Armand",
+    "action_type": "examines",
+    "target": "jammed message drawer",
+    "degree": "setback",
+    "facts": [
+      "one torn message corner protrudes"
+    ],
+    "visible": [
+      "message drawer",
+      "telegraph key",
+      "wall clock"
+    ],
+    "forbidden_terms": [
+      "murder",
+      "culprit",
+      "secret society"
+    ],
+    "post_action_state": {
+      "message_fragment_access": "obtained",
+      "drawer": "jammed",
+      "remaining_messages_access": "unavailable"
+    },
+    "event_state": {},
+    "npc_withholds": []
+  },
+  {
+    "id": "confirm-06",
+    "category": "setback_event_occurs",
+    "seed": 6206,
+    "location": "river customs loft",
+    "time": "late night",
+    "weather": "rain",
+    "actor": "Armand",
+    "action_type": "lifts",
+    "target": "canvas tarpaulin",
+    "degree": "setback",
+    "facts": [
+      "a brass seal lies beneath it"
+    ],
+    "visible": [
+      "tarpaulin",
+      "brass seal",
+      "loft stairs"
+    ],
+    "forbidden_terms": [
+      "murder",
+      "culprit",
+      "secret society"
+    ],
+    "post_action_state": {
+      "brass_seal_access": "obtained"
+    },
+    "event_state": {
+      "loft_bell": "rang once"
+    },
+    "npc_withholds": []
+  },
+  {
+    "id": "confirm-07",
+    "category": "setback_event_occurs",
+    "seed": 6207,
+    "location": "printer cellar",
+    "time": "late night",
+    "weather": "rain",
+    "actor": "Armand",
+    "action_type": "moves",
+    "target": "paper bale",
+    "degree": "setback",
+    "facts": [
+      "the bale shifts aside"
+    ],
+    "visible": [
+      "paper bale",
+      "ink barrels",
+      "cellar door"
+    ],
+    "forbidden_terms": [
+      "murder",
+      "culprit",
+      "secret society"
+    ],
+    "post_action_state": {
+      "paper_bale": "moved aside"
+    },
+    "event_state": {
+      "upstairs_footsteps": "approaching",
+      "glass_bottle": "fell and shattered"
+    },
+    "npc_withholds": []
+  },
+  {
+    "id": "confirm-08",
+    "category": "bounded_npc_disclosure",
+    "seed": 6208,
+    "location": "cab rank shelter",
+    "time": "late night",
+    "weather": "rain",
+    "actor": "Armand",
+    "action_type": "asks",
+    "target": "dispatcher about cab seventeen",
+    "degree": "success",
+    "facts": [
+      "Armand asks when cab seventeen returned and who rode in it"
+    ],
+    "visible": [
+      "dispatch board",
+      "bench",
+      "street door"
+    ],
+    "forbidden_terms": [
+      "murder",
+      "culprit",
+      "secret society"
+    ],
+    "post_action_state": {},
+    "event_state": {},
+    "npc_discloses": [
+      "cab seventeen returned at one oclock"
+    ],
+    "npc_withholds": [
+      "the passenger identity"
+    ]
+  },
+  {
+    "id": "confirm-09",
+    "category": "bounded_npc_disclosure",
+    "seed": 6209,
+    "location": "museum porter desk",
+    "time": "late night",
+    "weather": "rain",
+    "actor": "Armand",
+    "action_type": "asks",
+    "target": "porter about the east door",
+    "degree": "success",
+    "facts": [
+      "Armand asks when the east door opened and who used it"
+    ],
+    "visible": [
+      "porter desk",
+      "key board",
+      "east corridor"
+    ],
+    "forbidden_terms": [
+      "murder",
+      "culprit",
+      "secret society"
+    ],
+    "post_action_state": {},
+    "event_state": {},
+    "npc_discloses": [
+      "the east door opened shortly before midnight"
+    ],
+    "npc_withholds": [
+      "the person who used the door"
+    ]
+  },
+  {
+    "id": "confirm-10",
+    "category": "bounded_npc_disclosure",
+    "seed": 6210,
+    "location": "market watch house",
+    "time": "late night",
+    "weather": "rain",
+    "actor": "Armand",
+    "action_type": "asks",
+    "target": "sergeant about a detained cart",
+    "degree": "success",
+    "facts": [
+      "Armand asks where the cart was stopped and what it carried"
+    ],
+    "visible": [
+      "duty desk",
+      "wall map",
+      "cell door"
+    ],
+    "forbidden_terms": [
+      "murder",
+      "culprit",
+      "secret society"
+    ],
+    "post_action_state": {},
+    "event_state": {},
+    "npc_discloses": [
+      "the cart was stopped on Bell Street"
+    ],
+    "npc_withholds": [
+      "the cart cargo"
+    ]
+  },
+  {
+    "id": "confirm-11",
+    "category": "guillermo_gesture",
+    "seed": 6211,
+    "location": "clock repair shop",
+    "time": "late night",
+    "weather": "rain",
+    "actor": "Guillermo",
+    "action_type": "reacts to",
+    "target": "warm air under the counter",
+    "degree": "resolved",
+    "facts": [
+      "warm air rises beneath the counter"
+    ],
+    "visible": [
+      "glass counter",
+      "clock parts",
+      "floor grate"
+    ],
+    "forbidden_terms": [
+      "murder",
+      "culprit",
+      "secret society"
+    ],
+    "post_action_state": {
+      "warm_air_source": "beneath counter"
+    },
+    "event_state": {},
+    "npc_withholds": [],
+    "guillermo_stage_direction": "Guillermo crouches, tests the warm air with one hand, then points beneath the counter and looks to Armand without speaking."
+  },
+  {
+    "id": "confirm-12",
+    "category": "guillermo_gesture",
+    "seed": 6212,
+    "location": "theatre wardrobe",
+    "time": "late night",
+    "weather": "rain",
+    "actor": "Guillermo",
+    "action_type": "reacts to",
+    "target": "powder on a coat cuff",
+    "degree": "resolved",
+    "facts": [
+      "white powder marks the coat cuff"
+    ],
+    "visible": [
+      "dark coat",
+      "costume rail",
+      "mirror"
+    ],
+    "forbidden_terms": [
+      "murder",
+      "culprit",
+      "secret society"
+    ],
+    "post_action_state": {
+      "powder_identity": "unknown",
+      "powder_location": "coat cuff"
+    },
+    "event_state": {},
+    "npc_withholds": [],
+    "guillermo_stage_direction": "Guillermo sniffs the cuff, sneezes, wipes his nose with offended dignity, and points at the powder without speaking."
+  },
+  {
+    "id": "confirm-13",
+    "category": "spell_result",
+    "seed": 6213,
+    "location": "chapel vestry",
+    "time": "late night",
+    "weather": "rain",
+    "actor": "Armand",
+    "action_type": "casts Detect Magic on",
+    "target": "silver reliquary",
+    "degree": "success",
+    "facts": [
+      "magic is present"
+    ],
+    "visible": [
+      "silver reliquary",
+      "prayer stool",
+      "cold brazier"
+    ],
+    "forbidden_terms": [
+      "murder",
+      "culprit",
+      "secret society"
+    ],
+    "post_action_state": {
+      "reliquary": "closed",
+      "magic_nature": "unknown",
+      "magic_presence": "detected"
+    },
+    "event_state": {},
+    "npc_withholds": []
+  },
+  {
+    "id": "confirm-14",
+    "category": "spell_result",
+    "seed": 6214,
+    "location": "flooded tunnel",
+    "time": "late night",
+    "weather": "rain",
+    "actor": "Armand",
+    "action_type": "casts Light toward",
+    "target": "far arch",
+    "degree": "failure",
+    "facts": [
+      "the spell produces a brief spark"
+    ],
+    "visible": [
+      "black water",
+      "far arch",
+      "brick ledge"
+    ],
+    "forbidden_terms": [
+      "murder",
+      "culprit",
+      "secret society"
+    ],
+    "post_action_state": {
+      "far_arch_visibility": "unavailable",
+      "light_source": "extinguished"
+    },
+    "event_state": {},
+    "npc_withholds": []
+  },
+  {
+    "id": "confirm-15",
+    "category": "successful_investigation",
+    "seed": 6215,
+    "location": "insurance assessor office",
+    "time": "late night",
+    "weather": "rain",
+    "actor": "Armand",
+    "action_type": "investigates",
+    "target": "burned account page",
+    "degree": "success",
+    "facts": [
+      "three figures remain legible",
+      "the lower corner bears red sealing wax"
+    ],
+    "visible": [
+      "burned page",
+      "adding machine",
+      "metal tray"
+    ],
+    "forbidden_terms": [
+      "murder",
+      "culprit",
+      "secret society"
+    ],
+    "post_action_state": {
+      "red_wax_location": "lower corner",
+      "legible_figures": "three"
+    },
+    "event_state": {},
+    "npc_withholds": []
+  },
+  {
+    "id": "confirm-16",
+    "category": "successful_investigation",
+    "seed": 6216,
+    "location": "canal toll booth",
+    "time": "late night",
+    "weather": "rain",
+    "actor": "Armand",
+    "action_type": "investigates",
+    "target": "muddy token",
+    "degree": "success",
+    "facts": [
+      "the token bears the number forty-two",
+      "one edge is freshly filed"
+    ],
+    "visible": [
+      "muddy token",
+      "cash drawer",
+      "canal window"
+    ],
+    "forbidden_terms": [
+      "murder",
+      "culprit",
+      "secret society"
+    ],
+    "post_action_state": {
+      "token_number": "42",
+      "token_edge": "freshly filed"
+    },
+    "event_state": {},
+    "npc_withholds": []
+  },
+  {
+    "id": "confirm-17",
+    "category": "mundane_observation",
+    "seed": 6217,
+    "location": "hotel scullery",
+    "time": "late night",
+    "weather": "rain",
+    "actor": "Armand",
+    "action_type": "searches",
+    "target": "coal bucket",
+    "degree": "success",
+    "facts": [
+      "the bucket contains coal dust and a bent scoop"
+    ],
+    "visible": [
+      "coal bucket",
+      "stone sink",
+      "service bell"
+    ],
+    "forbidden_terms": [
+      "murder",
+      "culprit",
+      "secret society"
+    ],
+    "post_action_state": {
+      "bucket_contents": "coal dust and bent scoop",
+      "consequential_evidence": "none"
+    },
+    "event_state": {},
+    "npc_withholds": []
+  },
+  {
+    "id": "confirm-18",
+    "category": "mundane_observation",
+    "seed": 6218,
+    "location": "station parcel room",
+    "time": "late night",
+    "weather": "rain",
+    "actor": "Armand",
+    "action_type": "examines",
+    "target": "empty wicker hamper",
+    "degree": "success",
+    "facts": [
+      "the hamper contains only straw"
+    ],
+    "visible": [
+      "wicker hamper",
+      "parcel scale",
+      "wire shelves"
+    ],
+    "forbidden_terms": [
+      "murder",
+      "culprit",
+      "secret society"
+    ],
+    "post_action_state": {
+      "hamper_contents": "straw",
+      "consequential_evidence": "none"
+    },
+    "event_state": {},
+    "npc_withholds": []
+  },
+  {
+    "id": "confirm-19",
+    "category": "event_occurs",
+    "seed": 6219,
+    "location": "boarding-house landing",
+    "time": "late night",
+    "weather": "rain",
+    "actor": "Armand",
+    "action_type": "tests",
+    "target": "loose banister",
+    "degree": "setback",
+    "facts": [
+      "the banister shifts under pressure"
+    ],
+    "visible": [
+      "loose banister",
+      "stair runner",
+      "numbered doors"
+    ],
+    "forbidden_terms": [
+      "murder",
+      "culprit",
+      "secret society"
+    ],
+    "post_action_state": {
+      "banister": "loose"
+    },
+    "event_state": {
+      "unidentified_person_visibility": "unavailable",
+      "door_three": "opened"
+    },
+    "npc_withholds": []
+  },
+  {
+    "id": "confirm-20",
+    "category": "object_inaccessible",
+    "seed": 6220,
+    "location": "harbour signal room",
+    "time": "late night",
+    "weather": "rain",
+    "actor": "Armand",
+    "action_type": "reaches for",
+    "target": "codebook behind glass",
+    "degree": "failure",
+    "facts": [
+      "the cabinet key does not turn"
+    ],
+    "visible": [
+      "glass cabinet",
+      "codebook",
+      "signal levers"
+    ],
+    "forbidden_terms": [
+      "murder",
+      "culprit",
+      "secret society"
+    ],
+    "post_action_state": {
+      "codebook_access": "unavailable",
+      "glass_cabinet": "locked"
+    },
+    "event_state": {},
+    "npc_withholds": []
+  }
+]

@@ -1,0 +1,657 @@
+[
+  {
+    "id": "gate-01",
+    "category": "entering_location",
+    "seed": 5101,
+    "location": "Harrow Street pawnshop",
+    "time": "closing time",
+    "weather": "rain",
+    "actor": "Armand",
+    "action_type": "enters",
+    "target": "pawnshop",
+    "degree": "resolved",
+    "facts": [
+      "the street door shuts behind Armand",
+      "a bell rings once above the door"
+    ],
+    "visible": [
+      "glass counter",
+      "caged gas lamp",
+      "rows of numbered shelves"
+    ],
+    "forbidden_terms": [
+      "stolen emerald",
+      "murder",
+      "Harrow"
+    ],
+    "retry_source": "existing Gate 1 held-out case; revised representation only",
+    "event_state": {
+      "street_door": "shut",
+      "door_bell": "rang once"
+    }
+  },
+  {
+    "id": "gate-02",
+    "category": "entering_location",
+    "seed": 5102,
+    "location": "deserted ferry office",
+    "time": "before dawn",
+    "weather": "river fog",
+    "actor": "Armand",
+    "action_type": "enters",
+    "target": "ferry office",
+    "degree": "resolved",
+    "facts": [
+      "river water has pooled across the threshold"
+    ],
+    "visible": [
+      "ticket desk",
+      "tide chart",
+      "cold stove"
+    ],
+    "forbidden_terms": [
+      "drowned clerk",
+      "smuggling",
+      "Morrow"
+    ],
+    "retry_source": "existing Gate 1 held-out case; revised representation only",
+    "post_action_state": {
+      "office_door": "open",
+      "threshold": "flooded"
+    }
+  },
+  {
+    "id": "gate-03",
+    "category": "successful_investigation",
+    "seed": 5103,
+    "location": "dressmaker's workroom",
+    "time": "afternoon",
+    "weather": "overcast",
+    "actor": "Armand",
+    "action_type": "investigates",
+    "target": "unfinished mourning dress",
+    "degree": "success",
+    "facts": [
+      "the hem carries pale clay",
+      "one inner pocket has been cut away"
+    ],
+    "visible": [
+      "unfinished dress",
+      "cutting table",
+      "dressmaker's dummy"
+    ],
+    "forbidden_terms": [
+      "cemetery",
+      "poison",
+      "Lady Crane"
+    ],
+    "retry_source": "existing Gate 1 held-out case; revised representation only",
+    "post_action_state": {
+      "hem_trace": "pale clay",
+      "inner_pocket": "cut away"
+    }
+  },
+  {
+    "id": "gate-04",
+    "category": "successful_investigation",
+    "seed": 5104,
+    "location": "harbour master's office",
+    "time": "9:15 p.m.",
+    "weather": "gale",
+    "actor": "Armand",
+    "action_type": "investigates",
+    "target": "torn manifest",
+    "degree": "success",
+    "facts": [
+      "the final cargo line has been torn away",
+      "the remaining paper bears fresh blue ink"
+    ],
+    "visible": [
+      "torn manifest",
+      "wall map",
+      "signal lantern"
+    ],
+    "forbidden_terms": [
+      "contraband",
+      "captain",
+      "Black Gull"
+    ],
+    "retry_source": "existing Gate 1 held-out case; revised representation only",
+    "post_action_state": {
+      "final_cargo_line": "absent from manifest",
+      "remaining_ink": "fresh blue"
+    }
+  },
+  {
+    "id": "gate-05",
+    "category": "setback",
+    "seed": 5105,
+    "location": "locked school archive",
+    "time": "night",
+    "weather": "snow",
+    "actor": "Armand",
+    "action_type": "forces",
+    "target": "filing drawer",
+    "degree": "setback",
+    "facts": [
+      "the drawer opens",
+      "its handle breaks off",
+      "a caretaker's lantern appears beneath the corridor door"
+    ],
+    "visible": [
+      "filing drawer",
+      "attendance books",
+      "corridor door"
+    ],
+    "forbidden_terms": [
+      "missing child",
+      "abduction",
+      "Headmaster Bell"
+    ],
+    "retry_source": "existing Gate 1 held-out case; revised representation only",
+    "post_action_state": {
+      "filing_drawer": "open",
+      "drawer_handle": "broken off"
+    },
+    "event_state": {
+      "caretaker_lantern": "visible beneath corridor door"
+    }
+  },
+  {
+    "id": "gate-06",
+    "category": "setback",
+    "seed": 5106,
+    "location": "glasshouse potting room",
+    "time": "dusk",
+    "weather": "hail",
+    "actor": "Armand",
+    "action_type": "searches",
+    "target": "soil bin",
+    "degree": "setback",
+    "facts": [
+      "a brass tag is found",
+      "a flowerpot falls and breaks",
+      "voices outside become quiet"
+    ],
+    "visible": [
+      "soil bin",
+      "empty pots",
+      "frosted door"
+    ],
+    "forbidden_terms": [
+      "nightshade",
+      "gardener",
+      "poisoning"
+    ],
+    "retry_source": "existing Gate 1 held-out case; revised representation only",
+    "post_action_state": {
+      "brass_tag_access": "obtained",
+      "flowerpot": "broken"
+    },
+    "event_state": {
+      "outside_voices": "became quiet"
+    }
+  },
+  {
+    "id": "gate-07",
+    "category": "setback",
+    "seed": 5107,
+    "location": "jeweller's back office",
+    "time": "midnight",
+    "weather": "rain",
+    "actor": "Armand",
+    "action_type": "opens",
+    "target": "wall safe",
+    "degree": "setback",
+    "facts": [
+      "the safe opens",
+      "the mechanism emits a shrill bell",
+      "the safe contains only an empty velvet tray"
+    ],
+    "visible": [
+      "wall safe",
+      "work desk",
+      "street window"
+    ],
+    "forbidden_terms": [
+      "ruby",
+      "thief",
+      "Mrs. Locke"
+    ],
+    "retry_source": "existing Gate 1 held-out case; revised representation only",
+    "post_action_state": {
+      "wall_safe": "open",
+      "safe_contents": "empty velvet tray"
+    },
+    "event_state": {
+      "safe_bell": "ringing"
+    }
+  },
+  {
+    "id": "gate-08",
+    "category": "failure",
+    "seed": 5108,
+    "location": "chapel bell chamber",
+    "time": "sunset",
+    "weather": "wind",
+    "actor": "Armand",
+    "action_type": "crosses",
+    "target": "rotted walkway",
+    "degree": "failure",
+    "facts": [
+      "one walkway board splits",
+      "the bell rope swings within reach"
+    ],
+    "visible": [
+      "rotted walkway",
+      "bell rope",
+      "far platform"
+    ],
+    "forbidden_terms": [
+      "hidden tunnel",
+      "monk",
+      "treasure"
+    ],
+    "retry_source": "existing Gate 1 held-out case; revised representation only",
+    "post_action_state": {
+      "Armand_location": "near platform",
+      "far_platform_access": "unavailable"
+    }
+  },
+  {
+    "id": "gate-09",
+    "category": "failure",
+    "seed": 5109,
+    "location": "private clinic cellar",
+    "time": "2 a.m.",
+    "weather": "rain",
+    "actor": "Armand",
+    "action_type": "unlocks",
+    "target": "iron cabinet",
+    "degree": "failure",
+    "facts": [
+      "the pick snaps inside the keyhole",
+      "water begins dripping through the ceiling"
+    ],
+    "visible": [
+      "iron cabinet",
+      "drain",
+      "wooden chair"
+    ],
+    "forbidden_terms": [
+      "body",
+      "experiment",
+      "Dr. Ash"
+    ],
+    "retry_source": "existing Gate 1 held-out case; revised representation only",
+    "post_action_state": {
+      "iron_cabinet": "locked",
+      "cabinet_contents_access": "unavailable"
+    }
+  },
+  {
+    "id": "gate-10",
+    "category": "failure",
+    "seed": 5110,
+    "location": "tram conductor's room",
+    "time": "last service",
+    "weather": "fog",
+    "actor": "Armand",
+    "action_type": "searches",
+    "target": "locker",
+    "degree": "severe failure",
+    "facts": [
+      "the locker is empty",
+      "its unsecured door falls against a signal lever",
+      "a warning bell begins ringing"
+    ],
+    "visible": [
+      "locker",
+      "signal lever",
+      "timetable"
+    ],
+    "forbidden_terms": [
+      "sabotage",
+      "conductor",
+      "explosion"
+    ],
+    "retry_source": "existing Gate 1 held-out case; revised representation only",
+    "post_action_state": {
+      "locker_contents": "empty",
+      "locker_door": "fallen against signal lever"
+    },
+    "event_state": {
+      "warning_bell": "ringing"
+    }
+  },
+  {
+    "id": "gate-11",
+    "category": "guillermo_gesture",
+    "seed": 5111,
+    "location": "antiquarian's gallery",
+    "time": "late evening",
+    "weather": "rain",
+    "actor": "Guillermo",
+    "action_type": "reacts to",
+    "target": "a draft behind a tapestry",
+    "degree": "resolved",
+    "facts": [
+      "Guillermo feels a draft behind the tapestry"
+    ],
+    "visible": [
+      "wall tapestry",
+      "display plinth",
+      "dark window"
+    ],
+    "guillermo_stage_direction": "Guillermo's fur lifts in the draft. He sniffs along the tapestry's edge, glances back at Armand twice, and points without speaking.",
+    "forbidden_terms": [
+      "passage",
+      "safe",
+      "antiquarian"
+    ],
+    "retry_source": "existing Gate 1 held-out case; revised representation only",
+    "post_action_state": {
+      "draft_source": "behind tapestry",
+      "concealed_area_visibility": "unavailable"
+    }
+  },
+  {
+    "id": "gate-12",
+    "category": "guillermo_gesture",
+    "seed": 5112,
+    "location": "railway lost-property room",
+    "time": "dawn",
+    "weather": "mist",
+    "actor": "Guillermo",
+    "action_type": "reacts to",
+    "target": "a scent on a green valise",
+    "degree": "resolved",
+    "facts": [
+      "Guillermo smells something on the green valise"
+    ],
+    "visible": [
+      "green valise",
+      "parcel shelves",
+      "wire cage"
+    ],
+    "guillermo_stage_direction": "Guillermo sniffs the valise, recoils, wipes his nose theatrically, then fixes Armand with an expectant stare. He does not speak.",
+    "forbidden_terms": [
+      "chloroform",
+      "kidnapper",
+      "Rose"
+    ],
+    "retry_source": "existing Gate 1 held-out case; revised representation only",
+    "post_action_state": {
+      "scent_source": "unknown",
+      "scent_meaning": "unknown"
+    }
+  },
+  {
+    "id": "gate-13",
+    "category": "guillermo_gesture",
+    "seed": 5113,
+    "location": "backstage prop room",
+    "time": "during applause",
+    "weather": "storm",
+    "actor": "Guillermo",
+    "action_type": "returns from",
+    "target": "brief scouting beyond the curtain",
+    "degree": "success",
+    "facts": [
+      "Guillermo saw one person waiting beyond the curtain"
+    ],
+    "visible": [
+      "painted throne",
+      "costume trunks",
+      "stage curtain"
+    ],
+    "guillermo_stage_direction": "Guillermo returns, holds up one finger, points beyond the curtain, then cups a hand to one ear and shakes his head. He does not speak.",
+    "forbidden_terms": [
+      "actor",
+      "assassin",
+      "knife"
+    ],
+    "retry_source": "existing Gate 1 held-out case; revised representation only",
+    "post_action_state": {
+      "person_count": "one",
+      "person_identity": "unknown"
+    },
+    "event_state": {
+      "other_people_heard": "none"
+    }
+  },
+  {
+    "id": "gate-14",
+    "category": "mundane_truth",
+    "seed": 5114,
+    "location": "boarding-house linen room",
+    "time": "morning",
+    "weather": "clear",
+    "actor": "Armand",
+    "action_type": "searches",
+    "target": "laundry basket",
+    "degree": "success",
+    "facts": [
+      "the basket contains clean sheets and one wooden clothes peg"
+    ],
+    "visible": [
+      "laundry basket",
+      "linen shelves",
+      "small window"
+    ],
+    "forbidden_terms": [
+      "blood",
+      "letter",
+      "weapon"
+    ],
+    "retry_source": "existing Gate 1 held-out case; revised representation only",
+    "post_action_state": {
+      "basket_contents": "clean sheets and one wooden clothes peg",
+      "consequential_evidence": "none"
+    }
+  },
+  {
+    "id": "gate-15",
+    "category": "mundane_truth",
+    "seed": 5115,
+    "location": "solicitor's waiting room",
+    "time": "noon",
+    "weather": "drizzle",
+    "actor": "Armand",
+    "action_type": "examines",
+    "target": "umbrella stand",
+    "degree": "success",
+    "facts": [
+      "the stand contains three dry umbrellas and street grit"
+    ],
+    "visible": [
+      "umbrella stand",
+      "leather chairs",
+      "closed office door"
+    ],
+    "forbidden_terms": [
+      "will",
+      "murder",
+      "secret"
+    ],
+    "retry_source": "existing Gate 1 held-out case; revised representation only",
+    "post_action_state": {
+      "umbrella_count": "three",
+      "umbrellas": "dry",
+      "street_grit": "present in stand",
+      "consequential_evidence": "none"
+    }
+  },
+  {
+    "id": "gate-16",
+    "category": "npc_conversation",
+    "seed": 5116,
+    "location": "hospital admissions desk",
+    "time": "before dawn",
+    "weather": "snow",
+    "actor": "Armand",
+    "action_type": "asks",
+    "target": "nurse about an unidentified patient",
+    "degree": "success",
+    "facts": [
+      "Armand asks when the patient arrived"
+    ],
+    "visible": [
+      "admissions desk",
+      "empty chairs",
+      "ward door"
+    ],
+    "forbidden_terms": [
+      "patient name",
+      "murder",
+      "Ward C"
+    ],
+    "retry_source": "existing Gate 1 held-out case; revised representation only",
+    "npc_discloses": [
+      "two constables brought the patient shortly after one oclock",
+      "the patient was unconscious"
+    ],
+    "npc_withholds": [
+      "the ward where the patient was taken"
+    ]
+  },
+  {
+    "id": "gate-17",
+    "category": "npc_conversation",
+    "seed": 5117,
+    "location": "customs inspection shed",
+    "time": "afternoon",
+    "weather": "rain",
+    "actor": "Armand",
+    "action_type": "asks",
+    "target": "inspector about a damaged crate",
+    "degree": "setback",
+    "facts": [
+      "Armand asks where the damaged crate arrived from"
+    ],
+    "visible": [
+      "damaged crate",
+      "inspection table",
+      "harbour door"
+    ],
+    "forbidden_terms": [
+      "France",
+      "smuggler",
+      "consignee name"
+    ],
+    "retry_source": "existing Gate 1 held-out case; revised representation only",
+    "npc_discloses": [
+      "the crate came off the morning packet"
+    ],
+    "npc_withholds": [
+      "the consignee identity"
+    ],
+    "event_state": {
+      "inspector_response": "asks to see Armand authority"
+    }
+  },
+  {
+    "id": "gate-18",
+    "category": "npc_conversation",
+    "seed": 5118,
+    "location": "theatre stage door",
+    "time": "after midnight",
+    "weather": "fog",
+    "actor": "Armand",
+    "action_type": "asks",
+    "target": "doorman about the missing violinist",
+    "degree": "success",
+    "facts": [
+      "Armand asks when the violinist left"
+    ],
+    "visible": [
+      "stage door",
+      "call board",
+      "empty corridor"
+    ],
+    "forbidden_terms": [
+      "lover",
+      "carriage",
+      "abduction"
+    ],
+    "retry_source": "existing Gate 1 held-out case; revised representation only",
+    "npc_discloses": [
+      "the violinist left before the final curtain",
+      "the violinist carried no instrument case",
+      "the doorman did not see her direction"
+    ],
+    "npc_withholds": []
+  },
+  {
+    "id": "gate-19",
+    "category": "returning_changed_location",
+    "seed": 5119,
+    "location": "newspaper editor's office",
+    "time": "3 a.m.",
+    "weather": "rain",
+    "actor": "Armand",
+    "action_type": "returns to",
+    "target": "editor's office",
+    "degree": "resolved",
+    "facts": [
+      "the proof sheets are on the floor"
+    ],
+    "visible": [
+      "extinguished desk lamp",
+      "open window",
+      "proof sheets"
+    ],
+    "forbidden_terms": [
+      "intruder",
+      "editor",
+      "escape"
+    ],
+    "retry_source": "existing Gate 1 held-out case; revised representation only",
+    "post_action_state": {
+      "desk_lamp": "extinguished",
+      "window": "open",
+      "proof_sheets": "on floor"
+    },
+    "recent_history": [
+      "previous desk lamp state: lit",
+      "previous window state: closed",
+      "previous proof sheets location: floor"
+    ]
+  },
+  {
+    "id": "gate-20",
+    "category": "returning_changed_location",
+    "seed": 5120,
+    "location": "riverside counting room",
+    "time": "4:10 a.m.",
+    "weather": "fog",
+    "actor": "Armand",
+    "action_type": "returns to",
+    "target": "counting room",
+    "degree": "resolved",
+    "facts": [
+      "the chair is beneath the high window"
+    ],
+    "visible": [
+      "bare desk",
+      "chair beneath high window",
+      "locked door"
+    ],
+    "forbidden_terms": [
+      "burglar",
+      "roof",
+      "bookkeeper"
+    ],
+    "retry_source": "existing Gate 1 held-out case; revised representation only",
+    "post_action_state": {
+      "account_book_access": "unavailable",
+      "account_book_location": "absent from desk",
+      "chair_location": "beneath high window",
+      "door": "locked"
+    },
+    "recent_history": [
+      "previous account book location: open on desk",
+      "previous chair location: beside desk"
+    ]
+  }
+]
