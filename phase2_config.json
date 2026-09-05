@@ -1,0 +1,12 @@
+{
+  "packet_format": "facts",
+  "temperature": 0.35,
+  "top_p": 0.95,
+  "top_k": 40,
+  "repeat_penalty": 1.1,
+  "max_tokens": 224,
+  "seed": 3001,
+  "stop_sequence": "\nFACTS",
+  "validation_policy": "report_only",
+  "max_words": 180
+}

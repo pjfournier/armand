@@ -1,0 +1,93 @@
+[
+  {
+    "id": "enter_location",
+    "category": "entering_location",
+    "packet": {
+      "location": "Ashcombe House entrance hall", "time": "11:40 p.m.", "weather": "rain",
+      "actor": "Armand", "action_type": "enters", "target": "entrance hall", "degree": "resolved",
+      "facts": ["the front door closes behind Armand", "rainwater darkens the floor beneath his boots"],
+      "visible": ["narrow staircase", "unlit chandelier", "umbrella stand"]
+    },
+    "narration": "You cross the threshold, and the front door settles shut behind you. Rainwater shines beneath your boots while the unlit chandelier hangs over the narrow stair, every crystal black in the gloom."
+  },
+  {
+    "id": "investigation_success",
+    "category": "successful_investigation",
+    "packet": {
+      "location": "solicitor's study", "time": "midnight", "weather": "rain",
+      "actor": "Armand", "action_type": "investigates", "target": "writing desk", "degree": "success",
+      "facts": ["fresh scratches surround the locked drawer", "the drawer remains closed"],
+      "visible": ["writing desk", "cold fireplace", "rain-streaked window"]
+    },
+    "narration": "You trace the edge of the locked drawer. Fresh scratches score the wood around its keyhole; whatever marked it did so recently, but the drawer remains closed."
+  },
+  {
+    "id": "setback",
+    "category": "setback",
+    "packet": {
+      "location": "warehouse office", "time": "2:10 a.m.", "weather": "cold rain",
+      "actor": "Armand", "action_type": "forces open", "target": "ledger cabinet", "degree": "setback",
+      "facts": ["the cabinet opens", "a metal hinge snaps loudly", "footsteps stop in the corridor"],
+      "visible": ["ledger cabinet", "ink-stained desk", "corridor door"]
+    },
+    "narration": "You wrench the cabinet open. Its hinge snaps with a pistol-crack, and the footsteps beyond the corridor door stop at once."
+  },
+  {
+    "id": "failure_changes_situation",
+    "category": "failure",
+    "packet": {
+      "location": "museum archive", "time": "after closing", "weather": "hail",
+      "actor": "Armand", "action_type": "opens", "target": "high window", "degree": "failure",
+      "facts": ["the window remains shut", "the latch breaks", "loose glass falls onto the floor"],
+      "visible": ["high window", "covered shelves", "archive door"]
+    },
+    "narration": "You press the latch; it gives before the window does. A sliver of loose glass drops and breaks on the floor, bright and sharp in the silence, while the window stays shut."
+  },
+  {
+    "id": "guillermo_gesture",
+    "category": "guillermo_gesture",
+    "packet": {
+      "location": "boarding-house parlour", "time": "evening", "weather": "fog",
+      "actor": "Guillermo", "action_type": "reacts to", "target": "a sound behind the wall", "degree": "resolved",
+      "facts": ["Guillermo hears a faint scratching behind the wall", "the source is unknown"],
+      "visible": ["faded settee", "floral wallpaper", "cold tea service"],
+      "guillermo_stage_direction": "He freezes, presses one ear to the wallpaper, then gives Armand a long look and points at the wall. He does not speak."
+    },
+    "narration": "You see Guillermo freeze beside the faded settee. He presses one small ear to the floral paper, listens to the faint scratching beyond it, then turns a long, accusing look on you and points at the wall."
+  },
+  {
+    "id": "mundane_truth",
+    "category": "mundane_truth",
+    "packet": {
+      "location": "hotel cloakroom", "time": "late evening", "weather": "snow",
+      "actor": "Armand", "action_type": "searches", "target": "beneath the coat rack", "degree": "success",
+      "facts": ["nothing consequential is hidden there", "only dust, a loose button, and a dead beetle are present"],
+      "visible": ["coat rack", "wooden bench", "numbered hooks"]
+    },
+    "narration": "You search beneath the coat rack. Dust softens the boards around a loose button and the husk of a beetle; nothing else waits there."
+  },
+  {
+    "id": "npc_disclosure",
+    "category": "npc_conversation",
+    "packet": {
+      "location": "railway booking hall", "time": "dawn", "weather": "fog",
+      "actor": "Armand", "action_type": "asks", "target": "station clerk about the abandoned case", "degree": "success",
+      "facts": ["Armand asks who left the case"],
+      "visible": ["ticket window", "abandoned case", "brass clock"],
+      "npc_disclosure": ["the clerk says a woman in a grey veil left it before midnight", "the clerk refuses to describe her face", "the clerk does not disclose anything else"]
+    },
+    "narration": "You ask who left the case. The clerk glances from it to the brass clock. ‘A woman in a grey veil, before midnight.’ When you press him for her face, his mouth hardens. ‘That is all I can tell you.’"
+  },
+  {
+    "id": "return_changed_location",
+    "category": "returning_changed_location",
+    "packet": {
+      "location": "Wren Street study", "time": "1:15 a.m.", "weather": "rain",
+      "actor": "Armand", "action_type": "returns to", "target": "study", "degree": "resolved",
+      "facts": ["the desk drawer was closed on the previous visit", "the desk drawer is now open", "the papers previously on the desk are gone"],
+      "visible": ["open desk drawer", "bare desktop", "extinguished fireplace"],
+      "recent_history": ["Armand previously left the study with its drawer closed and papers on the desk"]
+    },
+    "narration": "You return to the study and find the desk altered. The drawer you left closed now gapes open, and the papers are gone from the bare desktop; only the extinguished fireplace remains as you remember it."
+  }
+]

@@ -3,4 +3,4 @@ models/
 artifacts/
 *.log
 *.tmp
-
+eval/.work/

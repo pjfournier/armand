@@ -1,0 +1,22 @@
+[
+  {"case_id":"gate-01","grounded":true,"form":true,"agency":true,"identity":true,"register":true,"pass":true,"notes":"Faithful threshold entry."},
+  {"case_id":"gate-02","grounded":false,"form":true,"agency":true,"identity":true,"register":true,"pass":false,"notes":"Adds that the ticket desk is empty and the tide chart has not been consulted."},
+  {"case_id":"gate-03","grounded":true,"form":true,"agency":true,"identity":true,"register":true,"pass":true,"notes":"Faithful investigation result."},
+  {"case_id":"gate-04","grounded":false,"form":true,"agency":true,"identity":true,"register":true,"pass":false,"notes":"Turns fresh blue ink on the remaining paper into an unsupported ink trail."},
+  {"case_id":"gate-05","grounded":true,"form":true,"agency":true,"identity":true,"register":true,"pass":true,"notes":"Faithful setback."},
+  {"case_id":"gate-06","grounded":false,"form":true,"agency":false,"identity":true,"register":true,"pass":false,"notes":"Invents the room shaking and assigns the player a physical sensation."},
+  {"case_id":"gate-07","grounded":true,"form":true,"agency":true,"identity":true,"register":true,"pass":true,"notes":"Faithful setback."},
+  {"case_id":"gate-08","grounded":false,"form":true,"agency":true,"identity":true,"register":true,"pass":false,"notes":"Escalates one split board into the boards giving way beneath the player."},
+  {"case_id":"gate-09","grounded":false,"form":true,"agency":true,"identity":true,"register":true,"pass":false,"notes":"Contradicts the packet by forcing open a cabinet that remains locked."},
+  {"case_id":"gate-10","grounded":true,"form":true,"agency":true,"identity":true,"register":true,"pass":true,"notes":"Faithful severe failure."},
+  {"case_id":"gate-11","grounded":true,"form":true,"agency":true,"identity":true,"register":true,"pass":true,"notes":"Faithful nonverbal Guillermo behavior."},
+  {"case_id":"gate-12","grounded":true,"form":true,"agency":true,"identity":true,"register":true,"pass":true,"notes":"Faithful nonverbal Guillermo behavior."},
+  {"case_id":"gate-13","grounded":true,"form":true,"agency":true,"identity":true,"register":true,"pass":true,"notes":"Faithfully conveys the explicit scouting gesture."},
+  {"case_id":"gate-14","grounded":true,"form":true,"agency":true,"identity":true,"register":true,"pass":true,"notes":"Faithful mundane result."},
+  {"case_id":"gate-15","grounded":false,"form":true,"agency":true,"identity":true,"register":true,"pass":false,"notes":"Moves street grit into the umbrellas' folds, changing the stated observation."},
+  {"case_id":"gate-16","grounded":false,"form":true,"agency":true,"identity":true,"register":true,"pass":false,"notes":"Replaces specific disclosures and a ward-only refusal with a blanket refusal."},
+  {"case_id":"gate-17","grounded":false,"form":true,"agency":true,"identity":true,"register":true,"pass":false,"notes":"Omits the authority challenge and changes it into a blanket refusal."},
+  {"case_id":"gate-18","grounded":true,"form":true,"agency":true,"identity":true,"register":true,"pass":true,"notes":"Faithfully answers the question and preserves uncertainty about direction."},
+  {"case_id":"gate-19","grounded":true,"form":true,"agency":false,"identity":true,"register":true,"pass":false,"notes":"Assigns the player a memory with 'as you remember them'."},
+  {"case_id":"gate-20","grounded":false,"form":true,"agency":false,"identity":true,"register":true,"pass":false,"notes":"Adds an unsupported remembered state for the locked door and assigns memory."}
+]

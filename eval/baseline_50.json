@@ -1,0 +1,1413 @@
+[
+  {
+    "id": "regression-01",
+    "category": "regression",
+    "seed": 2001,
+    "location": "Victorian study",
+    "time": "midnight",
+    "weather": "rain",
+    "actor": "Armand",
+    "action_type": "investigate",
+    "target": "desk",
+    "degree": "success",
+    "facts": [
+      "scratches surround the locked drawer",
+      "the drawer remains closed",
+      "desk",
+      "extinguished fireplace",
+      "open window"
+    ],
+    "visible": [
+      "desk",
+      "extinguished fireplace",
+      "open window"
+    ],
+    "guillermo_stage_direction": null,
+    "forbidden_terms": [],
+    "original_prompt": "FACTS\nlocation: Victorian study\ntime: midnight\nweather: rain\nactor: Armand\naction: investigate\ntarget: desk\nresult: success\nresolved:\n- scratches surround the locked drawer\n- the drawer remains closed\nvisible:\n- desk\n- extinguished fireplace\n- open window\n\nNARRATION",
+    "baseline_output": "Armand was sleeping in his room when he heard the front door slam. He jumped out of bed, turned on a light, and rushed down the stairs. He grabbed his flashlight and headed to his study to investigate what had occurred.\r\nThe rain was falling, but Armand pushed open the front door and looked into the hallway. A thin line of water ran from his boots as he moved across the floor.\r\nHe reached for his desk, hoping it would be open. Instead, he found a drawer that was locked.\r\nHe turned on all the lights in the study, including the fireplace. He opened the window and looked out. The sky was clear and there were no signs o"
+  },
+  {
+    "id": "regression-02",
+    "category": "regression",
+    "seed": 2002,
+    "location": "fogbound railway platform",
+    "time": "dawn",
+    "weather": "heavy fog",
+    "actor": "Armand",
+    "action_type": "search",
+    "target": "abandoned suitcase",
+    "degree": "setback",
+    "facts": [
+      "a railway receipt is found",
+      "opening the case makes a loud snap",
+      "empty bench",
+      "brass clock",
+      "abandoned suitcase"
+    ],
+    "visible": [
+      "empty bench",
+      "brass clock",
+      "abandoned suitcase"
+    ],
+    "guillermo_stage_direction": null,
+    "forbidden_terms": [],
+    "original_prompt": "FACTS\nlocation: fogbound railway platform\ntime: dawn\nweather: heavy fog\nactor: Armand\naction: search\ntarget: abandoned suitcase\nresult: setback\nresolved:\n- a railway receipt is found\n- opening the case makes a loud snap\nvisible:\n- empty bench\n- brass clock\n- abandoned suitcase\n\nNARRATION",
+    "baseline_output": "Armand stands on the railway platform. The fog has started to lift, but it’s still pretty dark out. Armand looks around and sees that he is alone on the platform.\r\n\r\nHe checks his watch and spots an empty bench nearby. He sits down to rest for a moment. He notices some debris on the ground in front of him - an abandoned suitcase with an old railway receipt stuck inside it. He picks up the receipt, but as he opens the case, something makes a loud snap. Armand puts down the receipt, which is now covered with graffiti.\r\n\r\nArmand gets up from his seat and walks away from the bench. As he leaves the platform, he notices a clock on the wall"
+  },
+  {
+    "id": "regression-03",
+    "category": "regression",
+    "seed": 2003,
+    "location": "gaslit alley",
+    "time": "late evening",
+    "weather": "drizzle",
+    "actor": "Armand",
+    "action_type": "examine",
+    "target": "discarded glove",
+    "degree": "success",
+    "facts": [
+      "the glove is wet",
+      "black grease marks the fingertips",
+      "brick wall",
+      "locked gate",
+      "discarded glove"
+    ],
+    "visible": [
+      "brick wall",
+      "locked gate",
+      "discarded glove"
+    ],
+    "guillermo_stage_direction": null,
+    "forbidden_terms": [],
+    "original_prompt": "FACTS\nlocation: gaslit alley\ntime: late evening\nweather: drizzle\nactor: Armand\naction: examine\ntarget: discarded glove\nresult: success\nresolved:\n- the glove is wet\n- black grease marks the fingertips\nvisible:\n- brick wall\n- locked gate\n- discarded glove\n\nNARRATION",
+    "baseline_output": "Armand, a con artist, sneaks through a dark alley in the city and notices a discarded glove lying on the ground. He picks up the glove and examines it. Armand looks at the glove and sees that it is wet with black grease. The weather outside is drizzling rain. Armand also sees a brick wall behind him and a locked gate in front of him. He carefully opens the locked gate and enters the alley.\r\nACTION\r\nArmand picks up the discarded glove lying on the ground. He examines it closely and finds black grease marks on the fingertips. He sees that the weather outside is drizzling rain, and he notices a"
+  },
+  {
+    "id": "regression-04",
+    "category": "regression",
+    "seed": 2004,
+    "location": "dusty library",
+    "time": "afternoon",
+    "weather": "overcast",
+    "actor": "Armand",
+    "action_type": "move",
+    "target": "rolling ladder",
+    "degree": "failure",
+    "facts": [
+      "the ladder jams halfway",
+      "dust falls from the upper shelf",
+      "tall shelves",
+      "rolling ladder",
+      "sealed envelope"
+    ],
+    "visible": [
+      "tall shelves",
+      "rolling ladder",
+      "sealed envelope"
+    ],
+    "guillermo_stage_direction": null,
+    "forbidden_terms": [],
+    "original_prompt": "FACTS\nlocation: dusty library\ntime: afternoon\nweather: overcast\nactor: Armand\naction: move\ntarget: rolling ladder\nresult: failure\nresolved:\n- the ladder jams halfway\n- dust falls from the upper shelf\nvisible:\n- tall shelves\n- rolling ladder\n- sealed envelope\n\nNARRATION",
+    "baseline_output": "Armand walks into a dusty library. He finds himself in a vast and dimly lit room, with rows of tall shelves filled with books. The library is littered with dust, and there are no signs of care or attention to the place. Armand notices a rolling ladder against the wall. He tries to roll it, but the ladder jams halfway, and dust falls from the upper shelf. Armand gives up on using the ladder and walks away.\r\n\r\nThe library is an example of a neglected space that needs attention and care to be restored to its original state. The dust falling from the shelves is a reminder of how much damage neglect can do"
+  },
+  {
+    "id": "regression-05",
+    "category": "regression",
+    "seed": 2005,
+    "location": "abandoned conservatory",
+    "time": "sunset",
+    "weather": "wind",
+    "actor": "Armand",
+    "action_type": "take",
+    "target": "sealed envelope",
+    "degree": "success",
+    "facts": [
+      "the envelope enters inventory",
+      "the seal remains intact",
+      "broken glass",
+      "dead roses",
+      "marble fountain"
+    ],
+    "visible": [
+      "broken glass",
+      "dead roses",
+      "marble fountain"
+    ],
+    "guillermo_stage_direction": null,
+    "forbidden_terms": [],
+    "original_prompt": "FACTS\nlocation: abandoned conservatory\ntime: sunset\nweather: wind\nactor: Armand\naction: take\ntarget: sealed envelope\nresult: success\nresolved:\n- the envelope enters inventory\n- the seal remains intact\nvisible:\n- broken glass\n- dead roses\n- marble fountain\n\nNARRATION",
+    "baseline_output": "The action and target are visible, as is part of the environment.\r\n\r\nPROBLEMS\r\nno problem [end of text]"
+  },
+  {
+    "id": "regression-06",
+    "category": "regression",
+    "seed": 2006,
+    "location": "riverside warehouse",
+    "time": "2 a.m.",
+    "weather": "cold rain",
+    "actor": "Armand",
+    "action_type": "use crowbar",
+    "target": "locked chest",
+    "degree": "setback",
+    "facts": [
+      "the lid opens",
+      "the crowbar bends",
+      "a hinge breaks loudly",
+      "wooden crates",
+      "cargo hook",
+      "muddy footprints"
+    ],
+    "visible": [
+      "wooden crates",
+      "cargo hook",
+      "muddy footprints"
+    ],
+    "guillermo_stage_direction": null,
+    "forbidden_terms": [],
+    "original_prompt": "FACTS\nlocation: riverside warehouse\ntime: 2 a.m.\nweather: cold rain\nactor: Armand\naction: use crowbar\ntarget: locked chest\nresult: setback\nresolved:\n- the lid opens\n- the crowbar bends\n- a hinge breaks loudly\nvisible:\n- wooden crates\n- cargo hook\n- muddy footprints\n\nNARRATION",
+    "baseline_output": "Armand's backpack is full of weapons, including a crowbar.\r\nHe makes his way to the riverside warehouse at 2 a.m. on a cold rainy night.\r\n\r\nHe finds a locked chest by a pile of wooden crates and a cargo hook.\r\n\r\nWith some effort, Armand bends the crowbar until it breaks with a loud\r\nnoise. The lid of the chest opens.\r\n\r\nArmand uses the crowbar to smash the contents of the chest into a pile\r\nof wood. The pieces are scattered on the ground.\r\n\r\nHe walks out into the rain.\r\n\r\nA footprints appears in muddy soil.\r\n [end of text]"
+  },
+  {
+    "id": "regression-07",
+    "category": "regression",
+    "seed": 2007,
+    "location": "hotel lobby",
+    "time": "noon",
+    "weather": "snow",
+    "actor": "Armand",
+    "action_type": "cast Detect Magic",
+    "target": "display case",
+    "degree": "success",
+    "facts": [
+      "magic is present",
+      "its nature and meaning remain unknown",
+      "reception desk",
+      "grand staircase",
+      "unclaimed key"
+    ],
+    "visible": [
+      "reception desk",
+      "grand staircase",
+      "unclaimed key"
+    ],
+    "guillermo_stage_direction": null,
+    "forbidden_terms": [],
+    "original_prompt": "FACTS\nlocation: hotel lobby\ntime: noon\nweather: snow\nactor: Armand\naction: cast Detect Magic\ntarget: display case\nresult: success\nresolved:\n- magic is present\n- its nature and meaning remain unknown\nvisible:\n- reception desk\n- grand staircase\n- unclaimed key\n\nNARRATION",
+    "baseline_output": "Detect Magic spell is cast.\r\nIt succeeds. A magical display case appears, which does not belong to the hotel.\r\nWe do not know what this object is for, its nature and meaning remain unknown.\r\nThe caster is able to see a few more objects:\r\n- reception desk\r\n- grand staircase\r\n- unclaimed key [end of text]"
+  },
+  {
+    "id": "regression-08",
+    "category": "regression",
+    "seed": 2008,
+    "location": "church vestry",
+    "time": "early morning",
+    "weather": "clear",
+    "actor": "Armand",
+    "action_type": "speak",
+    "target": "night clerk",
+    "degree": "success",
+    "facts": [
+      "Armand asks who left the key",
+      "the clerk says a veiled woman left it at midnight",
+      "oak cabinet",
+      "wax candle",
+      "mud-stained cassock"
+    ],
+    "visible": [
+      "oak cabinet",
+      "wax candle",
+      "mud-stained cassock"
+    ],
+    "guillermo_stage_direction": null,
+    "forbidden_terms": [],
+    "original_prompt": "FACTS\nlocation: church vestry\ntime: early morning\nweather: clear\nactor: Armand\naction: speak\ntarget: night clerk\nresult: success\nresolved:\n- Armand asks who left the key\n- the clerk says a veiled woman left it at midnight\nvisible:\n- oak cabinet\n- wax candle\n- mud-stained cassock\n\nNARRATION",
+    "baseline_output": "As dawn breaks, Armand wakes up in his bed and reaches for his clothes. He doesn't remember having gone to sleep. The door opens as he leaves the bed, and a priest enters, carrying a small book in his hand.\r\nThe priest says: \"Hello, Armand.\" The young man looks at him curiously. \"Do you want something?\"\r\nThe priest: \"Armand, I have news for you.\"\r\nArmand: \"About your father?\"\r\nThe priest: \"Yes.\"\r\nArmand: \"What news?\"\r\nThe priest: \"He is not dead.\"\r\nArmand: \"I knew it. How could he possibly have died?\"\r\nThe priest: \"Well, let us sit down and talk about it.\"\r\nThey go"
+  },
+  {
+    "id": "regression-09",
+    "category": "regression",
+    "seed": 2009,
+    "location": "opera dressing room",
+    "time": "intermission",
+    "weather": "storm",
+    "actor": "Guillermo",
+    "action_type": "search",
+    "target": "high shelf",
+    "degree": "success",
+    "facts": [
+      "Guillermo finds a folded scrap",
+      "Guillermo can communicate only through gestures",
+      "vanity mirror",
+      "costume rack",
+      "half-written note"
+    ],
+    "visible": [
+      "vanity mirror",
+      "costume rack",
+      "half-written note"
+    ],
+    "guillermo_stage_direction": "Perform only the resolved action through gesture, expression, vocalization, and physical behavior. Guillermo does not speak.",
+    "forbidden_terms": [],
+    "original_prompt": "FACTS\nlocation: opera dressing room\ntime: intermission\nweather: storm\nactor: Guillermo\naction: search\ntarget: high shelf\nresult: success\nresolved:\n- Guillermo finds a folded scrap\n- Guillermo can communicate only through gestures\nvisible:\n- vanity mirror\n- costume rack\n- half-written note\n\nNARRATION",
+    "baseline_output": "The opera company's next production is \"Les Misérables.\" The first act features a scene where a young girl, played by Juliette, tells her father, played by Molière, of her love for the prince, played by Arlequin. The production is nearly complete. A few hours ago, Juliette received a telegram from the prince saying that he would be unable to join the cast until the next day's performance. After discussing the problem with Molière, she decided not to inform her father of the prince's absence.\r\nAs it happens, Juliette is the one who will need the prince's presence most.\r\nThe opera house manager, Guillermo, has been tasked with searching the dressing rooms for any notes left by the"
+  },
+  {
+    "id": "regression-10",
+    "category": "regression",
+    "seed": 2010,
+    "location": "museum gallery",
+    "time": "closing time",
+    "weather": "hail",
+    "actor": "Armand",
+    "action_type": "wait",
+    "target": "current location",
+    "degree": "success",
+    "facts": [
+      "ten minutes pass",
+      "footsteps approach from the corridor",
+      "covered portrait",
+      "display case",
+      "wet umbrella"
+    ],
+    "visible": [
+      "covered portrait",
+      "display case",
+      "wet umbrella"
+    ],
+    "guillermo_stage_direction": null,
+    "forbidden_terms": [],
+    "original_prompt": "FACTS\nlocation: museum gallery\ntime: closing time\nweather: hail\nactor: Armand\naction: wait\ntarget: current location\nresult: success\nresolved:\n- ten minutes pass\n- footsteps approach from the corridor\nvisible:\n- covered portrait\n- display case\n- wet umbrella\n\nNARRATION",
+    "baseline_output": "Armand stands in front of a small museum gallery. He waits patiently for the gallery to be open.\r\nIt is raining hail outside.\r\nAfter ten minutes have passed, footsteps approach from the corridor.\r\n\r\nNARRATION\r\n“What's that?”\r\nA voice asks.\r\nArmand turns around and sees a man in a rain coat standing at his side. His face is covered by the hat he wears on his head.\r\nThe man is wearing a big umbrella with him.\r\n“I'm waiting for the gallery to open,” Armand responds.\r\n“What do you want here?”\r\nthe man asks, looking around.\r\nArmand looks down at his watch. “It's closing time now.”\r\n“So what are you waiting for?”"
+  },
+  {
+    "id": "regression-11",
+    "category": "regression",
+    "seed": 2011,
+    "location": "boarding-house kitchen",
+    "time": "breakfast",
+    "weather": "mist",
+    "actor": "Armand",
+    "action_type": "investigate",
+    "target": "muddy footprints",
+    "degree": "exceptional success",
+    "facts": [
+      "two different shoe patterns are present",
+      "one trail enters and does not leave",
+      "iron stove",
+      "chipped cup",
+      "back door"
+    ],
+    "visible": [
+      "iron stove",
+      "chipped cup",
+      "back door"
+    ],
+    "guillermo_stage_direction": null,
+    "forbidden_terms": [],
+    "original_prompt": "FACTS\nlocation: boarding-house kitchen\ntime: breakfast\nweather: mist\nactor: Armand\naction: investigate\ntarget: muddy footprints\nresult: exceptional success\nresolved:\n- two different shoe patterns are present\n- one trail enters and does not leave\nvisible:\n- iron stove\n- chipped cup\n- back door\n\nNARRATION",
+    "baseline_output": "It is the breakfast hour. I am sitting in my room at the boarding-house, studying and writing, but I cannot concentrate because of the noises outside. From time to time I hear a sound that seems to come from the kitchen, but I cannot make out what it is. It could be a chair scraping on the floor, or maybe some dishes being washed. Or maybe it is someone snoring loudly.\r\nBut now I do hear something different. A series of footsteps in the hallway outside my door. Someone walking quickly, as if trying to get away from a sound they can’t explain or ignore. The footsteps come closer, then stop. The steps retreat, and there’s a pause, before I"
+  },
+  {
+    "id": "regression-12",
+    "category": "regression",
+    "seed": 2012,
+    "location": "lawyer's office",
+    "time": "late afternoon",
+    "weather": "rain",
+    "actor": "Armand",
+    "action_type": "move quietly",
+    "target": "back door",
+    "degree": "setback",
+    "facts": [
+      "Armand reaches the door",
+      "a loose board creaks",
+      "suspicion increases",
+      "filing cabinet",
+      "inkwell",
+      "torn contract"
+    ],
+    "visible": [
+      "filing cabinet",
+      "inkwell",
+      "torn contract"
+    ],
+    "guillermo_stage_direction": null,
+    "forbidden_terms": [],
+    "original_prompt": "FACTS\nlocation: lawyer's office\ntime: late afternoon\nweather: rain\nactor: Armand\naction: move quietly\ntarget: back door\nresult: setback\nresolved:\n- Armand reaches the door\n- a loose board creaks\n- suspicion increases\nvisible:\n- filing cabinet\n- inkwell\n- torn contract\n\nNARRATION",
+    "baseline_output": "Armand, lawyer, is finishing up a brief and taking it to his back door in order to mail it. He has just reached the door when the loose board creaks. He takes one step forward, then stops in mid-step with the movement of suspicion.\r\n\"Huh?\" he murmurs.\r\nHe moves back from the doorway. \"What was that?\"\r\nThere is no answer.\r\nArmand opens the door and steps out. The rain has washed away the dirt from the walkway but not enough to disguise Armand's footsteps. He takes off his shoes and starts walking, leaving only a thin trail behind him.\r\n\r\nHe looks up at the building as he walks. He can see the filing"
+  },
+  {
+    "id": "regression-13",
+    "category": "regression",
+    "seed": 2013,
+    "location": "cemetery gatehouse",
+    "time": "midnight",
+    "weather": "fog",
+    "actor": "Armand",
+    "action_type": "cast Minor Illusion",
+    "target": "far corner",
+    "degree": "success",
+    "facts": [
+      "a sound of breaking glass occurs in the far corner",
+      "nearby attention shifts toward it",
+      "ledger",
+      "rusted key",
+      "muddy lantern"
+    ],
+    "visible": [
+      "ledger",
+      "rusted key",
+      "muddy lantern"
+    ],
+    "guillermo_stage_direction": null,
+    "forbidden_terms": [],
+    "original_prompt": "FACTS\nlocation: cemetery gatehouse\ntime: midnight\nweather: fog\nactor: Armand\naction: cast Minor Illusion\ntarget: far corner\nresult: success\nresolved:\n- a sound of breaking glass occurs in the far corner\n- nearby attention shifts toward it\nvisible:\n- ledger\n- rusted key\n- muddy lantern\n\nNARRATION",
+    "baseline_output": "Armand stands by the cemetery gatehouse. He casts his Minor Illusion, drawing forth the ledger, key and muddy lantern from the corner of the cemetery.\r\n [end of text]"
+  },
+  {
+    "id": "regression-14",
+    "category": "regression",
+    "seed": 2014,
+    "location": "apothecary cellar",
+    "time": "evening",
+    "weather": "thunderstorm",
+    "actor": "Armand",
+    "action_type": "investigate",
+    "target": "half-written note",
+    "degree": "failure",
+    "facts": [
+      "the handwriting cannot be identified",
+      "wet ink smears under the examination",
+      "glass bottles",
+      "wooden table",
+      "locked chest"
+    ],
+    "visible": [
+      "glass bottles",
+      "wooden table",
+      "locked chest"
+    ],
+    "guillermo_stage_direction": null,
+    "forbidden_terms": [],
+    "original_prompt": "FACTS\nlocation: apothecary cellar\ntime: evening\nweather: thunderstorm\nactor: Armand\naction: investigate\ntarget: half-written note\nresult: failure\nresolved:\n- the handwriting cannot be identified\n- wet ink smears under the examination\nvisible:\n- glass bottles\n- wooden table\n- locked chest\n\nNARRATION",
+    "baseline_output": "It was a dark night in February and Armand was at home. The house was small and lonely, but there were many things he needed to take care of. He had to go to the apothecary cellar for some supplies. It was late, so he thought he should hurry to finish his chores before it got dark.\r\nThere were two notes in the box that had been left at the house. Armand opened the chest, but only one of them was addressed to him. He quickly put this note on the table and opened the other one. It was a very strange note, but he hoped it was a joke.\r\nHe took a light to look at"
+  },
+  {
+    "id": "regression-15",
+    "category": "regression",
+    "seed": 2015,
+    "location": "theatre balcony",
+    "time": "after midnight",
+    "weather": "clear",
+    "actor": "Armand",
+    "action_type": "open",
+    "target": "window",
+    "degree": "severe failure",
+    "facts": [
+      "the window stays shut",
+      "the latch snaps",
+      "glass cracks loudly",
+      "velvet seats",
+      "opera glasses",
+      "single white rose"
+    ],
+    "visible": [
+      "velvet seats",
+      "opera glasses",
+      "single white rose"
+    ],
+    "guillermo_stage_direction": null,
+    "forbidden_terms": [],
+    "original_prompt": "FACTS\nlocation: theatre balcony\ntime: after midnight\nweather: clear\nactor: Armand\naction: open\ntarget: window\nresult: severe failure\nresolved:\n- the window stays shut\n- the latch snaps\n- glass cracks loudly\nvisible:\n- velvet seats\n- opera glasses\n- single white rose\n\nNARRATION",
+    "baseline_output": "Armand is an actor on a European stage. He lives in London, but loves Paris with all his heart.\r\nAfter the performance tonight, Armand will fly back home and he has not much time for dinner.\r\nHe has to catch the midnight flight out of the airport.\r\nHis friend told him that he will be late and that he should open his window instead of going outside in the rain.\r\nThe theatre is located on top of a hill and the window is situated directly above the street. The building's balcony has a glass floor, which makes it difficult to open the window without hitting the window ledge below.\r\nArmand wants to test his new window release"
+  },
+  {
+    "id": "regression-16",
+    "category": "regression",
+    "seed": 2016,
+    "location": "country manor foyer",
+    "time": "dusk",
+    "weather": "snow",
+    "actor": "Armand",
+    "action_type": "give command",
+    "target": "Guillermo",
+    "degree": "success",
+    "facts": [
+      "command is to scout the next room",
+      "Guillermo slips through the doorway",
+      "no scouting result is available yet",
+      "coat stand",
+      "grandfather clock",
+      "wet footprints"
+    ],
+    "visible": [
+      "coat stand",
+      "grandfather clock",
+      "wet footprints"
+    ],
+    "guillermo_stage_direction": null,
+    "forbidden_terms": [],
+    "original_prompt": "FACTS\nlocation: country manor foyer\ntime: dusk\nweather: snow\nactor: Armand\naction: give command\ntarget: Guillermo\nresult: success\nresolved:\n- command is to scout the next room\n- Guillermo slips through the doorway\n- no scouting result is available yet\nvisible:\n- coat stand\n- grandfather clock\n- wet footprints\n\nNARRATION",
+    "baseline_output": "Armand gave the command to scout the next room to Guillermo.\r\n [end of text]"
+  },
+  {
+    "id": "regression-17",
+    "category": "regression",
+    "seed": 2017,
+    "location": "police archive",
+    "time": "3 a.m.",
+    "weather": "rain",
+    "actor": "Armand",
+    "action_type": "investigate",
+    "target": "dark stain",
+    "degree": "success",
+    "facts": [
+      "the stain is dried blood",
+      "the amount is inconsistent with a death here",
+      "case files",
+      "oil lamp",
+      "open drawer"
+    ],
+    "visible": [
+      "case files",
+      "oil lamp",
+      "open drawer"
+    ],
+    "guillermo_stage_direction": null,
+    "forbidden_terms": [],
+    "original_prompt": "FACTS\nlocation: police archive\ntime: 3 a.m.\nweather: rain\nactor: Armand\naction: investigate\ntarget: dark stain\nresult: success\nresolved:\n- the stain is dried blood\n- the amount is inconsistent with a death here\nvisible:\n- case files\n- oil lamp\n- open drawer\n\nNARRATION",
+    "baseline_output": "I go into the police archive, check through old papers, find nothing of interest. I go outside and wait for it to rain. I investigate the dark stain on the door of a house that's been uninhabited for years. [end of text]"
+  },
+  {
+    "id": "regression-18",
+    "category": "regression",
+    "seed": 2018,
+    "location": "dockside tavern",
+    "time": "last call",
+    "weather": "dense fog",
+    "actor": "Armand",
+    "action_type": "speak deceptively",
+    "target": "dockworker",
+    "degree": "setback",
+    "facts": [
+      "the dockworker accepts the false name",
+      "the dockworker demands payment before answering",
+      "empty bottles",
+      "cold hearth",
+      "silver coin"
+    ],
+    "visible": [
+      "empty bottles",
+      "cold hearth",
+      "silver coin"
+    ],
+    "guillermo_stage_direction": null,
+    "forbidden_terms": [],
+    "original_prompt": "FACTS\nlocation: dockside tavern\ntime: last call\nweather: dense fog\nactor: Armand\naction: speak deceptively\ntarget: dockworker\nresult: setback\nresolved:\n- the dockworker accepts the false name\n- the dockworker demands payment before answering\nvisible:\n- empty bottles\n- cold hearth\n- silver coin\n\nNARRATION",
+    "baseline_output": "In a dockside tavern, Armand speaks a few words of French and English with his friends. The fog is thick, but they have a lantern and can see each other, and the tavern door opens for them to enter. One of them is drunk and Armand tells him that he will pay for it and that he has been told there are no more empty bottles. The man says he needs to know the truth. He goes outside and Armand's friends leave, leaving just the two of them.\r\nArmand offers to pay for the drinks, but the dockworker says the bills must be settled before any other business. Armand's"
+  },
+  {
+    "id": "regression-19",
+    "category": "regression",
+    "seed": 2019,
+    "location": "photographer's studio",
+    "time": "morning",
+    "weather": "bright sun",
+    "actor": "Armand",
+    "action_type": "cast Misty Step",
+    "target": "visible balcony",
+    "degree": "success",
+    "facts": [
+      "Armand teleports to the balcony",
+      "the spell slot is spent",
+      "camera tripod",
+      "painted backdrop",
+      "broken plate"
+    ],
+    "visible": [
+      "camera tripod",
+      "painted backdrop",
+      "broken plate"
+    ],
+    "guillermo_stage_direction": null,
+    "forbidden_terms": [],
+    "original_prompt": "FACTS\nlocation: photographer's studio\ntime: morning\nweather: bright sun\nactor: Armand\naction: cast Misty Step\ntarget: visible balcony\nresult: success\nresolved:\n- Armand teleports to the balcony\n- the spell slot is spent\nvisible:\n- camera tripod\n- painted backdrop\n- broken plate\n\nNARRATION",
+    "baseline_output": "Armand has a secret, untapped talent. When he looks up at the sky, he can cast a teleportation spell. He's used it before, but not in front of a camera. Armand pulls out his notebook and pencil, and draws a map of the city on his balcony.\r\nHe then casts the spell to transport himself to the balcony of the photographer's studio.\r\nThe spell transports him to the balcony where he can see the camera tripod, the painted backdrop, and the broken plate.\r\nArmand is a bit disoriented at first, but soon adjusts to the new environment. He notices that the camera tripod is not in use"
+  },
+  {
+    "id": "regression-20",
+    "category": "regression",
+    "seed": 2020,
+    "location": "underground tunnel",
+    "time": "unknown",
+    "weather": "dry",
+    "actor": "Guillermo",
+    "action_type": "steal",
+    "target": "brass key",
+    "degree": "failure",
+    "facts": [
+      "the key remains on the hook",
+      "the key rattles",
+      "Guillermo retreats",
+      "brick arch",
+      "standing water",
+      "chalk mark"
+    ],
+    "visible": [
+      "brick arch",
+      "standing water",
+      "chalk mark"
+    ],
+    "guillermo_stage_direction": "Perform only the resolved action through gesture, expression, vocalization, and physical behavior. Guillermo does not speak.",
+    "forbidden_terms": [],
+    "original_prompt": "FACTS\nlocation: underground tunnel\ntime: unknown\nweather: dry\nactor: Guillermo\naction: steal\ntarget: brass key\nresult: failure\nresolved:\n- the key remains on the hook\n- the key rattles\n- Guillermo retreats\nvisible:\n- brick arch\n- standing water\n- chalk mark\n\nNARRATION",
+    "baseline_output": "Guillermo is trying to open the door, but it's locked. He goes to look for a key, finds one on the hook, and tries to pick up the key. As he pulls at it, however, it comes off the hook.\r\n [end of text]"
+  },
+  {
+    "id": "regression-21",
+    "category": "regression",
+    "seed": 2021,
+    "location": "university laboratory",
+    "time": "late night",
+    "weather": "wind",
+    "actor": "Armand",
+    "action_type": "investigate",
+    "target": "desk",
+    "degree": "success",
+    "facts": [
+      "scratches surround the locked drawer",
+      "the drawer remains closed",
+      "brass microscope",
+      "chemical stains",
+      "open notebook"
+    ],
+    "visible": [
+      "brass microscope",
+      "chemical stains",
+      "open notebook"
+    ],
+    "guillermo_stage_direction": null,
+    "forbidden_terms": [],
+    "original_prompt": "FACTS\nlocation: university laboratory\ntime: late night\nweather: wind\nactor: Armand\naction: investigate\ntarget: desk\nresult: success\nresolved:\n- scratches surround the locked drawer\n- the drawer remains closed\nvisible:\n- brass microscope\n- chemical stains\n- open notebook\n\nNARRATION",
+    "baseline_output": "Armand arrived at the university laboratory in the early hours of the morning. He wanted to investigate his target, but it was not as easy as he had hoped.\r\nThe wind was howling through the corridors and the doors were shut tight. The drawer had a lock on it, and Armand knew that it would be impossible for him to open it without a key.\r\nArmand went into the laboratory and tried his best to open the drawer, but he could not budge it. He looked at the brass microscope and saw that it was stained with chemicals. He looked at the notebook and saw that it had been opened and closed many times.\r\nArmand knew that the drawer contained a"
+  },
+  {
+    "id": "regression-22",
+    "category": "regression",
+    "seed": 2022,
+    "location": "clockmaker's workshop",
+    "time": "noon",
+    "weather": "rain",
+    "actor": "Armand",
+    "action_type": "search",
+    "target": "abandoned suitcase",
+    "degree": "setback",
+    "facts": [
+      "a railway receipt is found",
+      "opening the case makes a loud snap",
+      "wall clocks",
+      "workbench",
+      "missing gear"
+    ],
+    "visible": [
+      "wall clocks",
+      "workbench",
+      "missing gear"
+    ],
+    "guillermo_stage_direction": null,
+    "forbidden_terms": [],
+    "original_prompt": "FACTS\nlocation: clockmaker's workshop\ntime: noon\nweather: rain\nactor: Armand\naction: search\ntarget: abandoned suitcase\nresult: setback\nresolved:\n- a railway receipt is found\n- opening the case makes a loud snap\nvisible:\n- wall clocks\n- workbench\n- missing gear\n\nNARRATION",
+    "baseline_output": "Armand, the clockmaker of Notre Dame du Lac, has been called to fix a mechanical problem in a set of wall clocks. The suitcase he opens is filled with gears and parts. It was dropped during World War II by a German officer who escaped from his captivity after being wounded. When Armand opens the suitcase, a loud snap can be heard. He decides to continue searching for the source of the noise in a nearby abandoned building.\r\nArmand goes inside and finds two clocks that are not working correctly. He starts to repair them by removing the gear with the missing teeth from one clock and replacing it with another gear from the same clock. However, he is interrupted when he sees"
+  },
+  {
+    "id": "regression-23",
+    "category": "regression",
+    "seed": 2023,
+    "location": "embassy drawing room",
+    "time": "evening",
+    "weather": "snow",
+    "actor": "Armand",
+    "action_type": "examine",
+    "target": "discarded glove",
+    "degree": "success",
+    "facts": [
+      "the glove is wet",
+      "black grease marks the fingertips",
+      "piano",
+      "silk curtains",
+      "sealed dispatch"
+    ],
+    "visible": [
+      "piano",
+      "silk curtains",
+      "sealed dispatch"
+    ],
+    "guillermo_stage_direction": null,
+    "forbidden_terms": [],
+    "original_prompt": "FACTS\nlocation: embassy drawing room\ntime: evening\nweather: snow\nactor: Armand\naction: examine\ntarget: discarded glove\nresult: success\nresolved:\n- the glove is wet\n- black grease marks the fingertips\nvisible:\n- piano\n- silk curtains\n- sealed dispatch\n\nNARRATION",
+    "baseline_output": "Armand examines the discarded glove, finding it to be wet. It has black grease on the tips of its fingers. He opens the window and sees that the snow is falling heavily. He looks out into the night, where he can see the glow from a fire burning in the street below. He shudders slightly at this sight. Then he turns his attention to the room, seeing a piano, silk curtains, and sealed dispatches.\r\nNARRATION\r\nArmand examines the discarded glove, finding it to be wet. It has black grease on the tips of its fingers. He opens the window and sees that the snow is falling heavily. He looks out into the night, where he"
+  },
+  {
+    "id": "regression-24",
+    "category": "regression",
+    "seed": 2024,
+    "location": "hospital corridor",
+    "time": "before dawn",
+    "weather": "storm",
+    "actor": "Armand",
+    "action_type": "move",
+    "target": "rolling ladder",
+    "degree": "failure",
+    "facts": [
+      "the ladder jams halfway",
+      "dust falls from the upper shelf",
+      "empty stretcher",
+      "medicine cabinet",
+      "flickering lamp"
+    ],
+    "visible": [
+      "empty stretcher",
+      "medicine cabinet",
+      "flickering lamp"
+    ],
+    "guillermo_stage_direction": null,
+    "forbidden_terms": [],
+    "original_prompt": "FACTS\nlocation: hospital corridor\ntime: before dawn\nweather: storm\nactor: Armand\naction: move\ntarget: rolling ladder\nresult: failure\nresolved:\n- the ladder jams halfway\n- dust falls from the upper shelf\nvisible:\n- empty stretcher\n- medicine cabinet\n- flickering lamp\n\nNARRATION",
+    "baseline_output": "The doctor comes downstairs with a bottle of water and a glass.\r\n“Doctor, we need help,” the nurse calls from the other end of the corridor. “Armand has fallen down the ladder to his room.”\r\nArmand is a boy with a cast on one arm. He’s been in the hospital for three weeks after falling off a playground swing. The doctors can’t do anything about it, so he’s been moved into a room near the main floor.\r\nThe doctor looks down at Armand with his bottle of water and glass in hand.\r\n“What happened?”\r\nArmand smiles faintly, but his eyes are heavy from lack of sleep.\r\n“I don’t know.”\r\nThe nurse starts to speak, but"
+  },
+  {
+    "id": "regression-25",
+    "category": "regression",
+    "seed": 2025,
+    "location": "seaside cottage",
+    "time": "sunrise",
+    "weather": "gale",
+    "actor": "Armand",
+    "action_type": "take",
+    "target": "sealed envelope",
+    "degree": "success",
+    "facts": [
+      "the envelope enters inventory",
+      "the seal remains intact",
+      "cold stove",
+      "nautical chart",
+      "broken compass"
+    ],
+    "visible": [
+      "cold stove",
+      "nautical chart",
+      "broken compass"
+    ],
+    "guillermo_stage_direction": null,
+    "forbidden_terms": [],
+    "original_prompt": "FACTS\nlocation: seaside cottage\ntime: sunrise\nweather: gale\nactor: Armand\naction: take\ntarget: sealed envelope\nresult: success\nresolved:\n- the envelope enters inventory\n- the seal remains intact\nvisible:\n- cold stove\n- nautical chart\n- broken compass\n\nNARRATION",
+    "baseline_output": "Armand took and opened a sealed envelope from his pocket. The contents were a nautical chart with his name on it, a compass that was clearly broken by a previous owner, and a small piece of paper with the words “This is my diary” written on it.\r\nHe put these objects on a table and sat down at it. He looked at them for some time before picking up the chart. He looked at each object in turn before looking back to the table. He turned on the stove, placed the broken compass on it, and lit the fire.\r\nHe took his coat off and hung it on a hook behind him. Then he put the cloth jacket over his head and sat down again on the table"
+  },
+  {
+    "id": "regression-26",
+    "category": "regression",
+    "seed": 2026,
+    "location": "taxidermist's shop",
+    "time": "closing time",
+    "weather": "fog",
+    "actor": "Armand",
+    "action_type": "use crowbar",
+    "target": "locked chest",
+    "degree": "setback",
+    "facts": [
+      "the lid opens",
+      "the crowbar bends",
+      "a hinge breaks loudly",
+      "glass eyes",
+      "display cabinet",
+      "black feather"
+    ],
+    "visible": [
+      "glass eyes",
+      "display cabinet",
+      "black feather"
+    ],
+    "guillermo_stage_direction": null,
+    "forbidden_terms": [],
+    "original_prompt": "FACTS\nlocation: taxidermist's shop\ntime: closing time\nweather: fog\nactor: Armand\naction: use crowbar\ntarget: locked chest\nresult: setback\nresolved:\n- the lid opens\n- the crowbar bends\n- a hinge breaks loudly\nvisible:\n- glass eyes\n- display cabinet\n- black feather\n\nNARRATION",
+    "baseline_output": "At 8:30 p.m., Armand enters his shop in the fog. He is tired after his long day at work but happy about having finished all the taxidermy jobs he had promised the customers for the week.\r\nHe opens his safe and removes some money, then places a crowbar next to a locked chest. \r\nArmand looks up and sees that the glass eyes of an avian specimen in a display cabinet are looking at him. He is startled. Then he remembers why he brought the crowbar.\r\nHe sets it down and tries to open the lid, but he fails again. He picks up the crowbar once more and hits the chest repeatedly, bending the crowbar an"
+  },
+  {
+    "id": "regression-27",
+    "category": "regression",
+    "seed": 2027,
+    "location": "courthouse records room",
+    "time": "midday",
+    "weather": "rain",
+    "actor": "Armand",
+    "action_type": "cast Detect Magic",
+    "target": "display case",
+    "degree": "success",
+    "facts": [
+      "magic is present",
+      "its nature and meaning remain unknown",
+      "bound ledgers",
+      "high window",
+      "missing file"
+    ],
+    "visible": [
+      "bound ledgers",
+      "high window",
+      "missing file"
+    ],
+    "guillermo_stage_direction": null,
+    "forbidden_terms": [],
+    "original_prompt": "FACTS\nlocation: courthouse records room\ntime: midday\nweather: rain\nactor: Armand\naction: cast Detect Magic\ntarget: display case\nresult: success\nresolved:\n- magic is present\n- its nature and meaning remain unknown\nvisible:\n- bound ledgers\n- high window\n- missing file\n\nNARRATION",
+    "baseline_output": "The court sits at noon in the courthouse, with the judge seated behind his desk. A clerk brings a document from the display case on the right and reads it into the record.\r\n\r\nCLERK: \"Armand v. Armand. On application of Plaintiff, the court is asked to detect the presence or absence of magic in this case.\"\r\n\r\nJUDGE: \"Let us begin with that.\"\r\n\r\nCLERK: \"I will proceed in order of the record.\"\r\n\r\nARMAND (PROSECUTOR): \"Detect the nature of any magic involved in this case, and its meaning if present.\"\r\n\r\nCLERK: \"The first document we have on file is a copy of the plaintiff's application for detection. This"
+  },
+  {
+    "id": "regression-28",
+    "category": "regression",
+    "seed": 2028,
+    "location": "botanical garden pavilion",
+    "time": "afternoon",
+    "weather": "humid",
+    "actor": "Armand",
+    "action_type": "speak",
+    "target": "night clerk",
+    "degree": "success",
+    "facts": [
+      "Armand asks who left the key",
+      "the clerk says a veiled woman left it at midnight",
+      "iron bench",
+      "exotic orchids",
+      "dropped handkerchief"
+    ],
+    "visible": [
+      "iron bench",
+      "exotic orchids",
+      "dropped handkerchief"
+    ],
+    "guillermo_stage_direction": null,
+    "forbidden_terms": [],
+    "original_prompt": "FACTS\nlocation: botanical garden pavilion\ntime: afternoon\nweather: humid\nactor: Armand\naction: speak\ntarget: night clerk\nresult: success\nresolved:\n- Armand asks who left the key\n- the clerk says a veiled woman left it at midnight\nvisible:\n- iron bench\n- exotic orchids\n- dropped handkerchief\n\nNARRATION",
+    "baseline_output": "The night clerk is surprised to see someone in the garden. He finds a note on a bench, and reads it.\r\n\"Armand, what are you doing here?\"\r\n\"I was just walking my dog.\" he says, taking out a leash.\r\nThe clerk is watching Armand from behind a window to see if he's alone. When he walks away, the clerk goes into the pavilion. He finds the handkerchief on a table.\r\n\"Who left this?\" he asks.\r\nHe looks in the drawer of the bench for the key. A note lies on top. It reads: \"A woman came to see the flowers. She wanted to know who took them.\" The clerk goes back to his"
+  },
+  {
+    "id": "regression-29",
+    "category": "regression",
+    "seed": 2029,
+    "location": "private railway carriage",
+    "time": "night",
+    "weather": "snow",
+    "actor": "Guillermo",
+    "action_type": "search",
+    "target": "high shelf",
+    "degree": "success",
+    "facts": [
+      "Guillermo finds a folded scrap",
+      "Guillermo can communicate only through gestures",
+      "leather seat",
+      "travel trunk",
+      "cracked watch"
+    ],
+    "visible": [
+      "leather seat",
+      "travel trunk",
+      "cracked watch"
+    ],
+    "guillermo_stage_direction": "Perform only the resolved action through gesture, expression, vocalization, and physical behavior. Guillermo does not speak.",
+    "forbidden_terms": [],
+    "original_prompt": "FACTS\nlocation: private railway carriage\ntime: night\nweather: snow\nactor: Guillermo\naction: search\ntarget: high shelf\nresult: success\nresolved:\n- Guillermo finds a folded scrap\n- Guillermo can communicate only through gestures\nvisible:\n- leather seat\n- travel trunk\n- cracked watch\n\nNARRATION",
+    "baseline_output": "Guillermo searches his luggage. He has to move it before he can find anything. The leather seat is solid and does not budge. But the travel trunk does, and he finds a folded scrap. His only means of communication are gestures.\r\nThe characters have a conversation about this event. They talk about Guillermo's search, the weather, the journey, their relationship with each other, and the possibility that they might meet again in the future.\r\nGuillermo and his friend take a trip together on the railway carriage. He searches for something he has lost. His only means of communication is through gestures. When he finds it, the two have a conversation about this event. They talk about their journey, their"
+  },
+  {
+    "id": "regression-30",
+    "category": "regression",
+    "seed": 2030,
+    "location": "newspaper press room",
+    "time": "dawn",
+    "weather": "clear",
+    "actor": "Armand",
+    "action_type": "wait",
+    "target": "current location",
+    "degree": "success",
+    "facts": [
+      "ten minutes pass",
+      "footsteps approach from the corridor",
+      "printing press",
+      "fresh proofs",
+      "red pencil"
+    ],
+    "visible": [
+      "printing press",
+      "fresh proofs",
+      "red pencil"
+    ],
+    "guillermo_stage_direction": null,
+    "forbidden_terms": [],
+    "original_prompt": "FACTS\nlocation: newspaper press room\ntime: dawn\nweather: clear\nactor: Armand\naction: wait\ntarget: current location\nresult: success\nresolved:\n- ten minutes pass\n- footsteps approach from the corridor\nvisible:\n- printing press\n- fresh proofs\n- red pencil\n\nNARRATION",
+    "baseline_output": "The morning was bright and cool with a slight wind. The editor of the newspaper, Armand, sat in his office and waited for the first batch of papers to arrive. He had just finished a long night of proofreading, and was feeling tired and worn out. He knew that it wouldn’t be much later before his assistant arrived with the proofs to be checked.\r\nArmand opened the door and glanced at the outside temperature gauge. It was still cool, so he went back to work on a piece of writing and continued to wait for the fresh proofs.\r\nHe glanced out the window and saw the morning sky filled with light and color"
+  },
+  {
+    "id": "regression-31",
+    "category": "regression",
+    "seed": 2031,
+    "location": "canal lock",
+    "time": "midnight",
+    "weather": "fog",
+    "actor": "Armand",
+    "action_type": "investigate",
+    "target": "muddy footprints",
+    "degree": "exceptional success",
+    "facts": [
+      "two different shoe patterns are present",
+      "one trail enters and does not leave",
+      "iron winch",
+      "mooring rope",
+      "floating hat"
+    ],
+    "visible": [
+      "iron winch",
+      "mooring rope",
+      "floating hat"
+    ],
+    "guillermo_stage_direction": null,
+    "forbidden_terms": [],
+    "original_prompt": "FACTS\nlocation: canal lock\ntime: midnight\nweather: fog\nactor: Armand\naction: investigate\ntarget: muddy footprints\nresult: exceptional success\nresolved:\n- two different shoe patterns are present\n- one trail enters and does not leave\nvisible:\n- iron winch\n- mooring rope\n- floating hat\n\nNARRATION",
+    "baseline_output": "Armand is the lock master at Canal Lock. He is responsible for the safety of all boats that pass through his section of the canal. When he arrives at midnight, he checks the temperature and finds it is just above freezing. Armand opens the door to the lock and goes inside. As he steps into the lock, he sees some muddy footprints on the bottom of the chamber.\r\nArmand investigates the footprints, using his flashlight. He can see two different shoe patterns. One trail enters the lock and does not leave. Armand cannot find any exit point. There is no sign of a door or gate. Armand sees what looks like an iron winch on one wall of the lock,"
+  },
+  {
+    "id": "regression-32",
+    "category": "regression",
+    "seed": 2032,
+    "location": "tailor's fitting room",
+    "time": "morning",
+    "weather": "rain",
+    "actor": "Armand",
+    "action_type": "move quietly",
+    "target": "back door",
+    "degree": "setback",
+    "facts": [
+      "Armand reaches the door",
+      "a loose board creaks",
+      "suspicion increases",
+      "three-way mirror",
+      "measuring tape",
+      "unfinished coat"
+    ],
+    "visible": [
+      "three-way mirror",
+      "measuring tape",
+      "unfinished coat"
+    ],
+    "guillermo_stage_direction": null,
+    "forbidden_terms": [],
+    "original_prompt": "FACTS\nlocation: tailor's fitting room\ntime: morning\nweather: rain\nactor: Armand\naction: move quietly\ntarget: back door\nresult: setback\nresolved:\n- Armand reaches the door\n- a loose board creaks\n- suspicion increases\nvisible:\n- three-way mirror\n- measuring tape\n- unfinished coat\n\nNARRATION",
+    "baseline_output": "Armand moves quietly into the tailor's fitting room, which is furnished with a three-way mirror, a measuring tape and a large cloth-covered form. He takes off his rain coat, slips his key card through the door and enters the dressing room.\r\nThe rain drips down the window panes in the narrow passage leading to the back door. The tailor, a young man with a weak chin, is busy measuring Armand's back. There are several loose boards in the floor. Some of them creak as Armand moves towards the door. The tailor starts up from his chair when he hears the noise.\r\nHe stares at Armand and then glances towards the mirror, where he sees a reflection of himself looking"
+  },
+  {
+    "id": "regression-33",
+    "category": "regression",
+    "seed": 2033,
+    "location": "bell tower",
+    "time": "sunset",
+    "weather": "wind",
+    "actor": "Armand",
+    "action_type": "cast Minor Illusion",
+    "target": "far corner",
+    "degree": "success",
+    "facts": [
+      "a sound of breaking glass occurs in the far corner",
+      "nearby attention shifts toward it",
+      "great bell",
+      "wooden stairs",
+      "frayed rope"
+    ],
+    "visible": [
+      "great bell",
+      "wooden stairs",
+      "frayed rope"
+    ],
+    "guillermo_stage_direction": null,
+    "forbidden_terms": [],
+    "original_prompt": "FACTS\nlocation: bell tower\ntime: sunset\nweather: wind\nactor: Armand\naction: cast Minor Illusion\ntarget: far corner\nresult: success\nresolved:\n- a sound of breaking glass occurs in the far corner\n- nearby attention shifts toward it\nvisible:\n- great bell\n- wooden stairs\n- frayed rope\n\nNARRATION",
+    "baseline_output": "as the sun sets over the bell tower, armand casts an illusion into the far corner. immediately there's a sound of breaking glass.\r\nthe sound is from a large and heavy bell in the corner, it has been broken by some force from without.\r\n\r\nnearby attention shifts toward the source of the noise, as if someone was being chased out of the tower.\r\n\r\nthe bell tower is quite old and its wooden stairs are frayed and worn. it seems that it needs a lot more time to decay than other buildings.\r\n\r\nthere is some rope in the corner, but it's frayed and hanging from a nail in the wall.\r\n [end of text]"
+  },
+  {
+    "id": "regression-34",
+    "category": "regression",
+    "seed": 2034,
+    "location": "collector's cabinet room",
+    "time": "late evening",
+    "weather": "storm",
+    "actor": "Armand",
+    "action_type": "investigate",
+    "target": "half-written note",
+    "degree": "failure",
+    "facts": [
+      "the handwriting cannot be identified",
+      "wet ink smears under the examination",
+      "curio cases",
+      "ivory figurine",
+      "empty pedestal"
+    ],
+    "visible": [
+      "curio cases",
+      "ivory figurine",
+      "empty pedestal"
+    ],
+    "guillermo_stage_direction": null,
+    "forbidden_terms": [],
+    "original_prompt": "FACTS\nlocation: collector's cabinet room\ntime: late evening\nweather: storm\nactor: Armand\naction: investigate\ntarget: half-written note\nresult: failure\nresolved:\n- the handwriting cannot be identified\n- wet ink smears under the examination\nvisible:\n- curio cases\n- ivory figurine\n- empty pedestal\n\nNARRATION",
+    "baseline_output": "The following morning, Armand was up at dawn. He made a fire in the fireplace and prepared breakfast, then went out to check on the progress of the weather. When he returned, he found a note in his mailbox that read, \"You should investigate the collector's cabinet room when the storm is over.\" Armand wondered if this was something he had already seen before, but could not remember seeing it.\r\nHe set out for the basement and went straight to the cabinet room, which he found still smoldering from the previous night. He carefully examined the damaged cabinets and found a note with an incomplete address of \"Royce Llewellyn\" and the word \""
+  },
+  {
+    "id": "regression-35",
+    "category": "regression",
+    "seed": 2035,
+    "location": "schoolroom",
+    "time": "after dark",
+    "weather": "snow",
+    "actor": "Armand",
+    "action_type": "open",
+    "target": "window",
+    "degree": "severe failure",
+    "facts": [
+      "the window stays shut",
+      "the latch snaps",
+      "glass cracks loudly",
+      "slate board",
+      "small desks",
+      "forgotten primer"
+    ],
+    "visible": [
+      "slate board",
+      "small desks",
+      "forgotten primer"
+    ],
+    "guillermo_stage_direction": null,
+    "forbidden_terms": [],
+    "original_prompt": "FACTS\nlocation: schoolroom\ntime: after dark\nweather: snow\nactor: Armand\naction: open\ntarget: window\nresult: severe failure\nresolved:\n- the window stays shut\n- the latch snaps\n- glass cracks loudly\nvisible:\n- slate board\n- small desks\n- forgotten primer\n\nNARRATION",
+    "baseline_output": "It was after dark. The teacher and his students were in their schoolroom. Suddenly, Armand, the school’s janitor, came into the room with a large hammer. He took down the window latch, but the window stayed shut.\r\n“Why didn’t it open?!” the teacher said. “It’s locked.”\r\n“I can’t reach up to unlock it,” said Armand.\r\n“Get on your knees then!” said the teacher.\r\nArmand obeyed, and tried to push up at the latch. The window opened slowly. Suddenly the glass cracked loudly. Armand sprang up in fright.\r\n“I am sorry for the accident,” he said, “but the window is open.”\r\n“Close it"
+  },
+  {
+    "id": "regression-36",
+    "category": "regression",
+    "seed": 2036,
+    "location": "bank vault corridor",
+    "time": "noon",
+    "weather": "clear",
+    "actor": "Armand",
+    "action_type": "give command",
+    "target": "Guillermo",
+    "degree": "success",
+    "facts": [
+      "command is to scout the next room",
+      "Guillermo slips through the doorway",
+      "no scouting result is available yet",
+      "steel door",
+      "gas sconce",
+      "bent hairpin"
+    ],
+    "visible": [
+      "steel door",
+      "gas sconce",
+      "bent hairpin"
+    ],
+    "guillermo_stage_direction": null,
+    "forbidden_terms": [],
+    "original_prompt": "FACTS\nlocation: bank vault corridor\ntime: noon\nweather: clear\nactor: Armand\naction: give command\ntarget: Guillermo\nresult: success\nresolved:\n- command is to scout the next room\n- Guillermo slips through the doorway\n- no scouting result is available yet\nvisible:\n- steel door\n- gas sconce\n- bent hairpin\n\nNARRATION",
+    "baseline_output": "Guillermo had been waiting for hours on end. He was beginning to wonder if his companion had forgotten him. Suddenly, he heard footsteps, but when the door opened he felt a chill of dread as he saw Armand standing before him. The old man looked at Guillermo with eyes that seemed to bore into the very marrow of his bones. He was wearing a long black coat, a shabby hat on his head, and had the ghostly pallor of someone who has spent many years in prison.\r\n\"What is it?\" asked Guillermo, as he stepped back.\r\nArmand pointed at the doorway.\r\n\"Scout.\"\r\nGuillermo walked through the narrow passageway. There was a steel door"
+  },
+  {
+    "id": "regression-37",
+    "category": "regression",
+    "seed": 2037,
+    "location": "laundry basement",
+    "time": "early morning",
+    "weather": "rain",
+    "actor": "Armand",
+    "action_type": "investigate",
+    "target": "dark stain",
+    "degree": "success",
+    "facts": [
+      "the stain is dried blood",
+      "the amount is inconsistent with a death here",
+      "copper boiler",
+      "linen basket",
+      "single cufflink"
+    ],
+    "visible": [
+      "copper boiler",
+      "linen basket",
+      "single cufflink"
+    ],
+    "guillermo_stage_direction": null,
+    "forbidden_terms": [],
+    "original_prompt": "FACTS\nlocation: laundry basement\ntime: early morning\nweather: rain\nactor: Armand\naction: investigate\ntarget: dark stain\nresult: success\nresolved:\n- the stain is dried blood\n- the amount is inconsistent with a death here\nvisible:\n- copper boiler\n- linen basket\n- single cufflink\n\nNARRATION",
+    "baseline_output": "The laundry basement of my grandfather's house had been locked up for years. As I opened the door, the smell of stale laundry greeted me. The room was completely dark, except for a single light switch on the wall.\r\nAs I made my way down to the boiler, which I knew would be in one of two places, I noticed some blood stains on the floor. There were several spots of dried blood that could only be seen by holding up a flashlight. The amount was inconsistent with a death here.\r\nThe boiler was located in the middle of the room. As I approached it, I saw the remains of copper tubing protruding out of the boiler's base.\r\nAs I started to examine the boiler"
+  },
+  {
+    "id": "regression-38",
+    "category": "regression",
+    "seed": 2038,
+    "location": "music hall backstage",
+    "time": "midnight",
+    "weather": "fog",
+    "actor": "Armand",
+    "action_type": "speak deceptively",
+    "target": "dockworker",
+    "degree": "setback",
+    "facts": [
+      "the dockworker accepts the false name",
+      "the dockworker demands payment before answering",
+      "rope rigging",
+      "painted scenery",
+      "discarded mask"
+    ],
+    "visible": [
+      "rope rigging",
+      "painted scenery",
+      "discarded mask"
+    ],
+    "guillermo_stage_direction": null,
+    "forbidden_terms": [],
+    "original_prompt": "FACTS\nlocation: music hall backstage\ntime: midnight\nweather: fog\nactor: Armand\naction: speak deceptively\ntarget: dockworker\nresult: setback\nresolved:\n- the dockworker accepts the false name\n- the dockworker demands payment before answering\nvisible:\n- rope rigging\n- painted scenery\n- discarded mask\n\nNARRATION",
+    "baseline_output": "the music hall stands dark, its walls lit by torches. Armand lies on his back across a wooden plank. he is tied down and has his hands cuffed behind him. a dockworker approaches the stage from behind the scenes. as the dockworker's footsteps approach, Armand opens his eyes.\r\nThe dockworker pauses. \"How did you get here?\" he asks.\r\n\"Don't talk,\" says Armand. His voice is low and thick with fatigue.\r\n\"I need to know who I'm dealing with,\" insists the dockworker.\r\nArmand shakes his head. \"I have no idea.\"\r\nThe dockworker draws a small bag of cash from his pocket. he offers it to Armand.\r\n\"Why do you"
+  },
+  {
+    "id": "regression-39",
+    "category": "regression",
+    "seed": 2039,
+    "location": "ornithologist's attic",
+    "time": "afternoon",
+    "weather": "wind",
+    "actor": "Armand",
+    "action_type": "cast Misty Step",
+    "target": "visible balcony",
+    "degree": "success",
+    "facts": [
+      "Armand teleports to the balcony",
+      "the spell slot is spent",
+      "bird cages",
+      "field journals",
+      "open skylight"
+    ],
+    "visible": [
+      "bird cages",
+      "field journals",
+      "open skylight"
+    ],
+    "guillermo_stage_direction": null,
+    "forbidden_terms": [],
+    "original_prompt": "FACTS\nlocation: ornithologist's attic\ntime: afternoon\nweather: wind\nactor: Armand\naction: cast Misty Step\ntarget: visible balcony\nresult: success\nresolved:\n- Armand teleports to the balcony\n- the spell slot is spent\nvisible:\n- bird cages\n- field journals\n- open skylight\n\nNARRATION",
+    "baseline_output": "Armand, a former ornithologist, stands in his attic, casting Misty Step on the visible balcony. A windy afternoon. He spends his days reading field journals and feeding birds.\r\n [end of text]"
+  },
+  {
+    "id": "regression-40",
+    "category": "regression",
+    "seed": 2040,
+    "location": "telegraph office",
+    "time": "2 a.m.",
+    "weather": "thunderstorm",
+    "actor": "Guillermo",
+    "action_type": "steal",
+    "target": "brass key",
+    "degree": "failure",
+    "facts": [
+      "the key remains on the hook",
+      "the key rattles",
+      "Guillermo retreats",
+      "telegraph key",
+      "paper tape",
+      "locked drawer"
+    ],
+    "visible": [
+      "telegraph key",
+      "paper tape",
+      "locked drawer"
+    ],
+    "guillermo_stage_direction": "Perform only the resolved action through gesture, expression, vocalization, and physical behavior. Guillermo does not speak.",
+    "forbidden_terms": [],
+    "original_prompt": "FACTS\nlocation: telegraph office\ntime: 2 a.m.\nweather: thunderstorm\nactor: Guillermo\naction: steal\ntarget: brass key\nresult: failure\nresolved:\n- the key remains on the hook\n- the key rattles\n- Guillermo retreats\nvisible:\n- telegraph key\n- paper tape\n- locked drawer\n\nNARRATION",
+    "baseline_output": "Guillermo stands in the dark corridor, his hand clutching the brass key. He hears footsteps coming along the corridor and he retreats behind a door as someone enters.\r\nHe hears them rummaging around inside the office. Then he hears the key rattling. After a moment, they come out again.\r\nGuillermo is relieved that nothing was taken. He decides to slip the key back on the hook.\r\n\r\nFACTS"
+  },
+  {
+    "id": "regression-41",
+    "category": "regression",
+    "seed": 2041,
+    "location": "funeral parlour",
+    "time": "dusk",
+    "weather": "drizzle",
+    "actor": "Armand",
+    "action_type": "investigate",
+    "target": "desk",
+    "degree": "success",
+    "facts": [
+      "scratches surround the locked drawer",
+      "the drawer remains closed",
+      "closed coffin",
+      "flower wreath",
+      "muddy shoe"
+    ],
+    "visible": [
+      "closed coffin",
+      "flower wreath",
+      "muddy shoe"
+    ],
+    "guillermo_stage_direction": null,
+    "forbidden_terms": [],
+    "original_prompt": "FACTS\nlocation: funeral parlour\ntime: dusk\nweather: drizzle\nactor: Armand\naction: investigate\ntarget: desk\nresult: success\nresolved:\n- scratches surround the locked drawer\n- the drawer remains closed\nvisible:\n- closed coffin\n- flower wreath\n- muddy shoe\n\nNARRATION",
+    "baseline_output": "The funeral parlour was dark with only a few lights on. Armand went through the crowd of mourners, looking for something that could help him track down the murderer. He found the coffin and closed it. Then he took the key from the desk drawer and opened it, but nothing was in there. The lock did not work.\r\n\r\nArmand searched through the crowd for someone who might know what happened. At last, he found a woman who was holding a flower wreath. He asked her about the murderer, but she said she had only heard of the man who was buried there. Armand walked back to the desk and started looking at it. After some time, he saw a"
+  },
+  {
+    "id": "regression-42",
+    "category": "regression",
+    "seed": 2042,
+    "location": "shipping office",
+    "time": "morning",
+    "weather": "fog",
+    "actor": "Armand",
+    "action_type": "search",
+    "target": "abandoned suitcase",
+    "degree": "setback",
+    "facts": [
+      "a railway receipt is found",
+      "opening the case makes a loud snap",
+      "cargo manifests",
+      "wall map",
+      "broken seal"
+    ],
+    "visible": [
+      "cargo manifests",
+      "wall map",
+      "broken seal"
+    ],
+    "guillermo_stage_direction": null,
+    "forbidden_terms": [],
+    "original_prompt": "FACTS\nlocation: shipping office\ntime: morning\nweather: fog\nactor: Armand\naction: search\ntarget: abandoned suitcase\nresult: setback\nresolved:\n- a railway receipt is found\n- opening the case makes a loud snap\nvisible:\n- cargo manifests\n- wall map\n- broken seal\n\nNARRATION",
+    "baseline_output": "The shipping office is filled with freight, crates and boxes in all directions. Armand has been on the case for several days now. He finds a container marked as empty. But when he opens it, he sees a small piece of paper inside.\r\nA quick search through the wall map turns up a clue:\r\nThe receipt has been issued at a shipping depot in Paris. A few miles away is a railway station. Armand heads there, but instead of finding an abandoned suitcase, he finds a big box marked with a red X.\r\nIt takes him some time to find the right ticket, and when he gets to the station, the train has left, leaving behind only a few empty crates.\r\n\r\nTHE END [end of text]"
+  },
+  {
+    "id": "regression-43",
+    "category": "regression",
+    "seed": 2043,
+    "location": "icehouse",
+    "time": "midday",
+    "weather": "snow",
+    "actor": "Armand",
+    "action_type": "examine",
+    "target": "discarded glove",
+    "degree": "success",
+    "facts": [
+      "the glove is wet",
+      "black grease marks the fingertips",
+      "stacked ice blocks",
+      "meat hook",
+      "dark stain"
+    ],
+    "visible": [
+      "stacked ice blocks",
+      "meat hook",
+      "dark stain"
+    ],
+    "guillermo_stage_direction": null,
+    "forbidden_terms": [],
+    "original_prompt": "FACTS\nlocation: icehouse\ntime: midday\nweather: snow\nactor: Armand\naction: examine\ntarget: discarded glove\nresult: success\nresolved:\n- the glove is wet\n- black grease marks the fingertips\nvisible:\n- stacked ice blocks\n- meat hook\n- dark stain\n\nNARRATION",
+    "baseline_output": "Armand examines a discarded glove, then finds an ice block, a meat hook,\r\nand a dark stain. The glove is wet and has black grease on the fingertips.\r\n\r\nQUESTION\r\nWhat is the name of the object that Armand examined?\r\n(1) glove (2) meat hook\r\nAns: (1) [end of text]"
+  },
+  {
+    "id": "regression-44",
+    "category": "regression",
+    "seed": 2044,
+    "location": "portrait gallery",
+    "time": "evening",
+    "weather": "rain",
+    "actor": "Armand",
+    "action_type": "move",
+    "target": "rolling ladder",
+    "degree": "failure",
+    "facts": [
+      "the ladder jams halfway",
+      "dust falls from the upper shelf",
+      "family paintings",
+      "marble bust",
+      "crooked frame"
+    ],
+    "visible": [
+      "family paintings",
+      "marble bust",
+      "crooked frame"
+    ],
+    "guillermo_stage_direction": null,
+    "forbidden_terms": [],
+    "original_prompt": "FACTS\nlocation: portrait gallery\ntime: evening\nweather: rain\nactor: Armand\naction: move\ntarget: rolling ladder\nresult: failure\nresolved:\n- the ladder jams halfway\n- dust falls from the upper shelf\nvisible:\n- family paintings\n- marble bust\n- crooked frame\n\nNARRATION",
+    "baseline_output": "Armand, a young man, is working in his studio, painting portraits. He has just finished his first attempt at painting a portrait of his parents and wants to take it back home so they can see how he did. He takes the portrait from the easel, but the rolling ladder on which he climbed up to the shelf is now stuck midway. The dust that fell from the upper shelf also falls onto his painting. As he tries to move it, the family paintings, marble bust, and crooked frame fall from their place. Armand, a young man, is working in his studio, painting portraits. He has just finished his first attempt at painting a portrait of his parents"
+  },
+  {
+    "id": "regression-45",
+    "category": "regression",
+    "seed": 2045,
+    "location": "servants' passage",
+    "time": "before dawn",
+    "weather": "clear",
+    "actor": "Armand",
+    "action_type": "take",
+    "target": "sealed envelope",
+    "degree": "success",
+    "facts": [
+      "the envelope enters inventory",
+      "the seal remains intact",
+      "narrow stairs",
+      "service bell",
+      "dropped tray"
+    ],
+    "visible": [
+      "narrow stairs",
+      "service bell",
+      "dropped tray"
+    ],
+    "guillermo_stage_direction": null,
+    "forbidden_terms": [],
+    "original_prompt": "FACTS\nlocation: servants' passage\ntime: before dawn\nweather: clear\nactor: Armand\naction: take\ntarget: sealed envelope\nresult: success\nresolved:\n- the envelope enters inventory\n- the seal remains intact\nvisible:\n- narrow stairs\n- service bell\n- dropped tray\n\nNARRATION",
+    "baseline_output": "Armand's eyes open slowly, as his brain registers his surroundings. He is in a darkened room and can see only the dim outlines of furniture.\r\n\"Ahh….\" he thinks, \"I remember this place, but not well. My memory of it is blurry…\"\r\nHe closes his eyes again, and for several minutes remains motionless, his mind drifting. Then, abruptly, a flash of light dazzles his eyes. It appears to be coming from behind him. He looks up, and sees the light coming from the servants' passage.\r\n\"Ahh….\" he thinks again, \"My memory has come back to me now…\"\r\nHe slowly gets off the bed, an"
+  },
+  {
+    "id": "regression-46",
+    "category": "regression",
+    "seed": 2046,
+    "location": "auction house storeroom",
+    "time": "closing time",
+    "weather": "hail",
+    "actor": "Armand",
+    "action_type": "use crowbar",
+    "target": "locked chest",
+    "degree": "setback",
+    "facts": [
+      "the lid opens",
+      "the crowbar bends",
+      "a hinge breaks loudly",
+      "numbered lots",
+      "packing straw",
+      "empty crate"
+    ],
+    "visible": [
+      "numbered lots",
+      "packing straw",
+      "empty crate"
+    ],
+    "guillermo_stage_direction": null,
+    "forbidden_terms": [],
+    "original_prompt": "FACTS\nlocation: auction house storeroom\ntime: closing time\nweather: hail\nactor: Armand\naction: use crowbar\ntarget: locked chest\nresult: setback\nresolved:\n- the lid opens\n- the crowbar bends\n- a hinge breaks loudly\nvisible:\n- numbered lots\n- packing straw\n- empty crate\n\nNARRATION",
+    "baseline_output": "Armand and his partner are preparing for the auction. They have prepared to work on the lock, but now that they have found a key in the storeroom, they feel more hopeful. Armand and his partner have found a crowbar in the storeroom, which he thinks might be useful in forcing open the lid of the locked chest.\r\nWhen Armand uses the crowbar to force open the lid of the locked chest, he finds that the crowbar bends. This causes the hinge on the lid to break loudly, causing a setback.\r\nArmand and his partner then proceed to use a different approach in order to open the lid of the locked chest."
+  },
+  {
+    "id": "regression-47",
+    "category": "regression",
+    "seed": 2047,
+    "location": "observatory dome",
+    "time": "midnight",
+    "weather": "clear",
+    "actor": "Armand",
+    "action_type": "cast Detect Magic",
+    "target": "display case",
+    "degree": "success",
+    "facts": [
+      "magic is present",
+      "its nature and meaning remain unknown",
+      "brass telescope",
+      "star charts",
+      "open hatch"
+    ],
+    "visible": [
+      "brass telescope",
+      "star charts",
+      "open hatch"
+    ],
+    "guillermo_stage_direction": null,
+    "forbidden_terms": [],
+    "original_prompt": "FACTS\nlocation: observatory dome\ntime: midnight\nweather: clear\nactor: Armand\naction: cast Detect Magic\ntarget: display case\nresult: success\nresolved:\n- magic is present\n- its nature and meaning remain unknown\nvisible:\n- brass telescope\n- star charts\n- open hatch\n\nNARRATION",
+    "baseline_output": "The observatory has no windows, so it’s always dark in there. Armand enters the room and sees that his equipment is ready to go.\r\nHe presses a button on the control panel, and a door at the end of the room opens. He climbs the stairs up into the dome, which has a brass telescope aimed at the sky. Armand uses it to look for stars. The star charts on the walls match the ones on his telescope, so he knows what he’s looking at.\r\n“It must be easy,” he thinks to himself as he stares out at the dark night sky.\r\nHe presses the button again and hears the hatch open in the ceiling above him. He steps onto a platform over"
+  },
+  {
+    "id": "regression-48",
+    "category": "regression",
+    "seed": 2048,
+    "location": "tram depot",
+    "time": "first light",
+    "weather": "mist",
+    "actor": "Armand",
+    "action_type": "speak",
+    "target": "night clerk",
+    "degree": "success",
+    "facts": [
+      "Armand asks who left the key",
+      "the clerk says a veiled woman left it at midnight",
+      "parked tram",
+      "ticket booth",
+      "forgotten parcel"
+    ],
+    "visible": [
+      "parked tram",
+      "ticket booth",
+      "forgotten parcel"
+    ],
+    "guillermo_stage_direction": null,
+    "forbidden_terms": [],
+    "original_prompt": "FACTS\nlocation: tram depot\ntime: first light\nweather: mist\nactor: Armand\naction: speak\ntarget: night clerk\nresult: success\nresolved:\n- Armand asks who left the key\n- the clerk says a veiled woman left it at midnight\nvisible:\n- parked tram\n- ticket booth\n- forgotten parcel\n\nNARRATION",
+    "baseline_output": "Armand approaches the tram depot to check for new passengers.\r\nHe is surprised when he discovers the ticket booth open. He walks through the door and finds a parcel lying there, but no one else inside.\r\nThe clerk had said that some unknown person left a key in front of the depot at midnight. [end of text]"
+  },
+  {
+    "id": "regression-49",
+    "category": "regression",
+    "seed": 2049,
+    "location": "bookbinder's workshop",
+    "time": "afternoon",
+    "weather": "rain",
+    "actor": "Guillermo",
+    "action_type": "search",
+    "target": "high shelf",
+    "degree": "success",
+    "facts": [
+      "Guillermo finds a folded scrap",
+      "Guillermo can communicate only through gestures",
+      "binding press",
+      "leather scraps",
+      "loose photograph"
+    ],
+    "visible": [
+      "binding press",
+      "leather scraps",
+      "loose photograph"
+    ],
+    "guillermo_stage_direction": "Perform only the resolved action through gesture, expression, vocalization, and physical behavior. Guillermo does not speak.",
+    "forbidden_terms": [],
+    "original_prompt": "FACTS\nlocation: bookbinder's workshop\ntime: afternoon\nweather: rain\nactor: Guillermo\naction: search\ntarget: high shelf\nresult: success\nresolved:\n- Guillermo finds a folded scrap\n- Guillermo can communicate only through gestures\nvisible:\n- binding press\n- leather scraps\n- loose photograph\n\nNARRATION",
+    "baseline_output": "Guillermo is working in the workshop. He goes to the bookbinder's table, where there are tools and materials. His hands touch the leather scraps, a photo of his mother and his father's watch. He opens the folded scrap and looks at it. He goes to the binding press, which is a wooden box with a lever. Guillermo turns the lever, making a noise as he does so. The binder comes in. Guillermo asks him how to work. Guillermo takes the book and presses it on the machine. The binder holds the book together. Guillermo goes to search for something in the book shelf above. He finds a scrap an"
+  },
+  {
+    "id": "regression-50",
+    "category": "regression",
+    "seed": 2050,
+    "location": "winter garden",
+    "time": "late evening",
+    "weather": "snow",
+    "actor": "Armand",
+    "action_type": "wait",
+    "target": "current location",
+    "degree": "success",
+    "facts": [
+      "ten minutes pass",
+      "footsteps approach from the corridor",
+      "frosted panes",
+      "stone bench",
+      "freshly dug soil"
+    ],
+    "visible": [
+      "frosted panes",
+      "stone bench",
+      "freshly dug soil"
+    ],
+    "guillermo_stage_direction": null,
+    "forbidden_terms": [],
+    "original_prompt": "FACTS\nlocation: winter garden\ntime: late evening\nweather: snow\nactor: Armand\naction: wait\ntarget: current location\nresult: success\nresolved:\n- ten minutes pass\n- footsteps approach from the corridor\nvisible:\n- frosted panes\n- stone bench\n- freshly dug soil\n\nNARRATION",
+    "baseline_output": "Armand waits in the winter garden. He’s been there for about half an hour already, but he has no idea why. The frost has melted away from his shoes and coat, and his hands are warm. He is aware that the air feels a bit chillier than usual, but this is nothing new; it has been like this since last night. The only thing that has changed is the sky, which has cleared of clouds.\r\nArmand has spent all day in the office and now the door to the winter garden opens. He gets up and stands at the top of the stairs, his footsteps echoing along the corridor. A few minutes later he sees a figure emerge from the corridor, come down"
+  }
+]
