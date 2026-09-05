@@ -4,6 +4,16 @@ Phases 1–5 provide the local Comma harness, grounded narration pipeline, deter
 
 Phase 5 details and APIs are documented in `PHASE5_REPORT.md`. The Notebook stores engine-known facts separately from player notes and theories, and only bounded engine-selected evidence may enter narration.
 
+## Playable Callum Study slice
+
+The Godot desktop vertical slice is documented in `PLAYABLE_SLICE_REPORT.md`; the suggested freeform route is in `MANUAL_PLAYTEST.md`. Launch the local inference service, persistent game bridge, and game together with:
+
+```powershell
+.\Start-Prototype.ps1
+```
+
+Stop both managed backend services with `.\Stop-Prototype.ps1`.
+
 ## Persistent inference
 
 Start the shared local model service once before normal interpreter or narrator use:

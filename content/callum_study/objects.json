@@ -1,0 +1,17 @@
+{
+  "objects": [
+    {"id":"study_room","name":"study","location":"callum_study","aliases":["room","study","around"]},
+    {"id":"writing_desk","name":"writing desk","location":"callum_study","aliases":["desk","writing desk"],"parts":["underneath","inside","on_top"]},
+    {"id":"fireplace","name":"fireplace","location":"callum_study","aliases":["fireplace","hearth"],"parts":["inside","around"]},
+    {"id":"rug","name":"rug and floor","location":"callum_study","aliases":["rug","floor","floor area"],"parts":["underneath","around"]},
+    {"id":"large_painting","name":"large painting","location":"callum_study","aliases":["painting","portrait","large painting"],"parts":["behind"]},
+    {"id":"bookshelves","name":"bookshelves","location":"callum_study","aliases":["bookshelf","bookshelves","books"]},
+    {"id":"window","name":"window","location":"callum_study","aliases":["window"]},
+    {"id":"study_door","name":"study door","location":"callum_study","aliases":["door","study door"]},
+    {"id":"paneled_wall","name":"paneled wall","location":"callum_study","aliases":["wall","paneling","paneled wall"]},
+    {"id":"study_entrance","name":"study entrance","location":"landing","aliases":["study","door","study entrance"]},
+    {"id":"wall_safe","name":"concealed safe","location":"callum_study","aliases":["safe","concealed safe"],"parts":["inside"]},
+    {"id":"burned_note","name":"partially burned note","location":"safe","aliases":["note","burned note","partially burned note"]},
+    {"id":"crowbar","name":"crowbar","location":"inventory","owner":"Armand","aliases":["crowbar","pry bar"]}
+  ]
+}

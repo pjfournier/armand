@@ -4,3 +4,4 @@ artifacts/
 *.log
 *.tmp
 eval/.work/
+godot/.godot/

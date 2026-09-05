@@ -1,0 +1,41 @@
+{
+  "clues": [
+    {
+      "id":"bloodstain","name":"Dark discoloration","location":"callum_study","related":["rug"],
+      "tiers":[
+        {"dc":10,"skill":"Awareness","fact":"A dark discoloration is present beside the rug."},
+        {"dc":15,"skill":"Investigation","fact":"The discoloration is dried blood."},
+        {"dc":20,"skill":"Investigation","fact":"There is too little blood here for someone to have died in this room."},
+        {"dc":25,"skill":"Investigation","fact":"The pattern suggests an injured person was moved from this spot."}
+      ]
+    },
+    {
+      "id":"scorch_marks","name":"Unusual scorch marks","location":"callum_study","related":["fireplace"],
+      "tiers":[
+        {"dc":10,"skill":"Awareness","fact":"Dark, unusual burn patterns mark the stone near the hearth."},
+        {"dc":15,"skill":"Occult","fact":"The marks are inconsistent with an ordinary fire."},
+        {"dc":20,"skill":"Occult","fact":"The marks indicate that magical or occult energy was discharged here."}
+      ]
+    },
+    {
+      "id":"rope_fibers","name":"Coarse fibers","location":"callum_study","related":["writing_desk"],
+      "tiers":[
+        {"dc":10,"skill":"Awareness","fact":"Several coarse fibers are caught on a splinter of the desk."},
+        {"dc":15,"skill":"Investigation","fact":"The fibers are hemp cordage."},
+        {"dc":20,"skill":"Investigation","fact":"Their condition is consistent with rope pulled tightly across the surface."}
+      ]
+    },
+    {
+      "id":"callum_symbol","name":"Three-pointed crown symbol","location":"callum_study","related":["writing_desk","wall_safe"],
+      "tiers":[{"dc":10,"skill":"Investigation","fact":"Callum repeatedly drew a three-pointed crown beside the number 1847."}]
+    },
+    {
+      "id":"occult_residue","name":"Lingering magical residue","location":"callum_study","related":["fireplace"],
+      "tiers":[{"dc":10,"skill":"Occult","fact":"Faint magical residue lingers around the scorch marks."}]
+    },
+    {
+      "id":"external_lead","name":"Blackthorn Station lead","location":"callum_study","related":["burned_note"],
+      "tiers":[{"dc":10,"skill":"Investigation","fact":"A partially burned note names Blackthorn Station and tomorrow's midnight meeting."}]
+    }
+  ]
+}

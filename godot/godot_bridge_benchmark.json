@@ -1,0 +1,16 @@
+{
+  "average_seconds": 4.4256,
+  "fallback_count_from_public_response": 0,
+  "godot_version": "4.7.2-stable (official)",
+  "max_seconds": 5.168,
+  "median_seconds": 4.505,
+  "min_seconds": 3.926,
+  "sample_count": 5,
+  "samples": [
+    5.168,
+    4.513,
+    4.505,
+    4.016,
+    3.926
+  ]
+}

@@ -1,0 +1,10 @@
+{
+  "title":"Callum's Study",
+  "start_location":"callum_study",
+  "lead_id":"burned_note",
+  "lead_fact":"A partially burned note names Blackthorn Station and tomorrow's midnight meeting.",
+  "ending_title":"LEAD DISCOVERED",
+  "ending_text":"You now have somewhere to look next.",
+  "hidden_truth":["Callum was forcibly removed.","Others searched the room afterward.","They failed to find the safe's most important content."],
+  "narrator_max_attempts":2
+}

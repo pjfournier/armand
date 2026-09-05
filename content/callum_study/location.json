@@ -1,0 +1,18 @@
+{
+  "locations": [
+    {
+      "id": "callum_study",
+      "display_name": "Callum's Study",
+      "visible_objects": ["study_room", "writing_desk", "fireplace", "rug", "large_painting", "bookshelves", "window", "study_door", "paneled_wall"],
+      "exits": ["landing"],
+      "known_features": ["a disturbed Victorian study lit by gaslight"]
+    },
+    {
+      "id": "landing",
+      "display_name": "Upstairs Landing",
+      "visible_objects": ["study_entrance"],
+      "exits": ["callum_study"],
+      "known_features": ["a narrow landing outside the study"]
+    }
+  ]
+}
