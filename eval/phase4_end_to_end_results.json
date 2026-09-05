@@ -1,0 +1,161 @@
+[
+  {
+    "id": "armand-natural-investigation",
+    "player_input": "Look beneath the desk.",
+    "interpretation": {
+      "Status": "RESOLVED",
+      "Intent": {
+        "actor": "armand",
+        "action": "examine",
+        "target": "desk_01",
+        "method": null,
+        "area": "underneath",
+        "communicative_intent": null,
+        "spell": null,
+        "raw_input": "Look beneath the desk."
+      },
+      "Reason": "",
+      "Clarification": "",
+      "RawModelStructuredOutput": "{\"actor\":\"armand\",\"action\":\"examine\",\"target\":\"desk_01\",\"method\":null,\"area\":\"underneath\",\"communicative_intent\":null,\"spell\":null} [end of text]",
+      "ElapsedSeconds": 3.2008679
+    },
+    "engine_intent": {
+      "Actor": "Armand",
+      "Action": "examine",
+      "Target": "desk_01",
+      "Method": null,
+      "Area": "underneath",
+      "CommunicativeIntent": null,
+      "Spell": null,
+      "RawInput": "Look beneath the desk."
+    },
+    "resolution": {
+      "Mode": "active",
+      "DC": 15,
+      "RollMode": "normal",
+      "Rolls": [
+        13
+      ],
+      "NaturalRoll": 13,
+      "SkillModifier": 4,
+      "SituationalModifier": 0,
+      "Total": 17,
+      "Margin": 2,
+      "Degree": "Success",
+      "Possible": true
+    },
+    "handoff": {
+      "Attempt": {
+        "Actor": "Armand",
+        "Description": "Armand attempts to examine writing desk."
+      },
+      "Outcome": {
+        "Degree": "Success"
+      },
+      "PostActionState": {
+        "desk_scratches_observed": true,
+        "desk_area": "underneath"
+      },
+      "Events": [
+        "scratches are observed beneath the desk"
+      ],
+      "Visible": [
+        "writing desk",
+        "fireplace",
+        "brass key on hook"
+      ],
+      "NpcDisclosure": {
+        "Discloses": [],
+        "Withholds": []
+      }
+    },
+    "authoritative_key_state": null,
+    "raw_narrator_completion": "attempt to examine the writing desk. Scratches appear beneath it, but nothing else.\r\n\r\n\r\nFACTS",
+    "narration": "You attempt to examine the writing desk. Scratches appear beneath it, but nothing else.",
+    "interpretation_seconds": 3.2008679,
+    "narration_seconds": 2.9977545,
+    "gpu_active": true
+  },
+  {
+    "id": "guillermo-natural-failed-steal",
+    "player_input": "Have Guillermo steal the key.",
+    "interpretation": {
+      "Status": "RESOLVED",
+      "Intent": {
+        "actor": "guillermo",
+        "action": "steal",
+        "target": "brass_key",
+        "method": null,
+        "area": null,
+        "communicative_intent": null,
+        "spell": null,
+        "raw_input": "Have Guillermo steal the key."
+      },
+      "Reason": "",
+      "Clarification": "",
+      "RawModelStructuredOutput": "{\"actor\":\"guillermo\",\"action\":\"steal\",\"target\":\"brass_key\",\"method\":null,\"area\":null,\"communicative_intent\":null,\"spell\":null} [end of text]",
+      "ElapsedSeconds": 3.1524718
+    },
+    "engine_intent": {
+      "Actor": "Guillermo",
+      "Action": "steal",
+      "Target": "brass_key",
+      "Method": null,
+      "Area": null,
+      "CommunicativeIntent": null,
+      "Spell": null,
+      "RawInput": "Have Guillermo steal the key."
+    },
+    "resolution": {
+      "Mode": "active",
+      "DC": 15,
+      "RollMode": "normal",
+      "Rolls": [
+        4
+      ],
+      "NaturalRoll": 4,
+      "SkillModifier": 5,
+      "SituationalModifier": 0,
+      "Total": 9,
+      "Margin": -6,
+      "Degree": "Failure",
+      "Possible": true
+    },
+    "handoff": {
+      "Attempt": {
+        "Actor": "Guillermo",
+        "Description": "Guillermo tries to take brass key from the hook."
+      },
+      "Outcome": {
+        "Degree": "Failure"
+      },
+      "PostActionState": {
+        "brass_key_location": "hook",
+        "Guillermo_has_key": false
+      },
+      "Events": [
+        "brass key rattles",
+        "Guillermo retreats"
+      ],
+      "Visible": [
+        "writing desk",
+        "fireplace",
+        "brass key on hook"
+      ],
+      "NpcDisclosure": {
+        "Discloses": [],
+        "Withholds": []
+      }
+    },
+    "authoritative_key_state": {
+      "location": "hook",
+      "owner": "",
+      "Guillermo_has_key": false
+    },
+    "raw_narrator_completion": "see Guillermo try to take the brass key from its hook. The key rattles, and he retreats. He tries again.\r\n\r\n\r\nFACTS",
+    "narration": "You see Guillermo try to take the brass key from its hook. The key rattles, and he retreats. He tries again.",
+    "interpretation_seconds": 3.1524718,
+    "narration_seconds": 3.2315394,
+    "gpu_active": true
+  }
+]

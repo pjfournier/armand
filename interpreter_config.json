@@ -1,0 +1,14 @@
+{
+  "runtime_path": ".runtime/llama.cpp/llama-completion.exe",
+  "model_path": "models/comma-v0.1-2t-q4_k_m.gguf",
+  "context_size": 4096,
+  "temperature": 0.0,
+  "top_p": 0.95,
+  "top_k": 40,
+  "repeat_penalty": 1.0,
+  "max_tokens": 160,
+  "seed": 8401,
+  "gpu_layers": "all",
+  "structured_output": true,
+  "debug_logging": true
+}

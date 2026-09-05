@@ -5,6 +5,7 @@ Import-Module (Join-Path $PSScriptRoot 'Resolution.psm1') -Force
 Import-Module (Join-Path $PSScriptRoot 'NarratorHandoff.psm1') -Force
 
 function Get-EngineActor { param($State,[string]$Actor) if($Actor-eq'Armand'){$State.Player}elseif($Actor-eq'Guillermo'){$State.Guillermo}else{throw "Unsupported actor: $Actor"} }
+function Get-EngineTargetDescription {param($State,[string]$Target,[string]$Action)if($State.Items.Contains($Target)){$item=$State.Items[$Target];if($Action-in@('take','steal')-and$item.Location-and$item.Location-ne'inventory'){return "$($item.DisplayName) from the $($item.Location)"};return $item.DisplayName};if($State.NPCs.Contains($Target)){return $State.NPCs[$Target].DisplayName};if($State.Locations.Contains($Target)){return $State.Locations[$Target].DisplayName};$Target}
 function Invoke-StateMutations {
  param($State,[object[]]$Mutations,[string]$Degree)
  foreach($m in $Mutations){$hasApply=$null-ne$m.PSObject.Properties['apply_on'];if($hasApply-and$Degree-notin@($m.apply_on)){continue};switch($m.type){
@@ -28,8 +29,9 @@ function Resolve-StructuredIntent {
  $resolution=Resolve-Check -Mode $Mode -DC $DC -SkillModifier $modifier -SituationalModifier $SituationalModifier -RollMode $RollMode -FixedRoll $FixedRoll -FixedRolls $FixedRolls -Seed $Seed -PassiveScore $passive -Possible $Possible
  Invoke-StateMutations $State $Mutations $resolution.Degree
  if($Minutes-gt0){Add-GameTime $State $Minutes 1}
- $handoff=New-NarratorHandoff -Intent $Intent -Resolution $resolution -PostActionState $PostActionState -Events $Events -Visible $Visible -NpcDiscloses $NpcDiscloses -NpcWithholds $NpcWithholds
+ $handoffIntent=[pscustomobject]@{Actor=$Intent.Actor;Action=$Intent.Action;Target=(Get-EngineTargetDescription $State $Intent.Target $Intent.Action);Method=$Intent.Method}
+ $handoff=New-NarratorHandoff -Intent $handoffIntent -Resolution $resolution -PostActionState $PostActionState -Events $Events -Visible $Visible -NpcDiscloses $NpcDiscloses -NpcWithholds $NpcWithholds
  [pscustomobject]@{Intent=$Intent;Resolution=$resolution;Handoff=$handoff}
 }
 
-Export-ModuleMember -Function Resolve-StructuredIntent
+Export-ModuleMember -Function Resolve-StructuredIntent,Get-EngineTargetDescription

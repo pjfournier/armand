@@ -1,0 +1,212 @@
+[
+  {
+    "id": "01-examine",
+    "correct": true,
+    "expected_status": "RESOLVED",
+    "actual_status": "RESOLVED",
+    "notes": "Semantically correct."
+  },
+  {
+    "id": "02-paraphrase",
+    "correct": false,
+    "expected_status": "RESOLVED",
+    "actual_status": "RESOLVED",
+    "notes": "Correct actor/action/target, but invents an inside area for an unqualified closer look."
+  },
+  {
+    "id": "03-canonical-a",
+    "correct": true,
+    "expected_status": "RESOLVED",
+    "actual_status": "RESOLVED",
+    "notes": "Semantically correct."
+  },
+  {
+    "id": "04-canonical-b",
+    "correct": true,
+    "expected_status": "RESOLVED",
+    "actual_status": "RESOLVED",
+    "notes": "Semantically correct."
+  },
+  {
+    "id": "05-search",
+    "correct": true,
+    "expected_status": "RESOLVED",
+    "actual_status": "RESOLVED",
+    "notes": "Semantically correct."
+  },
+  {
+    "id": "06-move",
+    "correct": true,
+    "expected_status": "RESOLVED",
+    "actual_status": "RESOLVED",
+    "notes": "Semantically correct."
+  },
+  {
+    "id": "07-take",
+    "correct": true,
+    "expected_status": "RESOLVED",
+    "actual_status": "RESOLVED",
+    "notes": "Semantically correct."
+  },
+  {
+    "id": "08-use-inventory",
+    "correct": true,
+    "expected_status": "RESOLVED",
+    "actual_status": "RESOLVED",
+    "notes": "Semantically correct."
+  },
+  {
+    "id": "09-guillermo-search",
+    "correct": false,
+    "expected_status": "RESOLVED",
+    "actual_status": "RESOLVED",
+    "notes": "Correct actor/action/target, but narrows an unqualified cabinet search to inside."
+  },
+  {
+    "id": "10-guillermo-scout",
+    "correct": true,
+    "expected_status": "RESOLVED",
+    "actual_status": "RESOLVED",
+    "notes": "Semantically correct."
+  },
+  {
+    "id": "11-guillermo-steal",
+    "correct": true,
+    "expected_status": "RESOLVED",
+    "actual_status": "RESOLVED",
+    "notes": "Semantically correct."
+  },
+  {
+    "id": "12-detect-magic",
+    "correct": true,
+    "expected_status": "RESOLVED",
+    "actual_status": "RESOLVED",
+    "notes": "Semantically correct."
+  },
+  {
+    "id": "13-darkness",
+    "correct": true,
+    "expected_status": "RESOLVED",
+    "actual_status": "RESOLVED",
+    "notes": "Semantically correct."
+  },
+  {
+    "id": "14-misty-step",
+    "correct": false,
+    "expected_status": "RESOLVED",
+    "actual_status": "RESOLVED",
+    "notes": "Recognizes Misty Step but selects the guard instead of the hallway/destination as target."
+  },
+  {
+    "id": "15-social",
+    "correct": true,
+    "expected_status": "RESOLVED",
+    "actual_status": "RESOLVED",
+    "notes": "Semantically correct."
+  },
+  {
+    "id": "16-deceptive-social",
+    "correct": true,
+    "expected_status": "RESOLVED",
+    "actual_status": "RESOLVED",
+    "notes": "Semantically correct."
+  },
+  {
+    "id": "17-pronoun",
+    "correct": true,
+    "expected_status": "RESOLVED",
+    "actual_status": "RESOLVED",
+    "notes": "Semantically correct."
+  },
+  {
+    "id": "18-ambiguous-pronoun",
+    "correct": true,
+    "expected_status": "NEEDS_CLARIFICATION",
+    "actual_status": "NEEDS_CLARIFICATION",
+    "notes": "Semantically correct."
+  },
+  {
+    "id": "19-duplicate-object",
+    "correct": true,
+    "expected_status": "NEEDS_CLARIFICATION",
+    "actual_status": "NEEDS_CLARIFICATION",
+    "notes": "Semantically correct."
+  },
+  {
+    "id": "20-area",
+    "correct": true,
+    "expected_status": "RESOLVED",
+    "actual_status": "RESOLVED",
+    "notes": "Semantically correct."
+  },
+  {
+    "id": "21-impossible-valid",
+    "correct": true,
+    "expected_status": "RESOLVED",
+    "actual_status": "RESOLVED",
+    "notes": "Semantically correct."
+  },
+  {
+    "id": "22-unknown-target",
+    "correct": true,
+    "expected_status": "UNRECOGNIZED",
+    "actual_status": "UNRECOGNIZED",
+    "notes": "Semantically correct."
+  },
+  {
+    "id": "23-nonsense",
+    "correct": true,
+    "expected_status": "UNRECOGNIZED",
+    "actual_status": "UNRECOGNIZED",
+    "notes": "Semantically correct."
+  },
+  {
+    "id": "24-typo",
+    "correct": true,
+    "expected_status": "RESOLVED",
+    "actual_status": "RESOLVED",
+    "notes": "Semantically correct."
+  },
+  {
+    "id": "25-verbose",
+    "correct": false,
+    "expected_status": "RESOLVED",
+    "actual_status": "RESOLVED",
+    "notes": "Recognizes examine/fireplace but invents inside and places without-touching in communicative intent rather than method."
+  },
+  {
+    "id": "26-terse",
+    "correct": true,
+    "expected_status": "RESOLVED",
+    "actual_status": "RESOLVED",
+    "notes": "Semantically correct."
+  },
+  {
+    "id": "27-compound",
+    "correct": true,
+    "expected_status": "NEEDS_CLARIFICATION",
+    "actual_status": "NEEDS_CLARIFICATION",
+    "notes": "Semantically correct."
+  },
+  {
+    "id": "28-sequential",
+    "correct": true,
+    "expected_status": "NEEDS_CLARIFICATION",
+    "actual_status": "NEEDS_CLARIFICATION",
+    "notes": "Semantically correct."
+  },
+  {
+    "id": "29-hidden-leak",
+    "correct": true,
+    "expected_status": "UNRECOGNIZED",
+    "actual_status": "UNRECOGNIZED",
+    "notes": "Semantically correct."
+  },
+  {
+    "id": "30-npc-control",
+    "correct": true,
+    "expected_status": "UNRECOGNIZED",
+    "actual_status": "UNRECOGNIZED",
+    "notes": "Semantically correct."
+  }
+]
