@@ -1,0 +1,11 @@
+FACTS
+location: Victorian study
+time: midnight
+weather: rain
+visible:
+- desk
+- extinguished fireplace
+- open window
+
+NARRATION
+
