@@ -49,8 +49,10 @@ Assert-True ($retryText -match 'POST_ACTION_STATE[\s\S]*drawer: closed') 'Affirm
 Assert-True ($retryText -match 'EVENT_STATE[\s\S]*bell: rang once') 'Affirmative event state must render.'
 Assert-True ($retryText -match 'NPC_DISCLOSURE[\s\S]*discloses:[\s\S]*withholds:') 'Bounded disclosure must render.'
 Assert-True ($retryText -notmatch '(?i)<\|system\|>|<\|assistant\|>|ChatML') 'No chat template may be introduced.'
-$stageA = @(Get-Content -Raw (Join-Path $root 'eval/grounding_retry_stageA_cases.json') | ConvertFrom-Json)
-$stageB = @(Get-Content -Raw (Join-Path $root 'eval/grounding_retry_stageB_cases.json') | ConvertFrom-Json)
+$stageAParsed = Get-Content -Raw (Join-Path $root 'eval/grounding_retry_stageA_cases.json') | ConvertFrom-Json
+$stageBParsed = Get-Content -Raw (Join-Path $root 'eval/grounding_retry_stageB_cases.json') | ConvertFrom-Json
+$stageA = @($stageAParsed | ForEach-Object { $_ })
+$stageB = @($stageBParsed | ForEach-Object { $_ })
 Assert-True ($stageA.Count -eq 20 -and $stageB.Count -eq 20) 'Retry stages must contain twenty cases each.'
 Assert-True (@(Compare-Object $stageA.id $stageB.id -IncludeEqual -ExcludeDifferent).Count -eq 0) 'Stage A and B case IDs must remain distinct.'
 $runnerText = Get-Content -Raw (Join-Path $root 'Run-GroundingRetry.ps1')
