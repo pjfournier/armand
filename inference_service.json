@@ -1,0 +1,12 @@
+{
+  "inference_backend": "server",
+  "runtime_path": ".runtime/llama.cpp/llama-server.exe",
+  "model_path": "models/comma-v0.1-2t-q4_k_m.gguf",
+  "host": "127.0.0.1",
+  "port": 8080,
+  "context_size": 4096,
+  "gpu_layers": "all",
+  "health_timeout_seconds": 2,
+  "timeout_seconds": 30,
+  "startup_timeout_seconds": 120
+}

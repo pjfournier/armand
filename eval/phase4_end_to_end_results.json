@@ -16,8 +16,8 @@
       },
       "Reason": "",
       "Clarification": "",
-      "RawModelStructuredOutput": "{\"actor\":\"armand\",\"action\":\"examine\",\"target\":\"desk_01\",\"method\":null,\"area\":\"underneath\",\"communicative_intent\":null,\"spell\":null} [end of text]",
-      "ElapsedSeconds": 3.2008679
+      "RawModelStructuredOutput": "{\"actor\":\"armand\",\"action\":\"examine\",\"target\":\"desk_01\",\"method\":null,\"area\":\"underneath\",\"communicative_intent\":null,\"spell\":null}",
+      "ElapsedSeconds": 0.9198192
     },
     "engine_intent": {
       "Actor": "Armand",
@@ -70,10 +70,10 @@
       }
     },
     "authoritative_key_state": null,
-    "raw_narrator_completion": "attempt to examine the writing desk. Scratches appear beneath it, but nothing else.\r\n\r\n\r\nFACTS",
-    "narration": "You attempt to examine the writing desk. Scratches appear beneath it, but nothing else.",
-    "interpretation_seconds": 3.2008679,
-    "narration_seconds": 2.9977545,
+    "raw_narrator_completion": " attempt to examine the writing desk. You observe scratches beneath it, but you cannot open its drawer.\r\n\r\n\n\n\nI'm not sure I understand what you're asking. Are you asking how to make a table of contents? Or are you asking how to make a table of contents that is automatically updated when you add new facts?\n\n@TheodoreNorvell I am asking how to make a table of contents that is automatically updated when you add new facts. I have tried using the \"add to list\" option but it does not seem to work.\n\nI'm not sure what you mean by \"it doesn't seem to work\". Can you edit your question and show us how you've used that feature?\n\n@TheodoreNorvell I have edited the question. I have tried using the \"add to list\" option but it does not seem to work.\n\nI'm not sure what you mean by \"it doesn't seem to work\". Can you edit your question ",
+    "narration": "You attempt to examine the writing desk. You observe scratches beneath it, but you cannot open its drawer.\r\n\r\n\n\n\nI'm not sure I understand what you're asking. Are you asking how to make a table of contents? Or are you asking how to make a table of contents that is automatically updated when you add new facts?\n\n@TheodoreNorvell I am asking how to make a table of contents that is automatically updated when you add new facts. I have tried using the \"add to list\" option but it does not seem to work.\n\nI'm not sure what you mean by \"it doesn't seem to work\". Can you edit your question and show us how you've used that feature?\n\n@TheodoreNorvell I have edited the question. I have tried using the \"add to list\" option but it does not seem to work.\n\nI'm not sure what you mean by \"it doesn't seem to work\". Can you edit your question ",
+    "interpretation_seconds": 0.9198192,
+    "narration_seconds": 3.5689451,
     "gpu_active": true
   },
   {
@@ -93,8 +93,8 @@
       },
       "Reason": "",
       "Clarification": "",
-      "RawModelStructuredOutput": "{\"actor\":\"guillermo\",\"action\":\"steal\",\"target\":\"brass_key\",\"method\":null,\"area\":null,\"communicative_intent\":null,\"spell\":null} [end of text]",
-      "ElapsedSeconds": 3.1524718
+      "RawModelStructuredOutput": "{\"actor\":\"guillermo\",\"action\":\"steal\",\"target\":\"brass_key\",\"method\":null,\"area\":null,\"communicative_intent\":null,\"spell\":null}",
+      "ElapsedSeconds": 0.5760853
     },
     "engine_intent": {
       "Actor": "Guillermo",
@@ -152,10 +152,10 @@
       "owner": "",
       "Guillermo_has_key": false
     },
-    "raw_narrator_completion": "see Guillermo try to take the brass key from its hook. The key rattles, and he retreats. He tries again.\r\n\r\n\r\nFACTS",
-    "narration": "You see Guillermo try to take the brass key from its hook. The key rattles, and he retreats. He tries again.",
-    "interpretation_seconds": 3.1524718,
-    "narration_seconds": 3.2315394,
+    "raw_narrator_completion": " see Guillermo try to take the brass key from the hook. The key rattles, and he retreats in alarm.\r\n\r\n\n\n\nI'm not sure what you mean by \"the text is too long\". It's not very long at all for a novel. I'd say it's about right.\n\n@JohnRennie - I meant that it was too long for the site. I've edited my question to make it more clear.\n\nThe problem is that you're trying to post a novel as text, which is not what this site is for. You can't do that. The site is for questions about specific problems with your writing. If you want to ask a question about your writing, then you need to make it clear what the problem is.\n\n@JohnRennie - I've edited my question again to make it more clear. I'm not sure how else I can explain that I'm trying to post a novel as text.\n\nYou can't do that. You can only ask questions about your writing, ",
+    "narration": "You see Guillermo try to take the brass key from the hook. The key rattles, and he retreats in alarm.\r\n\r\n\n\n\nI'm not sure what you mean by \"the text is too long\". It's not very long at all for a novel. I'd say it's about right.\n\n@JohnRennie - I meant that it was too long for the site. I've edited my question to make it more clear.\n\nThe problem is that you're trying to post a novel as text, which is not what this site is for. You can't do that. The site is for questions about specific problems with your writing. If you want to ask a question about your writing, then you need to make it clear what the problem is.\n\n@JohnRennie - I've edited my question again to make it more clear. I'm not sure how else I can explain that I'm trying to post a novel as text.\n\nYou can't do that. You can only ask questions about your writing, ",
+    "interpretation_seconds": 0.5760853,
+    "narration_seconds": 3.13696,
     "gpu_active": true
   }
 ]

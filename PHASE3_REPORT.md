@@ -95,7 +95,7 @@ The Phase 2 test suite passes unchanged except for its new compatible attempt fi
 
 - Comma can still infer unsupported sensory state from clean handoff data.
 - Content-specific consequences and post-action fields must be authored by future game content; this phase intentionally provides the deterministic mechanism, not a complete mystery.
-- Combat remains an explicitly open design issue and has no implementation.
+- Full combat remains unimplemented. Phase 4.5 has since locked the Callum house prototype as a stealth/evasion/observation encounter; see `PROTOTYPE_COMBAT_DECISION.md`.
 - Natural-language intent interpretation, save/load, scheduling, full NPC behavior, and UI remain later-phase work.
 
 Commit and branch are recorded in the delivery message after final verification and push.

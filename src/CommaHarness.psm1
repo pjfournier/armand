@@ -1,4 +1,5 @@
 Set-StrictMode -Version Latest
+Import-Module (Join-Path $PSScriptRoot 'InferenceService.psm1') -Force
 
 function Resolve-ProjectPath {
     param([Parameter(Mandatory)][string]$Value, [Parameter(Mandatory)][string]$ProjectRoot)
@@ -57,6 +58,15 @@ function Invoke-CommaGeneration {
 
     $prompt = Get-Content -Raw -LiteralPath $resolvedPrompt
     if ([string]::IsNullOrWhiteSpace($prompt)) { throw "Prompt file is empty: $resolvedPrompt" }
+
+    if ($config.PSObject.Properties['inference_backend'] -and $config.inference_backend -eq 'server') {
+        $result=Invoke-PersistentInference -Prompt $prompt -GenerationConfig $config -Seed $Seed -Temperature $Temperature -MaxTokens $MaxTokens
+        return [pscustomobject]@{
+            Text=$result.Text;TokenCount=$null;ElapsedSeconds=$result.ElapsedSeconds;LoadSeconds=0.0
+            GenerationSeconds=$result.ElapsedSeconds;TokensPerSecond=$result.TokensPerSecond;GpuActive=$result.GpuActive
+            CpuFallback=$false;RuntimeLog=$result.RuntimeLog;Settings=$config;Prompt=$prompt
+        }
+    }
 
     $arguments = @(
             '--model', $config.model_path,

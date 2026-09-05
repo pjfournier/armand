@@ -1,4 +1,5 @@
 {
+  "inference_backend": "server",
   "runtime_path": ".runtime/llama.cpp/llama-completion.exe",
   "model_path": "models/comma-v0.1-2t-q4_k_m.gguf",
   "context_size": 4096,

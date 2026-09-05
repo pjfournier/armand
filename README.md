@@ -1,4 +1,24 @@
-# An Armand Mystery - Phase 1 Comma capability spike
+# An Armand Mystery
+
+Phases 1–4.5 provide the local Comma harness, grounded narration pipeline, deterministic rules/state engine, intent interpreter, and persistent local inference service. The engine determines reality; models only interpret and narrate.
+
+## Persistent inference
+
+Start the shared local model service once before normal interpreter or narrator use:
+
+```powershell
+.\Start-InferenceService.ps1
+```
+
+Check readiness with `Test-InferenceService` from `src/InferenceService.psm1`, or request `http://127.0.0.1:8080/health`. Stop the managed service cleanly with:
+
+```powershell
+.\Stop-InferenceService.ps1
+```
+
+Host, port, model path, context size, GPU layers, and timeouts live in `inference_service.json`. Interpreter and narrator sampling settings remain independent in `interpreter_config.json` and `config.json`. An unavailable service raises a clear error and never falls back to fabricated output. The legacy CLI mode remains available for explicit debugging by setting `inference_backend` away from `server`.
+
+## Original Phase 1 capability spike
 
 This repository contains only the Phase 1 raw-completion harness. It proves that the `common-pile/comma-v0.1-2t` base model can run locally, accept a plain `FACTS`/`NARRATION` prefix, and return a timed completion. It contains no game engine, narrator packet assembler, validators, exemplars, training, character systems, or other later-phase work.
 

@@ -1,4 +1,5 @@
 Set-StrictMode -Version Latest
+Import-Module (Join-Path $PSScriptRoot 'InferenceService.psm1') -Force
 
 function Resolve-InterpreterPath {param([string]$Value,[string]$Root)if([IO.Path]::IsPathRooted($Value)){[IO.Path]::GetFullPath($Value)}else{[IO.Path]::GetFullPath((Join-Path $Root $Value))}}
 function New-InterpreterPrompt {
@@ -86,7 +87,12 @@ OUTPUT
 }
 function Invoke-CommaIntentBackend {
  [CmdletBinding()]param([string]$PlayerText,$Context,$Schema,[string]$ConfigPath=(Join-Path (Split-Path -Parent $PSScriptRoot) 'interpreter_config.json'),[Nullable[int]]$Seed)
- $root=Split-Path -Parent $PSScriptRoot;$cfg=Get-Content -Raw $ConfigPath|ConvertFrom-Json;$runtime=Resolve-InterpreterPath $cfg.runtime_path $root;$model=Resolve-InterpreterPath $cfg.model_path $root
+ $root=Split-Path -Parent $PSScriptRoot;$cfg=Get-Content -Raw $ConfigPath|ConvertFrom-Json
+ if($cfg.PSObject.Properties['inference_backend']-and$cfg.inference_backend-eq'server'){
+  $result=Invoke-PersistentInference -Prompt (New-InterpreterPrompt $PlayerText $Context) -GenerationConfig $cfg -JsonSchema $Schema -Seed $Seed
+  return [pscustomobject]@{RawOutput=$result.RawOutput;ElapsedSeconds=$result.ElapsedSeconds;TokensPerSecond=$result.TokensPerSecond;GpuActive=$result.GpuActive;RuntimeLog=$result.RuntimeLog}
+ }
+ $runtime=Resolve-InterpreterPath $cfg.runtime_path $root;$model=Resolve-InterpreterPath $cfg.model_path $root
  if(-not(Test-Path $runtime)){throw "Interpreter runtime missing: $runtime"};if(-not(Test-Path $model)){throw "Interpreter model missing: $model"}
  $work=Join-Path $root 'eval/.work';New-Item -ItemType Directory -Force $work|Out-Null;$id=[guid]::NewGuid().ToString('N');$promptPath=Join-Path $work "intent_$id.txt";$schemaPath=Join-Path $work "intent_$id.schema.json"
  New-InterpreterPrompt $PlayerText $Context|Set-Content -NoNewline -Encoding utf8 $promptPath;$Schema|ConvertTo-Json -Depth 12 -Compress|Set-Content -NoNewline -Encoding utf8 $schemaPath
