@@ -107,6 +107,10 @@ function Invoke-CommaGeneration {
         elseif ($runtimeLog -match '(?m)^.*common_perf_print:\s+eval time\s*=.*?/\s*([0-9]+) (?:runs|tokens)') { $tokenCount = [int]$Matches[1] }
         $speed = $null
         if ($runtimeLog -match '(?m)^.*common_perf_print:\s+eval time\s*=.*?([0-9]+(?:\.[0-9]+)?) tokens per second') { $speed = [double]$Matches[1] }
+        $loadSeconds = $null
+        if ($runtimeLog -match '(?m)^.*common_perf_print:\s+load time\s*=\s*([0-9]+(?:\.[0-9]+)?) ms') { $loadSeconds = [double]$Matches[1] / 1000 }
+        $generationSeconds = $null
+        if ($runtimeLog -match '(?m)^.*common_perf_print:\s+total time\s*=\s*([0-9]+(?:\.[0-9]+)?) ms') { $generationSeconds = [double]$Matches[1] / 1000 }
         $gpuActive = $runtimeLog -match '(?im)offloaded\s+[1-9][0-9]*\/\s*[0-9]+\s+layers?\s+to GPU'
         $cpuFallback = -not $gpuActive
 
@@ -114,6 +118,8 @@ function Invoke-CommaGeneration {
             Text = $completion
             TokenCount = $tokenCount
             ElapsedSeconds = $watch.Elapsed.TotalSeconds
+            LoadSeconds = $loadSeconds
+            GenerationSeconds = $generationSeconds
             TokensPerSecond = $speed
             GpuActive = $gpuActive
             CpuFallback = $cpuFallback

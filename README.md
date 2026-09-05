@@ -45,7 +45,7 @@ Small overrides are available without editing source:
 .\run.ps1 -Seed 42 -Temperature 0.7 -MaxTokens 96
 ```
 
-The command prints the prompt, generated continuation, elapsed time, generated-token count, tokens/second, and detected acceleration separately. `-SmokeTest` also fails if output is empty or simply contains the entire input.
+The command prints the prompt, generated continuation, model-load time, generation time, end-to-end time, generated-token count, tokens/second, and detected acceleration separately. `-SmokeTest` also fails if output is empty or simply contains the entire input.
 
 ## Configuration
 

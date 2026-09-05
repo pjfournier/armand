@@ -21,7 +21,9 @@ try {
     Write-Host "`nGENERATED COMPLETION`n--------------------"
     Write-Output $result.Text
     Write-Host "`nGENERATION METRICS`n------------------"
-    Write-Host ('Generation: {0:N2} sec' -f $result.ElapsedSeconds)
+    Write-Host ('Model load: {0}' -f $(if ($null -eq $result.LoadSeconds) { 'unavailable' } else { '{0:N2} sec' -f $result.LoadSeconds }))
+    Write-Host ('Generation: {0}' -f $(if ($null -eq $result.GenerationSeconds) { 'unavailable' } else { '{0:N2} sec' -f $result.GenerationSeconds }))
+    Write-Host ('End-to-end: {0:N2} sec' -f $result.ElapsedSeconds)
     Write-Host ('Tokens: {0}' -f $(if ($null -eq $result.TokenCount) { 'unavailable' } else { $result.TokenCount }))
     Write-Host ('Speed: {0}' -f $(if ($null -eq $result.TokensPerSecond) { 'unavailable' } else { '{0:N2} tok/s' -f $result.TokensPerSecond }))
     Write-Host ('Acceleration: {0}' -f $(if ($result.GpuActive) { 'GPU (CUDA)' } else { 'CPU fallback (CUDA offload was not detected)' }))
@@ -36,4 +38,3 @@ catch {
     Write-Error $_.Exception.Message
     exit 1
 }
-
