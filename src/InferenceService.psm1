@@ -64,7 +64,9 @@ function Invoke-PersistentInference {
     if($GenerationConfig.PSObject.Properties['stop_sequence']-and-not[string]::IsNullOrEmpty([string]$GenerationConfig.stop_sequence)){$body.stop=@([string]$GenerationConfig.stop_sequence)}
     if($null-ne$JsonSchema){$body.json_schema=$JsonSchema}
     $watch=[Diagnostics.Stopwatch]::StartNew()
-    try{$response=Invoke-RestMethod -Uri (Get-InferenceServiceUri $service '/completion') -Method Post -ContentType 'application/json' -Body ($body|ConvertTo-Json -Depth 20 -Compress) -TimeoutSec ([int]$service.timeout_seconds)}
+    $json=$body|ConvertTo-Json -Depth 20 -Compress
+    $utf8Body=[Text.Encoding]::UTF8.GetBytes($json)
+    try{$response=Invoke-RestMethod -Uri (Get-InferenceServiceUri $service '/completion') -Method Post -ContentType 'application/json; charset=utf-8' -Body $utf8Body -TimeoutSec ([int]$service.timeout_seconds)}
     catch{throw "Inference request failed at $($service.host):$($service.port): $($_.Exception.Message)"}
     finally{$watch.Stop()}
     if($null-eq$response.PSObject.Properties['content']){throw 'Inference service returned no completion content.'}

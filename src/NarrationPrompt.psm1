@@ -4,7 +4,10 @@ Import-Module (Join-Path $PSScriptRoot 'NarrationPacket.psm1') -Force
 function Read-NarrationExemplars {
     param([Parameter(Mandatory)][string]$Path,[int]$ExpectedCount=8)
     if (-not (Test-Path -LiteralPath $Path)) { throw "Exemplar file not found: $Path" }
-    $items = @(Get-Content -Raw -LiteralPath $Path | ConvertFrom-Json)
+    # Windows PowerShell 5.1 returns a top-level JSON array as one nested pipeline value;
+    # enumerate it explicitly so the bridge behaves identically under 5.1 and PowerShell 7.
+    $parsed = Get-Content -Raw -LiteralPath $Path | ConvertFrom-Json
+    $items = @($parsed | ForEach-Object { $_ })
     if ($items.Count -ne $ExpectedCount) { throw "Exactly $ExpectedCount exemplars are required; found $($items.Count)." }
     $items
 }
