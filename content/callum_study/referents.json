@@ -1,0 +1,11 @@
+{
+  "referents": [
+    {"id":"bloodstain","parent":"rug","display_name":"dark discoloration","aliases":["dark discoloration","discoloration","dark mark","dark marks","dark stain","stain","bloodstain","blood stain","mark on the floor"],"trigger":"clue:bloodstain","capabilities":["examine","investigate"],"lifecycle":"known"},
+    {"id":"scorch_marks","parent":"fireplace","display_name":"scorch marks","aliases":["scorch marks","dark marks","burn marks","marks by the hearth","marks"],"trigger":"clue:scorch_marks","capabilities":["examine","investigate"],"lifecycle":"known"},
+    {"id":"rope_fibers","parent":"writing_desk","display_name":"rope fibers","aliases":["rope fibers","fibers","fibres","hemp fibers","cordage"],"trigger":"clue:rope_fibers","capabilities":["examine","investigate"],"lifecycle":"known"},
+    {"id":"bookshelf_gap","parent":"bookshelves","display_name":"empty bookshelf gap","aliases":["gap","empty gap","bookshelf gap","empty space","missing book space","space on the shelf","shelf wear"],"trigger":"session:bookshelf_gap","capabilities":["examine","investigate"],"lifecycle":"visible"},
+    {"id":"painting_frame","parent":"large_painting","display_name":"painting frame","aliases":["frame","painting frame","portrait frame"],"trigger":"always","capabilities":["examine","manipulate"],"lifecycle":"visible"},
+    {"id":"safe_dial","parent":"wall_safe","display_name":"safe dial","aliases":["dial","safe dial","combination dial"],"trigger":"session:safe_discovered","capabilities":["examine","manipulate","unlock"],"lifecycle":"visible"},
+    {"id":"safe_door","parent":"wall_safe","display_name":"safe door","aliases":["safe door","iron door"],"trigger":"session:safe_discovered","capabilities":["examine","manipulate","open","use"],"lifecycle":"visible"}
+  ]
+}

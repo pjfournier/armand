@@ -1,0 +1,18 @@
+{
+  "generated_utc": "2026-09-05T23:09:21.4786121Z",
+  "cases": 40,
+  "passed": 38,
+  "failed": 2,
+  "failure_categories": {
+    "actor": 0,
+    "action": 1,
+    "target": 1,
+    "purpose": 1,
+    "clarification": 0,
+    "hidden_leakage": 0,
+    "wrong_target": 1,
+    "status": 0
+  },
+  "average_latency_seconds": 1.0694,
+  "maximum_latency_seconds": 1.7606
+}

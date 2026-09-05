@@ -14,6 +14,48 @@ action names the intended act. A closer look is examine, never take or move.
 method contains only an explicitly stated tool or manner.
 area contains only an explicitly stated spatial qualifier.
 A named available spell uses action cast and the spell ID.
+secondary_target is an optional second entity or destination, not a second action.
+purpose preserves the investigative question or reason when the player asks to examine X for Y.
+modifiers preserves only explicit manners such as quietly or carefully.
+When move acts on an object, use manipulate. Use move only when the actor changes location.
+Never choose a target that is absent from PLAYER-VISIBLE CONTEXT. Prefer clarification to a guessed target.
+The noun actually named by the player is the primary target; do not replace it with its parent or an unrelated scene object.
+Use read for a direct request to read. Use search for rifle/rummage. A known stain or marks subfeature is preferred over its room or parent object.
+
+INPUT
+Move the rug to examine beneath it.
+OUTPUT
+{"actor":"armand","action":"manipulate","target":"rug","method":"move","area":"underneath","communicative_intent":null,"spell":null,"secondary_target":null,"purpose":"examine underneath the rug","modifiers":[]}
+
+INPUT
+Read the receipts and see if they show where Callum has been.
+OUTPUT
+{"actor":"armand","action":"examine","target":"receipt","method":"read","area":null,"communicative_intent":null,"spell":null,"secondary_target":null,"purpose":"determine whether the receipts indicate Callum's recent whereabouts","modifiers":[]}
+
+INPUT
+Misty Step beside the desk.
+OUTPUT
+{"actor":"armand","action":"cast","target":"writing_desk","method":null,"area":null,"communicative_intent":null,"spell":"misty_step","secondary_target":null,"purpose":"arrive beside the desk","modifiers":[]}
+
+INPUT
+Send Guillermo to investigate the bookcase.
+OUTPUT
+{"actor":"guillermo","action":"investigate","target":"bookshelves","method":null,"area":null,"communicative_intent":null,"spell":null,"secondary_target":null,"purpose":null,"modifiers":[]}
+
+INPUT
+Inspect the stain.
+OUTPUT
+{"actor":"armand","action":"examine","target":"bloodstain","method":null,"area":null,"communicative_intent":null,"spell":null,"secondary_target":null,"purpose":null,"modifiers":[]}
+
+INPUT
+Read the receipts.
+OUTPUT
+{"actor":"armand","action":"read","target":"receipt","method":"read","area":null,"communicative_intent":null,"spell":null,"secondary_target":null,"purpose":null,"modifiers":[]}
+
+INPUT
+Cast Darkness over the doorway.
+OUTPUT
+{"actor":"armand","action":"cast","target":"study_door","method":null,"area":null,"communicative_intent":null,"spell":"darkness","secondary_target":null,"purpose":null,"modifiers":[]}
 
 INPUT
 Look beneath the writing desk.
