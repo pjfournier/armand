@@ -9,6 +9,6 @@
   "repeat_penalty": 1.1,
   "max_tokens": 160,
   "seed": 12345,
-  "stop_sequence": "\nFACTS",
+  "stop_sequence": "\r\n\r\n",
   "gpu_layers": "all"
 }

@@ -13,6 +13,11 @@ function New-NarrationPacket {
         [Parameter(Mandatory)][string[]]$Facts,
         [Parameter(Mandatory)][string[]]$Visible,
         [string[]]$NotebookEntries = @(),
+        [string[]]$NewThisTurn = @(),
+        [string[]]$KnownContext = @(),
+        [string]$MundaneResult,
+        [ValidateSet('neutral','tense','dry_humor_allowed','guillermo_comic','serious')][string]$Tone='neutral',
+        [string[]]$SupportedAffordances=@(),
         [string[]]$RecentHistory = @(),
         [string]$GuillermoStageDirection,
         [string[]]$NpcDisclosure = @(),
@@ -38,6 +43,11 @@ function New-NarrationPacket {
         Resolution = [pscustomobject]@{ Degree=$Degree; Facts=@($Facts) }
         Visible = @($Visible)
         NotebookEntries = @($NotebookEntries)
+        NewThisTurn = @($NewThisTurn)
+        KnownContext = @($(if($KnownContext.Count){$KnownContext}else{$NotebookEntries}))
+        MundaneResult = $MundaneResult
+        Tone = $Tone
+        SupportedAffordances = @($SupportedAffordances)
         RecentHistory = @($RecentHistory)
         GuillermoStageDirection = $GuillermoStageDirection
         PostActionState = $PostActionState
@@ -97,7 +107,11 @@ function Format-NarrationPacket {
         Add-StateFields $builder 'POST_ACTION_STATE' $Packet.PostActionState
         Add-StateFields $builder 'EVENT_STATE' $Packet.EventState
         Add-Lines $builder 'visible:' $Packet.Visible
-        Add-Lines $builder 'known notebook entries:' $Packet.NotebookEntries
+        Add-Lines $builder 'NEW_THIS_TURN' $Packet.NewThisTurn
+        Add-Lines $builder 'KNOWN_CONTEXT (do not restate unless directly compared)' $Packet.KnownContext
+        if(-not[string]::IsNullOrWhiteSpace($Packet.MundaneResult)){[void]$builder.AppendLine("MUNDANE_RESULT: $($Packet.MundaneResult)")}
+        [void]$builder.AppendLine("TONE: $($Packet.Tone)")
+        Add-Lines $builder 'SUPPORTED_AFFORDANCES' $Packet.SupportedAffordances
         Add-Lines $builder 'recent narration:' $Packet.RecentHistory
         if (-not [string]::IsNullOrWhiteSpace($Packet.GuillermoStageDirection)) { [void]$builder.AppendLine("Guillermo stage direction: $($Packet.GuillermoStageDirection)") }
         if ($Packet.NpcDisclosure.Discloses.Count -or $Packet.NpcDisclosure.Withholds.Count) {
@@ -126,7 +140,10 @@ function Format-NarrationPacket {
         Add-StateFields $builder 'Post-action state:' $Packet.PostActionState
         Add-StateFields $builder 'Event state:' $Packet.EventState
         Add-Lines $builder 'Visible:' $Packet.Visible
-        Add-Lines $builder 'Known notebook entries:' $Packet.NotebookEntries
+        Add-Lines $builder 'New this turn:' $Packet.NewThisTurn
+        Add-Lines $builder 'Known context (do not restate unless directly compared):' $Packet.KnownContext
+        if(-not[string]::IsNullOrWhiteSpace($Packet.MundaneResult)){[void]$builder.AppendLine("Mundane result: $($Packet.MundaneResult)")}
+        [void]$builder.AppendLine("Tone: $($Packet.Tone)")
         Add-Lines $builder 'Recent narration:' $Packet.RecentHistory
         if (-not [string]::IsNullOrWhiteSpace($Packet.GuillermoStageDirection)) { [void]$builder.AppendLine("Guillermo: $($Packet.GuillermoStageDirection)") }
         Add-Lines $builder 'NPC discloses:' $Packet.NpcDisclosure.Discloses
@@ -146,6 +163,11 @@ function ConvertTo-NarrationPacket {
         Facts=@($Case.facts); Visible=@($Case.visible)
     }
     if ($Case.PSObject.Properties['notebook_entries']) { $args.NotebookEntries=@($Case.notebook_entries) }
+    if ($Case.PSObject.Properties['new_this_turn']) { $args.NewThisTurn=@($Case.new_this_turn) }
+    if ($Case.PSObject.Properties['known_context']) { $args.KnownContext=@($Case.known_context) }
+    if ($Case.PSObject.Properties['mundane_result']) { $args.MundaneResult=$Case.mundane_result }
+    if ($Case.PSObject.Properties['tone']) { $args.Tone=$Case.tone }
+    if ($Case.PSObject.Properties['supported_affordances']) { $args.SupportedAffordances=@($Case.supported_affordances) }
     if ($Case.PSObject.Properties['recent_history']) { $args.RecentHistory=@($Case.recent_history) }
     if ($Case.PSObject.Properties['guillermo_stage_direction']) { $args.GuillermoStageDirection=$Case.guillermo_stage_direction }
     if ($Case.PSObject.Properties['npc_disclosure']) { $args.NpcDisclosure=@($Case.npc_disclosure) }

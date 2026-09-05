@@ -1,0 +1,19 @@
+{
+  "generated_utc": "2026-09-05T20:35:52.8768349Z",
+  "turns": 30,
+  "accepted": 30,
+  "meaningful": 12,
+  "mundane": 18,
+  "first_pass": 29,
+  "retries": 1,
+  "fallbacks": 0,
+  "generation_attempts": 31,
+  "failure_categories": {
+    "unsupported_object": 1
+  },
+  "latency_seconds": {
+    "average": 0.5112,
+    "median": 0.4379,
+    "maximum": 1.0292
+  }
+}

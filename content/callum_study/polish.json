@@ -1,0 +1,21 @@
+{
+  "relevance": {"same_location": 0, "max_entries": 4},
+  "mundane_results": {
+    "writing_desk": {
+      "look_under": "Dust softens the floor beneath the desk; no compartment or hidden object is present.",
+      "touch": "The desk's scratched wood is dry and solid; the contact reveals nothing new.",
+      "knock": "The desk answers with a dull wooden knock and no suggestion of a hidden compartment.",
+      "repeat": "The already-searched wood offers no new evidence."
+    },
+    "correspondence": {"read": "The correspondence covers an academic dinner, a newspaper subscription, and an overdue reply; none bears on Callum's disappearance.", "smell": "The correspondence smells faintly of paper and old ink, without any unusual chemical trace."},
+    "receipt": {"read": "The receipt records two bottles of ink and an expensive lunch, with no coded notation or hidden message.", "touch": "The receipt is ordinary, dry paper; its texture supplies no hidden message."},
+    "paneled_wall": {"knock": "The panel returns a solid, ordinary knock; there is no hollow passage behind this section."},
+    "rug": {"smell": "The wool smells of dust, damp, and old smoke; the scent reveals nothing further.", "manipulate": "The rug shifts easily. Beneath it are dusty boards and one bent tack, but no hidden compartment."},
+    "window_latch": {"inspect": "The brass latch is cold, intact, and firmly seated."},
+    "fireplace": {"touch": "The hearthstone is cold and lightly gritty with soot."},
+    "bookshelves": {"stare": "The shelves endure the scrutiny with rows of ordinary reference works."},
+    "chair": {"look_under": "Only dust lies beneath the chair; its upholstery has contributed nothing to the case.", "touch": "The chair's worn upholstery gives slightly under your hand and reveals nothing concealed."},
+    "large_painting": {"stare": "The painting remains stubbornly inanimate under sustained scrutiny.", "repeat": "The shifted painting remains a painting, now less successful at concealing the safe."},
+    "guillermo": {"ask": "Guillermo looks at Armand, considers the question, and answers with a small, noncommittal shrug."}
+  }
+}

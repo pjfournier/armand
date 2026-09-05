@@ -1,0 +1,22 @@
+[
+  {
+    "id":"new-versus-known",
+    "packet":{"location":"study","time":"midnight","weather":"rain","actor":"Armand","action_type":"examine","target":"safe","degree":"success","facts":["a three-pointed crown is engraved on the safe"],"visible":["safe","painting"],"new_this_turn":["a three-pointed crown is engraved on the safe"],"known_context":["dried blood was identified beside the rug"],"tone":"neutral"},
+    "narration":"You find a three-pointed crown engraved on the safe door."
+  },
+  {
+    "id":"pointless-dry",
+    "packet":{"location":"study","time":"midnight","weather":"rain","actor":"Armand","action_type":"examine","target":"beneath desk","degree":"resolved","facts":["dust lies beneath the desk"],"visible":["desk","floor"],"new_this_turn":["dust lies beneath the desk"],"mundane_result":"Dust lies beneath the desk; nothing is hidden there.","tone":"dry_humor_allowed"},
+    "narration":"You inspect beneath the desk. Dust remains in firm possession of the floor."
+  },
+  {
+    "id":"mundane-correspondence",
+    "packet":{"location":"study","time":"midnight","weather":"rain","actor":"Armand","action_type":"read","target":"correspondence","degree":"resolved","facts":["the papers concern an academic dinner and newspaper subscription"],"visible":["correspondence","desk"],"new_this_turn":["the papers concern an academic dinner and newspaper subscription"],"mundane_result":"The correspondence is ordinary and unrelated to the disappearance.","tone":"dry_humor_allowed"},
+    "narration":"You read invitations and subscription notices. Callum's social obligations were extensive; their criminal significance is nil."
+  },
+  {
+    "id":"manipulation-empty",
+    "packet":{"location":"study","time":"midnight","weather":"rain","actor":"Armand","action_type":"manipulate","target":"rug","degree":"resolved","facts":["the rug moves and dusty boards lie beneath"],"visible":["rug","floor"],"new_this_turn":["the rug moves and dusty boards lie beneath"],"mundane_result":"The rug shifts; dusty boards beneath conceal nothing.","tone":"dry_humor_allowed"},
+    "narration":"You shift the rug aside. The boards beneath offer dust, but no conspiracy."
+  }
+]

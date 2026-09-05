@@ -19,7 +19,7 @@ function Get-AttemptDescription {
 function New-NarratorHandoff {
  [CmdletBinding()]param(
   [Parameter(Mandatory)]$Intent,[Parameter(Mandatory)]$Resolution,[Parameter(Mandatory)][object]$PostActionState,
-  [string[]]$Events=@(),[string[]]$Visible=@(),[string[]]$NpcDiscloses=@(),[string[]]$NpcWithholds=@(),[string[]]$NotebookEntries=@()
+  [string[]]$Events=@(),[string[]]$Visible=@(),[string[]]$NpcDiscloses=@(),[string[]]$NpcWithholds=@(),[string[]]$NotebookEntries=@(),[string[]]$NewThisTurn=@(),[string[]]$KnownContext=@(),[string]$MundaneResult,[ValidateSet('neutral','tense','dry_humor_allowed','guillermo_comic','serious')][string]$Tone='neutral',[string[]]$SupportedAffordances=@()
  )
  $attempt=Get-AttemptDescription -Actor $Intent.Actor -Action $Intent.Action -Target $Intent.Target -Method $Intent.Method
  $handoff=[ordered]@{
@@ -30,6 +30,11 @@ function New-NarratorHandoff {
   Visible=@($Visible)
   NpcDisclosure=[pscustomobject]@{Discloses=@($NpcDiscloses);Withholds=@($NpcWithholds)}
   NotebookEntries=@($NotebookEntries)
+  NewThisTurn=@($(if($NewThisTurn.Count){$NewThisTurn}else{$Events}))
+  KnownContext=@($KnownContext)
+  MundaneResult=$MundaneResult
+  Tone=$Tone
+  SupportedAffordances=@($SupportedAffordances)
  }
  # JSON round-trip guarantees no reference into authoritative state survives.
  $handoff|ConvertTo-Json -Depth 12|ConvertFrom-Json
@@ -44,6 +49,11 @@ function Convert-HandoffToNarrationCase {
   post_action_state=$Handoff.PostActionState;event_state=$null
   npc_discloses=@($Handoff.NpcDisclosure.Discloses);npc_withholds=@($Handoff.NpcDisclosure.Withholds)
   notebook_entries=@($(if($Handoff.PSObject.Properties['NotebookEntries']){$Handoff.NotebookEntries}else{@()}))
+  new_this_turn=@($(if($Handoff.PSObject.Properties['NewThisTurn']){$Handoff.NewThisTurn}else{$Handoff.Events}))
+  known_context=@($(if($Handoff.PSObject.Properties['KnownContext']){$Handoff.KnownContext}else{@()}))
+  mundane_result=$(if($Handoff.PSObject.Properties['MundaneResult']){$Handoff.MundaneResult}else{$null})
+  tone=$(if($Handoff.PSObject.Properties['Tone']){$Handoff.Tone}else{'neutral'})
+  supported_affordances=@($(if($Handoff.PSObject.Properties['SupportedAffordances']){$Handoff.SupportedAffordances}else{@()}))
  }
  if($Handoff.Attempt.Actor-eq'Guillermo'){$case|Add-Member -NotePropertyName guillermo_stage_direction -NotePropertyValue ((@($Handoff.Events)+@($Handoff.Attempt.Description))-join' ')}
  $case
