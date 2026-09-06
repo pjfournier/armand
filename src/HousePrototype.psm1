@@ -36,7 +36,7 @@ function Find-HouseTarget {param($Session,[string]$Text)$result=Resolve-HouseTar
 function Test-HouseNounContract {param($Session)$failures=@();foreach($id in @(Get-HouseVisibleIds $Session)){$item=$Session.State.Items[$id];$resolved=Resolve-HouseTarget $Session "inspect $($item.DisplayName)";if($resolved.status-ne'resolved'-or$resolved.target-ne$id){$failures+=[pscustomobject]@{location=$Session.State.Player.Location;id=$id;display_name=$item.DisplayName;status=$resolved.status;candidates=@($resolved.candidates)}}};@($failures)}
 function New-HouseNarrationPacket {
  param($Session,[string]$PlayerText,[string[]]$ResolvedFacts=@(),[string[]]$Events=@(),[string[]]$Ambient=@())
- $room=Get-HouseRoom $Session;$visible=@(Get-HouseVisibleIds $Session|ForEach-Object{$item=$Session.State.Items[$_];[pscustomobject]@{id=$item.Id;display_name=$item.DisplayName;aliases=@($item.Aliases);kind='object'}})
+ $room=Get-HouseRoom $Session;if([string]::IsNullOrWhiteSpace([string]$room.overview)){throw "House authorial intent is missing for $($room.id)."};$visible=@(Get-HouseVisibleIds $Session|ForEach-Object{$item=$Session.State.Items[$_];[pscustomobject]@{id=$item.Id;display_name=$item.DisplayName;aliases=@($item.Aliases);kind='object'}})
  $known=@($Session.State.Notebook.Clues.Values|ForEach-Object{@($_.known_facts)});$passthrough=@($known)+@($ResolvedFacts)+@($Events)
  [pscustomobject]@{location=[pscustomobject]@{id=$room.id;display_name=$room.name};player_input=$PlayerText;authorial_intent=$room.overview;resolved_facts=@($ResolvedFacts);observed_facts=@($passthrough|Where-Object{$_});events=@($Events);ambient=@($Ambient);visible_referents=$visible}
 }
