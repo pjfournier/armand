@@ -1,6 +1,15 @@
 {
   "start_location":"exterior",
   "ending":{"title":"A DIRECTION AND A QUESTION","text":"Blackthorn Station. Midnight tomorrow. Armand has a direction, but not the name or purpose of whoever took Callum."},
+  "navigation":{
+    "exterior":[{"destination":"kitchen","display_name":"kitchen door","aliases":["kitchen","kitchen door"]},{"destination":"cellar","display_name":"cellar door","aliases":["cellar","cellar door"]}],
+    "cellar":[{"destination":"exterior","display_name":"outer cellar door","aliases":["outside","exterior","outer door"]},{"destination":"kitchen","display_name":"cellar stair","aliases":["stair","stairs","steps","up","up the stairs","upstairs","kitchen"]}],
+    "kitchen":[{"destination":"exterior","display_name":"outside door","aliases":["outside","exterior"]},{"destination":"cellar","display_name":"cellar stairs","aliases":["cellar","downstairs","down the stairs"]},{"destination":"living_room","display_name":"living-room doorway","aliases":["living room","living-room","doorway"]}],
+    "living_room":[{"destination":"kitchen","display_name":"kitchen doorway","aliases":["kitchen"]},{"destination":"bedroom","display_name":"bedroom door","aliases":["bedroom"]},{"destination":"bathroom","display_name":"bathroom door","aliases":["bathroom"]},{"destination":"callum_study","display_name":"study door","aliases":["study","Callum's study"]}],
+    "bedroom":[{"destination":"living_room","display_name":"living-room door","aliases":["living room","living-room","out"]}],
+    "bathroom":[{"destination":"living_room","display_name":"landing door","aliases":["living room","landing","out"]}],
+    "callum_study":[{"destination":"living_room","display_name":"study doorway","aliases":["living room","out","leave"]}]
+  },
   "rooms":[
     {"id":"exterior","name":"Outside Callum's House","exits":["kitchen","cellar"],"windowed":true,"overview":"Rain falls over a dark house. Wheel ruts cross the mud; a front window, mailbox, locked front door, broken gate, covered woodpile, and paths around either side remain within reach.","ambient":["Rain ticks against the dark front window.","Wet leaves stir beside the house."],"guillermo":"Guillermo can reach into the mailbox, but at his Early communication tier Armand must inspect whatever he retrieves.","objects":[
       ["house","dark house",["house"]],["wheel_ruts","wheel ruts",["tracks","ruts","mud"]],["front_window","front window",["window","smudged window"]],["mailbox","mailbox",["mail box","post box","letter box","letters","mail"]],["front_door","locked front door",["front door","door"]],["broken_gate","broken gate",["gate"]],["woodpile","woodpile under tarpaulin",["covered woodpile","woodpile","firewood","tarpaulin"]],["kitchen_path","path around the kitchen side",["side path","path","around house"]],["cellar_path","track toward the cellar side",["cellar path","tracks"]]
