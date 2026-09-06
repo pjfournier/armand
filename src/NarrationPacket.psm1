@@ -126,7 +126,7 @@ function Format-NarrationPacket {
         Add-Lines $builder 'OBSERVED_FACTS' $Packet.ObservedFacts
         Add-Lines $builder 'EVENTS' $Packet.Events
         Add-Lines $builder 'AMBIENT' $Packet.Ambient
-        if($Packet.VisibleReferents.Count){[void]$builder.AppendLine('VISIBLE_REFERENTS');foreach($referent in $Packet.VisibleReferents){[void]$builder.AppendLine("- $($referent.id): $($referent.display_name) | aliases: $(@($referent.aliases)-join', ')")};[void]$builder.AppendLine()}
+        if($Packet.VisibleReferents.Count){[void]$builder.AppendLine('VISIBLE_REFERENTS');[void]$builder.AppendLine('Compose by salience: establish dominant details first, give notable details a clause when useful, and use texture sparingly. Salience is perceptual emphasis, not clue status.');foreach($referent in $Packet.VisibleReferents){[void]$builder.AppendLine("- [$($referent.salience)] $($referent.id): $($referent.display_name) | aliases: $(@($referent.aliases)-join', ')")};[void]$builder.AppendLine()}
         Add-Lines $builder 'recent narration:' $Packet.RecentHistory
         if (-not [string]::IsNullOrWhiteSpace($Packet.GuillermoStageDirection)) { [void]$builder.AppendLine("Guillermo stage direction: $($Packet.GuillermoStageDirection)") }
         if ($Packet.NpcDisclosure.Discloses.Count -or $Packet.NpcDisclosure.Withholds.Count) {
