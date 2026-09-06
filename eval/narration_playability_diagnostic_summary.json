@@ -1,0 +1,25 @@
+{
+  "generated_utc": "2026-09-05T23:56:23.6727956Z",
+  "turns": 30,
+  "meaningful": 17,
+  "mundane": 13,
+  "first_pass": 29,
+  "retries": 1,
+  "fallbacks": 0,
+  "first_pass_percent": 96.7,
+  "retry_percent": 3.3,
+  "fallback_percent": 0.0,
+  "validator_failure_categories": {
+    "known_fact_repetition": 1
+  },
+  "roll_indicators": {
+    "Failure": 2,
+    "Success": 1,
+    "Setback": 1
+  },
+  "average_latency_seconds": 1.2552,
+  "median_latency_seconds": 1.0291,
+  "maximum_latency_seconds": 3.2748,
+  "average_prompt_characters": 6381.2,
+  "average_output_words": 21.0
+}

@@ -1,0 +1,15 @@
+{
+  "generated_utc": "2026-09-05T23:56:51.4883638Z",
+  "turns": 13,
+  "meaningful": 9,
+  "mundane": 4,
+  "mechanical_successes": 1,
+  "mechanical_failures": 1,
+  "setbacks": 0,
+  "parser_clarifications": 0,
+  "engine_rejections": 0,
+  "roll_indicators": 2,
+  "narrator_retries": 0,
+  "fallbacks": 0,
+  "average_live_latency_seconds": 1.14
+}

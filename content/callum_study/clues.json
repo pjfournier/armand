@@ -1,27 +1,24 @@
 {
   "clues": [
     {
-      "id":"bloodstain","name":"Dark discoloration","location":"callum_study","related":["rug"],
+      "id":"bloodstain","name":"Dark discoloration","location":"callum_study","related":["rug"],"overview_fact":"A dark discoloration lies beside the rumpled rug.",
       "tiers":[
-        {"dc":10,"skill":"Awareness","fact":"A dark discoloration is present beside the rug."},
-        {"dc":15,"skill":"Investigation","fact":"The discoloration is dried blood."},
+        {"dc":10,"skill":"Awareness","fact":"The discoloration is dried blood."},
         {"dc":20,"skill":"Investigation","fact":"There is too little blood here for someone to have died in this room."},
         {"dc":25,"skill":"Investigation","fact":"The pattern suggests an injured person was moved from this spot."}
       ]
     },
     {
-      "id":"scorch_marks","name":"Unusual scorch marks","location":"callum_study","related":["fireplace"],
+      "id":"scorch_marks","name":"Unusual scorch marks","location":"callum_study","related":["fireplace"],"overview_fact":"Unusual dark patterns mark the stone around the cold hearth.",
       "tiers":[
-        {"dc":10,"skill":"Awareness","fact":"Dark, unusual burn patterns mark the stone near the hearth."},
-        {"dc":15,"skill":"Occult","fact":"The marks are inconsistent with an ordinary fire."},
+        {"dc":10,"skill":"Awareness","fact":"The marks are inconsistent with an ordinary fire."},
         {"dc":20,"skill":"Occult","fact":"The marks indicate that magical or occult energy was discharged here."}
       ]
     },
     {
-      "id":"rope_fibers","name":"Coarse fibers","location":"callum_study","related":["writing_desk"],
+      "id":"rope_fibers","name":"Coarse fibers","location":"callum_study","related":["writing_desk"],"overview_fact":"The writing desk is scratched and scattered with papers.",
       "tiers":[
-        {"dc":10,"skill":"Awareness","fact":"Several coarse fibers are caught on a splinter of the desk."},
-        {"dc":15,"skill":"Investigation","fact":"The fibers are hemp cordage."},
+        {"dc":10,"skill":"Awareness","fact":"Several coarse fibers caught on the desk are hemp cordage."},
         {"dc":20,"skill":"Investigation","fact":"Their condition is consistent with rope pulled tightly across the surface."}
       ]
     },

@@ -1,0 +1,7 @@
+{
+  "generated_utc": "2026-09-05T23:57:09.9253599Z",
+  "cases": 8,
+  "matched": 8,
+  "diverged": 0,
+  "finding": "After a clean bridge restart, the HTTP runtime and Godot display contract use the same semantic path as automation. The earlier observed movement routing was caused by a stale bridge process."
+}

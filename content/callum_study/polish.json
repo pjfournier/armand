@@ -1,5 +1,10 @@
 {
   "relevance": {"same_location": 0, "max_entries": 4},
+  "unsupported_action_responses": {
+    "force_against_wall": "The paneling shudders under the force, shedding a breath of plaster dust, but nothing opens or changes.",
+    "force_against_furniture": "The furniture jolts under the impact and settles exactly where the room's reality permits it.",
+    "default": "The action produces a visible but inconsequential disturbance and no useful change."
+  },
   "mundane_results": {
     "writing_desk": {
       "look_under": "Dust softens the floor beneath the desk; no compartment or hidden object is present.",

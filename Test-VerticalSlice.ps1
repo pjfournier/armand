@@ -7,10 +7,10 @@ $session=New-CallumStudySession $root;$public=Get-SlicePlayerState $session
 Assert ($session.State.Player.Location-eq'callum_study'-and$public.location.id-eq'callum_study') '1 new study session initializes'
 $json=$public|ConvertTo-Json -Depth 15;Assert ($json-notmatch'bloodstain|scorch_marks|rope_fibers|wall_safe|burned_note|hidden_truth|forcibly removed') '2 hidden clues absent from player response'
 foreach($name in @('writing desk','fireplace','rug and floor','large painting','bookshelves','window','study door')){Assert ($public.visible_objects-contains$name) "3 visible object: $name"}
-$blood=Resolve-SliceIntent $session (Intent Armand examine rug) 6;Assert ($session.State.Notebook.Clues.Contains('bloodstain')-and$session.State.Notebook.Clues.bloodstain.known_facts[0]-match'dark discoloration') '4 blood base tier discovers'
+$blood=Resolve-SliceIntent $session (Intent Armand examine rug) 6;Assert ($session.State.Notebook.Clues.Contains('bloodstain')-and$session.State.Notebook.Clues.bloodstain.known_facts[0]-match'dried blood') '4 blood focused passive tier discovers'
 Assert ($session.State.Notebook.Clues.bloodstain.known_facts-notmatch'too little|moved from') '5 blood higher tiers hidden'
 $count=$session.State.Notebook.Clues.bloodstain.known_facts.Count;Resolve-SliceIntent $session (Intent Armand examine rug) 1|Out-Null;Assert ($session.State.Notebook.Clues.bloodstain.known_facts.Count-eq$count) '6 failed interpretation reveals no extra fact'
-$scorch=Resolve-SliceIntent $session (Intent Armand examine fireplace) 16;Assert ($session.State.Notebook.Clues.scorch_marks.known_facts-match'magical or occult energy') '7 scorch supports Occult interpretation'
+$scorch=Resolve-SliceIntent $session (Intent Armand investigate fireplace) 17;Assert ($session.State.Notebook.Clues.scorch_marks.known_facts-match'magical or occult energy') '7 scorch supports active Occult interpretation'
 $detectSession=New-CallumStudySession $root;$detect=Resolve-SliceIntent $detectSession (Intent Armand cast fireplace $null detect_magic);$detectJson=$detect|ConvertTo-Json -Depth 10;Assert ($detectSession.State.Notebook.Clues.Contains('occult_residue')-and$detectJson-notmatch'who cast|cultist|identity of the caster') '8 Detect Magic establishes presence, not explanation'
 $rope=Resolve-SliceIntent $session (Intent Armand examine writing_desk) 11;Assert ($session.State.Notebook.Clues.Contains('rope_fibers')) '9 rope fibers discovered'
 Assert (-not(Get-SlicePlayerState $session).slice_state.safe_discovered) '10 safe hidden initially'

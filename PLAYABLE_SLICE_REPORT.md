@@ -86,3 +86,15 @@ The retry rate is a genuine risk and explains why the measured Godot turn is slo
 ## Scope
 
 This is one room plus a minimal landing, not full Phase 6. No full house, cultist encounter, conventional combat, save/load, progression, inventory UI, mature Guillermo, full hint escalation, procedural room, map, art pipeline, audio, cloud service, embeddings, fine-tuning, LoRA, dialogue tree, or autonomous planner was implemented.
+
+## Standing playability rules
+
+The room overview should tempt the player into investigating, not answer the investigation for them. Authored `overview_fact` text may expose objects, disturbances, and suspicious anomalies, while material identity, causal conclusions, forensic implications, and occult conclusions remain in earned clue tiers.
+
+Discovery follows: overview affordance → focused passive observation → active skill resolution → higher authored implication → player theory. Passive and automatic facts remain unobtrusive. Active checks use prototype-standard feedback (`🎲 Skill • Outcome`) without exposing raw roll, modifier, DC, or margin.
+
+Identical active checks under materially unchanged conditions do not reroll. A changed method, purpose, actor, clue tier, or relevant world state may justify a new check. This prevents paraphrasing from becoming unlimited rerolls.
+
+Understandable unsupported actions receive a bounded engine-authored physical result. The narrator may style that result but cannot create clues, damage, objects, compartments, or persistent changes. Any actionable noun introduced by narration must correspond to a visible object, registered sub-referent, inventory item, engine event, persistent decoration, or authorized mundane result.
+
+If behavior passes automated interpretation tests but fails in the live Godot build, runtime integration must be diagnosed before interpretation logic changes. A clean bridge restart is part of that audit because a long-lived PowerShell bridge retains the code loaded when its process started.

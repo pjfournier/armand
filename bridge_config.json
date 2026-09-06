@@ -2,5 +2,6 @@
   "host": "127.0.0.1",
   "port": 8090,
   "telemetry_path": "eval/playtest_turns.jsonl",
+  "roll_feedback_mode": "standard",
   "quality_tags": ["good", "invented_fact", "invented_action", "too_long", "too_short", "flat", "wrong_voice", "clue_unclear", "guillermo_wrong", "agency_violation", "harmless_embellishment"]
 }

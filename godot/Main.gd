@@ -82,7 +82,7 @@ func _on_request_completed(_result: int, code: int, _headers: PackedStringArray,
 	if code < 200 or code >= 300 or not parsed is Dictionary:
 		history.append_text("\n[color=salmon]The local game bridge returned an error.[/color]\n"); return
 	if pending_kind == "action":
-		latest_turn_id = str(parsed.get("turn_id", "")); history.append_text("\n[color=#d1ad68]>[/color] " + str(parsed.get("narration", "")) + "\n"); history.scroll_to_line(history.get_line_count())
+		latest_turn_id = str(parsed.get("turn_id", "")); history.append_text("\n[color=#d1ad68]>[/color] " + str(parsed.get("narration", "")) + "\n"); var roll_feedback := str(parsed.get("roll_feedback", "")); if not roll_feedback.is_empty(): history.append_text("[color=#9bb6d1]" + escape_bbcode(roll_feedback) + "[/color]\n"); history.scroll_to_line(history.get_line_count())
 		update_state(parsed.get("state", {}))
 	elif pending_kind == "theory" or pending_kind == "link": call_api("/notebook", HTTPClient.METHOD_GET, {}, "notebook")
 	elif pending_kind == "notebook": update_notebook(parsed)

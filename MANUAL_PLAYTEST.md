@@ -28,3 +28,11 @@ The playtest did reveal narrator problems that the base validator missed: contra
 The most encouraging interaction was Guillermo's repeated look toward the painting followed by a successful player instruction to inspect it. The weakest area remains narrator reliability: the prototype stays playable because fallback behavior is safe, but frequent retries make responses slower and sometimes less atmospheric.
 
 The ending deliberately establishes only a direction—Blackthorn Station and a midnight meeting—not the identity or full motive of whoever removed Callum.
+
+## Playability diagnostics
+
+Room overview text is deliberately low-resolution: it should present questions and targetable affordances, not identify blood, hemp cordage, magical discharge, or causal conclusions. Focused passive observations may reveal first-tier facts without UI noise; only active mechanical checks display `🎲 Skill • Outcome` in standard prototype mode.
+
+When testing a failed active investigation, repeat the same wording or a paraphrase before changing approach. The repeat should produce no new roll indicator. Then change method, purpose, actor, or relevant state and verify that a new roll may occur. Parser clarification and engine rejection must never display a roll indicator.
+
+After pulling a branch or changing bridge code, stop and restart the prototype before evaluating interpretation. A passing module test paired with different live behavior is a runtime-integration finding until the loaded bridge version is verified.
