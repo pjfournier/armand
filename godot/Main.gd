@@ -80,8 +80,8 @@ func build_ui() -> void:
 	var continue_button := Button.new(); continue_button.text = "Continue exploring"; continue_button.pressed.connect(func(): end_panel.visible = false); end_box.add_child(continue_button)
 	var restart_end := Button.new(); restart_end.text = "Restart slice"; restart_end.pressed.connect(func(): end_panel.visible = false; call_api("/session/reset", HTTPClient.METHOD_POST, {}, "reset")); end_box.add_child(restart_end)
 	var layout_cfg := ConfigFile.new(); if layout_cfg.load("user://layout.cfg") == OK: main_split.split_offset = int(layout_cfg.get_value("layout", "main_split", 820)); left_split.split_offset = int(layout_cfg.get_value("layout", "left_split", 220))
-	combat_panel = PanelContainer.new(); combat_panel.visible = false; combat_panel.position = Vector2(18, 82); combat_panel.size = Vector2(350, 245); add_child(combat_panel)
-	combat_text = RichTextLabel.new(); combat_text.bbcode_enabled = true; combat_text.selection_enabled = true; combat_text.context_menu_enabled = true; combat_panel.add_child(combat_text)
+	combat_panel = PanelContainer.new(); combat_panel.visible = false; combat_panel.set_anchors_and_offsets_preset(Control.PRESET_FULL_RECT); location_frame.add_child(combat_panel)
+	combat_text = RichTextLabel.new(); combat_text.bbcode_enabled = true; combat_text.selection_enabled = true; combat_text.context_menu_enabled = true; combat_text.scroll_active = true; combat_text.add_theme_font_size_override("normal_font_size", 14); combat_panel.add_child(combat_text)
 	tutorial_dialog = AcceptDialog.new(); tutorial_dialog.title = "COMBAT"; tutorial_dialog.dialog_text = "During your turn, you may take:\n\n• 1 Movement\n• 1 Action\n\nSome abilities may use a Bonus Action or Reaction.\n\nYou can describe Movement and Action together:\n\"Move behind the desk and cast Eldritch Blast at the cultist.\"\n\nOnce your turn resolves, the next combatant acts."; tutorial_dialog.confirmed.connect(func(): call_api("/combat/tutorial/dismiss", HTTPClient.METHOD_POST, {}, "combat_state")); add_child(tutorial_dialog)
 	reaction_dialog = ConfirmationDialog.new(); reaction_dialog.title = "REACTION"; reaction_dialog.dialog_text = "Use Hellish Rebuke?"; reaction_dialog.ok_button_text = "Yes"; reaction_dialog.cancel_button_text = "No"; reaction_dialog.confirmed.connect(func(): call_api("/combat/reaction", HTTPClient.METHOD_POST, {"use": true}, "reaction")); reaction_dialog.canceled.connect(func(): call_api("/combat/reaction", HTTPClient.METHOD_POST, {"use": false}, "reaction")); add_child(reaction_dialog)
 
@@ -123,12 +123,13 @@ func update_state(state: Dictionary) -> void:
 
 func update_combat(value) -> void:
 	if value == null or not value is Dictionary:
-		combat_panel.visible = false; return
+		combat_panel.visible = false; location_placeholder.visible = true; return
 	var combat: Dictionary = value; combat_panel.visible = bool(combat.get("active", false))
+	location_placeholder.visible = not combat_panel.visible
 	if not combat_panel.visible: return
 	var by_id := {}; for fighter in combat.get("combatants", []): by_id[str(fighter.get("id", ""))] = fighter
 	var combat_id := str(combat.get("combat_id", "")); if combat_id != last_combat_opening_id: var opening := str(combat.get("opening_narration", "")); if not opening.is_empty(): history.append_text("\n[color=#d1ad68][b]COMBAT[/b][/color]\n" + escape_bbcode(opening) + "\n"); history.scroll_to_line(history.get_line_count()); last_combat_opening_id = combat_id
-	var lines := PackedStringArray(["[font_size=22][color=#d1ad68][b]COMBAT[/b][/color][/font_size]", "[b]TURN ORDER[/b]"])
+	var lines := PackedStringArray(["[font_size=18][color=#d1ad68][b]COMBAT[/b][/color][/font_size]", "[b]TURN ORDER[/b]"])
 	for id in combat.get("initiative_order", []):
 		var fighter: Dictionary = by_id.get(str(id), {}); lines.append(("➤ " if str(id) == str(combat.get("active_combatant", "")) else "  ") + str(fighter.get("name", id)) + " — " + str(fighter.get("position", "")))
 	var budget = combat.get("turn_budget", null)
