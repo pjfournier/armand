@@ -1,0 +1,5240 @@
+{
+  "generated_utc": "2026-09-06T14:47:18.8716775Z",
+  "seed_count": 20,
+  "scenarios": {
+    "A": "Armand vs 1 Initiate",
+    "B": "Armand vs 1 Cultist",
+    "C": "Armand vs 2 Cultists",
+    "D": "Armand vs Adept",
+    "E": "Armand vs Adept + Initiate"
+  },
+  "summary": [
+    {
+      "scenario": "A",
+      "strategy": "creative",
+      "runs": 20,
+      "survival_rate": 100.0,
+      "win_rate": 100.0,
+      "escape_rate": 0.0,
+      "average_rounds": 2.45
+    },
+    {
+      "scenario": "A",
+      "strategy": "darkness",
+      "runs": 20,
+      "survival_rate": 100.0,
+      "win_rate": 100.0,
+      "escape_rate": 0.0,
+      "average_rounds": 2.3
+    },
+    {
+      "scenario": "A",
+      "strategy": "flee",
+      "runs": 20,
+      "survival_rate": 100.0,
+      "win_rate": 0.0,
+      "escape_rate": 100.0,
+      "average_rounds": 1.2
+    },
+    {
+      "scenario": "A",
+      "strategy": "guillermo",
+      "runs": 20,
+      "survival_rate": 100.0,
+      "win_rate": 100.0,
+      "escape_rate": 0.0,
+      "average_rounds": 1.35
+    },
+    {
+      "scenario": "A",
+      "strategy": "straight",
+      "runs": 20,
+      "survival_rate": 100.0,
+      "win_rate": 100.0,
+      "escape_rate": 0.0,
+      "average_rounds": 1.35
+    },
+    {
+      "scenario": "B",
+      "strategy": "creative",
+      "runs": 20,
+      "survival_rate": 60.0,
+      "win_rate": 60.0,
+      "escape_rate": 0.0,
+      "average_rounds": 4.05
+    },
+    {
+      "scenario": "B",
+      "strategy": "darkness",
+      "runs": 20,
+      "survival_rate": 100.0,
+      "win_rate": 100.0,
+      "escape_rate": 0.0,
+      "average_rounds": 4.4
+    },
+    {
+      "scenario": "B",
+      "strategy": "flee",
+      "runs": 20,
+      "survival_rate": 100.0,
+      "win_rate": 0.0,
+      "escape_rate": 100.0,
+      "average_rounds": 1.35
+    },
+    {
+      "scenario": "B",
+      "strategy": "guillermo",
+      "runs": 20,
+      "survival_rate": 95.0,
+      "win_rate": 95.0,
+      "escape_rate": 0.0,
+      "average_rounds": 3.75
+    },
+    {
+      "scenario": "B",
+      "strategy": "straight",
+      "runs": 20,
+      "survival_rate": 95.0,
+      "win_rate": 95.0,
+      "escape_rate": 0.0,
+      "average_rounds": 3.75
+    },
+    {
+      "scenario": "C",
+      "strategy": "creative",
+      "runs": 20,
+      "survival_rate": 15.0,
+      "win_rate": 15.0,
+      "escape_rate": 0.0,
+      "average_rounds": 4.55
+    },
+    {
+      "scenario": "C",
+      "strategy": "darkness",
+      "runs": 20,
+      "survival_rate": 60.0,
+      "win_rate": 60.0,
+      "escape_rate": 0.0,
+      "average_rounds": 5.95
+    },
+    {
+      "scenario": "C",
+      "strategy": "flee",
+      "runs": 20,
+      "survival_rate": 75.0,
+      "win_rate": 0.0,
+      "escape_rate": 80.0,
+      "average_rounds": 1.05
+    },
+    {
+      "scenario": "C",
+      "strategy": "guillermo",
+      "runs": 20,
+      "survival_rate": 30.0,
+      "win_rate": 30.0,
+      "escape_rate": 0.0,
+      "average_rounds": 4.85
+    },
+    {
+      "scenario": "C",
+      "strategy": "straight",
+      "runs": 20,
+      "survival_rate": 30.0,
+      "win_rate": 30.0,
+      "escape_rate": 0.0,
+      "average_rounds": 4.85
+    },
+    {
+      "scenario": "D",
+      "strategy": "creative",
+      "runs": 20,
+      "survival_rate": 15.0,
+      "win_rate": 15.0,
+      "escape_rate": 0.0,
+      "average_rounds": 4.35
+    },
+    {
+      "scenario": "D",
+      "strategy": "darkness",
+      "runs": 20,
+      "survival_rate": 30.0,
+      "win_rate": 30.0,
+      "escape_rate": 0.0,
+      "average_rounds": 5.05
+    },
+    {
+      "scenario": "D",
+      "strategy": "flee",
+      "runs": 20,
+      "survival_rate": 85.0,
+      "win_rate": 0.0,
+      "escape_rate": 100.0,
+      "average_rounds": 1.65
+    },
+    {
+      "scenario": "D",
+      "strategy": "guillermo",
+      "runs": 20,
+      "survival_rate": 20.0,
+      "win_rate": 20.0,
+      "escape_rate": 0.0,
+      "average_rounds": 4.1
+    },
+    {
+      "scenario": "D",
+      "strategy": "straight",
+      "runs": 20,
+      "survival_rate": 20.0,
+      "win_rate": 20.0,
+      "escape_rate": 0.0,
+      "average_rounds": 4.1
+    },
+    {
+      "scenario": "E",
+      "strategy": "creative",
+      "runs": 20,
+      "survival_rate": 10.0,
+      "win_rate": 10.0,
+      "escape_rate": 0.0,
+      "average_rounds": 3.25
+    },
+    {
+      "scenario": "E",
+      "strategy": "darkness",
+      "runs": 20,
+      "survival_rate": 15.0,
+      "win_rate": 15.0,
+      "escape_rate": 0.0,
+      "average_rounds": 4.4
+    },
+    {
+      "scenario": "E",
+      "strategy": "flee",
+      "runs": 20,
+      "survival_rate": 55.0,
+      "win_rate": 0.0,
+      "escape_rate": 55.0,
+      "average_rounds": 1.25
+    },
+    {
+      "scenario": "E",
+      "strategy": "guillermo",
+      "runs": 20,
+      "survival_rate": 15.0,
+      "win_rate": 15.0,
+      "escape_rate": 0.0,
+      "average_rounds": 3.35
+    },
+    {
+      "scenario": "E",
+      "strategy": "straight",
+      "runs": 20,
+      "survival_rate": 15.0,
+      "win_rate": 15.0,
+      "escape_rate": 0.0,
+      "average_rounds": 3.35
+    }
+  ],
+  "runs": [
+    {
+      "scenario": "A",
+      "strategy": "straight",
+      "seed": 1,
+      "survived": true,
+      "won": true,
+      "escaped": false,
+      "rounds": 1,
+      "end_reason": "all_hostiles_defeated"
+    },
+    {
+      "scenario": "A",
+      "strategy": "straight",
+      "seed": 2,
+      "survived": true,
+      "won": true,
+      "escaped": false,
+      "rounds": 2,
+      "end_reason": "all_hostiles_defeated"
+    },
+    {
+      "scenario": "A",
+      "strategy": "straight",
+      "seed": 3,
+      "survived": true,
+      "won": true,
+      "escaped": false,
+      "rounds": 1,
+      "end_reason": "all_hostiles_defeated"
+    },
+    {
+      "scenario": "A",
+      "strategy": "straight",
+      "seed": 4,
+      "survived": true,
+      "won": true,
+      "escaped": false,
+      "rounds": 2,
+      "end_reason": "all_hostiles_defeated"
+    },
+    {
+      "scenario": "A",
+      "strategy": "straight",
+      "seed": 5,
+      "survived": true,
+      "won": true,
+      "escaped": false,
+      "rounds": 1,
+      "end_reason": "all_hostiles_defeated"
+    },
+    {
+      "scenario": "A",
+      "strategy": "straight",
+      "seed": 6,
+      "survived": true,
+      "won": true,
+      "escaped": false,
+      "rounds": 2,
+      "end_reason": "all_hostiles_defeated"
+    },
+    {
+      "scenario": "A",
+      "strategy": "straight",
+      "seed": 7,
+      "survived": true,
+      "won": true,
+      "escaped": false,
+      "rounds": 1,
+      "end_reason": "all_hostiles_defeated"
+    },
+    {
+      "scenario": "A",
+      "strategy": "straight",
+      "seed": 8,
+      "survived": true,
+      "won": true,
+      "escaped": false,
+      "rounds": 2,
+      "end_reason": "all_hostiles_defeated"
+    },
+    {
+      "scenario": "A",
+      "strategy": "straight",
+      "seed": 9,
+      "survived": true,
+      "won": true,
+      "escaped": false,
+      "rounds": 1,
+      "end_reason": "all_hostiles_defeated"
+    },
+    {
+      "scenario": "A",
+      "strategy": "straight",
+      "seed": 10,
+      "survived": true,
+      "won": true,
+      "escaped": false,
+      "rounds": 2,
+      "end_reason": "all_hostiles_defeated"
+    },
+    {
+      "scenario": "A",
+      "strategy": "straight",
+      "seed": 11,
+      "survived": true,
+      "won": true,
+      "escaped": false,
+      "rounds": 1,
+      "end_reason": "all_hostiles_defeated"
+    },
+    {
+      "scenario": "A",
+      "strategy": "straight",
+      "seed": 12,
+      "survived": true,
+      "won": true,
+      "escaped": false,
+      "rounds": 1,
+      "end_reason": "enemy_fled"
+    },
+    {
+      "scenario": "A",
+      "strategy": "straight",
+      "seed": 13,
+      "survived": true,
+      "won": true,
+      "escaped": false,
+      "rounds": 1,
+      "end_reason": "all_hostiles_defeated"
+    },
+    {
+      "scenario": "A",
+      "strategy": "straight",
+      "seed": 14,
+      "survived": true,
+      "won": true,
+      "escaped": false,
+      "rounds": 1,
+      "end_reason": "enemy_fled"
+    },
+    {
+      "scenario": "A",
+      "strategy": "straight",
+      "seed": 15,
+      "survived": true,
+      "won": true,
+      "escaped": false,
+      "rounds": 1,
+      "end_reason": "all_hostiles_defeated"
+    },
+    {
+      "scenario": "A",
+      "strategy": "straight",
+      "seed": 16,
+      "survived": true,
+      "won": true,
+      "escaped": false,
+      "rounds": 1,
+      "end_reason": "all_hostiles_defeated"
+    },
+    {
+      "scenario": "A",
+      "strategy": "straight",
+      "seed": 17,
+      "survived": true,
+      "won": true,
+      "escaped": false,
+      "rounds": 2,
+      "end_reason": "all_hostiles_defeated"
+    },
+    {
+      "scenario": "A",
+      "strategy": "straight",
+      "seed": 18,
+      "survived": true,
+      "won": true,
+      "escaped": false,
+      "rounds": 1,
+      "end_reason": "all_hostiles_defeated"
+    },
+    {
+      "scenario": "A",
+      "strategy": "straight",
+      "seed": 19,
+      "survived": true,
+      "won": true,
+      "escaped": false,
+      "rounds": 2,
+      "end_reason": "all_hostiles_defeated"
+    },
+    {
+      "scenario": "A",
+      "strategy": "straight",
+      "seed": 20,
+      "survived": true,
+      "won": true,
+      "escaped": false,
+      "rounds": 1,
+      "end_reason": "all_hostiles_defeated"
+    },
+    {
+      "scenario": "A",
+      "strategy": "darkness",
+      "seed": 1,
+      "survived": true,
+      "won": true,
+      "escaped": false,
+      "rounds": 2,
+      "end_reason": "all_hostiles_defeated"
+    },
+    {
+      "scenario": "A",
+      "strategy": "darkness",
+      "seed": 2,
+      "survived": true,
+      "won": true,
+      "escaped": false,
+      "rounds": 3,
+      "end_reason": "all_hostiles_defeated"
+    },
+    {
+      "scenario": "A",
+      "strategy": "darkness",
+      "seed": 3,
+      "survived": true,
+      "won": true,
+      "escaped": false,
+      "rounds": 2,
+      "end_reason": "all_hostiles_defeated"
+    },
+    {
+      "scenario": "A",
+      "strategy": "darkness",
+      "seed": 4,
+      "survived": true,
+      "won": true,
+      "escaped": false,
+      "rounds": 3,
+      "end_reason": "all_hostiles_defeated"
+    },
+    {
+      "scenario": "A",
+      "strategy": "darkness",
+      "seed": 5,
+      "survived": true,
+      "won": true,
+      "escaped": false,
+      "rounds": 2,
+      "end_reason": "all_hostiles_defeated"
+    },
+    {
+      "scenario": "A",
+      "strategy": "darkness",
+      "seed": 6,
+      "survived": true,
+      "won": true,
+      "escaped": false,
+      "rounds": 3,
+      "end_reason": "all_hostiles_defeated"
+    },
+    {
+      "scenario": "A",
+      "strategy": "darkness",
+      "seed": 7,
+      "survived": true,
+      "won": true,
+      "escaped": false,
+      "rounds": 2,
+      "end_reason": "all_hostiles_defeated"
+    },
+    {
+      "scenario": "A",
+      "strategy": "darkness",
+      "seed": 8,
+      "survived": true,
+      "won": true,
+      "escaped": false,
+      "rounds": 3,
+      "end_reason": "all_hostiles_defeated"
+    },
+    {
+      "scenario": "A",
+      "strategy": "darkness",
+      "seed": 9,
+      "survived": true,
+      "won": true,
+      "escaped": false,
+      "rounds": 2,
+      "end_reason": "all_hostiles_defeated"
+    },
+    {
+      "scenario": "A",
+      "strategy": "darkness",
+      "seed": 10,
+      "survived": true,
+      "won": true,
+      "escaped": false,
+      "rounds": 2,
+      "end_reason": "enemy_fled"
+    },
+    {
+      "scenario": "A",
+      "strategy": "darkness",
+      "seed": 11,
+      "survived": true,
+      "won": true,
+      "escaped": false,
+      "rounds": 2,
+      "end_reason": "all_hostiles_defeated"
+    },
+    {
+      "scenario": "A",
+      "strategy": "darkness",
+      "seed": 12,
+      "survived": true,
+      "won": true,
+      "escaped": false,
+      "rounds": 2,
+      "end_reason": "enemy_fled"
+    },
+    {
+      "scenario": "A",
+      "strategy": "darkness",
+      "seed": 13,
+      "survived": true,
+      "won": true,
+      "escaped": false,
+      "rounds": 2,
+      "end_reason": "all_hostiles_defeated"
+    },
+    {
+      "scenario": "A",
+      "strategy": "darkness",
+      "seed": 14,
+      "survived": true,
+      "won": true,
+      "escaped": false,
+      "rounds": 2,
+      "end_reason": "enemy_fled"
+    },
+    {
+      "scenario": "A",
+      "strategy": "darkness",
+      "seed": 15,
+      "survived": true,
+      "won": true,
+      "escaped": false,
+      "rounds": 2,
+      "end_reason": "all_hostiles_defeated"
+    },
+    {
+      "scenario": "A",
+      "strategy": "darkness",
+      "seed": 16,
+      "survived": true,
+      "won": true,
+      "escaped": false,
+      "rounds": 2,
+      "end_reason": "all_hostiles_defeated"
+    },
+    {
+      "scenario": "A",
+      "strategy": "darkness",
+      "seed": 17,
+      "survived": true,
+      "won": true,
+      "escaped": false,
+      "rounds": 3,
+      "end_reason": "all_hostiles_defeated"
+    },
+    {
+      "scenario": "A",
+      "strategy": "darkness",
+      "seed": 18,
+      "survived": true,
+      "won": true,
+      "escaped": false,
+      "rounds": 2,
+      "end_reason": "all_hostiles_defeated"
+    },
+    {
+      "scenario": "A",
+      "strategy": "darkness",
+      "seed": 19,
+      "survived": true,
+      "won": true,
+      "escaped": false,
+      "rounds": 3,
+      "end_reason": "all_hostiles_defeated"
+    },
+    {
+      "scenario": "A",
+      "strategy": "darkness",
+      "seed": 20,
+      "survived": true,
+      "won": true,
+      "escaped": false,
+      "rounds": 2,
+      "end_reason": "all_hostiles_defeated"
+    },
+    {
+      "scenario": "A",
+      "strategy": "flee",
+      "seed": 1,
+      "survived": true,
+      "won": false,
+      "escaped": true,
+      "rounds": 1,
+      "end_reason": "escaped_and_hidden"
+    },
+    {
+      "scenario": "A",
+      "strategy": "flee",
+      "seed": 2,
+      "survived": true,
+      "won": false,
+      "escaped": true,
+      "rounds": 1,
+      "end_reason": "escaped_and_hidden"
+    },
+    {
+      "scenario": "A",
+      "strategy": "flee",
+      "seed": 3,
+      "survived": true,
+      "won": false,
+      "escaped": true,
+      "rounds": 1,
+      "end_reason": "escaped_and_hidden"
+    },
+    {
+      "scenario": "A",
+      "strategy": "flee",
+      "seed": 4,
+      "survived": true,
+      "won": false,
+      "escaped": true,
+      "rounds": 1,
+      "end_reason": "escaped_and_hidden"
+    },
+    {
+      "scenario": "A",
+      "strategy": "flee",
+      "seed": 5,
+      "survived": true,
+      "won": false,
+      "escaped": true,
+      "rounds": 1,
+      "end_reason": "escaped_and_hidden"
+    },
+    {
+      "scenario": "A",
+      "strategy": "flee",
+      "seed": 6,
+      "survived": true,
+      "won": false,
+      "escaped": true,
+      "rounds": 1,
+      "end_reason": "escaped_and_hidden"
+    },
+    {
+      "scenario": "A",
+      "strategy": "flee",
+      "seed": 7,
+      "survived": true,
+      "won": false,
+      "escaped": true,
+      "rounds": 1,
+      "end_reason": "escaped_and_hidden"
+    },
+    {
+      "scenario": "A",
+      "strategy": "flee",
+      "seed": 8,
+      "survived": true,
+      "won": false,
+      "escaped": true,
+      "rounds": 1,
+      "end_reason": "escaped_and_hidden"
+    },
+    {
+      "scenario": "A",
+      "strategy": "flee",
+      "seed": 9,
+      "survived": true,
+      "won": false,
+      "escaped": true,
+      "rounds": 1,
+      "end_reason": "escaped_and_hidden"
+    },
+    {
+      "scenario": "A",
+      "strategy": "flee",
+      "seed": 10,
+      "survived": true,
+      "won": false,
+      "escaped": true,
+      "rounds": 1,
+      "end_reason": "escaped_and_hidden"
+    },
+    {
+      "scenario": "A",
+      "strategy": "flee",
+      "seed": 11,
+      "survived": true,
+      "won": false,
+      "escaped": true,
+      "rounds": 1,
+      "end_reason": "escaped_and_hidden"
+    },
+    {
+      "scenario": "A",
+      "strategy": "flee",
+      "seed": 12,
+      "survived": true,
+      "won": false,
+      "escaped": true,
+      "rounds": 1,
+      "end_reason": "escaped_and_hidden"
+    },
+    {
+      "scenario": "A",
+      "strategy": "flee",
+      "seed": 13,
+      "survived": true,
+      "won": false,
+      "escaped": true,
+      "rounds": 2,
+      "end_reason": "escaped_and_hidden"
+    },
+    {
+      "scenario": "A",
+      "strategy": "flee",
+      "seed": 14,
+      "survived": true,
+      "won": false,
+      "escaped": true,
+      "rounds": 1,
+      "end_reason": "escaped_and_hidden"
+    },
+    {
+      "scenario": "A",
+      "strategy": "flee",
+      "seed": 15,
+      "survived": true,
+      "won": false,
+      "escaped": true,
+      "rounds": 2,
+      "end_reason": "escaped_and_hidden"
+    },
+    {
+      "scenario": "A",
+      "strategy": "flee",
+      "seed": 16,
+      "survived": true,
+      "won": false,
+      "escaped": true,
+      "rounds": 1,
+      "end_reason": "escaped_and_hidden"
+    },
+    {
+      "scenario": "A",
+      "strategy": "flee",
+      "seed": 17,
+      "survived": true,
+      "won": false,
+      "escaped": true,
+      "rounds": 2,
+      "end_reason": "escaped_and_hidden"
+    },
+    {
+      "scenario": "A",
+      "strategy": "flee",
+      "seed": 18,
+      "survived": true,
+      "won": false,
+      "escaped": true,
+      "rounds": 1,
+      "end_reason": "escaped_and_hidden"
+    },
+    {
+      "scenario": "A",
+      "strategy": "flee",
+      "seed": 19,
+      "survived": true,
+      "won": false,
+      "escaped": true,
+      "rounds": 2,
+      "end_reason": "escaped_and_hidden"
+    },
+    {
+      "scenario": "A",
+      "strategy": "flee",
+      "seed": 20,
+      "survived": true,
+      "won": false,
+      "escaped": true,
+      "rounds": 1,
+      "end_reason": "escaped_and_hidden"
+    },
+    {
+      "scenario": "A",
+      "strategy": "guillermo",
+      "seed": 1,
+      "survived": true,
+      "won": true,
+      "escaped": false,
+      "rounds": 1,
+      "end_reason": "all_hostiles_defeated"
+    },
+    {
+      "scenario": "A",
+      "strategy": "guillermo",
+      "seed": 2,
+      "survived": true,
+      "won": true,
+      "escaped": false,
+      "rounds": 2,
+      "end_reason": "all_hostiles_defeated"
+    },
+    {
+      "scenario": "A",
+      "strategy": "guillermo",
+      "seed": 3,
+      "survived": true,
+      "won": true,
+      "escaped": false,
+      "rounds": 1,
+      "end_reason": "all_hostiles_defeated"
+    },
+    {
+      "scenario": "A",
+      "strategy": "guillermo",
+      "seed": 4,
+      "survived": true,
+      "won": true,
+      "escaped": false,
+      "rounds": 2,
+      "end_reason": "all_hostiles_defeated"
+    },
+    {
+      "scenario": "A",
+      "strategy": "guillermo",
+      "seed": 5,
+      "survived": true,
+      "won": true,
+      "escaped": false,
+      "rounds": 1,
+      "end_reason": "all_hostiles_defeated"
+    },
+    {
+      "scenario": "A",
+      "strategy": "guillermo",
+      "seed": 6,
+      "survived": true,
+      "won": true,
+      "escaped": false,
+      "rounds": 2,
+      "end_reason": "all_hostiles_defeated"
+    },
+    {
+      "scenario": "A",
+      "strategy": "guillermo",
+      "seed": 7,
+      "survived": true,
+      "won": true,
+      "escaped": false,
+      "rounds": 1,
+      "end_reason": "all_hostiles_defeated"
+    },
+    {
+      "scenario": "A",
+      "strategy": "guillermo",
+      "seed": 8,
+      "survived": true,
+      "won": true,
+      "escaped": false,
+      "rounds": 2,
+      "end_reason": "all_hostiles_defeated"
+    },
+    {
+      "scenario": "A",
+      "strategy": "guillermo",
+      "seed": 9,
+      "survived": true,
+      "won": true,
+      "escaped": false,
+      "rounds": 1,
+      "end_reason": "all_hostiles_defeated"
+    },
+    {
+      "scenario": "A",
+      "strategy": "guillermo",
+      "seed": 10,
+      "survived": true,
+      "won": true,
+      "escaped": false,
+      "rounds": 2,
+      "end_reason": "all_hostiles_defeated"
+    },
+    {
+      "scenario": "A",
+      "strategy": "guillermo",
+      "seed": 11,
+      "survived": true,
+      "won": true,
+      "escaped": false,
+      "rounds": 1,
+      "end_reason": "all_hostiles_defeated"
+    },
+    {
+      "scenario": "A",
+      "strategy": "guillermo",
+      "seed": 12,
+      "survived": true,
+      "won": true,
+      "escaped": false,
+      "rounds": 1,
+      "end_reason": "enemy_fled"
+    },
+    {
+      "scenario": "A",
+      "strategy": "guillermo",
+      "seed": 13,
+      "survived": true,
+      "won": true,
+      "escaped": false,
+      "rounds": 1,
+      "end_reason": "all_hostiles_defeated"
+    },
+    {
+      "scenario": "A",
+      "strategy": "guillermo",
+      "seed": 14,
+      "survived": true,
+      "won": true,
+      "escaped": false,
+      "rounds": 1,
+      "end_reason": "enemy_fled"
+    },
+    {
+      "scenario": "A",
+      "strategy": "guillermo",
+      "seed": 15,
+      "survived": true,
+      "won": true,
+      "escaped": false,
+      "rounds": 1,
+      "end_reason": "all_hostiles_defeated"
+    },
+    {
+      "scenario": "A",
+      "strategy": "guillermo",
+      "seed": 16,
+      "survived": true,
+      "won": true,
+      "escaped": false,
+      "rounds": 1,
+      "end_reason": "all_hostiles_defeated"
+    },
+    {
+      "scenario": "A",
+      "strategy": "guillermo",
+      "seed": 17,
+      "survived": true,
+      "won": true,
+      "escaped": false,
+      "rounds": 2,
+      "end_reason": "all_hostiles_defeated"
+    },
+    {
+      "scenario": "A",
+      "strategy": "guillermo",
+      "seed": 18,
+      "survived": true,
+      "won": true,
+      "escaped": false,
+      "rounds": 1,
+      "end_reason": "all_hostiles_defeated"
+    },
+    {
+      "scenario": "A",
+      "strategy": "guillermo",
+      "seed": 19,
+      "survived": true,
+      "won": true,
+      "escaped": false,
+      "rounds": 2,
+      "end_reason": "all_hostiles_defeated"
+    },
+    {
+      "scenario": "A",
+      "strategy": "guillermo",
+      "seed": 20,
+      "survived": true,
+      "won": true,
+      "escaped": false,
+      "rounds": 1,
+      "end_reason": "all_hostiles_defeated"
+    },
+    {
+      "scenario": "A",
+      "strategy": "creative",
+      "seed": 1,
+      "survived": true,
+      "won": true,
+      "escaped": false,
+      "rounds": 3,
+      "end_reason": "all_hostiles_defeated"
+    },
+    {
+      "scenario": "A",
+      "strategy": "creative",
+      "seed": 2,
+      "survived": true,
+      "won": true,
+      "escaped": false,
+      "rounds": 2,
+      "end_reason": "enemy_fled"
+    },
+    {
+      "scenario": "A",
+      "strategy": "creative",
+      "seed": 3,
+      "survived": true,
+      "won": true,
+      "escaped": false,
+      "rounds": 3,
+      "end_reason": "all_hostiles_defeated"
+    },
+    {
+      "scenario": "A",
+      "strategy": "creative",
+      "seed": 4,
+      "survived": true,
+      "won": true,
+      "escaped": false,
+      "rounds": 2,
+      "end_reason": "all_hostiles_defeated"
+    },
+    {
+      "scenario": "A",
+      "strategy": "creative",
+      "seed": 5,
+      "survived": true,
+      "won": true,
+      "escaped": false,
+      "rounds": 3,
+      "end_reason": "all_hostiles_defeated"
+    },
+    {
+      "scenario": "A",
+      "strategy": "creative",
+      "seed": 6,
+      "survived": true,
+      "won": true,
+      "escaped": false,
+      "rounds": 2,
+      "end_reason": "all_hostiles_defeated"
+    },
+    {
+      "scenario": "A",
+      "strategy": "creative",
+      "seed": 7,
+      "survived": true,
+      "won": true,
+      "escaped": false,
+      "rounds": 3,
+      "end_reason": "all_hostiles_defeated"
+    },
+    {
+      "scenario": "A",
+      "strategy": "creative",
+      "seed": 8,
+      "survived": true,
+      "won": true,
+      "escaped": false,
+      "rounds": 2,
+      "end_reason": "all_hostiles_defeated"
+    },
+    {
+      "scenario": "A",
+      "strategy": "creative",
+      "seed": 9,
+      "survived": true,
+      "won": true,
+      "escaped": false,
+      "rounds": 3,
+      "end_reason": "all_hostiles_defeated"
+    },
+    {
+      "scenario": "A",
+      "strategy": "creative",
+      "seed": 10,
+      "survived": true,
+      "won": true,
+      "escaped": false,
+      "rounds": 2,
+      "end_reason": "all_hostiles_defeated"
+    },
+    {
+      "scenario": "A",
+      "strategy": "creative",
+      "seed": 11,
+      "survived": true,
+      "won": true,
+      "escaped": false,
+      "rounds": 3,
+      "end_reason": "all_hostiles_defeated"
+    },
+    {
+      "scenario": "A",
+      "strategy": "creative",
+      "seed": 12,
+      "survived": true,
+      "won": true,
+      "escaped": false,
+      "rounds": 2,
+      "end_reason": "all_hostiles_defeated"
+    },
+    {
+      "scenario": "A",
+      "strategy": "creative",
+      "seed": 13,
+      "survived": true,
+      "won": true,
+      "escaped": false,
+      "rounds": 3,
+      "end_reason": "all_hostiles_defeated"
+    },
+    {
+      "scenario": "A",
+      "strategy": "creative",
+      "seed": 14,
+      "survived": true,
+      "won": true,
+      "escaped": false,
+      "rounds": 2,
+      "end_reason": "all_hostiles_defeated"
+    },
+    {
+      "scenario": "A",
+      "strategy": "creative",
+      "seed": 15,
+      "survived": true,
+      "won": true,
+      "escaped": false,
+      "rounds": 3,
+      "end_reason": "all_hostiles_defeated"
+    },
+    {
+      "scenario": "A",
+      "strategy": "creative",
+      "seed": 16,
+      "survived": true,
+      "won": true,
+      "escaped": false,
+      "rounds": 2,
+      "end_reason": "all_hostiles_defeated"
+    },
+    {
+      "scenario": "A",
+      "strategy": "creative",
+      "seed": 17,
+      "survived": true,
+      "won": true,
+      "escaped": false,
+      "rounds": 3,
+      "end_reason": "all_hostiles_defeated"
+    },
+    {
+      "scenario": "A",
+      "strategy": "creative",
+      "seed": 18,
+      "survived": true,
+      "won": true,
+      "escaped": false,
+      "rounds": 2,
+      "end_reason": "all_hostiles_defeated"
+    },
+    {
+      "scenario": "A",
+      "strategy": "creative",
+      "seed": 19,
+      "survived": true,
+      "won": true,
+      "escaped": false,
+      "rounds": 2,
+      "end_reason": "enemy_fled"
+    },
+    {
+      "scenario": "A",
+      "strategy": "creative",
+      "seed": 20,
+      "survived": true,
+      "won": true,
+      "escaped": false,
+      "rounds": 2,
+      "end_reason": "all_hostiles_defeated"
+    },
+    {
+      "scenario": "B",
+      "strategy": "straight",
+      "seed": 1,
+      "survived": false,
+      "won": false,
+      "escaped": false,
+      "rounds": 4,
+      "end_reason": "armand_defeated"
+    },
+    {
+      "scenario": "B",
+      "strategy": "straight",
+      "seed": 2,
+      "survived": true,
+      "won": true,
+      "escaped": false,
+      "rounds": 4,
+      "end_reason": "all_hostiles_defeated"
+    },
+    {
+      "scenario": "B",
+      "strategy": "straight",
+      "seed": 3,
+      "survived": true,
+      "won": true,
+      "escaped": false,
+      "rounds": 5,
+      "end_reason": "all_hostiles_defeated"
+    },
+    {
+      "scenario": "B",
+      "strategy": "straight",
+      "seed": 4,
+      "survived": true,
+      "won": true,
+      "escaped": false,
+      "rounds": 4,
+      "end_reason": "all_hostiles_defeated"
+    },
+    {
+      "scenario": "B",
+      "strategy": "straight",
+      "seed": 5,
+      "survived": true,
+      "won": true,
+      "escaped": false,
+      "rounds": 4,
+      "end_reason": "all_hostiles_defeated"
+    },
+    {
+      "scenario": "B",
+      "strategy": "straight",
+      "seed": 6,
+      "survived": true,
+      "won": true,
+      "escaped": false,
+      "rounds": 4,
+      "end_reason": "all_hostiles_defeated"
+    },
+    {
+      "scenario": "B",
+      "strategy": "straight",
+      "seed": 7,
+      "survived": true,
+      "won": true,
+      "escaped": false,
+      "rounds": 4,
+      "end_reason": "all_hostiles_defeated"
+    },
+    {
+      "scenario": "B",
+      "strategy": "straight",
+      "seed": 8,
+      "survived": true,
+      "won": true,
+      "escaped": false,
+      "rounds": 4,
+      "end_reason": "all_hostiles_defeated"
+    },
+    {
+      "scenario": "B",
+      "strategy": "straight",
+      "seed": 9,
+      "survived": true,
+      "won": true,
+      "escaped": false,
+      "rounds": 4,
+      "end_reason": "all_hostiles_defeated"
+    },
+    {
+      "scenario": "B",
+      "strategy": "straight",
+      "seed": 10,
+      "survived": true,
+      "won": true,
+      "escaped": false,
+      "rounds": 3,
+      "end_reason": "all_hostiles_defeated"
+    },
+    {
+      "scenario": "B",
+      "strategy": "straight",
+      "seed": 11,
+      "survived": true,
+      "won": true,
+      "escaped": false,
+      "rounds": 4,
+      "end_reason": "all_hostiles_defeated"
+    },
+    {
+      "scenario": "B",
+      "strategy": "straight",
+      "seed": 12,
+      "survived": true,
+      "won": true,
+      "escaped": false,
+      "rounds": 3,
+      "end_reason": "all_hostiles_defeated"
+    },
+    {
+      "scenario": "B",
+      "strategy": "straight",
+      "seed": 13,
+      "survived": true,
+      "won": true,
+      "escaped": false,
+      "rounds": 4,
+      "end_reason": "all_hostiles_defeated"
+    },
+    {
+      "scenario": "B",
+      "strategy": "straight",
+      "seed": 14,
+      "survived": true,
+      "won": true,
+      "escaped": false,
+      "rounds": 3,
+      "end_reason": "all_hostiles_defeated"
+    },
+    {
+      "scenario": "B",
+      "strategy": "straight",
+      "seed": 15,
+      "survived": true,
+      "won": true,
+      "escaped": false,
+      "rounds": 4,
+      "end_reason": "all_hostiles_defeated"
+    },
+    {
+      "scenario": "B",
+      "strategy": "straight",
+      "seed": 16,
+      "survived": true,
+      "won": true,
+      "escaped": false,
+      "rounds": 3,
+      "end_reason": "all_hostiles_defeated"
+    },
+    {
+      "scenario": "B",
+      "strategy": "straight",
+      "seed": 17,
+      "survived": true,
+      "won": true,
+      "escaped": false,
+      "rounds": 4,
+      "end_reason": "all_hostiles_defeated"
+    },
+    {
+      "scenario": "B",
+      "strategy": "straight",
+      "seed": 18,
+      "survived": true,
+      "won": true,
+      "escaped": false,
+      "rounds": 3,
+      "end_reason": "all_hostiles_defeated"
+    },
+    {
+      "scenario": "B",
+      "strategy": "straight",
+      "seed": 19,
+      "survived": true,
+      "won": true,
+      "escaped": false,
+      "rounds": 4,
+      "end_reason": "all_hostiles_defeated"
+    },
+    {
+      "scenario": "B",
+      "strategy": "straight",
+      "seed": 20,
+      "survived": true,
+      "won": true,
+      "escaped": false,
+      "rounds": 3,
+      "end_reason": "all_hostiles_defeated"
+    },
+    {
+      "scenario": "B",
+      "strategy": "darkness",
+      "seed": 1,
+      "survived": true,
+      "won": true,
+      "escaped": false,
+      "rounds": 4,
+      "end_reason": "all_hostiles_defeated"
+    },
+    {
+      "scenario": "B",
+      "strategy": "darkness",
+      "seed": 2,
+      "survived": true,
+      "won": true,
+      "escaped": false,
+      "rounds": 5,
+      "end_reason": "all_hostiles_defeated"
+    },
+    {
+      "scenario": "B",
+      "strategy": "darkness",
+      "seed": 3,
+      "survived": true,
+      "won": true,
+      "escaped": false,
+      "rounds": 5,
+      "end_reason": "all_hostiles_defeated"
+    },
+    {
+      "scenario": "B",
+      "strategy": "darkness",
+      "seed": 4,
+      "survived": true,
+      "won": true,
+      "escaped": false,
+      "rounds": 5,
+      "end_reason": "all_hostiles_defeated"
+    },
+    {
+      "scenario": "B",
+      "strategy": "darkness",
+      "seed": 5,
+      "survived": true,
+      "won": true,
+      "escaped": false,
+      "rounds": 5,
+      "end_reason": "all_hostiles_defeated"
+    },
+    {
+      "scenario": "B",
+      "strategy": "darkness",
+      "seed": 6,
+      "survived": true,
+      "won": true,
+      "escaped": false,
+      "rounds": 5,
+      "end_reason": "all_hostiles_defeated"
+    },
+    {
+      "scenario": "B",
+      "strategy": "darkness",
+      "seed": 7,
+      "survived": true,
+      "won": true,
+      "escaped": false,
+      "rounds": 5,
+      "end_reason": "all_hostiles_defeated"
+    },
+    {
+      "scenario": "B",
+      "strategy": "darkness",
+      "seed": 8,
+      "survived": true,
+      "won": true,
+      "escaped": false,
+      "rounds": 3,
+      "end_reason": "all_hostiles_defeated"
+    },
+    {
+      "scenario": "B",
+      "strategy": "darkness",
+      "seed": 9,
+      "survived": true,
+      "won": true,
+      "escaped": false,
+      "rounds": 5,
+      "end_reason": "all_hostiles_defeated"
+    },
+    {
+      "scenario": "B",
+      "strategy": "darkness",
+      "seed": 10,
+      "survived": true,
+      "won": true,
+      "escaped": false,
+      "rounds": 4,
+      "end_reason": "all_hostiles_defeated"
+    },
+    {
+      "scenario": "B",
+      "strategy": "darkness",
+      "seed": 11,
+      "survived": true,
+      "won": true,
+      "escaped": false,
+      "rounds": 5,
+      "end_reason": "all_hostiles_defeated"
+    },
+    {
+      "scenario": "B",
+      "strategy": "darkness",
+      "seed": 12,
+      "survived": true,
+      "won": true,
+      "escaped": false,
+      "rounds": 4,
+      "end_reason": "all_hostiles_defeated"
+    },
+    {
+      "scenario": "B",
+      "strategy": "darkness",
+      "seed": 13,
+      "survived": true,
+      "won": true,
+      "escaped": false,
+      "rounds": 5,
+      "end_reason": "all_hostiles_defeated"
+    },
+    {
+      "scenario": "B",
+      "strategy": "darkness",
+      "seed": 14,
+      "survived": true,
+      "won": true,
+      "escaped": false,
+      "rounds": 4,
+      "end_reason": "all_hostiles_defeated"
+    },
+    {
+      "scenario": "B",
+      "strategy": "darkness",
+      "seed": 15,
+      "survived": true,
+      "won": true,
+      "escaped": false,
+      "rounds": 5,
+      "end_reason": "all_hostiles_defeated"
+    },
+    {
+      "scenario": "B",
+      "strategy": "darkness",
+      "seed": 16,
+      "survived": true,
+      "won": true,
+      "escaped": false,
+      "rounds": 4,
+      "end_reason": "all_hostiles_defeated"
+    },
+    {
+      "scenario": "B",
+      "strategy": "darkness",
+      "seed": 17,
+      "survived": true,
+      "won": true,
+      "escaped": false,
+      "rounds": 5,
+      "end_reason": "all_hostiles_defeated"
+    },
+    {
+      "scenario": "B",
+      "strategy": "darkness",
+      "seed": 18,
+      "survived": true,
+      "won": true,
+      "escaped": false,
+      "rounds": 3,
+      "end_reason": "all_hostiles_defeated"
+    },
+    {
+      "scenario": "B",
+      "strategy": "darkness",
+      "seed": 19,
+      "survived": true,
+      "won": true,
+      "escaped": false,
+      "rounds": 3,
+      "end_reason": "all_hostiles_defeated"
+    },
+    {
+      "scenario": "B",
+      "strategy": "darkness",
+      "seed": 20,
+      "survived": true,
+      "won": true,
+      "escaped": false,
+      "rounds": 4,
+      "end_reason": "all_hostiles_defeated"
+    },
+    {
+      "scenario": "B",
+      "strategy": "flee",
+      "seed": 1,
+      "survived": true,
+      "won": false,
+      "escaped": true,
+      "rounds": 2,
+      "end_reason": "escaped_and_hidden"
+    },
+    {
+      "scenario": "B",
+      "strategy": "flee",
+      "seed": 2,
+      "survived": true,
+      "won": false,
+      "escaped": true,
+      "rounds": 1,
+      "end_reason": "escaped_and_hidden"
+    },
+    {
+      "scenario": "B",
+      "strategy": "flee",
+      "seed": 3,
+      "survived": true,
+      "won": false,
+      "escaped": true,
+      "rounds": 2,
+      "end_reason": "escaped_and_hidden"
+    },
+    {
+      "scenario": "B",
+      "strategy": "flee",
+      "seed": 4,
+      "survived": true,
+      "won": false,
+      "escaped": true,
+      "rounds": 1,
+      "end_reason": "escaped_and_hidden"
+    },
+    {
+      "scenario": "B",
+      "strategy": "flee",
+      "seed": 5,
+      "survived": true,
+      "won": false,
+      "escaped": true,
+      "rounds": 2,
+      "end_reason": "escaped_and_hidden"
+    },
+    {
+      "scenario": "B",
+      "strategy": "flee",
+      "seed": 6,
+      "survived": true,
+      "won": false,
+      "escaped": true,
+      "rounds": 1,
+      "end_reason": "escaped_and_hidden"
+    },
+    {
+      "scenario": "B",
+      "strategy": "flee",
+      "seed": 7,
+      "survived": true,
+      "won": false,
+      "escaped": true,
+      "rounds": 2,
+      "end_reason": "escaped_and_hidden"
+    },
+    {
+      "scenario": "B",
+      "strategy": "flee",
+      "seed": 8,
+      "survived": true,
+      "won": false,
+      "escaped": true,
+      "rounds": 1,
+      "end_reason": "escaped_and_hidden"
+    },
+    {
+      "scenario": "B",
+      "strategy": "flee",
+      "seed": 9,
+      "survived": true,
+      "won": false,
+      "escaped": true,
+      "rounds": 2,
+      "end_reason": "escaped_and_hidden"
+    },
+    {
+      "scenario": "B",
+      "strategy": "flee",
+      "seed": 10,
+      "survived": true,
+      "won": false,
+      "escaped": true,
+      "rounds": 1,
+      "end_reason": "escaped_and_hidden"
+    },
+    {
+      "scenario": "B",
+      "strategy": "flee",
+      "seed": 11,
+      "survived": true,
+      "won": false,
+      "escaped": true,
+      "rounds": 2,
+      "end_reason": "escaped_and_hidden"
+    },
+    {
+      "scenario": "B",
+      "strategy": "flee",
+      "seed": 12,
+      "survived": true,
+      "won": false,
+      "escaped": true,
+      "rounds": 1,
+      "end_reason": "escaped_and_hidden"
+    },
+    {
+      "scenario": "B",
+      "strategy": "flee",
+      "seed": 13,
+      "survived": true,
+      "won": false,
+      "escaped": true,
+      "rounds": 1,
+      "end_reason": "escaped_and_hidden"
+    },
+    {
+      "scenario": "B",
+      "strategy": "flee",
+      "seed": 14,
+      "survived": true,
+      "won": false,
+      "escaped": true,
+      "rounds": 1,
+      "end_reason": "escaped_and_hidden"
+    },
+    {
+      "scenario": "B",
+      "strategy": "flee",
+      "seed": 15,
+      "survived": true,
+      "won": false,
+      "escaped": true,
+      "rounds": 1,
+      "end_reason": "escaped_and_hidden"
+    },
+    {
+      "scenario": "B",
+      "strategy": "flee",
+      "seed": 16,
+      "survived": true,
+      "won": false,
+      "escaped": true,
+      "rounds": 1,
+      "end_reason": "escaped_and_hidden"
+    },
+    {
+      "scenario": "B",
+      "strategy": "flee",
+      "seed": 17,
+      "survived": true,
+      "won": false,
+      "escaped": true,
+      "rounds": 1,
+      "end_reason": "escaped_and_hidden"
+    },
+    {
+      "scenario": "B",
+      "strategy": "flee",
+      "seed": 18,
+      "survived": true,
+      "won": false,
+      "escaped": true,
+      "rounds": 1,
+      "end_reason": "escaped_and_hidden"
+    },
+    {
+      "scenario": "B",
+      "strategy": "flee",
+      "seed": 19,
+      "survived": true,
+      "won": false,
+      "escaped": true,
+      "rounds": 1,
+      "end_reason": "escaped_and_hidden"
+    },
+    {
+      "scenario": "B",
+      "strategy": "flee",
+      "seed": 20,
+      "survived": true,
+      "won": false,
+      "escaped": true,
+      "rounds": 2,
+      "end_reason": "escaped_and_hidden"
+    },
+    {
+      "scenario": "B",
+      "strategy": "guillermo",
+      "seed": 1,
+      "survived": false,
+      "won": false,
+      "escaped": false,
+      "rounds": 4,
+      "end_reason": "armand_defeated"
+    },
+    {
+      "scenario": "B",
+      "strategy": "guillermo",
+      "seed": 2,
+      "survived": true,
+      "won": true,
+      "escaped": false,
+      "rounds": 4,
+      "end_reason": "all_hostiles_defeated"
+    },
+    {
+      "scenario": "B",
+      "strategy": "guillermo",
+      "seed": 3,
+      "survived": true,
+      "won": true,
+      "escaped": false,
+      "rounds": 5,
+      "end_reason": "all_hostiles_defeated"
+    },
+    {
+      "scenario": "B",
+      "strategy": "guillermo",
+      "seed": 4,
+      "survived": true,
+      "won": true,
+      "escaped": false,
+      "rounds": 4,
+      "end_reason": "all_hostiles_defeated"
+    },
+    {
+      "scenario": "B",
+      "strategy": "guillermo",
+      "seed": 5,
+      "survived": true,
+      "won": true,
+      "escaped": false,
+      "rounds": 4,
+      "end_reason": "all_hostiles_defeated"
+    },
+    {
+      "scenario": "B",
+      "strategy": "guillermo",
+      "seed": 6,
+      "survived": true,
+      "won": true,
+      "escaped": false,
+      "rounds": 4,
+      "end_reason": "all_hostiles_defeated"
+    },
+    {
+      "scenario": "B",
+      "strategy": "guillermo",
+      "seed": 7,
+      "survived": true,
+      "won": true,
+      "escaped": false,
+      "rounds": 4,
+      "end_reason": "all_hostiles_defeated"
+    },
+    {
+      "scenario": "B",
+      "strategy": "guillermo",
+      "seed": 8,
+      "survived": true,
+      "won": true,
+      "escaped": false,
+      "rounds": 4,
+      "end_reason": "all_hostiles_defeated"
+    },
+    {
+      "scenario": "B",
+      "strategy": "guillermo",
+      "seed": 9,
+      "survived": true,
+      "won": true,
+      "escaped": false,
+      "rounds": 4,
+      "end_reason": "all_hostiles_defeated"
+    },
+    {
+      "scenario": "B",
+      "strategy": "guillermo",
+      "seed": 10,
+      "survived": true,
+      "won": true,
+      "escaped": false,
+      "rounds": 3,
+      "end_reason": "all_hostiles_defeated"
+    },
+    {
+      "scenario": "B",
+      "strategy": "guillermo",
+      "seed": 11,
+      "survived": true,
+      "won": true,
+      "escaped": false,
+      "rounds": 4,
+      "end_reason": "all_hostiles_defeated"
+    },
+    {
+      "scenario": "B",
+      "strategy": "guillermo",
+      "seed": 12,
+      "survived": true,
+      "won": true,
+      "escaped": false,
+      "rounds": 3,
+      "end_reason": "all_hostiles_defeated"
+    },
+    {
+      "scenario": "B",
+      "strategy": "guillermo",
+      "seed": 13,
+      "survived": true,
+      "won": true,
+      "escaped": false,
+      "rounds": 4,
+      "end_reason": "all_hostiles_defeated"
+    },
+    {
+      "scenario": "B",
+      "strategy": "guillermo",
+      "seed": 14,
+      "survived": true,
+      "won": true,
+      "escaped": false,
+      "rounds": 3,
+      "end_reason": "all_hostiles_defeated"
+    },
+    {
+      "scenario": "B",
+      "strategy": "guillermo",
+      "seed": 15,
+      "survived": true,
+      "won": true,
+      "escaped": false,
+      "rounds": 4,
+      "end_reason": "all_hostiles_defeated"
+    },
+    {
+      "scenario": "B",
+      "strategy": "guillermo",
+      "seed": 16,
+      "survived": true,
+      "won": true,
+      "escaped": false,
+      "rounds": 3,
+      "end_reason": "all_hostiles_defeated"
+    },
+    {
+      "scenario": "B",
+      "strategy": "guillermo",
+      "seed": 17,
+      "survived": true,
+      "won": true,
+      "escaped": false,
+      "rounds": 4,
+      "end_reason": "all_hostiles_defeated"
+    },
+    {
+      "scenario": "B",
+      "strategy": "guillermo",
+      "seed": 18,
+      "survived": true,
+      "won": true,
+      "escaped": false,
+      "rounds": 3,
+      "end_reason": "all_hostiles_defeated"
+    },
+    {
+      "scenario": "B",
+      "strategy": "guillermo",
+      "seed": 19,
+      "survived": true,
+      "won": true,
+      "escaped": false,
+      "rounds": 4,
+      "end_reason": "all_hostiles_defeated"
+    },
+    {
+      "scenario": "B",
+      "strategy": "guillermo",
+      "seed": 20,
+      "survived": true,
+      "won": true,
+      "escaped": false,
+      "rounds": 3,
+      "end_reason": "all_hostiles_defeated"
+    },
+    {
+      "scenario": "B",
+      "strategy": "creative",
+      "seed": 1,
+      "survived": true,
+      "won": true,
+      "escaped": false,
+      "rounds": 5,
+      "end_reason": "all_hostiles_defeated"
+    },
+    {
+      "scenario": "B",
+      "strategy": "creative",
+      "seed": 2,
+      "survived": true,
+      "won": true,
+      "escaped": false,
+      "rounds": 4,
+      "end_reason": "all_hostiles_defeated"
+    },
+    {
+      "scenario": "B",
+      "strategy": "creative",
+      "seed": 3,
+      "survived": false,
+      "won": false,
+      "escaped": false,
+      "rounds": 4,
+      "end_reason": "armand_defeated"
+    },
+    {
+      "scenario": "B",
+      "strategy": "creative",
+      "seed": 4,
+      "survived": true,
+      "won": true,
+      "escaped": false,
+      "rounds": 4,
+      "end_reason": "all_hostiles_defeated"
+    },
+    {
+      "scenario": "B",
+      "strategy": "creative",
+      "seed": 5,
+      "survived": true,
+      "won": true,
+      "escaped": false,
+      "rounds": 5,
+      "end_reason": "all_hostiles_defeated"
+    },
+    {
+      "scenario": "B",
+      "strategy": "creative",
+      "seed": 6,
+      "survived": true,
+      "won": true,
+      "escaped": false,
+      "rounds": 4,
+      "end_reason": "all_hostiles_defeated"
+    },
+    {
+      "scenario": "B",
+      "strategy": "creative",
+      "seed": 7,
+      "survived": false,
+      "won": false,
+      "escaped": false,
+      "rounds": 4,
+      "end_reason": "armand_defeated"
+    },
+    {
+      "scenario": "B",
+      "strategy": "creative",
+      "seed": 8,
+      "survived": true,
+      "won": true,
+      "escaped": false,
+      "rounds": 4,
+      "end_reason": "all_hostiles_defeated"
+    },
+    {
+      "scenario": "B",
+      "strategy": "creative",
+      "seed": 9,
+      "survived": false,
+      "won": false,
+      "escaped": false,
+      "rounds": 4,
+      "end_reason": "armand_defeated"
+    },
+    {
+      "scenario": "B",
+      "strategy": "creative",
+      "seed": 10,
+      "survived": true,
+      "won": true,
+      "escaped": false,
+      "rounds": 4,
+      "end_reason": "all_hostiles_defeated"
+    },
+    {
+      "scenario": "B",
+      "strategy": "creative",
+      "seed": 11,
+      "survived": false,
+      "won": false,
+      "escaped": false,
+      "rounds": 4,
+      "end_reason": "armand_defeated"
+    },
+    {
+      "scenario": "B",
+      "strategy": "creative",
+      "seed": 12,
+      "survived": false,
+      "won": false,
+      "escaped": false,
+      "rounds": 5,
+      "end_reason": "armand_defeated"
+    },
+    {
+      "scenario": "B",
+      "strategy": "creative",
+      "seed": 13,
+      "survived": true,
+      "won": true,
+      "escaped": false,
+      "rounds": 4,
+      "end_reason": "all_hostiles_defeated"
+    },
+    {
+      "scenario": "B",
+      "strategy": "creative",
+      "seed": 14,
+      "survived": false,
+      "won": false,
+      "escaped": false,
+      "rounds": 3,
+      "end_reason": "armand_defeated"
+    },
+    {
+      "scenario": "B",
+      "strategy": "creative",
+      "seed": 15,
+      "survived": true,
+      "won": true,
+      "escaped": false,
+      "rounds": 4,
+      "end_reason": "all_hostiles_defeated"
+    },
+    {
+      "scenario": "B",
+      "strategy": "creative",
+      "seed": 16,
+      "survived": false,
+      "won": false,
+      "escaped": false,
+      "rounds": 3,
+      "end_reason": "armand_defeated"
+    },
+    {
+      "scenario": "B",
+      "strategy": "creative",
+      "seed": 17,
+      "survived": true,
+      "won": true,
+      "escaped": false,
+      "rounds": 4,
+      "end_reason": "all_hostiles_defeated"
+    },
+    {
+      "scenario": "B",
+      "strategy": "creative",
+      "seed": 18,
+      "survived": false,
+      "won": false,
+      "escaped": false,
+      "rounds": 3,
+      "end_reason": "armand_defeated"
+    },
+    {
+      "scenario": "B",
+      "strategy": "creative",
+      "seed": 19,
+      "survived": true,
+      "won": true,
+      "escaped": false,
+      "rounds": 4,
+      "end_reason": "all_hostiles_defeated"
+    },
+    {
+      "scenario": "B",
+      "strategy": "creative",
+      "seed": 20,
+      "survived": true,
+      "won": true,
+      "escaped": false,
+      "rounds": 5,
+      "end_reason": "all_hostiles_defeated"
+    },
+    {
+      "scenario": "C",
+      "strategy": "straight",
+      "seed": 1,
+      "survived": false,
+      "won": false,
+      "escaped": false,
+      "rounds": 3,
+      "end_reason": "armand_defeated"
+    },
+    {
+      "scenario": "C",
+      "strategy": "straight",
+      "seed": 2,
+      "survived": false,
+      "won": false,
+      "escaped": false,
+      "rounds": 7,
+      "end_reason": "armand_defeated"
+    },
+    {
+      "scenario": "C",
+      "strategy": "straight",
+      "seed": 3,
+      "survived": false,
+      "won": false,
+      "escaped": false,
+      "rounds": 3,
+      "end_reason": "armand_defeated"
+    },
+    {
+      "scenario": "C",
+      "strategy": "straight",
+      "seed": 4,
+      "survived": true,
+      "won": true,
+      "escaped": false,
+      "rounds": 8,
+      "end_reason": "all_hostiles_defeated"
+    },
+    {
+      "scenario": "C",
+      "strategy": "straight",
+      "seed": 5,
+      "survived": true,
+      "won": true,
+      "escaped": false,
+      "rounds": 6,
+      "end_reason": "all_hostiles_defeated"
+    },
+    {
+      "scenario": "C",
+      "strategy": "straight",
+      "seed": 6,
+      "survived": false,
+      "won": false,
+      "escaped": false,
+      "rounds": 3,
+      "end_reason": "armand_defeated"
+    },
+    {
+      "scenario": "C",
+      "strategy": "straight",
+      "seed": 7,
+      "survived": true,
+      "won": true,
+      "escaped": false,
+      "rounds": 6,
+      "end_reason": "all_hostiles_defeated"
+    },
+    {
+      "scenario": "C",
+      "strategy": "straight",
+      "seed": 8,
+      "survived": false,
+      "won": false,
+      "escaped": false,
+      "rounds": 3,
+      "end_reason": "armand_defeated"
+    },
+    {
+      "scenario": "C",
+      "strategy": "straight",
+      "seed": 9,
+      "survived": false,
+      "won": false,
+      "escaped": false,
+      "rounds": 5,
+      "end_reason": "armand_defeated"
+    },
+    {
+      "scenario": "C",
+      "strategy": "straight",
+      "seed": 10,
+      "survived": false,
+      "won": false,
+      "escaped": false,
+      "rounds": 2,
+      "end_reason": "armand_defeated"
+    },
+    {
+      "scenario": "C",
+      "strategy": "straight",
+      "seed": 11,
+      "survived": false,
+      "won": false,
+      "escaped": false,
+      "rounds": 5,
+      "end_reason": "armand_defeated"
+    },
+    {
+      "scenario": "C",
+      "strategy": "straight",
+      "seed": 12,
+      "survived": false,
+      "won": false,
+      "escaped": false,
+      "rounds": 2,
+      "end_reason": "armand_defeated"
+    },
+    {
+      "scenario": "C",
+      "strategy": "straight",
+      "seed": 13,
+      "survived": true,
+      "won": true,
+      "escaped": false,
+      "rounds": 7,
+      "end_reason": "all_hostiles_defeated"
+    },
+    {
+      "scenario": "C",
+      "strategy": "straight",
+      "seed": 14,
+      "survived": false,
+      "won": false,
+      "escaped": false,
+      "rounds": 6,
+      "end_reason": "armand_defeated"
+    },
+    {
+      "scenario": "C",
+      "strategy": "straight",
+      "seed": 15,
+      "survived": false,
+      "won": false,
+      "escaped": false,
+      "rounds": 7,
+      "end_reason": "armand_defeated"
+    },
+    {
+      "scenario": "C",
+      "strategy": "straight",
+      "seed": 16,
+      "survived": false,
+      "won": false,
+      "escaped": false,
+      "rounds": 6,
+      "end_reason": "armand_defeated"
+    },
+    {
+      "scenario": "C",
+      "strategy": "straight",
+      "seed": 17,
+      "survived": false,
+      "won": false,
+      "escaped": false,
+      "rounds": 3,
+      "end_reason": "armand_defeated"
+    },
+    {
+      "scenario": "C",
+      "strategy": "straight",
+      "seed": 18,
+      "survived": true,
+      "won": true,
+      "escaped": false,
+      "rounds": 6,
+      "end_reason": "all_hostiles_defeated"
+    },
+    {
+      "scenario": "C",
+      "strategy": "straight",
+      "seed": 19,
+      "survived": false,
+      "won": false,
+      "escaped": false,
+      "rounds": 2,
+      "end_reason": "armand_defeated"
+    },
+    {
+      "scenario": "C",
+      "strategy": "straight",
+      "seed": 20,
+      "survived": true,
+      "won": true,
+      "escaped": false,
+      "rounds": 7,
+      "end_reason": "all_hostiles_defeated"
+    },
+    {
+      "scenario": "C",
+      "strategy": "darkness",
+      "seed": 1,
+      "survived": true,
+      "won": true,
+      "escaped": false,
+      "rounds": 7,
+      "end_reason": "all_hostiles_defeated"
+    },
+    {
+      "scenario": "C",
+      "strategy": "darkness",
+      "seed": 2,
+      "survived": true,
+      "won": true,
+      "escaped": false,
+      "rounds": 8,
+      "end_reason": "all_hostiles_defeated"
+    },
+    {
+      "scenario": "C",
+      "strategy": "darkness",
+      "seed": 3,
+      "survived": false,
+      "won": false,
+      "escaped": false,
+      "rounds": 4,
+      "end_reason": "armand_defeated"
+    },
+    {
+      "scenario": "C",
+      "strategy": "darkness",
+      "seed": 4,
+      "survived": true,
+      "won": true,
+      "escaped": false,
+      "rounds": 8,
+      "end_reason": "all_hostiles_defeated"
+    },
+    {
+      "scenario": "C",
+      "strategy": "darkness",
+      "seed": 5,
+      "survived": true,
+      "won": true,
+      "escaped": false,
+      "rounds": 7,
+      "end_reason": "all_hostiles_defeated"
+    },
+    {
+      "scenario": "C",
+      "strategy": "darkness",
+      "seed": 6,
+      "survived": false,
+      "won": false,
+      "escaped": false,
+      "rounds": 4,
+      "end_reason": "armand_defeated"
+    },
+    {
+      "scenario": "C",
+      "strategy": "darkness",
+      "seed": 7,
+      "survived": true,
+      "won": true,
+      "escaped": false,
+      "rounds": 7,
+      "end_reason": "all_hostiles_defeated"
+    },
+    {
+      "scenario": "C",
+      "strategy": "darkness",
+      "seed": 8,
+      "survived": false,
+      "won": false,
+      "escaped": false,
+      "rounds": 3,
+      "end_reason": "armand_defeated"
+    },
+    {
+      "scenario": "C",
+      "strategy": "darkness",
+      "seed": 9,
+      "survived": false,
+      "won": false,
+      "escaped": false,
+      "rounds": 6,
+      "end_reason": "armand_defeated"
+    },
+    {
+      "scenario": "C",
+      "strategy": "darkness",
+      "seed": 10,
+      "survived": true,
+      "won": true,
+      "escaped": false,
+      "rounds": 6,
+      "end_reason": "all_hostiles_defeated"
+    },
+    {
+      "scenario": "C",
+      "strategy": "darkness",
+      "seed": 11,
+      "survived": false,
+      "won": false,
+      "escaped": false,
+      "rounds": 6,
+      "end_reason": "armand_defeated"
+    },
+    {
+      "scenario": "C",
+      "strategy": "darkness",
+      "seed": 12,
+      "survived": false,
+      "won": false,
+      "escaped": false,
+      "rounds": 3,
+      "end_reason": "armand_defeated"
+    },
+    {
+      "scenario": "C",
+      "strategy": "darkness",
+      "seed": 13,
+      "survived": true,
+      "won": true,
+      "escaped": false,
+      "rounds": 8,
+      "end_reason": "all_hostiles_defeated"
+    },
+    {
+      "scenario": "C",
+      "strategy": "darkness",
+      "seed": 14,
+      "survived": true,
+      "won": true,
+      "escaped": false,
+      "rounds": 6,
+      "end_reason": "all_hostiles_defeated"
+    },
+    {
+      "scenario": "C",
+      "strategy": "darkness",
+      "seed": 15,
+      "survived": true,
+      "won": true,
+      "escaped": false,
+      "rounds": 8,
+      "end_reason": "all_hostiles_defeated"
+    },
+    {
+      "scenario": "C",
+      "strategy": "darkness",
+      "seed": 16,
+      "survived": true,
+      "won": true,
+      "escaped": false,
+      "rounds": 7,
+      "end_reason": "all_hostiles_defeated"
+    },
+    {
+      "scenario": "C",
+      "strategy": "darkness",
+      "seed": 17,
+      "survived": false,
+      "won": false,
+      "escaped": false,
+      "rounds": 4,
+      "end_reason": "armand_defeated"
+    },
+    {
+      "scenario": "C",
+      "strategy": "darkness",
+      "seed": 18,
+      "survived": true,
+      "won": true,
+      "escaped": false,
+      "rounds": 7,
+      "end_reason": "all_hostiles_defeated"
+    },
+    {
+      "scenario": "C",
+      "strategy": "darkness",
+      "seed": 19,
+      "survived": false,
+      "won": false,
+      "escaped": false,
+      "rounds": 3,
+      "end_reason": "armand_defeated"
+    },
+    {
+      "scenario": "C",
+      "strategy": "darkness",
+      "seed": 20,
+      "survived": true,
+      "won": true,
+      "escaped": false,
+      "rounds": 7,
+      "end_reason": "all_hostiles_defeated"
+    },
+    {
+      "scenario": "C",
+      "strategy": "flee",
+      "seed": 1,
+      "survived": true,
+      "won": false,
+      "escaped": true,
+      "rounds": 1,
+      "end_reason": "escaped_and_hidden"
+    },
+    {
+      "scenario": "C",
+      "strategy": "flee",
+      "seed": 2,
+      "survived": true,
+      "won": false,
+      "escaped": true,
+      "rounds": 1,
+      "end_reason": "escaped_and_hidden"
+    },
+    {
+      "scenario": "C",
+      "strategy": "flee",
+      "seed": 3,
+      "survived": true,
+      "won": false,
+      "escaped": true,
+      "rounds": 1,
+      "end_reason": "escaped_and_hidden"
+    },
+    {
+      "scenario": "C",
+      "strategy": "flee",
+      "seed": 4,
+      "survived": true,
+      "won": false,
+      "escaped": true,
+      "rounds": 1,
+      "end_reason": "escaped_and_hidden"
+    },
+    {
+      "scenario": "C",
+      "strategy": "flee",
+      "seed": 5,
+      "survived": true,
+      "won": false,
+      "escaped": true,
+      "rounds": 1,
+      "end_reason": "escaped_and_hidden"
+    },
+    {
+      "scenario": "C",
+      "strategy": "flee",
+      "seed": 6,
+      "survived": true,
+      "won": false,
+      "escaped": true,
+      "rounds": 1,
+      "end_reason": "escaped_and_hidden"
+    },
+    {
+      "scenario": "C",
+      "strategy": "flee",
+      "seed": 7,
+      "survived": true,
+      "won": false,
+      "escaped": true,
+      "rounds": 1,
+      "end_reason": "escaped_and_hidden"
+    },
+    {
+      "scenario": "C",
+      "strategy": "flee",
+      "seed": 8,
+      "survived": true,
+      "won": false,
+      "escaped": true,
+      "rounds": 1,
+      "end_reason": "escaped_and_hidden"
+    },
+    {
+      "scenario": "C",
+      "strategy": "flee",
+      "seed": 9,
+      "survived": true,
+      "won": false,
+      "escaped": true,
+      "rounds": 1,
+      "end_reason": "escaped_and_hidden"
+    },
+    {
+      "scenario": "C",
+      "strategy": "flee",
+      "seed": 10,
+      "survived": true,
+      "won": false,
+      "escaped": true,
+      "rounds": 1,
+      "end_reason": "escaped_and_hidden"
+    },
+    {
+      "scenario": "C",
+      "strategy": "flee",
+      "seed": 11,
+      "survived": true,
+      "won": false,
+      "escaped": true,
+      "rounds": 1,
+      "end_reason": "escaped_and_hidden"
+    },
+    {
+      "scenario": "C",
+      "strategy": "flee",
+      "seed": 12,
+      "survived": false,
+      "won": false,
+      "escaped": true,
+      "rounds": 2,
+      "end_reason": "escaped_and_hidden"
+    },
+    {
+      "scenario": "C",
+      "strategy": "flee",
+      "seed": 13,
+      "survived": true,
+      "won": false,
+      "escaped": true,
+      "rounds": 1,
+      "end_reason": "escaped_and_hidden"
+    },
+    {
+      "scenario": "C",
+      "strategy": "flee",
+      "seed": 14,
+      "survived": false,
+      "won": false,
+      "escaped": false,
+      "rounds": 1,
+      "end_reason": "armand_defeated"
+    },
+    {
+      "scenario": "C",
+      "strategy": "flee",
+      "seed": 15,
+      "survived": true,
+      "won": false,
+      "escaped": true,
+      "rounds": 1,
+      "end_reason": "escaped_and_hidden"
+    },
+    {
+      "scenario": "C",
+      "strategy": "flee",
+      "seed": 16,
+      "survived": false,
+      "won": false,
+      "escaped": false,
+      "rounds": 1,
+      "end_reason": "armand_defeated"
+    },
+    {
+      "scenario": "C",
+      "strategy": "flee",
+      "seed": 17,
+      "survived": true,
+      "won": false,
+      "escaped": true,
+      "rounds": 1,
+      "end_reason": "escaped_and_hidden"
+    },
+    {
+      "scenario": "C",
+      "strategy": "flee",
+      "seed": 18,
+      "survived": false,
+      "won": false,
+      "escaped": false,
+      "rounds": 1,
+      "end_reason": "armand_defeated"
+    },
+    {
+      "scenario": "C",
+      "strategy": "flee",
+      "seed": 19,
+      "survived": true,
+      "won": false,
+      "escaped": true,
+      "rounds": 1,
+      "end_reason": "escaped_and_hidden"
+    },
+    {
+      "scenario": "C",
+      "strategy": "flee",
+      "seed": 20,
+      "survived": false,
+      "won": false,
+      "escaped": false,
+      "rounds": 1,
+      "end_reason": "armand_defeated"
+    },
+    {
+      "scenario": "C",
+      "strategy": "guillermo",
+      "seed": 1,
+      "survived": false,
+      "won": false,
+      "escaped": false,
+      "rounds": 3,
+      "end_reason": "armand_defeated"
+    },
+    {
+      "scenario": "C",
+      "strategy": "guillermo",
+      "seed": 2,
+      "survived": false,
+      "won": false,
+      "escaped": false,
+      "rounds": 7,
+      "end_reason": "armand_defeated"
+    },
+    {
+      "scenario": "C",
+      "strategy": "guillermo",
+      "seed": 3,
+      "survived": false,
+      "won": false,
+      "escaped": false,
+      "rounds": 3,
+      "end_reason": "armand_defeated"
+    },
+    {
+      "scenario": "C",
+      "strategy": "guillermo",
+      "seed": 4,
+      "survived": true,
+      "won": true,
+      "escaped": false,
+      "rounds": 8,
+      "end_reason": "all_hostiles_defeated"
+    },
+    {
+      "scenario": "C",
+      "strategy": "guillermo",
+      "seed": 5,
+      "survived": true,
+      "won": true,
+      "escaped": false,
+      "rounds": 6,
+      "end_reason": "all_hostiles_defeated"
+    },
+    {
+      "scenario": "C",
+      "strategy": "guillermo",
+      "seed": 6,
+      "survived": false,
+      "won": false,
+      "escaped": false,
+      "rounds": 3,
+      "end_reason": "armand_defeated"
+    },
+    {
+      "scenario": "C",
+      "strategy": "guillermo",
+      "seed": 7,
+      "survived": true,
+      "won": true,
+      "escaped": false,
+      "rounds": 6,
+      "end_reason": "all_hostiles_defeated"
+    },
+    {
+      "scenario": "C",
+      "strategy": "guillermo",
+      "seed": 8,
+      "survived": false,
+      "won": false,
+      "escaped": false,
+      "rounds": 3,
+      "end_reason": "armand_defeated"
+    },
+    {
+      "scenario": "C",
+      "strategy": "guillermo",
+      "seed": 9,
+      "survived": false,
+      "won": false,
+      "escaped": false,
+      "rounds": 5,
+      "end_reason": "armand_defeated"
+    },
+    {
+      "scenario": "C",
+      "strategy": "guillermo",
+      "seed": 10,
+      "survived": false,
+      "won": false,
+      "escaped": false,
+      "rounds": 2,
+      "end_reason": "armand_defeated"
+    },
+    {
+      "scenario": "C",
+      "strategy": "guillermo",
+      "seed": 11,
+      "survived": false,
+      "won": false,
+      "escaped": false,
+      "rounds": 5,
+      "end_reason": "armand_defeated"
+    },
+    {
+      "scenario": "C",
+      "strategy": "guillermo",
+      "seed": 12,
+      "survived": false,
+      "won": false,
+      "escaped": false,
+      "rounds": 2,
+      "end_reason": "armand_defeated"
+    },
+    {
+      "scenario": "C",
+      "strategy": "guillermo",
+      "seed": 13,
+      "survived": true,
+      "won": true,
+      "escaped": false,
+      "rounds": 7,
+      "end_reason": "all_hostiles_defeated"
+    },
+    {
+      "scenario": "C",
+      "strategy": "guillermo",
+      "seed": 14,
+      "survived": false,
+      "won": false,
+      "escaped": false,
+      "rounds": 6,
+      "end_reason": "armand_defeated"
+    },
+    {
+      "scenario": "C",
+      "strategy": "guillermo",
+      "seed": 15,
+      "survived": false,
+      "won": false,
+      "escaped": false,
+      "rounds": 7,
+      "end_reason": "armand_defeated"
+    },
+    {
+      "scenario": "C",
+      "strategy": "guillermo",
+      "seed": 16,
+      "survived": false,
+      "won": false,
+      "escaped": false,
+      "rounds": 6,
+      "end_reason": "armand_defeated"
+    },
+    {
+      "scenario": "C",
+      "strategy": "guillermo",
+      "seed": 17,
+      "survived": false,
+      "won": false,
+      "escaped": false,
+      "rounds": 3,
+      "end_reason": "armand_defeated"
+    },
+    {
+      "scenario": "C",
+      "strategy": "guillermo",
+      "seed": 18,
+      "survived": true,
+      "won": true,
+      "escaped": false,
+      "rounds": 6,
+      "end_reason": "all_hostiles_defeated"
+    },
+    {
+      "scenario": "C",
+      "strategy": "guillermo",
+      "seed": 19,
+      "survived": false,
+      "won": false,
+      "escaped": false,
+      "rounds": 2,
+      "end_reason": "armand_defeated"
+    },
+    {
+      "scenario": "C",
+      "strategy": "guillermo",
+      "seed": 20,
+      "survived": true,
+      "won": true,
+      "escaped": false,
+      "rounds": 7,
+      "end_reason": "all_hostiles_defeated"
+    },
+    {
+      "scenario": "C",
+      "strategy": "creative",
+      "seed": 1,
+      "survived": false,
+      "won": false,
+      "escaped": false,
+      "rounds": 3,
+      "end_reason": "armand_defeated"
+    },
+    {
+      "scenario": "C",
+      "strategy": "creative",
+      "seed": 2,
+      "survived": false,
+      "won": false,
+      "escaped": false,
+      "rounds": 7,
+      "end_reason": "armand_defeated"
+    },
+    {
+      "scenario": "C",
+      "strategy": "creative",
+      "seed": 3,
+      "survived": false,
+      "won": false,
+      "escaped": false,
+      "rounds": 3,
+      "end_reason": "armand_defeated"
+    },
+    {
+      "scenario": "C",
+      "strategy": "creative",
+      "seed": 4,
+      "survived": false,
+      "won": false,
+      "escaped": false,
+      "rounds": 7,
+      "end_reason": "armand_defeated"
+    },
+    {
+      "scenario": "C",
+      "strategy": "creative",
+      "seed": 5,
+      "survived": false,
+      "won": false,
+      "escaped": false,
+      "rounds": 3,
+      "end_reason": "armand_defeated"
+    },
+    {
+      "scenario": "C",
+      "strategy": "creative",
+      "seed": 6,
+      "survived": true,
+      "won": true,
+      "escaped": false,
+      "rounds": 7,
+      "end_reason": "all_hostiles_defeated"
+    },
+    {
+      "scenario": "C",
+      "strategy": "creative",
+      "seed": 7,
+      "survived": false,
+      "won": false,
+      "escaped": false,
+      "rounds": 3,
+      "end_reason": "armand_defeated"
+    },
+    {
+      "scenario": "C",
+      "strategy": "creative",
+      "seed": 8,
+      "survived": true,
+      "won": true,
+      "escaped": false,
+      "rounds": 8,
+      "end_reason": "all_hostiles_defeated"
+    },
+    {
+      "scenario": "C",
+      "strategy": "creative",
+      "seed": 9,
+      "survived": false,
+      "won": false,
+      "escaped": false,
+      "rounds": 3,
+      "end_reason": "armand_defeated"
+    },
+    {
+      "scenario": "C",
+      "strategy": "creative",
+      "seed": 10,
+      "survived": false,
+      "won": false,
+      "escaped": false,
+      "rounds": 2,
+      "end_reason": "armand_defeated"
+    },
+    {
+      "scenario": "C",
+      "strategy": "creative",
+      "seed": 11,
+      "survived": false,
+      "won": false,
+      "escaped": false,
+      "rounds": 3,
+      "end_reason": "armand_defeated"
+    },
+    {
+      "scenario": "C",
+      "strategy": "creative",
+      "seed": 12,
+      "survived": false,
+      "won": false,
+      "escaped": false,
+      "rounds": 6,
+      "end_reason": "armand_defeated"
+    },
+    {
+      "scenario": "C",
+      "strategy": "creative",
+      "seed": 13,
+      "survived": false,
+      "won": false,
+      "escaped": false,
+      "rounds": 7,
+      "end_reason": "armand_defeated"
+    },
+    {
+      "scenario": "C",
+      "strategy": "creative",
+      "seed": 14,
+      "survived": false,
+      "won": false,
+      "escaped": false,
+      "rounds": 2,
+      "end_reason": "armand_defeated"
+    },
+    {
+      "scenario": "C",
+      "strategy": "creative",
+      "seed": 15,
+      "survived": false,
+      "won": false,
+      "escaped": false,
+      "rounds": 7,
+      "end_reason": "armand_defeated"
+    },
+    {
+      "scenario": "C",
+      "strategy": "creative",
+      "seed": 16,
+      "survived": false,
+      "won": false,
+      "escaped": false,
+      "rounds": 2,
+      "end_reason": "armand_defeated"
+    },
+    {
+      "scenario": "C",
+      "strategy": "creative",
+      "seed": 17,
+      "survived": true,
+      "won": true,
+      "escaped": false,
+      "rounds": 7,
+      "end_reason": "all_hostiles_defeated"
+    },
+    {
+      "scenario": "C",
+      "strategy": "creative",
+      "seed": 18,
+      "survived": false,
+      "won": false,
+      "escaped": false,
+      "rounds": 2,
+      "end_reason": "armand_defeated"
+    },
+    {
+      "scenario": "C",
+      "strategy": "creative",
+      "seed": 19,
+      "survived": false,
+      "won": false,
+      "escaped": false,
+      "rounds": 7,
+      "end_reason": "armand_defeated"
+    },
+    {
+      "scenario": "C",
+      "strategy": "creative",
+      "seed": 20,
+      "survived": false,
+      "won": false,
+      "escaped": false,
+      "rounds": 2,
+      "end_reason": "armand_defeated"
+    },
+    {
+      "scenario": "D",
+      "strategy": "straight",
+      "seed": 1,
+      "survived": false,
+      "won": false,
+      "escaped": false,
+      "rounds": 5,
+      "end_reason": "armand_defeated"
+    },
+    {
+      "scenario": "D",
+      "strategy": "straight",
+      "seed": 2,
+      "survived": false,
+      "won": false,
+      "escaped": false,
+      "rounds": 4,
+      "end_reason": "armand_defeated"
+    },
+    {
+      "scenario": "D",
+      "strategy": "straight",
+      "seed": 3,
+      "survived": false,
+      "won": false,
+      "escaped": false,
+      "rounds": 5,
+      "end_reason": "armand_defeated"
+    },
+    {
+      "scenario": "D",
+      "strategy": "straight",
+      "seed": 4,
+      "survived": true,
+      "won": true,
+      "escaped": false,
+      "rounds": 5,
+      "end_reason": "all_hostiles_defeated"
+    },
+    {
+      "scenario": "D",
+      "strategy": "straight",
+      "seed": 5,
+      "survived": false,
+      "won": false,
+      "escaped": false,
+      "rounds": 4,
+      "end_reason": "armand_defeated"
+    },
+    {
+      "scenario": "D",
+      "strategy": "straight",
+      "seed": 6,
+      "survived": false,
+      "won": false,
+      "escaped": false,
+      "rounds": 6,
+      "end_reason": "armand_defeated"
+    },
+    {
+      "scenario": "D",
+      "strategy": "straight",
+      "seed": 7,
+      "survived": false,
+      "won": false,
+      "escaped": false,
+      "rounds": 4,
+      "end_reason": "armand_defeated"
+    },
+    {
+      "scenario": "D",
+      "strategy": "straight",
+      "seed": 8,
+      "survived": false,
+      "won": false,
+      "escaped": false,
+      "rounds": 4,
+      "end_reason": "armand_defeated"
+    },
+    {
+      "scenario": "D",
+      "strategy": "straight",
+      "seed": 9,
+      "survived": false,
+      "won": false,
+      "escaped": false,
+      "rounds": 4,
+      "end_reason": "armand_defeated"
+    },
+    {
+      "scenario": "D",
+      "strategy": "straight",
+      "seed": 10,
+      "survived": false,
+      "won": false,
+      "escaped": false,
+      "rounds": 3,
+      "end_reason": "armand_defeated"
+    },
+    {
+      "scenario": "D",
+      "strategy": "straight",
+      "seed": 11,
+      "survived": false,
+      "won": false,
+      "escaped": false,
+      "rounds": 4,
+      "end_reason": "armand_defeated"
+    },
+    {
+      "scenario": "D",
+      "strategy": "straight",
+      "seed": 12,
+      "survived": false,
+      "won": false,
+      "escaped": false,
+      "rounds": 3,
+      "end_reason": "armand_defeated"
+    },
+    {
+      "scenario": "D",
+      "strategy": "straight",
+      "seed": 13,
+      "survived": false,
+      "won": false,
+      "escaped": false,
+      "rounds": 4,
+      "end_reason": "armand_defeated"
+    },
+    {
+      "scenario": "D",
+      "strategy": "straight",
+      "seed": 14,
+      "survived": false,
+      "won": false,
+      "escaped": false,
+      "rounds": 3,
+      "end_reason": "armand_defeated"
+    },
+    {
+      "scenario": "D",
+      "strategy": "straight",
+      "seed": 15,
+      "survived": true,
+      "won": true,
+      "escaped": false,
+      "rounds": 5,
+      "end_reason": "all_hostiles_defeated"
+    },
+    {
+      "scenario": "D",
+      "strategy": "straight",
+      "seed": 16,
+      "survived": true,
+      "won": true,
+      "escaped": false,
+      "rounds": 3,
+      "end_reason": "all_hostiles_defeated"
+    },
+    {
+      "scenario": "D",
+      "strategy": "straight",
+      "seed": 17,
+      "survived": false,
+      "won": false,
+      "escaped": false,
+      "rounds": 4,
+      "end_reason": "armand_defeated"
+    },
+    {
+      "scenario": "D",
+      "strategy": "straight",
+      "seed": 18,
+      "survived": true,
+      "won": true,
+      "escaped": false,
+      "rounds": 3,
+      "end_reason": "all_hostiles_defeated"
+    },
+    {
+      "scenario": "D",
+      "strategy": "straight",
+      "seed": 19,
+      "survived": false,
+      "won": false,
+      "escaped": false,
+      "rounds": 4,
+      "end_reason": "armand_defeated"
+    },
+    {
+      "scenario": "D",
+      "strategy": "straight",
+      "seed": 20,
+      "survived": false,
+      "won": false,
+      "escaped": false,
+      "rounds": 5,
+      "end_reason": "armand_defeated"
+    },
+    {
+      "scenario": "D",
+      "strategy": "darkness",
+      "seed": 1,
+      "survived": false,
+      "won": false,
+      "escaped": false,
+      "rounds": 6,
+      "end_reason": "armand_defeated"
+    },
+    {
+      "scenario": "D",
+      "strategy": "darkness",
+      "seed": 2,
+      "survived": true,
+      "won": true,
+      "escaped": false,
+      "rounds": 6,
+      "end_reason": "all_hostiles_defeated"
+    },
+    {
+      "scenario": "D",
+      "strategy": "darkness",
+      "seed": 3,
+      "survived": false,
+      "won": false,
+      "escaped": false,
+      "rounds": 6,
+      "end_reason": "armand_defeated"
+    },
+    {
+      "scenario": "D",
+      "strategy": "darkness",
+      "seed": 4,
+      "survived": true,
+      "won": true,
+      "escaped": false,
+      "rounds": 6,
+      "end_reason": "all_hostiles_defeated"
+    },
+    {
+      "scenario": "D",
+      "strategy": "darkness",
+      "seed": 5,
+      "survived": false,
+      "won": false,
+      "escaped": false,
+      "rounds": 5,
+      "end_reason": "armand_defeated"
+    },
+    {
+      "scenario": "D",
+      "strategy": "darkness",
+      "seed": 6,
+      "survived": false,
+      "won": false,
+      "escaped": false,
+      "rounds": 5,
+      "end_reason": "armand_defeated"
+    },
+    {
+      "scenario": "D",
+      "strategy": "darkness",
+      "seed": 7,
+      "survived": false,
+      "won": false,
+      "escaped": false,
+      "rounds": 5,
+      "end_reason": "armand_defeated"
+    },
+    {
+      "scenario": "D",
+      "strategy": "darkness",
+      "seed": 8,
+      "survived": false,
+      "won": false,
+      "escaped": false,
+      "rounds": 5,
+      "end_reason": "armand_defeated"
+    },
+    {
+      "scenario": "D",
+      "strategy": "darkness",
+      "seed": 9,
+      "survived": false,
+      "won": false,
+      "escaped": false,
+      "rounds": 5,
+      "end_reason": "armand_defeated"
+    },
+    {
+      "scenario": "D",
+      "strategy": "darkness",
+      "seed": 10,
+      "survived": false,
+      "won": false,
+      "escaped": false,
+      "rounds": 4,
+      "end_reason": "armand_defeated"
+    },
+    {
+      "scenario": "D",
+      "strategy": "darkness",
+      "seed": 11,
+      "survived": false,
+      "won": false,
+      "escaped": false,
+      "rounds": 5,
+      "end_reason": "armand_defeated"
+    },
+    {
+      "scenario": "D",
+      "strategy": "darkness",
+      "seed": 12,
+      "survived": false,
+      "won": false,
+      "escaped": false,
+      "rounds": 4,
+      "end_reason": "armand_defeated"
+    },
+    {
+      "scenario": "D",
+      "strategy": "darkness",
+      "seed": 13,
+      "survived": true,
+      "won": true,
+      "escaped": false,
+      "rounds": 6,
+      "end_reason": "all_hostiles_defeated"
+    },
+    {
+      "scenario": "D",
+      "strategy": "darkness",
+      "seed": 14,
+      "survived": false,
+      "won": false,
+      "escaped": false,
+      "rounds": 4,
+      "end_reason": "armand_defeated"
+    },
+    {
+      "scenario": "D",
+      "strategy": "darkness",
+      "seed": 15,
+      "survived": false,
+      "won": false,
+      "escaped": false,
+      "rounds": 5,
+      "end_reason": "armand_defeated"
+    },
+    {
+      "scenario": "D",
+      "strategy": "darkness",
+      "seed": 16,
+      "survived": true,
+      "won": true,
+      "escaped": false,
+      "rounds": 4,
+      "end_reason": "all_hostiles_defeated"
+    },
+    {
+      "scenario": "D",
+      "strategy": "darkness",
+      "seed": 17,
+      "survived": false,
+      "won": false,
+      "escaped": false,
+      "rounds": 5,
+      "end_reason": "armand_defeated"
+    },
+    {
+      "scenario": "D",
+      "strategy": "darkness",
+      "seed": 18,
+      "survived": true,
+      "won": true,
+      "escaped": false,
+      "rounds": 4,
+      "end_reason": "all_hostiles_defeated"
+    },
+    {
+      "scenario": "D",
+      "strategy": "darkness",
+      "seed": 19,
+      "survived": false,
+      "won": false,
+      "escaped": false,
+      "rounds": 5,
+      "end_reason": "armand_defeated"
+    },
+    {
+      "scenario": "D",
+      "strategy": "darkness",
+      "seed": 20,
+      "survived": true,
+      "won": true,
+      "escaped": false,
+      "rounds": 6,
+      "end_reason": "all_hostiles_defeated"
+    },
+    {
+      "scenario": "D",
+      "strategy": "flee",
+      "seed": 1,
+      "survived": true,
+      "won": false,
+      "escaped": true,
+      "rounds": 2,
+      "end_reason": "escaped_and_hidden"
+    },
+    {
+      "scenario": "D",
+      "strategy": "flee",
+      "seed": 2,
+      "survived": true,
+      "won": false,
+      "escaped": true,
+      "rounds": 2,
+      "end_reason": "escaped_and_hidden"
+    },
+    {
+      "scenario": "D",
+      "strategy": "flee",
+      "seed": 3,
+      "survived": true,
+      "won": false,
+      "escaped": true,
+      "rounds": 2,
+      "end_reason": "escaped_and_hidden"
+    },
+    {
+      "scenario": "D",
+      "strategy": "flee",
+      "seed": 4,
+      "survived": true,
+      "won": false,
+      "escaped": true,
+      "rounds": 2,
+      "end_reason": "escaped_and_hidden"
+    },
+    {
+      "scenario": "D",
+      "strategy": "flee",
+      "seed": 5,
+      "survived": true,
+      "won": false,
+      "escaped": true,
+      "rounds": 2,
+      "end_reason": "escaped_and_hidden"
+    },
+    {
+      "scenario": "D",
+      "strategy": "flee",
+      "seed": 6,
+      "survived": true,
+      "won": false,
+      "escaped": true,
+      "rounds": 1,
+      "end_reason": "escaped_and_hidden"
+    },
+    {
+      "scenario": "D",
+      "strategy": "flee",
+      "seed": 7,
+      "survived": false,
+      "won": false,
+      "escaped": true,
+      "rounds": 2,
+      "end_reason": "escaped_and_hidden"
+    },
+    {
+      "scenario": "D",
+      "strategy": "flee",
+      "seed": 8,
+      "survived": true,
+      "won": false,
+      "escaped": true,
+      "rounds": 1,
+      "end_reason": "escaped_and_hidden"
+    },
+    {
+      "scenario": "D",
+      "strategy": "flee",
+      "seed": 9,
+      "survived": false,
+      "won": false,
+      "escaped": true,
+      "rounds": 2,
+      "end_reason": "escaped_and_hidden"
+    },
+    {
+      "scenario": "D",
+      "strategy": "flee",
+      "seed": 10,
+      "survived": true,
+      "won": false,
+      "escaped": true,
+      "rounds": 1,
+      "end_reason": "escaped_and_hidden"
+    },
+    {
+      "scenario": "D",
+      "strategy": "flee",
+      "seed": 11,
+      "survived": true,
+      "won": false,
+      "escaped": true,
+      "rounds": 2,
+      "end_reason": "escaped_and_hidden"
+    },
+    {
+      "scenario": "D",
+      "strategy": "flee",
+      "seed": 12,
+      "survived": true,
+      "won": false,
+      "escaped": true,
+      "rounds": 1,
+      "end_reason": "escaped_and_hidden"
+    },
+    {
+      "scenario": "D",
+      "strategy": "flee",
+      "seed": 13,
+      "survived": true,
+      "won": false,
+      "escaped": true,
+      "rounds": 2,
+      "end_reason": "escaped_and_hidden"
+    },
+    {
+      "scenario": "D",
+      "strategy": "flee",
+      "seed": 14,
+      "survived": true,
+      "won": false,
+      "escaped": true,
+      "rounds": 1,
+      "end_reason": "escaped_and_hidden"
+    },
+    {
+      "scenario": "D",
+      "strategy": "flee",
+      "seed": 15,
+      "survived": true,
+      "won": false,
+      "escaped": true,
+      "rounds": 2,
+      "end_reason": "escaped_and_hidden"
+    },
+    {
+      "scenario": "D",
+      "strategy": "flee",
+      "seed": 16,
+      "survived": true,
+      "won": false,
+      "escaped": true,
+      "rounds": 2,
+      "end_reason": "escaped_and_hidden"
+    },
+    {
+      "scenario": "D",
+      "strategy": "flee",
+      "seed": 17,
+      "survived": true,
+      "won": false,
+      "escaped": true,
+      "rounds": 1,
+      "end_reason": "escaped_and_hidden"
+    },
+    {
+      "scenario": "D",
+      "strategy": "flee",
+      "seed": 18,
+      "survived": false,
+      "won": false,
+      "escaped": true,
+      "rounds": 2,
+      "end_reason": "escaped_and_hidden"
+    },
+    {
+      "scenario": "D",
+      "strategy": "flee",
+      "seed": 19,
+      "survived": true,
+      "won": false,
+      "escaped": true,
+      "rounds": 1,
+      "end_reason": "escaped_and_hidden"
+    },
+    {
+      "scenario": "D",
+      "strategy": "flee",
+      "seed": 20,
+      "survived": true,
+      "won": false,
+      "escaped": true,
+      "rounds": 2,
+      "end_reason": "escaped_and_hidden"
+    },
+    {
+      "scenario": "D",
+      "strategy": "guillermo",
+      "seed": 1,
+      "survived": false,
+      "won": false,
+      "escaped": false,
+      "rounds": 5,
+      "end_reason": "armand_defeated"
+    },
+    {
+      "scenario": "D",
+      "strategy": "guillermo",
+      "seed": 2,
+      "survived": false,
+      "won": false,
+      "escaped": false,
+      "rounds": 4,
+      "end_reason": "armand_defeated"
+    },
+    {
+      "scenario": "D",
+      "strategy": "guillermo",
+      "seed": 3,
+      "survived": false,
+      "won": false,
+      "escaped": false,
+      "rounds": 5,
+      "end_reason": "armand_defeated"
+    },
+    {
+      "scenario": "D",
+      "strategy": "guillermo",
+      "seed": 4,
+      "survived": true,
+      "won": true,
+      "escaped": false,
+      "rounds": 5,
+      "end_reason": "all_hostiles_defeated"
+    },
+    {
+      "scenario": "D",
+      "strategy": "guillermo",
+      "seed": 5,
+      "survived": false,
+      "won": false,
+      "escaped": false,
+      "rounds": 4,
+      "end_reason": "armand_defeated"
+    },
+    {
+      "scenario": "D",
+      "strategy": "guillermo",
+      "seed": 6,
+      "survived": false,
+      "won": false,
+      "escaped": false,
+      "rounds": 6,
+      "end_reason": "armand_defeated"
+    },
+    {
+      "scenario": "D",
+      "strategy": "guillermo",
+      "seed": 7,
+      "survived": false,
+      "won": false,
+      "escaped": false,
+      "rounds": 4,
+      "end_reason": "armand_defeated"
+    },
+    {
+      "scenario": "D",
+      "strategy": "guillermo",
+      "seed": 8,
+      "survived": false,
+      "won": false,
+      "escaped": false,
+      "rounds": 4,
+      "end_reason": "armand_defeated"
+    },
+    {
+      "scenario": "D",
+      "strategy": "guillermo",
+      "seed": 9,
+      "survived": false,
+      "won": false,
+      "escaped": false,
+      "rounds": 4,
+      "end_reason": "armand_defeated"
+    },
+    {
+      "scenario": "D",
+      "strategy": "guillermo",
+      "seed": 10,
+      "survived": false,
+      "won": false,
+      "escaped": false,
+      "rounds": 3,
+      "end_reason": "armand_defeated"
+    },
+    {
+      "scenario": "D",
+      "strategy": "guillermo",
+      "seed": 11,
+      "survived": false,
+      "won": false,
+      "escaped": false,
+      "rounds": 4,
+      "end_reason": "armand_defeated"
+    },
+    {
+      "scenario": "D",
+      "strategy": "guillermo",
+      "seed": 12,
+      "survived": false,
+      "won": false,
+      "escaped": false,
+      "rounds": 3,
+      "end_reason": "armand_defeated"
+    },
+    {
+      "scenario": "D",
+      "strategy": "guillermo",
+      "seed": 13,
+      "survived": false,
+      "won": false,
+      "escaped": false,
+      "rounds": 4,
+      "end_reason": "armand_defeated"
+    },
+    {
+      "scenario": "D",
+      "strategy": "guillermo",
+      "seed": 14,
+      "survived": false,
+      "won": false,
+      "escaped": false,
+      "rounds": 3,
+      "end_reason": "armand_defeated"
+    },
+    {
+      "scenario": "D",
+      "strategy": "guillermo",
+      "seed": 15,
+      "survived": true,
+      "won": true,
+      "escaped": false,
+      "rounds": 5,
+      "end_reason": "all_hostiles_defeated"
+    },
+    {
+      "scenario": "D",
+      "strategy": "guillermo",
+      "seed": 16,
+      "survived": true,
+      "won": true,
+      "escaped": false,
+      "rounds": 3,
+      "end_reason": "all_hostiles_defeated"
+    },
+    {
+      "scenario": "D",
+      "strategy": "guillermo",
+      "seed": 17,
+      "survived": false,
+      "won": false,
+      "escaped": false,
+      "rounds": 4,
+      "end_reason": "armand_defeated"
+    },
+    {
+      "scenario": "D",
+      "strategy": "guillermo",
+      "seed": 18,
+      "survived": true,
+      "won": true,
+      "escaped": false,
+      "rounds": 3,
+      "end_reason": "all_hostiles_defeated"
+    },
+    {
+      "scenario": "D",
+      "strategy": "guillermo",
+      "seed": 19,
+      "survived": false,
+      "won": false,
+      "escaped": false,
+      "rounds": 4,
+      "end_reason": "armand_defeated"
+    },
+    {
+      "scenario": "D",
+      "strategy": "guillermo",
+      "seed": 20,
+      "survived": false,
+      "won": false,
+      "escaped": false,
+      "rounds": 5,
+      "end_reason": "armand_defeated"
+    },
+    {
+      "scenario": "D",
+      "strategy": "creative",
+      "seed": 1,
+      "survived": false,
+      "won": false,
+      "escaped": false,
+      "rounds": 5,
+      "end_reason": "armand_defeated"
+    },
+    {
+      "scenario": "D",
+      "strategy": "creative",
+      "seed": 2,
+      "survived": false,
+      "won": false,
+      "escaped": false,
+      "rounds": 5,
+      "end_reason": "armand_defeated"
+    },
+    {
+      "scenario": "D",
+      "strategy": "creative",
+      "seed": 3,
+      "survived": false,
+      "won": false,
+      "escaped": false,
+      "rounds": 5,
+      "end_reason": "armand_defeated"
+    },
+    {
+      "scenario": "D",
+      "strategy": "creative",
+      "seed": 4,
+      "survived": false,
+      "won": false,
+      "escaped": false,
+      "rounds": 5,
+      "end_reason": "armand_defeated"
+    },
+    {
+      "scenario": "D",
+      "strategy": "creative",
+      "seed": 5,
+      "survived": false,
+      "won": false,
+      "escaped": false,
+      "rounds": 4,
+      "end_reason": "armand_defeated"
+    },
+    {
+      "scenario": "D",
+      "strategy": "creative",
+      "seed": 6,
+      "survived": false,
+      "won": false,
+      "escaped": false,
+      "rounds": 4,
+      "end_reason": "armand_defeated"
+    },
+    {
+      "scenario": "D",
+      "strategy": "creative",
+      "seed": 7,
+      "survived": false,
+      "won": false,
+      "escaped": false,
+      "rounds": 4,
+      "end_reason": "armand_defeated"
+    },
+    {
+      "scenario": "D",
+      "strategy": "creative",
+      "seed": 8,
+      "survived": true,
+      "won": true,
+      "escaped": false,
+      "rounds": 5,
+      "end_reason": "all_hostiles_defeated"
+    },
+    {
+      "scenario": "D",
+      "strategy": "creative",
+      "seed": 9,
+      "survived": false,
+      "won": false,
+      "escaped": false,
+      "rounds": 3,
+      "end_reason": "armand_defeated"
+    },
+    {
+      "scenario": "D",
+      "strategy": "creative",
+      "seed": 10,
+      "survived": true,
+      "won": true,
+      "escaped": false,
+      "rounds": 4,
+      "end_reason": "all_hostiles_defeated"
+    },
+    {
+      "scenario": "D",
+      "strategy": "creative",
+      "seed": 11,
+      "survived": false,
+      "won": false,
+      "escaped": false,
+      "rounds": 5,
+      "end_reason": "armand_defeated"
+    },
+    {
+      "scenario": "D",
+      "strategy": "creative",
+      "seed": 12,
+      "survived": false,
+      "won": false,
+      "escaped": false,
+      "rounds": 4,
+      "end_reason": "armand_defeated"
+    },
+    {
+      "scenario": "D",
+      "strategy": "creative",
+      "seed": 13,
+      "survived": false,
+      "won": false,
+      "escaped": false,
+      "rounds": 5,
+      "end_reason": "armand_defeated"
+    },
+    {
+      "scenario": "D",
+      "strategy": "creative",
+      "seed": 14,
+      "survived": false,
+      "won": false,
+      "escaped": false,
+      "rounds": 5,
+      "end_reason": "armand_defeated"
+    },
+    {
+      "scenario": "D",
+      "strategy": "creative",
+      "seed": 15,
+      "survived": false,
+      "won": false,
+      "escaped": false,
+      "rounds": 4,
+      "end_reason": "armand_defeated"
+    },
+    {
+      "scenario": "D",
+      "strategy": "creative",
+      "seed": 16,
+      "survived": false,
+      "won": false,
+      "escaped": false,
+      "rounds": 3,
+      "end_reason": "armand_defeated"
+    },
+    {
+      "scenario": "D",
+      "strategy": "creative",
+      "seed": 17,
+      "survived": false,
+      "won": false,
+      "escaped": false,
+      "rounds": 4,
+      "end_reason": "armand_defeated"
+    },
+    {
+      "scenario": "D",
+      "strategy": "creative",
+      "seed": 18,
+      "survived": false,
+      "won": false,
+      "escaped": false,
+      "rounds": 3,
+      "end_reason": "armand_defeated"
+    },
+    {
+      "scenario": "D",
+      "strategy": "creative",
+      "seed": 19,
+      "survived": true,
+      "won": true,
+      "escaped": false,
+      "rounds": 5,
+      "end_reason": "all_hostiles_defeated"
+    },
+    {
+      "scenario": "D",
+      "strategy": "creative",
+      "seed": 20,
+      "survived": false,
+      "won": false,
+      "escaped": false,
+      "rounds": 5,
+      "end_reason": "armand_defeated"
+    },
+    {
+      "scenario": "E",
+      "strategy": "straight",
+      "seed": 1,
+      "survived": false,
+      "won": false,
+      "escaped": false,
+      "rounds": 2,
+      "end_reason": "armand_defeated"
+    },
+    {
+      "scenario": "E",
+      "strategy": "straight",
+      "seed": 2,
+      "survived": false,
+      "won": false,
+      "escaped": false,
+      "rounds": 3,
+      "end_reason": "armand_defeated"
+    },
+    {
+      "scenario": "E",
+      "strategy": "straight",
+      "seed": 3,
+      "survived": false,
+      "won": false,
+      "escaped": false,
+      "rounds": 2,
+      "end_reason": "armand_defeated"
+    },
+    {
+      "scenario": "E",
+      "strategy": "straight",
+      "seed": 4,
+      "survived": false,
+      "won": false,
+      "escaped": false,
+      "rounds": 3,
+      "end_reason": "armand_defeated"
+    },
+    {
+      "scenario": "E",
+      "strategy": "straight",
+      "seed": 5,
+      "survived": false,
+      "won": false,
+      "escaped": false,
+      "rounds": 3,
+      "end_reason": "armand_defeated"
+    },
+    {
+      "scenario": "E",
+      "strategy": "straight",
+      "seed": 6,
+      "survived": false,
+      "won": false,
+      "escaped": false,
+      "rounds": 3,
+      "end_reason": "armand_defeated"
+    },
+    {
+      "scenario": "E",
+      "strategy": "straight",
+      "seed": 7,
+      "survived": false,
+      "won": false,
+      "escaped": false,
+      "rounds": 3,
+      "end_reason": "armand_defeated"
+    },
+    {
+      "scenario": "E",
+      "strategy": "straight",
+      "seed": 8,
+      "survived": false,
+      "won": false,
+      "escaped": false,
+      "rounds": 4,
+      "end_reason": "armand_defeated"
+    },
+    {
+      "scenario": "E",
+      "strategy": "straight",
+      "seed": 9,
+      "survived": false,
+      "won": false,
+      "escaped": false,
+      "rounds": 3,
+      "end_reason": "armand_defeated"
+    },
+    {
+      "scenario": "E",
+      "strategy": "straight",
+      "seed": 10,
+      "survived": false,
+      "won": false,
+      "escaped": false,
+      "rounds": 2,
+      "end_reason": "armand_defeated"
+    },
+    {
+      "scenario": "E",
+      "strategy": "straight",
+      "seed": 11,
+      "survived": false,
+      "won": false,
+      "escaped": false,
+      "rounds": 3,
+      "end_reason": "armand_defeated"
+    },
+    {
+      "scenario": "E",
+      "strategy": "straight",
+      "seed": 12,
+      "survived": true,
+      "won": true,
+      "escaped": false,
+      "rounds": 6,
+      "end_reason": "all_hostiles_defeated"
+    },
+    {
+      "scenario": "E",
+      "strategy": "straight",
+      "seed": 13,
+      "survived": false,
+      "won": false,
+      "escaped": false,
+      "rounds": 3,
+      "end_reason": "armand_defeated"
+    },
+    {
+      "scenario": "E",
+      "strategy": "straight",
+      "seed": 14,
+      "survived": false,
+      "won": false,
+      "escaped": false,
+      "rounds": 2,
+      "end_reason": "armand_defeated"
+    },
+    {
+      "scenario": "E",
+      "strategy": "straight",
+      "seed": 15,
+      "survived": true,
+      "won": true,
+      "escaped": false,
+      "rounds": 7,
+      "end_reason": "all_hostiles_defeated"
+    },
+    {
+      "scenario": "E",
+      "strategy": "straight",
+      "seed": 16,
+      "survived": false,
+      "won": false,
+      "escaped": false,
+      "rounds": 3,
+      "end_reason": "armand_defeated"
+    },
+    {
+      "scenario": "E",
+      "strategy": "straight",
+      "seed": 17,
+      "survived": false,
+      "won": false,
+      "escaped": false,
+      "rounds": 3,
+      "end_reason": "armand_defeated"
+    },
+    {
+      "scenario": "E",
+      "strategy": "straight",
+      "seed": 18,
+      "survived": false,
+      "won": false,
+      "escaped": false,
+      "rounds": 2,
+      "end_reason": "armand_defeated"
+    },
+    {
+      "scenario": "E",
+      "strategy": "straight",
+      "seed": 19,
+      "survived": false,
+      "won": false,
+      "escaped": false,
+      "rounds": 4,
+      "end_reason": "armand_defeated"
+    },
+    {
+      "scenario": "E",
+      "strategy": "straight",
+      "seed": 20,
+      "survived": true,
+      "won": true,
+      "escaped": false,
+      "rounds": 6,
+      "end_reason": "all_hostiles_defeated"
+    },
+    {
+      "scenario": "E",
+      "strategy": "darkness",
+      "seed": 1,
+      "survived": false,
+      "won": false,
+      "escaped": false,
+      "rounds": 3,
+      "end_reason": "armand_defeated"
+    },
+    {
+      "scenario": "E",
+      "strategy": "darkness",
+      "seed": 2,
+      "survived": false,
+      "won": false,
+      "escaped": false,
+      "rounds": 4,
+      "end_reason": "armand_defeated"
+    },
+    {
+      "scenario": "E",
+      "strategy": "darkness",
+      "seed": 3,
+      "survived": false,
+      "won": false,
+      "escaped": false,
+      "rounds": 4,
+      "end_reason": "armand_defeated"
+    },
+    {
+      "scenario": "E",
+      "strategy": "darkness",
+      "seed": 4,
+      "survived": false,
+      "won": false,
+      "escaped": false,
+      "rounds": 4,
+      "end_reason": "armand_defeated"
+    },
+    {
+      "scenario": "E",
+      "strategy": "darkness",
+      "seed": 5,
+      "survived": false,
+      "won": false,
+      "escaped": false,
+      "rounds": 4,
+      "end_reason": "armand_defeated"
+    },
+    {
+      "scenario": "E",
+      "strategy": "darkness",
+      "seed": 6,
+      "survived": false,
+      "won": false,
+      "escaped": false,
+      "rounds": 4,
+      "end_reason": "armand_defeated"
+    },
+    {
+      "scenario": "E",
+      "strategy": "darkness",
+      "seed": 7,
+      "survived": false,
+      "won": false,
+      "escaped": false,
+      "rounds": 4,
+      "end_reason": "armand_defeated"
+    },
+    {
+      "scenario": "E",
+      "strategy": "darkness",
+      "seed": 8,
+      "survived": false,
+      "won": false,
+      "escaped": false,
+      "rounds": 5,
+      "end_reason": "armand_defeated"
+    },
+    {
+      "scenario": "E",
+      "strategy": "darkness",
+      "seed": 9,
+      "survived": false,
+      "won": false,
+      "escaped": false,
+      "rounds": 4,
+      "end_reason": "armand_defeated"
+    },
+    {
+      "scenario": "E",
+      "strategy": "darkness",
+      "seed": 10,
+      "survived": false,
+      "won": false,
+      "escaped": false,
+      "rounds": 3,
+      "end_reason": "armand_defeated"
+    },
+    {
+      "scenario": "E",
+      "strategy": "darkness",
+      "seed": 11,
+      "survived": false,
+      "won": false,
+      "escaped": false,
+      "rounds": 4,
+      "end_reason": "armand_defeated"
+    },
+    {
+      "scenario": "E",
+      "strategy": "darkness",
+      "seed": 12,
+      "survived": true,
+      "won": true,
+      "escaped": false,
+      "rounds": 7,
+      "end_reason": "all_hostiles_defeated"
+    },
+    {
+      "scenario": "E",
+      "strategy": "darkness",
+      "seed": 13,
+      "survived": false,
+      "won": false,
+      "escaped": false,
+      "rounds": 4,
+      "end_reason": "armand_defeated"
+    },
+    {
+      "scenario": "E",
+      "strategy": "darkness",
+      "seed": 14,
+      "survived": false,
+      "won": false,
+      "escaped": false,
+      "rounds": 3,
+      "end_reason": "armand_defeated"
+    },
+    {
+      "scenario": "E",
+      "strategy": "darkness",
+      "seed": 15,
+      "survived": true,
+      "won": true,
+      "escaped": false,
+      "rounds": 8,
+      "end_reason": "all_hostiles_defeated"
+    },
+    {
+      "scenario": "E",
+      "strategy": "darkness",
+      "seed": 16,
+      "survived": false,
+      "won": false,
+      "escaped": false,
+      "rounds": 4,
+      "end_reason": "armand_defeated"
+    },
+    {
+      "scenario": "E",
+      "strategy": "darkness",
+      "seed": 17,
+      "survived": false,
+      "won": false,
+      "escaped": false,
+      "rounds": 4,
+      "end_reason": "armand_defeated"
+    },
+    {
+      "scenario": "E",
+      "strategy": "darkness",
+      "seed": 18,
+      "survived": false,
+      "won": false,
+      "escaped": false,
+      "rounds": 3,
+      "end_reason": "armand_defeated"
+    },
+    {
+      "scenario": "E",
+      "strategy": "darkness",
+      "seed": 19,
+      "survived": false,
+      "won": false,
+      "escaped": false,
+      "rounds": 5,
+      "end_reason": "armand_defeated"
+    },
+    {
+      "scenario": "E",
+      "strategy": "darkness",
+      "seed": 20,
+      "survived": true,
+      "won": true,
+      "escaped": false,
+      "rounds": 7,
+      "end_reason": "all_hostiles_defeated"
+    },
+    {
+      "scenario": "E",
+      "strategy": "flee",
+      "seed": 1,
+      "survived": false,
+      "won": false,
+      "escaped": false,
+      "rounds": 2,
+      "end_reason": "armand_defeated"
+    },
+    {
+      "scenario": "E",
+      "strategy": "flee",
+      "seed": 2,
+      "survived": true,
+      "won": false,
+      "escaped": true,
+      "rounds": 1,
+      "end_reason": "escaped_and_hidden"
+    },
+    {
+      "scenario": "E",
+      "strategy": "flee",
+      "seed": 3,
+      "survived": false,
+      "won": false,
+      "escaped": false,
+      "rounds": 2,
+      "end_reason": "armand_defeated"
+    },
+    {
+      "scenario": "E",
+      "strategy": "flee",
+      "seed": 4,
+      "survived": true,
+      "won": false,
+      "escaped": true,
+      "rounds": 1,
+      "end_reason": "escaped_and_hidden"
+    },
+    {
+      "scenario": "E",
+      "strategy": "flee",
+      "seed": 5,
+      "survived": true,
+      "won": false,
+      "escaped": true,
+      "rounds": 1,
+      "end_reason": "escaped_and_hidden"
+    },
+    {
+      "scenario": "E",
+      "strategy": "flee",
+      "seed": 6,
+      "survived": true,
+      "won": false,
+      "escaped": true,
+      "rounds": 1,
+      "end_reason": "escaped_and_hidden"
+    },
+    {
+      "scenario": "E",
+      "strategy": "flee",
+      "seed": 7,
+      "survived": true,
+      "won": false,
+      "escaped": true,
+      "rounds": 1,
+      "end_reason": "escaped_and_hidden"
+    },
+    {
+      "scenario": "E",
+      "strategy": "flee",
+      "seed": 8,
+      "survived": true,
+      "won": false,
+      "escaped": true,
+      "rounds": 1,
+      "end_reason": "escaped_and_hidden"
+    },
+    {
+      "scenario": "E",
+      "strategy": "flee",
+      "seed": 9,
+      "survived": false,
+      "won": false,
+      "escaped": false,
+      "rounds": 1,
+      "end_reason": "armand_defeated"
+    },
+    {
+      "scenario": "E",
+      "strategy": "flee",
+      "seed": 10,
+      "survived": false,
+      "won": false,
+      "escaped": false,
+      "rounds": 1,
+      "end_reason": "armand_defeated"
+    },
+    {
+      "scenario": "E",
+      "strategy": "flee",
+      "seed": 11,
+      "survived": true,
+      "won": false,
+      "escaped": true,
+      "rounds": 1,
+      "end_reason": "escaped_and_hidden"
+    },
+    {
+      "scenario": "E",
+      "strategy": "flee",
+      "seed": 12,
+      "survived": false,
+      "won": false,
+      "escaped": false,
+      "rounds": 2,
+      "end_reason": "armand_defeated"
+    },
+    {
+      "scenario": "E",
+      "strategy": "flee",
+      "seed": 13,
+      "survived": true,
+      "won": false,
+      "escaped": true,
+      "rounds": 1,
+      "end_reason": "escaped_and_hidden"
+    },
+    {
+      "scenario": "E",
+      "strategy": "flee",
+      "seed": 14,
+      "survived": false,
+      "won": false,
+      "escaped": false,
+      "rounds": 2,
+      "end_reason": "armand_defeated"
+    },
+    {
+      "scenario": "E",
+      "strategy": "flee",
+      "seed": 15,
+      "survived": true,
+      "won": false,
+      "escaped": true,
+      "rounds": 1,
+      "end_reason": "escaped_and_hidden"
+    },
+    {
+      "scenario": "E",
+      "strategy": "flee",
+      "seed": 16,
+      "survived": false,
+      "won": false,
+      "escaped": false,
+      "rounds": 1,
+      "end_reason": "armand_defeated"
+    },
+    {
+      "scenario": "E",
+      "strategy": "flee",
+      "seed": 17,
+      "survived": true,
+      "won": false,
+      "escaped": true,
+      "rounds": 1,
+      "end_reason": "escaped_and_hidden"
+    },
+    {
+      "scenario": "E",
+      "strategy": "flee",
+      "seed": 18,
+      "survived": false,
+      "won": false,
+      "escaped": false,
+      "rounds": 1,
+      "end_reason": "armand_defeated"
+    },
+    {
+      "scenario": "E",
+      "strategy": "flee",
+      "seed": 19,
+      "survived": true,
+      "won": false,
+      "escaped": true,
+      "rounds": 1,
+      "end_reason": "escaped_and_hidden"
+    },
+    {
+      "scenario": "E",
+      "strategy": "flee",
+      "seed": 20,
+      "survived": false,
+      "won": false,
+      "escaped": false,
+      "rounds": 2,
+      "end_reason": "armand_defeated"
+    },
+    {
+      "scenario": "E",
+      "strategy": "guillermo",
+      "seed": 1,
+      "survived": false,
+      "won": false,
+      "escaped": false,
+      "rounds": 2,
+      "end_reason": "armand_defeated"
+    },
+    {
+      "scenario": "E",
+      "strategy": "guillermo",
+      "seed": 2,
+      "survived": false,
+      "won": false,
+      "escaped": false,
+      "rounds": 3,
+      "end_reason": "armand_defeated"
+    },
+    {
+      "scenario": "E",
+      "strategy": "guillermo",
+      "seed": 3,
+      "survived": false,
+      "won": false,
+      "escaped": false,
+      "rounds": 2,
+      "end_reason": "armand_defeated"
+    },
+    {
+      "scenario": "E",
+      "strategy": "guillermo",
+      "seed": 4,
+      "survived": false,
+      "won": false,
+      "escaped": false,
+      "rounds": 3,
+      "end_reason": "armand_defeated"
+    },
+    {
+      "scenario": "E",
+      "strategy": "guillermo",
+      "seed": 5,
+      "survived": false,
+      "won": false,
+      "escaped": false,
+      "rounds": 3,
+      "end_reason": "armand_defeated"
+    },
+    {
+      "scenario": "E",
+      "strategy": "guillermo",
+      "seed": 6,
+      "survived": false,
+      "won": false,
+      "escaped": false,
+      "rounds": 3,
+      "end_reason": "armand_defeated"
+    },
+    {
+      "scenario": "E",
+      "strategy": "guillermo",
+      "seed": 7,
+      "survived": false,
+      "won": false,
+      "escaped": false,
+      "rounds": 3,
+      "end_reason": "armand_defeated"
+    },
+    {
+      "scenario": "E",
+      "strategy": "guillermo",
+      "seed": 8,
+      "survived": false,
+      "won": false,
+      "escaped": false,
+      "rounds": 4,
+      "end_reason": "armand_defeated"
+    },
+    {
+      "scenario": "E",
+      "strategy": "guillermo",
+      "seed": 9,
+      "survived": false,
+      "won": false,
+      "escaped": false,
+      "rounds": 3,
+      "end_reason": "armand_defeated"
+    },
+    {
+      "scenario": "E",
+      "strategy": "guillermo",
+      "seed": 10,
+      "survived": false,
+      "won": false,
+      "escaped": false,
+      "rounds": 2,
+      "end_reason": "armand_defeated"
+    },
+    {
+      "scenario": "E",
+      "strategy": "guillermo",
+      "seed": 11,
+      "survived": false,
+      "won": false,
+      "escaped": false,
+      "rounds": 3,
+      "end_reason": "armand_defeated"
+    },
+    {
+      "scenario": "E",
+      "strategy": "guillermo",
+      "seed": 12,
+      "survived": true,
+      "won": true,
+      "escaped": false,
+      "rounds": 6,
+      "end_reason": "all_hostiles_defeated"
+    },
+    {
+      "scenario": "E",
+      "strategy": "guillermo",
+      "seed": 13,
+      "survived": false,
+      "won": false,
+      "escaped": false,
+      "rounds": 3,
+      "end_reason": "armand_defeated"
+    },
+    {
+      "scenario": "E",
+      "strategy": "guillermo",
+      "seed": 14,
+      "survived": false,
+      "won": false,
+      "escaped": false,
+      "rounds": 2,
+      "end_reason": "armand_defeated"
+    },
+    {
+      "scenario": "E",
+      "strategy": "guillermo",
+      "seed": 15,
+      "survived": true,
+      "won": true,
+      "escaped": false,
+      "rounds": 7,
+      "end_reason": "all_hostiles_defeated"
+    },
+    {
+      "scenario": "E",
+      "strategy": "guillermo",
+      "seed": 16,
+      "survived": false,
+      "won": false,
+      "escaped": false,
+      "rounds": 3,
+      "end_reason": "armand_defeated"
+    },
+    {
+      "scenario": "E",
+      "strategy": "guillermo",
+      "seed": 17,
+      "survived": false,
+      "won": false,
+      "escaped": false,
+      "rounds": 3,
+      "end_reason": "armand_defeated"
+    },
+    {
+      "scenario": "E",
+      "strategy": "guillermo",
+      "seed": 18,
+      "survived": false,
+      "won": false,
+      "escaped": false,
+      "rounds": 2,
+      "end_reason": "armand_defeated"
+    },
+    {
+      "scenario": "E",
+      "strategy": "guillermo",
+      "seed": 19,
+      "survived": false,
+      "won": false,
+      "escaped": false,
+      "rounds": 4,
+      "end_reason": "armand_defeated"
+    },
+    {
+      "scenario": "E",
+      "strategy": "guillermo",
+      "seed": 20,
+      "survived": true,
+      "won": true,
+      "escaped": false,
+      "rounds": 6,
+      "end_reason": "all_hostiles_defeated"
+    },
+    {
+      "scenario": "E",
+      "strategy": "creative",
+      "seed": 1,
+      "survived": false,
+      "won": false,
+      "escaped": false,
+      "rounds": 4,
+      "end_reason": "armand_defeated"
+    },
+    {
+      "scenario": "E",
+      "strategy": "creative",
+      "seed": 2,
+      "survived": false,
+      "won": false,
+      "escaped": false,
+      "rounds": 3,
+      "end_reason": "armand_defeated"
+    },
+    {
+      "scenario": "E",
+      "strategy": "creative",
+      "seed": 3,
+      "survived": false,
+      "won": false,
+      "escaped": false,
+      "rounds": 2,
+      "end_reason": "armand_defeated"
+    },
+    {
+      "scenario": "E",
+      "strategy": "creative",
+      "seed": 4,
+      "survived": false,
+      "won": false,
+      "escaped": false,
+      "rounds": 3,
+      "end_reason": "armand_defeated"
+    },
+    {
+      "scenario": "E",
+      "strategy": "creative",
+      "seed": 5,
+      "survived": false,
+      "won": false,
+      "escaped": false,
+      "rounds": 3,
+      "end_reason": "armand_defeated"
+    },
+    {
+      "scenario": "E",
+      "strategy": "creative",
+      "seed": 6,
+      "survived": false,
+      "won": false,
+      "escaped": false,
+      "rounds": 3,
+      "end_reason": "armand_defeated"
+    },
+    {
+      "scenario": "E",
+      "strategy": "creative",
+      "seed": 7,
+      "survived": false,
+      "won": false,
+      "escaped": false,
+      "rounds": 3,
+      "end_reason": "armand_defeated"
+    },
+    {
+      "scenario": "E",
+      "strategy": "creative",
+      "seed": 8,
+      "survived": true,
+      "won": true,
+      "escaped": false,
+      "rounds": 7,
+      "end_reason": "all_hostiles_defeated"
+    },
+    {
+      "scenario": "E",
+      "strategy": "creative",
+      "seed": 9,
+      "survived": false,
+      "won": false,
+      "escaped": false,
+      "rounds": 3,
+      "end_reason": "armand_defeated"
+    },
+    {
+      "scenario": "E",
+      "strategy": "creative",
+      "seed": 10,
+      "survived": false,
+      "won": false,
+      "escaped": false,
+      "rounds": 2,
+      "end_reason": "armand_defeated"
+    },
+    {
+      "scenario": "E",
+      "strategy": "creative",
+      "seed": 11,
+      "survived": false,
+      "won": false,
+      "escaped": false,
+      "rounds": 2,
+      "end_reason": "armand_defeated"
+    },
+    {
+      "scenario": "E",
+      "strategy": "creative",
+      "seed": 12,
+      "survived": false,
+      "won": false,
+      "escaped": false,
+      "rounds": 4,
+      "end_reason": "armand_defeated"
+    },
+    {
+      "scenario": "E",
+      "strategy": "creative",
+      "seed": 13,
+      "survived": false,
+      "won": false,
+      "escaped": false,
+      "rounds": 3,
+      "end_reason": "armand_defeated"
+    },
+    {
+      "scenario": "E",
+      "strategy": "creative",
+      "seed": 14,
+      "survived": false,
+      "won": false,
+      "escaped": false,
+      "rounds": 2,
+      "end_reason": "armand_defeated"
+    },
+    {
+      "scenario": "E",
+      "strategy": "creative",
+      "seed": 15,
+      "survived": false,
+      "won": false,
+      "escaped": false,
+      "rounds": 3,
+      "end_reason": "armand_defeated"
+    },
+    {
+      "scenario": "E",
+      "strategy": "creative",
+      "seed": 16,
+      "survived": false,
+      "won": false,
+      "escaped": false,
+      "rounds": 2,
+      "end_reason": "armand_defeated"
+    },
+    {
+      "scenario": "E",
+      "strategy": "creative",
+      "seed": 17,
+      "survived": false,
+      "won": false,
+      "escaped": false,
+      "rounds": 3,
+      "end_reason": "armand_defeated"
+    },
+    {
+      "scenario": "E",
+      "strategy": "creative",
+      "seed": 18,
+      "survived": false,
+      "won": false,
+      "escaped": false,
+      "rounds": 2,
+      "end_reason": "armand_defeated"
+    },
+    {
+      "scenario": "E",
+      "strategy": "creative",
+      "seed": 19,
+      "survived": true,
+      "won": true,
+      "escaped": false,
+      "rounds": 7,
+      "end_reason": "all_hostiles_defeated"
+    },
+    {
+      "scenario": "E",
+      "strategy": "creative",
+      "seed": 20,
+      "survived": false,
+      "won": false,
+      "escaped": false,
+      "rounds": 4,
+      "end_reason": "armand_defeated"
+    }
+  ]
+}

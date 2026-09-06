@@ -1,0 +1,13 @@
+{
+  "progression_hook": "Early Guillermo commands: minor costs Bonus Action; consequential costs Action. Later tiers may move consequential commands to Bonus Action, then grant a limited independent turn.",
+  "tiers": {
+    "initiate": { "name": "Initiate", "ac": 11, "hp": 6, "attack": 2, "damage_die": 6, "damage_bonus": 0, "dex": 1, "passive_perception": 10, "priorities": ["retreat_when_injured", "pursue", "attack"] },
+    "cultist": { "name": "Cultist", "ac": 12, "hp": 11, "attack": 3, "damage_die": 6, "damage_bonus": 1, "dex": 1, "passive_perception": 11, "priorities": ["leave_darkness", "guard_exit", "pursue", "attack"] },
+    "adept": { "name": "Adept", "ac": 13, "hp": 18, "attack": 4, "damage_die": 8, "damage_bonus": 2, "dex": 2, "passive_perception": 13, "minor_magic": "shadow_bind", "priorities": ["order_pursuit", "shadow_bind", "leave_darkness", "attack"] }
+  },
+  "encounters": {
+    "benchmark_a": { "name": "One Initiate", "enemies": ["initiate"] },
+    "benchmark_b": { "name": "Two Cultists", "enemies": ["cultist", "cultist"] },
+    "benchmark_c": { "name": "Adept and Initiate", "enemies": ["adept", "initiate"] }
+  }
+}

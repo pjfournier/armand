@@ -19,6 +19,10 @@ var clue_picker: OptionButton
 var theory_picker: OptionButton
 var end_panel: PanelContainer
 var end_label: Label
+var combat_panel: PanelContainer
+var combat_text: RichTextLabel
+var tutorial_dialog: AcceptDialog
+var reaction_dialog: ConfirmationDialog
 var latest_turn_id := ""
 var pending_kind := ""
 
@@ -54,12 +58,19 @@ func build_ui() -> void:
 	input = LineEdit.new(); input.placeholder_text = "Type what Armand does..."; input.size_flags_horizontal = Control.SIZE_EXPAND_FILL; input.text_submitted.connect(func(_t): submit_action()); controls.add_child(input)
 	submit = Button.new(); submit.text = "Act"; submit.pressed.connect(submit_action); controls.add_child(submit)
 	var restart := Button.new(); restart.text = "Restart"; restart.pressed.connect(func(): call_api("/session/reset", HTTPClient.METHOD_POST, {}, "reset")); controls.add_child(restart)
+	var combat_a := Button.new(); combat_a.text = "Combat A"; combat_a.tooltip_text = "Prototype benchmark: one Initiate"; combat_a.pressed.connect(func(): call_api("/combat/start", HTTPClient.METHOD_POST, {"encounter_id": "benchmark_a"}, "combat_start")); controls.add_child(combat_a)
+	var combat_b := Button.new(); combat_b.text = "Combat B"; combat_b.tooltip_text = "Prototype benchmark: two Cultists"; combat_b.pressed.connect(func(): call_api("/combat/start", HTTPClient.METHOD_POST, {"encounter_id": "benchmark_b"}, "combat_start")); controls.add_child(combat_b)
+	var combat_c := Button.new(); combat_c.text = "Combat C"; combat_c.tooltip_text = "Prototype benchmark: Adept and Initiate"; combat_c.pressed.connect(func(): call_api("/combat/start", HTTPClient.METHOD_POST, {"encounter_id": "benchmark_c"}, "combat_start")); controls.add_child(combat_c)
 	var copy_transcript := Button.new(); copy_transcript.text = "Copy Transcript"; copy_transcript.pressed.connect(_copy_transcript); controls.add_child(copy_transcript)
 	status_label = Label.new(); status_label.text = "Guillermo: nearby • Early gestures"; status_label.add_theme_color_override("font_color", Color("b89a67")); root.add_child(status_label)
 	end_panel = PanelContainer.new(); end_panel.visible = false; end_panel.position = Vector2(390, 260); end_panel.size = Vector2(500, 170); add_child(end_panel)
 	var end_box := VBoxContainer.new(); end_panel.add_child(end_box); end_label = Label.new(); end_label.horizontal_alignment = HORIZONTAL_ALIGNMENT_CENTER; end_label.add_theme_font_size_override("font_size", 24); end_box.add_child(end_label)
 	var continue_button := Button.new(); continue_button.text = "Continue exploring"; continue_button.pressed.connect(func(): end_panel.visible = false); end_box.add_child(continue_button)
 	var restart_end := Button.new(); restart_end.text = "Restart slice"; restart_end.pressed.connect(func(): end_panel.visible = false; call_api("/session/reset", HTTPClient.METHOD_POST, {}, "reset")); end_box.add_child(restart_end)
+	combat_panel = PanelContainer.new(); combat_panel.visible = false; combat_panel.position = Vector2(18, 82); combat_panel.size = Vector2(350, 245); add_child(combat_panel)
+	combat_text = RichTextLabel.new(); combat_text.bbcode_enabled = true; combat_text.selection_enabled = true; combat_text.context_menu_enabled = true; combat_panel.add_child(combat_text)
+	tutorial_dialog = AcceptDialog.new(); tutorial_dialog.title = "COMBAT"; tutorial_dialog.dialog_text = "During your turn, you may take:\n\n• 1 Movement\n• 1 Action\n\nSome abilities may use a Bonus Action or Reaction.\n\nYou can describe Movement and Action together:\n\"Move behind the desk and cast Eldritch Blast at the cultist.\"\n\nOnce your turn resolves, the next combatant acts."; tutorial_dialog.confirmed.connect(func(): call_api("/combat/tutorial/dismiss", HTTPClient.METHOD_POST, {}, "combat_state")); add_child(tutorial_dialog)
+	reaction_dialog = ConfirmationDialog.new(); reaction_dialog.title = "REACTION"; reaction_dialog.dialog_text = "Use Hellish Rebuke?"; reaction_dialog.ok_button_text = "Yes"; reaction_dialog.cancel_button_text = "No"; reaction_dialog.confirmed.connect(func(): call_api("/combat/reaction", HTTPClient.METHOD_POST, {"use": true}, "reaction")); reaction_dialog.canceled.connect(func(): call_api("/combat/reaction", HTTPClient.METHOD_POST, {"use": false}, "reaction")); add_child(reaction_dialog)
 
 func make_rich_tab(title: String) -> RichTextLabel:
 	var rich := RichTextLabel.new(); rich.name = title; rich.bbcode_enabled = true; rich.fit_content = false; rich.scroll_active = true; rich.selection_enabled = true; rich.size_flags_vertical = Control.SIZE_EXPAND_FILL; rich.add_theme_constant_override("line_separation", 4); notebook_tabs.add_child(rich); return rich
@@ -82,7 +93,7 @@ func _on_request_completed(_result: int, code: int, _headers: PackedStringArray,
 	var parsed = JSON.parse_string(bytes.get_string_from_utf8())
 	if code < 200 or code >= 300 or not parsed is Dictionary:
 		history.append_text("\n[color=salmon]The local game bridge returned an error.[/color]\n"); return
-	if pending_kind == "action":
+	if pending_kind == "action" or pending_kind == "reaction":
 		latest_turn_id = str(parsed.get("turn_id", "")); var narration_value = parsed.get("narration", ""); var narration := "" if narration_value == null else str(narration_value); history.append_text("\n[color=#d1ad68]>[/color] " + narration + "\n"); var roll_value = parsed.get("roll_feedback", null); var roll_feedback := "" if roll_value == null else str(roll_value); if not roll_feedback.is_empty(): history.append_text("[color=#9bb6d1]" + escape_bbcode(roll_feedback) + "[/color]\n"); history.scroll_to_line(history.get_line_count())
 		update_state(parsed.get("state", {}))
 	elif pending_kind == "theory" or pending_kind == "link": call_api("/notebook", HTTPClient.METHOD_GET, {}, "notebook")
@@ -95,6 +106,22 @@ func set_busy(busy: bool) -> void:
 func update_state(state: Dictionary) -> void:
 	var loc: Dictionary = state.get("location", {}); location_label.text = str(loc.get("name", "Unknown")).to_upper(); time_label.text = str(state.get("time", "")); update_notebook(state.get("notebook", {}))
 	var slice: Dictionary = state.get("slice_state", {}); if slice.get("ending_reached", false): end_label.text = str(slice.get("ending_title", "LEAD DISCOVERED")) + "\n\n" + str(slice.get("ending_text", "")); end_panel.visible = true
+	update_combat(state.get("combat", null))
+
+func update_combat(value) -> void:
+	if value == null or not value is Dictionary:
+		combat_panel.visible = false; return
+	var combat: Dictionary = value; combat_panel.visible = bool(combat.get("active", false))
+	if not combat_panel.visible: return
+	var by_id := {}; for fighter in combat.get("combatants", []): by_id[str(fighter.get("id", ""))] = fighter
+	var lines := PackedStringArray(["[font_size=22][color=#d1ad68][b]COMBAT[/b][/color][/font_size]", "[b]TURN ORDER[/b]"])
+	for id in combat.get("initiative_order", []):
+		var fighter: Dictionary = by_id.get(str(id), {}); lines.append(("➤ " if str(id) == str(combat.get("active_combatant", "")) else "  ") + str(fighter.get("name", id)) + " — " + str(fighter.get("position", "")))
+	var budget = combat.get("turn_budget", null)
+	if budget is Dictionary: lines.append("\n[b]YOUR TURN[/b]\nMovement: " + str(budget.get("movement", "")) + " • Action: " + str(budget.get("action", "")) + "\nBonus Action: " + str(budget.get("bonus_action", "")))
+	combat_text.text = "\n".join(lines)
+	if bool(combat.get("tutorial_required", false)) and not tutorial_dialog.visible: tutorial_dialog.popup_centered()
+	if combat.get("reaction_prompt", null) != null and not reaction_dialog.visible: reaction_dialog.popup_centered()
 
 func update_notebook(book: Dictionary) -> void:
 	clue_text.clear(); clue_picker.clear(); var clues: Dictionary = book.get("Clues", {})

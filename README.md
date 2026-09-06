@@ -14,6 +14,8 @@ The Godot desktop vertical slice is documented in `PLAYABLE_SLICE_REPORT.md`; th
 
 Stop both managed backend services with `.\Stop-Prototype.ps1`.
 
+The combat prototype is available from the three **Combat A/B/C** buttons in the running Godot slice. Combat keeps the same freeform text box: type commands such as `Move behind the desk and cast Eldritch Blast at the initiate`, `Cast Darkness`, or `Flee through the doorway and hide`. A first-fight tutorial explains the Movement and Action budget; the compact combat panel then shows turn order, semantic positions, and remaining budgets.
+
 ## Persistent inference
 
 Start the shared local model service once before normal interpreter or narrator use:
