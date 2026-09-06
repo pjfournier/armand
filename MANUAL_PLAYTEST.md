@@ -36,3 +36,5 @@ Room overview text is deliberately low-resolution: it should present questions a
 When testing a failed active investigation, repeat the same wording or a paraphrase before changing approach. The repeat should produce no new roll indicator. Then change method, purpose, actor, or relevant state and verify that a new roll may occur. Parser clarification and engine rejection must never display a roll indicator.
 
 After pulling a branch or changing bridge code, stop and restart the prototype before evaluating interpretation. A passing module test paired with different live behavior is a runtime-integration finding until the loaded bridge version is verified.
+
+Run `Run-TurnContinuityReplay.ps1` for a clean-bridge check of explicit safe routes, note location, compound clarification, pending target completion, state queries, anti-reroll behavior, and leave/return continuity. Generic `try to open the safe` must request an approach; `light a fire using your spells` followed by `the fireplace` must complete the pending cast; `is there a fire?` must answer without a roll.

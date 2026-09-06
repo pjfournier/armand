@@ -1,0 +1,16 @@
+{
+  "generated_utc": "2026-09-06T00:43:18.6248383Z",
+  "running_commit": "1dc94f2",
+  "turns": 18,
+  "resolved": 15,
+  "clarifications": 2,
+  "engine_rejections": 1,
+  "stale_method_leaks": 0,
+  "false_movements": 0,
+  "null_render_values": 0,
+  "partial_compound_executions": 0,
+  "state_query_rejections": 0,
+  "narrator_retries": 2,
+  "fallbacks": 2,
+  "average_live_latency_seconds": 0.7727
+}

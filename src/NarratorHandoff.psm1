@@ -23,7 +23,7 @@ function New-NarratorHandoff {
  )
  $attempt=Get-AttemptDescription -Actor $Intent.Actor -Action $Intent.Action -Target $Intent.Target -Method $Intent.Method
  $handoff=[ordered]@{
-  Attempt=[pscustomobject]@{Actor=$Intent.Actor;Action=$Intent.Action;Target=$Intent.Target;Purpose=$(if($Intent.PSObject.Properties['Purpose']){$Intent.Purpose}else{$null});Description=$attempt}
+  Attempt=[pscustomobject]@{Actor=$Intent.Actor;Action=$Intent.Action;Target=$Intent.Target;Method=$Intent.Method;Purpose=$(if($Intent.PSObject.Properties['Purpose']){$Intent.Purpose}else{$null});Description=$attempt}
   Outcome=[pscustomobject]@{Degree=$Resolution.Degree}
   PostActionState=$PostActionState
   Events=@($Events)
