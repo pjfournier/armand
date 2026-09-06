@@ -5,6 +5,8 @@
     {"id":"correspondence","name":"ordinary correspondence","location":"callum_study","aliases":["correspondence","letters","papers","academic letter"],"capabilities":["read","examine","search"]},
     {"id":"receipt","name":"ink and lunch receipt","location":"callum_study","aliases":["receipt","receipts","bill","bills"],"capabilities":["read","examine","search"]},
     {"id":"fireplace","name":"fireplace","location":"callum_study","aliases":["fireplace","hearth"],"parts":["inside","around"]},
+    {"id":"fire_irons","name":"fire-irons","location":"callum_study","aliases":["fire irons","fire-irons","poker","hearth irons"],"capabilities":["examine","manipulate"]},
+    {"id":"oil_lamp","name":"oil lamp on the bracket","location":"callum_study","aliases":["lamp","oil lamp","bracket lamp"],"capabilities":["examine","manipulate"]},
     {"id":"rug","name":"rug and floor","location":"callum_study","aliases":["rug","floor","floor area"],"parts":["underneath","around"],"capabilities":["examine","search","manipulate"]},
     {"id":"large_painting","name":"large painting","location":"callum_study","aliases":["painting","portrait","large painting"],"parts":["behind"],"capabilities":["examine","manipulate"]},
     {"id":"bookshelves","name":"bookshelves","location":"callum_study","aliases":["bookshelf","bookshelves","bookcase","shelves","books"],"capabilities":["examine","search"]},

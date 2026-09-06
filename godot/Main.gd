@@ -25,6 +25,7 @@ var tutorial_dialog: AcceptDialog
 var reaction_dialog: ConfirmationDialog
 var latest_turn_id := ""
 var pending_kind := ""
+var last_combat_opening_id := ""
 
 func _ready() -> void:
 	build_ui()
@@ -114,11 +115,15 @@ func update_combat(value) -> void:
 	var combat: Dictionary = value; combat_panel.visible = bool(combat.get("active", false))
 	if not combat_panel.visible: return
 	var by_id := {}; for fighter in combat.get("combatants", []): by_id[str(fighter.get("id", ""))] = fighter
+	var combat_id := str(combat.get("combat_id", "")); if combat_id != last_combat_opening_id: var opening := str(combat.get("opening_narration", "")); if not opening.is_empty(): history.append_text("\n[color=#d1ad68][b]COMBAT[/b][/color]\n" + escape_bbcode(opening) + "\n"); history.scroll_to_line(history.get_line_count()); last_combat_opening_id = combat_id
 	var lines := PackedStringArray(["[font_size=22][color=#d1ad68][b]COMBAT[/b][/color][/font_size]", "[b]TURN ORDER[/b]"])
 	for id in combat.get("initiative_order", []):
 		var fighter: Dictionary = by_id.get(str(id), {}); lines.append(("➤ " if str(id) == str(combat.get("active_combatant", "")) else "  ") + str(fighter.get("name", id)) + " — " + str(fighter.get("position", "")))
 	var budget = combat.get("turn_budget", null)
-	if budget is Dictionary: lines.append("\n[b]YOUR TURN[/b]\nMovement: " + str(budget.get("movement", "")) + " • Action: " + str(budget.get("action", "")) + "\nBonus Action: " + str(budget.get("bonus_action", "")))
+	if budget is Dictionary:
+		var armand: Dictionary = by_id.get("armand", {}); var position := str(armand.get("position", "unknown")); var engaged: Array = armand.get("engaged_targets", []); if not engaged.is_empty(): position += " with " + str(by_id.get(str(engaged[0]), {}).get("name", engaged[0]))
+		lines.append("\n[b]YOUR TURN[/b] · Move " + str(budget.get("movement", "")) + " · Action " + str(budget.get("action", "")) + " · Bonus " + str(budget.get("bonus_action", "")) + "\nPosition: " + position)
+		var hints := PackedStringArray(); for affordance in combat.get("nearby_affordances", []): hints.append(str(affordance.get("panel_hint", ""))); lines.append("Nearby: " + " · ".join(hints))
 	combat_text.text = "\n".join(lines)
 	if bool(combat.get("tutorial_required", false)) and not tutorial_dialog.visible: tutorial_dialog.popup_centered()
 	if combat.get("reaction_prompt", null) != null and not reaction_dialog.visible: reaction_dialog.popup_centered()

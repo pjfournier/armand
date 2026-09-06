@@ -1,5 +1,5 @@
 {
-  "generated_utc": "2026-09-06T14:47:18.8716775Z",
+  "generated_utc": "2026-09-06T15:11:27.0093928Z",
   "seed_count": 20,
   "scenarios": {
     "A": "Armand vs 1 Initiate",
@@ -9,6 +9,15 @@
     "E": "Armand vs Adept + Initiate"
   },
   "summary": [
+    {
+      "scenario": "A",
+      "strategy": "affordance",
+      "runs": 20,
+      "survival_rate": 100.0,
+      "win_rate": 100.0,
+      "escape_rate": 0.0,
+      "average_rounds": 2.15
+    },
     {
       "scenario": "A",
       "strategy": "creative",
@@ -53,6 +62,15 @@
       "win_rate": 100.0,
       "escape_rate": 0.0,
       "average_rounds": 1.35
+    },
+    {
+      "scenario": "B",
+      "strategy": "affordance",
+      "runs": 20,
+      "survival_rate": 75.0,
+      "win_rate": 75.0,
+      "escape_rate": 0.0,
+      "average_rounds": 4.15
     },
     {
       "scenario": "B",
@@ -101,6 +119,15 @@
     },
     {
       "scenario": "C",
+      "strategy": "affordance",
+      "runs": 20,
+      "survival_rate": 20.0,
+      "win_rate": 20.0,
+      "escape_rate": 0.0,
+      "average_rounds": 5.1
+    },
+    {
+      "scenario": "C",
       "strategy": "creative",
       "runs": 20,
       "survival_rate": 15.0,
@@ -146,6 +173,15 @@
     },
     {
       "scenario": "D",
+      "strategy": "affordance",
+      "runs": 20,
+      "survival_rate": 30.0,
+      "win_rate": 30.0,
+      "escape_rate": 0.0,
+      "average_rounds": 4.65
+    },
+    {
+      "scenario": "D",
       "strategy": "creative",
       "runs": 20,
       "survival_rate": 15.0,
@@ -188,6 +224,15 @@
       "win_rate": 20.0,
       "escape_rate": 0.0,
       "average_rounds": 4.1
+    },
+    {
+      "scenario": "E",
+      "strategy": "affordance",
+      "runs": 20,
+      "survival_rate": 10.0,
+      "win_rate": 10.0,
+      "escape_rate": 0.0,
+      "average_rounds": 3.6
     },
     {
       "scenario": "E",
@@ -1237,6 +1282,206 @@
       "end_reason": "all_hostiles_defeated"
     },
     {
+      "scenario": "A",
+      "strategy": "affordance",
+      "seed": 1,
+      "survived": true,
+      "won": true,
+      "escaped": false,
+      "rounds": 2,
+      "end_reason": "all_hostiles_defeated"
+    },
+    {
+      "scenario": "A",
+      "strategy": "affordance",
+      "seed": 2,
+      "survived": true,
+      "won": true,
+      "escaped": false,
+      "rounds": 2,
+      "end_reason": "enemy_fled"
+    },
+    {
+      "scenario": "A",
+      "strategy": "affordance",
+      "seed": 3,
+      "survived": true,
+      "won": true,
+      "escaped": false,
+      "rounds": 2,
+      "end_reason": "all_hostiles_defeated"
+    },
+    {
+      "scenario": "A",
+      "strategy": "affordance",
+      "seed": 4,
+      "survived": true,
+      "won": true,
+      "escaped": false,
+      "rounds": 2,
+      "end_reason": "all_hostiles_defeated"
+    },
+    {
+      "scenario": "A",
+      "strategy": "affordance",
+      "seed": 5,
+      "survived": true,
+      "won": true,
+      "escaped": false,
+      "rounds": 2,
+      "end_reason": "all_hostiles_defeated"
+    },
+    {
+      "scenario": "A",
+      "strategy": "affordance",
+      "seed": 6,
+      "survived": true,
+      "won": true,
+      "escaped": false,
+      "rounds": 2,
+      "end_reason": "all_hostiles_defeated"
+    },
+    {
+      "scenario": "A",
+      "strategy": "affordance",
+      "seed": 7,
+      "survived": true,
+      "won": true,
+      "escaped": false,
+      "rounds": 2,
+      "end_reason": "all_hostiles_defeated"
+    },
+    {
+      "scenario": "A",
+      "strategy": "affordance",
+      "seed": 8,
+      "survived": true,
+      "won": true,
+      "escaped": false,
+      "rounds": 2,
+      "end_reason": "all_hostiles_defeated"
+    },
+    {
+      "scenario": "A",
+      "strategy": "affordance",
+      "seed": 9,
+      "survived": true,
+      "won": true,
+      "escaped": false,
+      "rounds": 2,
+      "end_reason": "all_hostiles_defeated"
+    },
+    {
+      "scenario": "A",
+      "strategy": "affordance",
+      "seed": 10,
+      "survived": true,
+      "won": true,
+      "escaped": false,
+      "rounds": 2,
+      "end_reason": "all_hostiles_defeated"
+    },
+    {
+      "scenario": "A",
+      "strategy": "affordance",
+      "seed": 11,
+      "survived": true,
+      "won": true,
+      "escaped": false,
+      "rounds": 2,
+      "end_reason": "all_hostiles_defeated"
+    },
+    {
+      "scenario": "A",
+      "strategy": "affordance",
+      "seed": 12,
+      "survived": true,
+      "won": true,
+      "escaped": false,
+      "rounds": 2,
+      "end_reason": "all_hostiles_defeated"
+    },
+    {
+      "scenario": "A",
+      "strategy": "affordance",
+      "seed": 13,
+      "survived": true,
+      "won": true,
+      "escaped": false,
+      "rounds": 3,
+      "end_reason": "all_hostiles_defeated"
+    },
+    {
+      "scenario": "A",
+      "strategy": "affordance",
+      "seed": 14,
+      "survived": true,
+      "won": true,
+      "escaped": false,
+      "rounds": 2,
+      "end_reason": "all_hostiles_defeated"
+    },
+    {
+      "scenario": "A",
+      "strategy": "affordance",
+      "seed": 15,
+      "survived": true,
+      "won": true,
+      "escaped": false,
+      "rounds": 3,
+      "end_reason": "all_hostiles_defeated"
+    },
+    {
+      "scenario": "A",
+      "strategy": "affordance",
+      "seed": 16,
+      "survived": true,
+      "won": true,
+      "escaped": false,
+      "rounds": 2,
+      "end_reason": "all_hostiles_defeated"
+    },
+    {
+      "scenario": "A",
+      "strategy": "affordance",
+      "seed": 17,
+      "survived": true,
+      "won": true,
+      "escaped": false,
+      "rounds": 3,
+      "end_reason": "all_hostiles_defeated"
+    },
+    {
+      "scenario": "A",
+      "strategy": "affordance",
+      "seed": 18,
+      "survived": true,
+      "won": true,
+      "escaped": false,
+      "rounds": 2,
+      "end_reason": "all_hostiles_defeated"
+    },
+    {
+      "scenario": "A",
+      "strategy": "affordance",
+      "seed": 19,
+      "survived": true,
+      "won": true,
+      "escaped": false,
+      "rounds": 2,
+      "end_reason": "enemy_fled"
+    },
+    {
+      "scenario": "A",
+      "strategy": "affordance",
+      "seed": 20,
+      "survived": true,
+      "won": true,
+      "escaped": false,
+      "rounds": 2,
+      "end_reason": "all_hostiles_defeated"
+    },
+    {
       "scenario": "B",
       "strategy": "straight",
       "seed": 1,
@@ -2235,6 +2480,206 @@
       "escaped": false,
       "rounds": 5,
       "end_reason": "all_hostiles_defeated"
+    },
+    {
+      "scenario": "B",
+      "strategy": "affordance",
+      "seed": 1,
+      "survived": true,
+      "won": true,
+      "escaped": false,
+      "rounds": 5,
+      "end_reason": "all_hostiles_defeated"
+    },
+    {
+      "scenario": "B",
+      "strategy": "affordance",
+      "seed": 2,
+      "survived": true,
+      "won": true,
+      "escaped": false,
+      "rounds": 4,
+      "end_reason": "all_hostiles_defeated"
+    },
+    {
+      "scenario": "B",
+      "strategy": "affordance",
+      "seed": 3,
+      "survived": false,
+      "won": false,
+      "escaped": false,
+      "rounds": 4,
+      "end_reason": "armand_defeated"
+    },
+    {
+      "scenario": "B",
+      "strategy": "affordance",
+      "seed": 4,
+      "survived": true,
+      "won": true,
+      "escaped": false,
+      "rounds": 4,
+      "end_reason": "all_hostiles_defeated"
+    },
+    {
+      "scenario": "B",
+      "strategy": "affordance",
+      "seed": 5,
+      "survived": true,
+      "won": true,
+      "escaped": false,
+      "rounds": 5,
+      "end_reason": "all_hostiles_defeated"
+    },
+    {
+      "scenario": "B",
+      "strategy": "affordance",
+      "seed": 6,
+      "survived": true,
+      "won": true,
+      "escaped": false,
+      "rounds": 4,
+      "end_reason": "all_hostiles_defeated"
+    },
+    {
+      "scenario": "B",
+      "strategy": "affordance",
+      "seed": 7,
+      "survived": false,
+      "won": false,
+      "escaped": false,
+      "rounds": 4,
+      "end_reason": "armand_defeated"
+    },
+    {
+      "scenario": "B",
+      "strategy": "affordance",
+      "seed": 8,
+      "survived": true,
+      "won": true,
+      "escaped": false,
+      "rounds": 4,
+      "end_reason": "all_hostiles_defeated"
+    },
+    {
+      "scenario": "B",
+      "strategy": "affordance",
+      "seed": 9,
+      "survived": false,
+      "won": false,
+      "escaped": false,
+      "rounds": 4,
+      "end_reason": "armand_defeated"
+    },
+    {
+      "scenario": "B",
+      "strategy": "affordance",
+      "seed": 10,
+      "survived": true,
+      "won": true,
+      "escaped": false,
+      "rounds": 4,
+      "end_reason": "all_hostiles_defeated"
+    },
+    {
+      "scenario": "B",
+      "strategy": "affordance",
+      "seed": 11,
+      "survived": false,
+      "won": false,
+      "escaped": false,
+      "rounds": 4,
+      "end_reason": "armand_defeated"
+    },
+    {
+      "scenario": "B",
+      "strategy": "affordance",
+      "seed": 12,
+      "survived": true,
+      "won": true,
+      "escaped": false,
+      "rounds": 4,
+      "end_reason": "all_hostiles_defeated"
+    },
+    {
+      "scenario": "B",
+      "strategy": "affordance",
+      "seed": 13,
+      "survived": true,
+      "won": true,
+      "escaped": false,
+      "rounds": 4,
+      "end_reason": "all_hostiles_defeated"
+    },
+    {
+      "scenario": "B",
+      "strategy": "affordance",
+      "seed": 14,
+      "survived": true,
+      "won": true,
+      "escaped": false,
+      "rounds": 4,
+      "end_reason": "all_hostiles_defeated"
+    },
+    {
+      "scenario": "B",
+      "strategy": "affordance",
+      "seed": 15,
+      "survived": true,
+      "won": true,
+      "escaped": false,
+      "rounds": 4,
+      "end_reason": "all_hostiles_defeated"
+    },
+    {
+      "scenario": "B",
+      "strategy": "affordance",
+      "seed": 16,
+      "survived": true,
+      "won": true,
+      "escaped": false,
+      "rounds": 4,
+      "end_reason": "all_hostiles_defeated"
+    },
+    {
+      "scenario": "B",
+      "strategy": "affordance",
+      "seed": 17,
+      "survived": true,
+      "won": true,
+      "escaped": false,
+      "rounds": 4,
+      "end_reason": "all_hostiles_defeated"
+    },
+    {
+      "scenario": "B",
+      "strategy": "affordance",
+      "seed": 18,
+      "survived": true,
+      "won": true,
+      "escaped": false,
+      "rounds": 4,
+      "end_reason": "all_hostiles_defeated"
+    },
+    {
+      "scenario": "B",
+      "strategy": "affordance",
+      "seed": 19,
+      "survived": true,
+      "won": true,
+      "escaped": false,
+      "rounds": 4,
+      "end_reason": "all_hostiles_defeated"
+    },
+    {
+      "scenario": "B",
+      "strategy": "affordance",
+      "seed": 20,
+      "survived": false,
+      "won": false,
+      "escaped": false,
+      "rounds": 5,
+      "end_reason": "armand_defeated"
     },
     {
       "scenario": "C",
@@ -3237,6 +3682,206 @@
       "end_reason": "armand_defeated"
     },
     {
+      "scenario": "C",
+      "strategy": "affordance",
+      "seed": 1,
+      "survived": false,
+      "won": false,
+      "escaped": false,
+      "rounds": 3,
+      "end_reason": "armand_defeated"
+    },
+    {
+      "scenario": "C",
+      "strategy": "affordance",
+      "seed": 2,
+      "survived": false,
+      "won": false,
+      "escaped": false,
+      "rounds": 7,
+      "end_reason": "armand_defeated"
+    },
+    {
+      "scenario": "C",
+      "strategy": "affordance",
+      "seed": 3,
+      "survived": false,
+      "won": false,
+      "escaped": false,
+      "rounds": 3,
+      "end_reason": "armand_defeated"
+    },
+    {
+      "scenario": "C",
+      "strategy": "affordance",
+      "seed": 4,
+      "survived": false,
+      "won": false,
+      "escaped": false,
+      "rounds": 7,
+      "end_reason": "armand_defeated"
+    },
+    {
+      "scenario": "C",
+      "strategy": "affordance",
+      "seed": 5,
+      "survived": false,
+      "won": false,
+      "escaped": false,
+      "rounds": 3,
+      "end_reason": "armand_defeated"
+    },
+    {
+      "scenario": "C",
+      "strategy": "affordance",
+      "seed": 6,
+      "survived": true,
+      "won": true,
+      "escaped": false,
+      "rounds": 7,
+      "end_reason": "all_hostiles_defeated"
+    },
+    {
+      "scenario": "C",
+      "strategy": "affordance",
+      "seed": 7,
+      "survived": false,
+      "won": false,
+      "escaped": false,
+      "rounds": 3,
+      "end_reason": "armand_defeated"
+    },
+    {
+      "scenario": "C",
+      "strategy": "affordance",
+      "seed": 8,
+      "survived": true,
+      "won": true,
+      "escaped": false,
+      "rounds": 8,
+      "end_reason": "all_hostiles_defeated"
+    },
+    {
+      "scenario": "C",
+      "strategy": "affordance",
+      "seed": 9,
+      "survived": false,
+      "won": false,
+      "escaped": false,
+      "rounds": 3,
+      "end_reason": "armand_defeated"
+    },
+    {
+      "scenario": "C",
+      "strategy": "affordance",
+      "seed": 10,
+      "survived": true,
+      "won": true,
+      "escaped": false,
+      "rounds": 7,
+      "end_reason": "all_hostiles_defeated"
+    },
+    {
+      "scenario": "C",
+      "strategy": "affordance",
+      "seed": 11,
+      "survived": false,
+      "won": false,
+      "escaped": false,
+      "rounds": 3,
+      "end_reason": "armand_defeated"
+    },
+    {
+      "scenario": "C",
+      "strategy": "affordance",
+      "seed": 12,
+      "survived": false,
+      "won": false,
+      "escaped": false,
+      "rounds": 4,
+      "end_reason": "armand_defeated"
+    },
+    {
+      "scenario": "C",
+      "strategy": "affordance",
+      "seed": 13,
+      "survived": false,
+      "won": false,
+      "escaped": false,
+      "rounds": 7,
+      "end_reason": "armand_defeated"
+    },
+    {
+      "scenario": "C",
+      "strategy": "affordance",
+      "seed": 14,
+      "survived": false,
+      "won": false,
+      "escaped": false,
+      "rounds": 4,
+      "end_reason": "armand_defeated"
+    },
+    {
+      "scenario": "C",
+      "strategy": "affordance",
+      "seed": 15,
+      "survived": false,
+      "won": false,
+      "escaped": false,
+      "rounds": 7,
+      "end_reason": "armand_defeated"
+    },
+    {
+      "scenario": "C",
+      "strategy": "affordance",
+      "seed": 16,
+      "survived": false,
+      "won": false,
+      "escaped": false,
+      "rounds": 3,
+      "end_reason": "armand_defeated"
+    },
+    {
+      "scenario": "C",
+      "strategy": "affordance",
+      "seed": 17,
+      "survived": true,
+      "won": true,
+      "escaped": false,
+      "rounds": 7,
+      "end_reason": "all_hostiles_defeated"
+    },
+    {
+      "scenario": "C",
+      "strategy": "affordance",
+      "seed": 18,
+      "survived": false,
+      "won": false,
+      "escaped": false,
+      "rounds": 3,
+      "end_reason": "armand_defeated"
+    },
+    {
+      "scenario": "C",
+      "strategy": "affordance",
+      "seed": 19,
+      "survived": false,
+      "won": false,
+      "escaped": false,
+      "rounds": 7,
+      "end_reason": "armand_defeated"
+    },
+    {
+      "scenario": "C",
+      "strategy": "affordance",
+      "seed": 20,
+      "survived": false,
+      "won": false,
+      "escaped": false,
+      "rounds": 6,
+      "end_reason": "armand_defeated"
+    },
+    {
       "scenario": "D",
       "strategy": "straight",
       "seed": 1,
@@ -4234,6 +4879,206 @@
       "won": false,
       "escaped": false,
       "rounds": 5,
+      "end_reason": "armand_defeated"
+    },
+    {
+      "scenario": "D",
+      "strategy": "affordance",
+      "seed": 1,
+      "survived": false,
+      "won": false,
+      "escaped": false,
+      "rounds": 5,
+      "end_reason": "armand_defeated"
+    },
+    {
+      "scenario": "D",
+      "strategy": "affordance",
+      "seed": 2,
+      "survived": false,
+      "won": false,
+      "escaped": false,
+      "rounds": 5,
+      "end_reason": "armand_defeated"
+    },
+    {
+      "scenario": "D",
+      "strategy": "affordance",
+      "seed": 3,
+      "survived": false,
+      "won": false,
+      "escaped": false,
+      "rounds": 5,
+      "end_reason": "armand_defeated"
+    },
+    {
+      "scenario": "D",
+      "strategy": "affordance",
+      "seed": 4,
+      "survived": false,
+      "won": false,
+      "escaped": false,
+      "rounds": 5,
+      "end_reason": "armand_defeated"
+    },
+    {
+      "scenario": "D",
+      "strategy": "affordance",
+      "seed": 5,
+      "survived": false,
+      "won": false,
+      "escaped": false,
+      "rounds": 4,
+      "end_reason": "armand_defeated"
+    },
+    {
+      "scenario": "D",
+      "strategy": "affordance",
+      "seed": 6,
+      "survived": false,
+      "won": false,
+      "escaped": false,
+      "rounds": 4,
+      "end_reason": "armand_defeated"
+    },
+    {
+      "scenario": "D",
+      "strategy": "affordance",
+      "seed": 7,
+      "survived": false,
+      "won": false,
+      "escaped": false,
+      "rounds": 4,
+      "end_reason": "armand_defeated"
+    },
+    {
+      "scenario": "D",
+      "strategy": "affordance",
+      "seed": 8,
+      "survived": true,
+      "won": true,
+      "escaped": false,
+      "rounds": 5,
+      "end_reason": "all_hostiles_defeated"
+    },
+    {
+      "scenario": "D",
+      "strategy": "affordance",
+      "seed": 9,
+      "survived": false,
+      "won": false,
+      "escaped": false,
+      "rounds": 3,
+      "end_reason": "armand_defeated"
+    },
+    {
+      "scenario": "D",
+      "strategy": "affordance",
+      "seed": 10,
+      "survived": false,
+      "won": false,
+      "escaped": false,
+      "rounds": 4,
+      "end_reason": "armand_defeated"
+    },
+    {
+      "scenario": "D",
+      "strategy": "affordance",
+      "seed": 11,
+      "survived": false,
+      "won": false,
+      "escaped": false,
+      "rounds": 5,
+      "end_reason": "armand_defeated"
+    },
+    {
+      "scenario": "D",
+      "strategy": "affordance",
+      "seed": 12,
+      "survived": true,
+      "won": true,
+      "escaped": false,
+      "rounds": 6,
+      "end_reason": "all_hostiles_defeated"
+    },
+    {
+      "scenario": "D",
+      "strategy": "affordance",
+      "seed": 13,
+      "survived": false,
+      "won": false,
+      "escaped": false,
+      "rounds": 5,
+      "end_reason": "armand_defeated"
+    },
+    {
+      "scenario": "D",
+      "strategy": "affordance",
+      "seed": 14,
+      "survived": true,
+      "won": true,
+      "escaped": false,
+      "rounds": 6,
+      "end_reason": "all_hostiles_defeated"
+    },
+    {
+      "scenario": "D",
+      "strategy": "affordance",
+      "seed": 15,
+      "survived": false,
+      "won": false,
+      "escaped": false,
+      "rounds": 4,
+      "end_reason": "armand_defeated"
+    },
+    {
+      "scenario": "D",
+      "strategy": "affordance",
+      "seed": 16,
+      "survived": true,
+      "won": true,
+      "escaped": false,
+      "rounds": 4,
+      "end_reason": "all_hostiles_defeated"
+    },
+    {
+      "scenario": "D",
+      "strategy": "affordance",
+      "seed": 17,
+      "survived": false,
+      "won": false,
+      "escaped": false,
+      "rounds": 4,
+      "end_reason": "armand_defeated"
+    },
+    {
+      "scenario": "D",
+      "strategy": "affordance",
+      "seed": 18,
+      "survived": true,
+      "won": true,
+      "escaped": false,
+      "rounds": 4,
+      "end_reason": "all_hostiles_defeated"
+    },
+    {
+      "scenario": "D",
+      "strategy": "affordance",
+      "seed": 19,
+      "survived": true,
+      "won": true,
+      "escaped": false,
+      "rounds": 5,
+      "end_reason": "all_hostiles_defeated"
+    },
+    {
+      "scenario": "D",
+      "strategy": "affordance",
+      "seed": 20,
+      "survived": false,
+      "won": false,
+      "escaped": false,
+      "rounds": 6,
       "end_reason": "armand_defeated"
     },
     {
@@ -5229,6 +6074,206 @@
     {
       "scenario": "E",
       "strategy": "creative",
+      "seed": 20,
+      "survived": false,
+      "won": false,
+      "escaped": false,
+      "rounds": 4,
+      "end_reason": "armand_defeated"
+    },
+    {
+      "scenario": "E",
+      "strategy": "affordance",
+      "seed": 1,
+      "survived": false,
+      "won": false,
+      "escaped": false,
+      "rounds": 4,
+      "end_reason": "armand_defeated"
+    },
+    {
+      "scenario": "E",
+      "strategy": "affordance",
+      "seed": 2,
+      "survived": false,
+      "won": false,
+      "escaped": false,
+      "rounds": 3,
+      "end_reason": "armand_defeated"
+    },
+    {
+      "scenario": "E",
+      "strategy": "affordance",
+      "seed": 3,
+      "survived": false,
+      "won": false,
+      "escaped": false,
+      "rounds": 2,
+      "end_reason": "armand_defeated"
+    },
+    {
+      "scenario": "E",
+      "strategy": "affordance",
+      "seed": 4,
+      "survived": false,
+      "won": false,
+      "escaped": false,
+      "rounds": 3,
+      "end_reason": "armand_defeated"
+    },
+    {
+      "scenario": "E",
+      "strategy": "affordance",
+      "seed": 5,
+      "survived": false,
+      "won": false,
+      "escaped": false,
+      "rounds": 3,
+      "end_reason": "armand_defeated"
+    },
+    {
+      "scenario": "E",
+      "strategy": "affordance",
+      "seed": 6,
+      "survived": false,
+      "won": false,
+      "escaped": false,
+      "rounds": 3,
+      "end_reason": "armand_defeated"
+    },
+    {
+      "scenario": "E",
+      "strategy": "affordance",
+      "seed": 7,
+      "survived": false,
+      "won": false,
+      "escaped": false,
+      "rounds": 3,
+      "end_reason": "armand_defeated"
+    },
+    {
+      "scenario": "E",
+      "strategy": "affordance",
+      "seed": 8,
+      "survived": true,
+      "won": true,
+      "escaped": false,
+      "rounds": 7,
+      "end_reason": "all_hostiles_defeated"
+    },
+    {
+      "scenario": "E",
+      "strategy": "affordance",
+      "seed": 9,
+      "survived": false,
+      "won": false,
+      "escaped": false,
+      "rounds": 3,
+      "end_reason": "armand_defeated"
+    },
+    {
+      "scenario": "E",
+      "strategy": "affordance",
+      "seed": 10,
+      "survived": false,
+      "won": false,
+      "escaped": false,
+      "rounds": 4,
+      "end_reason": "armand_defeated"
+    },
+    {
+      "scenario": "E",
+      "strategy": "affordance",
+      "seed": 11,
+      "survived": false,
+      "won": false,
+      "escaped": false,
+      "rounds": 2,
+      "end_reason": "armand_defeated"
+    },
+    {
+      "scenario": "E",
+      "strategy": "affordance",
+      "seed": 12,
+      "survived": false,
+      "won": false,
+      "escaped": false,
+      "rounds": 4,
+      "end_reason": "armand_defeated"
+    },
+    {
+      "scenario": "E",
+      "strategy": "affordance",
+      "seed": 13,
+      "survived": false,
+      "won": false,
+      "escaped": false,
+      "rounds": 3,
+      "end_reason": "armand_defeated"
+    },
+    {
+      "scenario": "E",
+      "strategy": "affordance",
+      "seed": 14,
+      "survived": false,
+      "won": false,
+      "escaped": false,
+      "rounds": 4,
+      "end_reason": "armand_defeated"
+    },
+    {
+      "scenario": "E",
+      "strategy": "affordance",
+      "seed": 15,
+      "survived": false,
+      "won": false,
+      "escaped": false,
+      "rounds": 3,
+      "end_reason": "armand_defeated"
+    },
+    {
+      "scenario": "E",
+      "strategy": "affordance",
+      "seed": 16,
+      "survived": false,
+      "won": false,
+      "escaped": false,
+      "rounds": 3,
+      "end_reason": "armand_defeated"
+    },
+    {
+      "scenario": "E",
+      "strategy": "affordance",
+      "seed": 17,
+      "survived": false,
+      "won": false,
+      "escaped": false,
+      "rounds": 3,
+      "end_reason": "armand_defeated"
+    },
+    {
+      "scenario": "E",
+      "strategy": "affordance",
+      "seed": 18,
+      "survived": false,
+      "won": false,
+      "escaped": false,
+      "rounds": 4,
+      "end_reason": "armand_defeated"
+    },
+    {
+      "scenario": "E",
+      "strategy": "affordance",
+      "seed": 19,
+      "survived": true,
+      "won": true,
+      "escaped": false,
+      "rounds": 7,
+      "end_reason": "all_hostiles_defeated"
+    },
+    {
+      "scenario": "E",
+      "strategy": "affordance",
       "seed": 20,
       "survived": false,
       "won": false,
