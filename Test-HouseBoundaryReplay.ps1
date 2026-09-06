@@ -4,7 +4,7 @@ Import-Module (Join-Path $PSScriptRoot 'src/HousePrototype.psm1') -Force -Disabl
 
 $session=New-HouseSession $PSScriptRoot 6001
 $inputs=@('look around','open mailbox','look at the mail','walk around house and find a window','go into the cellar','look at the rope','walk up the stairs')
-$backend={param($prompt,$attempt)[pscustomobject]@{Text=$(if($prompt-match'location: Cellar'){'You notice the missing rope upstairs while the resolved action settles.'}else{'You take in what is before you.'})}}
+$backend={param($prompt,$attempt)[pscustomobject]@{Text=$(if($prompt-match'missing rope'){'You notice the missing rope upstairs while the resolved action settles.'}else{'You take in what is before you.'})}}
 $turns=@($inputs|ForEach-Object{[pscustomobject]@{input=$_;result=Invoke-HouseTurn $session $_ -Narrate -NarratorBackend $backend}})
 $cellarTurn=$turns|Where-Object input -eq 'go into the cellar'|Select-Object -First 1
 $ropeTurn=$turns|Where-Object input -eq 'look at the rope'|Select-Object -First 1
