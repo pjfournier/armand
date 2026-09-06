@@ -18,6 +18,11 @@ function New-NarrationPacket {
         [string]$MundaneResult,
         [ValidateSet('neutral','tense','dry_humor_allowed','guillermo_comic','serious')][string]$Tone='neutral',
         [string[]]$SupportedAffordances=@(),
+        [object[]]$VisibleReferents=@(),
+        [string[]]$Ambient=@(),
+        [string[]]$Events=@(),
+        [string[]]$ObservedFacts=@(),
+        [string]$AuthorialIntent,
         [string[]]$RecentHistory = @(),
         [string]$GuillermoStageDirection,
         [string[]]$NpcDisclosure = @(),
@@ -48,6 +53,11 @@ function New-NarrationPacket {
         MundaneResult = $MundaneResult
         Tone = $Tone
         SupportedAffordances = @($SupportedAffordances)
+        VisibleReferents = @($VisibleReferents)
+        Ambient = @($Ambient)
+        Events = @($Events)
+        ObservedFacts = @($ObservedFacts)
+        AuthorialIntent = $AuthorialIntent
         RecentHistory = @($RecentHistory)
         GuillermoStageDirection = $GuillermoStageDirection
         PostActionState = $PostActionState
@@ -112,6 +122,11 @@ function Format-NarrationPacket {
         if(-not[string]::IsNullOrWhiteSpace($Packet.MundaneResult)){[void]$builder.AppendLine("MUNDANE_RESULT: $($Packet.MundaneResult)")}
         [void]$builder.AppendLine("TONE: $($Packet.Tone)")
         Add-Lines $builder 'SUPPORTED_AFFORDANCES' $Packet.SupportedAffordances
+        if(-not[string]::IsNullOrWhiteSpace($Packet.AuthorialIntent)){[void]$builder.AppendLine("AUTHORIAL_INTENT: $($Packet.AuthorialIntent)")}
+        Add-Lines $builder 'OBSERVED_FACTS' $Packet.ObservedFacts
+        Add-Lines $builder 'EVENTS' $Packet.Events
+        Add-Lines $builder 'AMBIENT' $Packet.Ambient
+        if($Packet.VisibleReferents.Count){[void]$builder.AppendLine('VISIBLE_REFERENTS');foreach($referent in $Packet.VisibleReferents){[void]$builder.AppendLine("- $($referent.id): $($referent.display_name) | aliases: $(@($referent.aliases)-join', ')")};[void]$builder.AppendLine()}
         Add-Lines $builder 'recent narration:' $Packet.RecentHistory
         if (-not [string]::IsNullOrWhiteSpace($Packet.GuillermoStageDirection)) { [void]$builder.AppendLine("Guillermo stage direction: $($Packet.GuillermoStageDirection)") }
         if ($Packet.NpcDisclosure.Discloses.Count -or $Packet.NpcDisclosure.Withholds.Count) {
@@ -168,6 +183,11 @@ function ConvertTo-NarrationPacket {
     if ($Case.PSObject.Properties['mundane_result']) { $args.MundaneResult=$Case.mundane_result }
     if ($Case.PSObject.Properties['tone']) { $args.Tone=$Case.tone }
     if ($Case.PSObject.Properties['supported_affordances']) { $args.SupportedAffordances=@($Case.supported_affordances) }
+    if ($Case.PSObject.Properties['visible_referents']) { $args.VisibleReferents=@($Case.visible_referents) }
+    if ($Case.PSObject.Properties['ambient']) { $args.Ambient=@($Case.ambient) }
+    if ($Case.PSObject.Properties['events']) { $args.Events=@($Case.events) }
+    if ($Case.PSObject.Properties['observed_facts']) { $args.ObservedFacts=@($Case.observed_facts) }
+    if ($Case.PSObject.Properties['authorial_intent']) { $args.AuthorialIntent=[string]$Case.authorial_intent }
     if ($Case.PSObject.Properties['recent_history']) { $args.RecentHistory=@($Case.recent_history) }
     if ($Case.PSObject.Properties['guillermo_stage_direction']) { $args.GuillermoStageDirection=$Case.guillermo_stage_direction }
     if ($Case.PSObject.Properties['npc_disclosure']) { $args.NpcDisclosure=@($Case.npc_disclosure) }
