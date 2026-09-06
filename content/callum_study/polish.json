@@ -12,6 +12,7 @@
       "knock": "The desk answers with a dull wooden knock and no suggestion of a hidden compartment.",
       "repeat": "The already-searched wood offers no new evidence."
     },
+    "desk_drawers": {"read": "The writing desk has decorative drawer fronts but no accessible drawers; the joinery declines further cross-examination.", "repeat": "The writing desk has decorative drawer fronts but no accessible drawers; the joinery declines further cross-examination."},
     "correspondence": {"read": "The correspondence covers an academic dinner, a newspaper subscription, and an overdue reply; none bears on Callum's disappearance.", "smell": "The correspondence smells faintly of paper and old ink, without any unusual chemical trace."},
     "receipt": {"read": "The receipt records two bottles of ink and an expensive lunch, with no coded notation or hidden message.", "touch": "The receipt is ordinary, dry paper; its texture supplies no hidden message."},
     "paneled_wall": {"knock": "The panel returns a solid, ordinary knock; there is no hollow passage behind this section."},
@@ -19,8 +20,8 @@
     "window_latch": {"inspect": "The brass latch is cold, intact, and firmly seated."},
     "fireplace": {"touch": "The hearthstone is cold and lightly gritty with soot."},
     "bookshelves": {"stare": "The shelves endure the scrutiny with rows of ordinary reference works."},
-    "chair": {"look_under": "Only dust lies beneath the chair; its upholstery has contributed nothing to the case.", "touch": "The chair's worn upholstery gives slightly under your hand and reveals nothing concealed."},
+    "chair": {"look_under": "Only dust lies beneath the chair; its upholstery has contributed nothing to the case.", "touch": "The chair's worn upholstery gives slightly under your hand and reveals nothing concealed.", "smell": "The chair smells of dust and old upholstery. It has no further statement to make."},
     "large_painting": {"stare": "The painting remains stubbornly inanimate under sustained scrutiny.", "repeat": "The shifted painting remains a painting, now less successful at concealing the safe."},
-    "guillermo": {"ask": "Guillermo looks at Armand, considers the question, and answers with a small, noncommittal shrug."}
+    "guillermo": {"ask": "Guillermo looks at Armand, considers the question, and answers with a small, noncommittal shrug.", "gesture": "Guillermo's head snaps toward the whistle. He gives one tiny, solemn wave back, then returns his attention to the desk as though the exchange had been official business."}
   }
 }

@@ -14,7 +14,7 @@ Assert ($blood.State.Notebook.Clues.bloodstain.known_facts-match'injured person 
 
 $desk=New-CallumStudySession $root
 $deskResult=Resolve-SliceIntent $desk (Intent examine writing_desk) 1
-Assert ($desk.State.Notebook.Clues.rope_fibers.known_facts-match'hemp cordage'-and$deskResult.Events-notmatch'nothing consequential') 'desk hook reaches fibers before mundane content'
+Assert ($desk.State.Notebook.Clues.rope_fibers.known_facts-match'rope fibers'-and$desk.State.Notebook.Clues.rope_fibers.known_facts-notmatch'hemp cordage'-and$deskResult.Events-notmatch'nothing consequential') 'desk focus identifies rope fibers without granting active hemp tier'
 
 $scorch=New-CallumStudySession $root
 Resolve-SliceIntent $scorch (Intent examine fireplace) 6|Out-Null

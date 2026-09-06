@@ -44,6 +44,7 @@ func build_ui() -> void:
 	clue_text = make_rich_tab("Clues"); character_box = VBoxContainer.new(); character_box.name = "Characters"; notebook_tabs.add_child(character_box); location_text = make_rich_tab("Locations")
 	var theory_panel := VBoxContainer.new(); theory_panel.name = "Theories"; notebook_tabs.add_child(theory_panel)
 	theory_list = RichTextLabel.new(); theory_list.bbcode_enabled = true; theory_list.custom_minimum_size.y = 170; theory_list.size_flags_vertical = Control.SIZE_EXPAND_FILL; theory_panel.add_child(theory_list)
+	theory_list.fit_content = false; theory_list.scroll_active = true; theory_list.selection_enabled = true; theory_list.add_theme_constant_override("line_separation", 4)
 	theory_title = LineEdit.new(); theory_title.placeholder_text = "Theory title"; theory_panel.add_child(theory_title)
 	theory_body = TextEdit.new(); theory_body.placeholder_text = "What do you think it means?"; theory_body.custom_minimum_size.y = 80; theory_panel.add_child(theory_body)
 	var save_theory := Button.new(); save_theory.text = "Save theory (belief)"; save_theory.pressed.connect(_save_theory); theory_panel.add_child(save_theory)
@@ -61,7 +62,7 @@ func build_ui() -> void:
 	var restart_end := Button.new(); restart_end.text = "Restart slice"; restart_end.pressed.connect(func(): end_panel.visible = false; call_api("/session/reset", HTTPClient.METHOD_POST, {}, "reset")); end_box.add_child(restart_end)
 
 func make_rich_tab(title: String) -> RichTextLabel:
-	var rich := RichTextLabel.new(); rich.name = title; rich.bbcode_enabled = true; notebook_tabs.add_child(rich); return rich
+	var rich := RichTextLabel.new(); rich.name = title; rich.bbcode_enabled = true; rich.fit_content = false; rich.scroll_active = true; rich.selection_enabled = true; rich.size_flags_vertical = Control.SIZE_EXPAND_FILL; rich.add_theme_constant_override("line_separation", 4); notebook_tabs.add_child(rich); return rich
 
 func submit_action() -> void:
 	var text := input.text.strip_edges()
@@ -98,10 +99,10 @@ func update_state(state: Dictionary) -> void:
 func update_notebook(book: Dictionary) -> void:
 	clue_text.clear(); clue_picker.clear(); var clues: Dictionary = book.get("Clues", {})
 	for id in clues:
-		var clue: Dictionary = clues[id]; clue_text.append_text("[b]" + str(clue.get("display_name", id)) + "[/b]\n"); clue_picker.add_item(str(clue.get("display_name", id))); clue_picker.set_item_metadata(clue_picker.item_count - 1, id)
+		var clue: Dictionary = clues[id]; clue_text.append_text("[font_size=20][color=#d1ad68][b]" + str(clue.get("display_name", id)) + "[/b][/color][/font_size]\n"); clue_picker.add_item(str(clue.get("display_name", id))); clue_picker.set_item_metadata(clue_picker.item_count - 1, id)
 		for fact in clue.get("known_facts", []): clue_text.append_text("• " + str(fact) + "\n")
 		if clue.get("player_note") != null: clue_text.append_text("[i]Your note: " + str(clue.player_note) + "[/i]\n")
-		clue_text.append_text("\n")
+		clue_text.append_text("\n[font_size=6] [/font_size]\n")
 	for child in character_box.get_children(): child.queue_free()
 	var characters: Dictionary = book.get("Characters", {})
 	for id in characters:

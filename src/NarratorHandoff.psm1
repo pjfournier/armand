@@ -44,7 +44,7 @@ function Convert-HandoffToNarrationCase {
  param([Parameter(Mandatory)]$Handoff,[Parameter(Mandatory)][string]$Location,[string]$Time='current case time',[string]$Weather='unknown')
  $case=[pscustomobject]@{
   location=$Location;time=$Time;weather=$Weather;actor=$Handoff.Attempt.Actor
-  action_type='attempt';target='resolved target';attempt_description=$Handoff.Attempt.Description
+  action_type=$Handoff.Attempt.Action;target=$Handoff.Attempt.Target;attempt_description=$Handoff.Attempt.Description
   degree=$Handoff.Outcome.Degree.ToLowerInvariant();facts=@($Handoff.Events);visible=@($Handoff.Visible)
   post_action_state=$Handoff.PostActionState;event_state=$null
   npc_discloses=@($Handoff.NpcDisclosure.Discloses);npc_withholds=@($Handoff.NpcDisclosure.Withholds)

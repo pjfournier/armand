@@ -38,6 +38,6 @@ $groundingBase=[pscustomobject]@{Passed=$true;Lexical=$null;Structural=$null};$c
 $routeA.SafeOpen=$false;$picked=Test-SliceNarrationGrounding $routeA $blood "You see the safe's lock has been picked." $groundingBase;Assert (-not$picked.Passed) '29d slice grounding rejects invented picked lock'
 $continuity=Test-SliceNarrationGrounding $routeA $blood 'You see the safe; it was not there before.' $groundingBase;Assert (-not$continuity.Passed) '29e slice grounding rejects false continuity'
 $epistemic=Test-SliceNarrationGrounding $routeA $blood 'You do not know what Guillermo means.' $groundingBase;Assert (-not$epistemic.Passed) '29f slice grounding rejects player epistemic assignment'
-$publicJson=Get-SlicePlayerState $session|ConvertTo-Json -Depth 15;Assert ($publicJson-notmatch'hidden_truth|CaseTruth|Skills|Nerve|DC|HighestTier|wall_safe') '30 Godot response excludes secret fields'
+$publicJson=Get-SlicePlayerState (New-CallumStudySession $root)|ConvertTo-Json -Depth 15;Assert ($publicJson-notmatch'hidden_truth|CaseTruth|Skills|Nerve|DC|HighestTier|wall_safe') '30 fresh Godot response excludes secret fields'
 $clean=New-CallumStudySession $root;Assert (-not$clean.SafeDiscovered-and-not$clean.LeadRecovered-and$clean.State.Notebook.Clues.Count-eq0) '31 restart creates clean session'
 Write-Host 'Vertical slice backend tests passed: 31 required gameplay and safety scenarios.'

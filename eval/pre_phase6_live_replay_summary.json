@@ -1,0 +1,19 @@
+{
+  "generated_utc": "2026-09-06T01:28:49.8140779Z",
+  "running_commit": "7f1bc2d",
+  "turns": 22,
+  "resolved": 20,
+  "clarifications": 1,
+  "engine_rejections": 1,
+  "overview_notebook_interpretation_leaks": 0,
+  "gesture_dialogue_violations": 0,
+  "property_target_errors": 0,
+  "partial_compound_executions": 0,
+  "drawer_target_substitutions": 0,
+  "internal_language_leaks": 0,
+  "average_sentences": 2.0,
+  "average_words": 21.8,
+  "average_live_latency_seconds": 0.9463,
+  "narrator_retries": 5,
+  "fallbacks": 5
+}

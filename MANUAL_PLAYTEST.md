@@ -38,3 +38,5 @@ When testing a failed active investigation, repeat the same wording or a paraphr
 After pulling a branch or changing bridge code, stop and restart the prototype before evaluating interpretation. A passing module test paired with different live behavior is a runtime-integration finding until the loaded bridge version is verified.
 
 Run `Run-TurnContinuityReplay.ps1` for a clean-bridge check of explicit safe routes, note location, compound clarification, pending target completion, state queries, anti-reroll behavior, and leave/return continuity. Generic `try to open the safe` must request an approach; `light a fire using your spells` followed by `the fireplace` must complete the pending cast; `is there a fire?` must answer without a roll.
+
+Run `Run-PrePhase6LiveReplay.ps1` to exercise overview-to-Notebook pacing, Guillermo gestures, property questions, window state, compound safety, exact drawer targeting, correspondence humor, the revised fiber tiers, safe/note continuity, state queries, and anti-reroll behavior. Rich prose should usually occupy two to four useful sentences; a shorter authoritative fallback is correct when a generation drifts to another target.

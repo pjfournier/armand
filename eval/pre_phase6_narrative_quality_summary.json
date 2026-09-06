@@ -1,0 +1,38 @@
+{
+  "generated_utc": "2026-09-06T01:28:16.0802558Z",
+  "turns": 30,
+  "average_sentences": 2.27,
+  "average_words": 24.5,
+  "atmospheric_outputs": 12,
+  "first_pass": 25,
+  "first_pass_percent": 83.3,
+  "retries": 5,
+  "retry_percent": 16.7,
+  "fallbacks": 5,
+  "fallback_percent": 16.7,
+  "validator_failure_categories": {
+    "wrong_target": 7,
+    "other": 3,
+    "excessive_length": 1,
+    "state_continuity": 1
+  },
+  "opening_distribution": {
+    "examine": 8,
+    "guillermo": 1,
+    "the": 6,
+    "open": 1,
+    "work": 1,
+    "attempt": 3,
+    "check": 1,
+    "stare": 1,
+    "crouch": 2,
+    "a": 1,
+    "test": 1,
+    "ask": 1,
+    "try": 1,
+    "step": 1,
+    "return": 1
+  },
+  "average_prompt_characters": 3317.9,
+  "average_latency_seconds": 0.9166
+}

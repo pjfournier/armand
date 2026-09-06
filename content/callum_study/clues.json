@@ -16,10 +16,11 @@
       ]
     },
     {
-      "id":"rope_fibers","name":"Coarse fibers","location":"callum_study","related":["writing_desk"],"overview_fact":"The writing desk is scratched and scattered with papers.",
+      "id":"rope_fibers","name":"Coarse fibers","location":"callum_study","related":["writing_desk"],"overview_fact":"Coarse fibers catch on the scratched writing desk among scattered papers.",
       "tiers":[
-        {"dc":10,"skill":"Awareness","fact":"Several coarse fibers caught on the desk are hemp cordage."},
-        {"dc":20,"skill":"Investigation","fact":"Their condition is consistent with rope pulled tightly across the surface."}
+        {"dc":10,"skill":"Awareness","fact":"The coarse strands are recognizable as rope fibers."},
+        {"dc":20,"skill":"Investigation","fact":"The rope fibers are hemp cordage."},
+        {"dc":25,"skill":"Investigation","fact":"Their condition is consistent with rope pulled tightly across the surface."}
       ]
     },
     {
