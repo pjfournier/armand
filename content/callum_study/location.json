@@ -3,7 +3,7 @@
     {
       "id": "callum_study",
       "display_name": "Callum's Study",
-      "visible_objects": ["study_room", "writing_desk", "correspondence", "receipt", "fireplace", "fire_irons", "oil_lamp", "rug", "large_painting", "bookshelves", "window", "window_latch", "chair", "study_door", "paneled_wall"],
+      "visible_objects": ["study_room", "writing_desk", "correspondence", "receipt", "fireplace", "fire_irons", "oil_lamp", "rug", "large_painting", "bookshelves", "window", "window_latch", "chair", "wastebasket", "desk_calendar", "framed_frontpage", "study_door", "paneled_wall"],
       "exits": ["landing"],
       "known_features": ["a disturbed Victorian study lit by gaslight"]
     },

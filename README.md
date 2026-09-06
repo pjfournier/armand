@@ -1,8 +1,8 @@
 # An Armand Mystery
 
-Phases 1–5 provide the local Comma harness, grounded narration pipeline, deterministic rules/state engine, intent interpreter, persistent local inference service, player Notebook, selective evidence retrieval, and Guillermo incident ledger. The engine determines reality; models only interpret and narrate.
+Phases 1–6 provide the local Comma harness, grounded narration pipeline, deterministic rules/state engine, intent interpreter, persistent local inference service, player Notebook, Guillermo incident ledger, and the complete playable prototype house. The engine determines reality; models only interpret and narrate.
 
-Phase 5 details and APIs are documented in `PHASE5_REPORT.md`. The Notebook stores engine-known facts separately from player notes and theories, and only bounded engine-selected evidence may enter narration.
+Phase 6 details and acceptance evidence are documented in `PHASE6_REPORT.md`. The Notebook stores engine-known facts separately from player notes and theories, and only bounded engine-selected evidence may enter narration.
 
 ## Playable Callum Study slice
 

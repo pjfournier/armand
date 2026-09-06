@@ -23,6 +23,9 @@ var combat_panel: PanelContainer
 var combat_text: RichTextLabel
 var tutorial_dialog: AcceptDialog
 var reaction_dialog: ConfirmationDialog
+var main_split: HSplitContainer
+var left_split: VSplitContainer
+var location_placeholder: Label
 var latest_turn_id := ""
 var pending_kind := ""
 var last_combat_opening_id := ""
@@ -35,6 +38,9 @@ func _ready() -> void:
 	request.request_completed.connect(_on_request_completed)
 	call_api("/session/state", HTTPClient.METHOD_GET, {}, "state")
 
+func _exit_tree() -> void:
+	var cfg := ConfigFile.new(); cfg.set_value("layout", "main_split", main_split.split_offset); cfg.set_value("layout", "left_split", left_split.split_offset); cfg.save("user://layout.cfg")
+
 func build_ui() -> void:
 	var bg := ColorRect.new(); bg.color = Color("101014"); bg.set_anchors_and_offsets_preset(Control.PRESET_FULL_RECT); add_child(bg)
 	var root := VBoxContainer.new(); root.set_anchors_and_offsets_preset(Control.PRESET_FULL_RECT, Control.PRESET_MODE_MINSIZE, 16); root.add_theme_constant_override("separation", 10); add_child(root)
@@ -42,10 +48,14 @@ func build_ui() -> void:
 	location_label = Label.new(); location_label.text = "CALLUM'S STUDY"; location_label.add_theme_font_size_override("font_size", 25); location_label.add_theme_color_override("font_color", Color("d1ad68")); header.add_child(location_label)
 	var spacer := Control.new(); spacer.size_flags_horizontal = Control.SIZE_EXPAND_FILL; header.add_child(spacer)
 	time_label = Label.new(); time_label.text = "8:00 PM"; time_label.add_theme_color_override("font_color", Color("d8ccb2")); header.add_child(time_label)
-	var body := HSplitContainer.new(); body.size_flags_vertical = Control.SIZE_EXPAND_FILL; body.split_offset = 820; root.add_child(body)
-	history = RichTextLabel.new(); history.bbcode_enabled = true; history.fit_content = false; history.scroll_active = true; history.add_theme_color_override("default_color", Color("e9dfca")); history.add_theme_font_size_override("normal_font_size", 18); history.text = "[color=#d1ad68][b]Callum's Study[/b][/color]\nRain traces the window. The room has been disturbed, and Guillermo watches from the desk.\n\n"; body.add_child(history)
+	main_split = HSplitContainer.new(); main_split.size_flags_vertical = Control.SIZE_EXPAND_FILL; main_split.split_offset = 820; root.add_child(main_split)
+	left_split = VSplitContainer.new(); left_split.size_flags_horizontal = Control.SIZE_EXPAND_FILL; left_split.split_offset = 220; main_split.add_child(left_split)
+	var location_frame := AspectRatioContainer.new(); location_frame.ratio = 16.0 / 9.0; location_frame.stretch_mode = AspectRatioContainer.STRETCH_FIT; location_frame.custom_minimum_size.y = 150; left_split.add_child(location_frame)
+	var location_bg := ColorRect.new(); location_bg.color = Color("181820"); location_frame.add_child(location_bg); location_placeholder = Label.new(); location_placeholder.text = "OUTSIDE CALLUM'S HOUSE"; location_placeholder.horizontal_alignment = HORIZONTAL_ALIGNMENT_CENTER; location_placeholder.vertical_alignment = VERTICAL_ALIGNMENT_CENTER; location_placeholder.add_theme_font_size_override("font_size", 22); location_placeholder.add_theme_color_override("font_color", Color("8e897f")); location_frame.add_child(location_placeholder)
+	var chat_column := VBoxContainer.new(); chat_column.size_flags_vertical = Control.SIZE_EXPAND_FILL; left_split.add_child(chat_column)
+	history = RichTextLabel.new(); history.bbcode_enabled = true; history.fit_content = false; history.scroll_active = true; history.size_flags_vertical = Control.SIZE_EXPAND_FILL; history.add_theme_color_override("default_color", Color("e9dfca")); history.add_theme_font_size_override("normal_font_size", 18); history.text = "[color=#d1ad68][b]Outside Callum's House[/b][/color]\nRain falls over the dark house. The front door is locked.\n\n"; chat_column.add_child(history)
 	history.selection_enabled = true; history.context_menu_enabled = true; history.shortcut_keys_enabled = true
-	notebook_tabs = TabContainer.new(); notebook_tabs.custom_minimum_size.x = 390; body.add_child(notebook_tabs)
+	notebook_tabs = TabContainer.new(); notebook_tabs.custom_minimum_size.x = 390; main_split.add_child(notebook_tabs)
 	clue_text = make_rich_tab("Clues"); character_box = VBoxContainer.new(); character_box.name = "Characters"; notebook_tabs.add_child(character_box); location_text = make_rich_tab("Locations")
 	var theory_panel := VBoxContainer.new(); theory_panel.name = "Theories"; notebook_tabs.add_child(theory_panel)
 	theory_list = RichTextLabel.new(); theory_list.bbcode_enabled = true; theory_list.custom_minimum_size.y = 170; theory_list.size_flags_vertical = Control.SIZE_EXPAND_FILL; theory_panel.add_child(theory_list)
@@ -55,7 +65,7 @@ func build_ui() -> void:
 	var save_theory := Button.new(); save_theory.text = "Save theory (belief)"; save_theory.pressed.connect(_save_theory); theory_panel.add_child(save_theory)
 	theory_picker = OptionButton.new(); clue_picker = OptionButton.new(); theory_panel.add_child(theory_picker); theory_panel.add_child(clue_picker)
 	var link := Button.new(); link.text = "Link selected clue"; link.pressed.connect(_link_clue); theory_panel.add_child(link)
-	var controls := HBoxContainer.new(); root.add_child(controls)
+	var controls := HBoxContainer.new(); chat_column.add_child(controls)
 	input = LineEdit.new(); input.placeholder_text = "Type what Armand does..."; input.size_flags_horizontal = Control.SIZE_EXPAND_FILL; input.text_submitted.connect(func(_t): submit_action()); controls.add_child(input)
 	submit = Button.new(); submit.text = "Act"; submit.pressed.connect(submit_action); controls.add_child(submit)
 	var restart := Button.new(); restart.text = "Restart"; restart.pressed.connect(func(): call_api("/session/reset", HTTPClient.METHOD_POST, {}, "reset")); controls.add_child(restart)
@@ -63,11 +73,13 @@ func build_ui() -> void:
 	var combat_b := Button.new(); combat_b.text = "Combat B"; combat_b.tooltip_text = "Prototype benchmark: two Cultists"; combat_b.pressed.connect(func(): call_api("/combat/start", HTTPClient.METHOD_POST, {"encounter_id": "benchmark_b"}, "combat_start")); controls.add_child(combat_b)
 	var combat_c := Button.new(); combat_c.text = "Combat C"; combat_c.tooltip_text = "Prototype benchmark: Adept and Initiate"; combat_c.pressed.connect(func(): call_api("/combat/start", HTTPClient.METHOD_POST, {"encounter_id": "benchmark_c"}, "combat_start")); controls.add_child(combat_c)
 	var copy_transcript := Button.new(); copy_transcript.text = "Copy Transcript"; copy_transcript.pressed.connect(_copy_transcript); controls.add_child(copy_transcript)
-	status_label = Label.new(); status_label.text = "Guillermo: nearby • Early gestures"; status_label.add_theme_color_override("font_color", Color("b89a67")); root.add_child(status_label)
+	var toggle_notebook := Button.new(); toggle_notebook.text = "Notebook"; toggle_notebook.pressed.connect(func(): notebook_tabs.visible = not notebook_tabs.visible); controls.add_child(toggle_notebook)
+	status_label = Label.new(); status_label.text = "Guillermo: nearby • Early gestures"; status_label.add_theme_color_override("font_color", Color("b89a67")); chat_column.add_child(status_label)
 	end_panel = PanelContainer.new(); end_panel.visible = false; end_panel.position = Vector2(390, 260); end_panel.size = Vector2(500, 170); add_child(end_panel)
 	var end_box := VBoxContainer.new(); end_panel.add_child(end_box); end_label = Label.new(); end_label.horizontal_alignment = HORIZONTAL_ALIGNMENT_CENTER; end_label.add_theme_font_size_override("font_size", 24); end_box.add_child(end_label)
 	var continue_button := Button.new(); continue_button.text = "Continue exploring"; continue_button.pressed.connect(func(): end_panel.visible = false); end_box.add_child(continue_button)
 	var restart_end := Button.new(); restart_end.text = "Restart slice"; restart_end.pressed.connect(func(): end_panel.visible = false; call_api("/session/reset", HTTPClient.METHOD_POST, {}, "reset")); end_box.add_child(restart_end)
+	var layout_cfg := ConfigFile.new(); if layout_cfg.load("user://layout.cfg") == OK: main_split.split_offset = int(layout_cfg.get_value("layout", "main_split", 820)); left_split.split_offset = int(layout_cfg.get_value("layout", "left_split", 220))
 	combat_panel = PanelContainer.new(); combat_panel.visible = false; combat_panel.position = Vector2(18, 82); combat_panel.size = Vector2(350, 245); add_child(combat_panel)
 	combat_text = RichTextLabel.new(); combat_text.bbcode_enabled = true; combat_text.selection_enabled = true; combat_text.context_menu_enabled = true; combat_panel.add_child(combat_text)
 	tutorial_dialog = AcceptDialog.new(); tutorial_dialog.title = "COMBAT"; tutorial_dialog.dialog_text = "During your turn, you may take:\n\n• 1 Movement\n• 1 Action\n\nSome abilities may use a Bonus Action or Reaction.\n\nYou can describe Movement and Action together:\n\"Move behind the desk and cast Eldritch Blast at the cultist.\"\n\nOnce your turn resolves, the next combatant acts."; tutorial_dialog.confirmed.connect(func(): call_api("/combat/tutorial/dismiss", HTTPClient.METHOD_POST, {}, "combat_state")); add_child(tutorial_dialog)
@@ -105,7 +117,7 @@ func set_busy(busy: bool) -> void:
 	input.editable = not busy; submit.disabled = busy; status_label.text = "Thinking…" if busy else "Guillermo: nearby • Early gestures"
 
 func update_state(state: Dictionary) -> void:
-	var loc: Dictionary = state.get("location", {}); location_label.text = str(loc.get("name", "Unknown")).to_upper(); time_label.text = str(state.get("time", "")); update_notebook(state.get("notebook", {}))
+	var loc: Dictionary = state.get("location", {}); location_label.text = str(loc.get("name", "Unknown")).to_upper(); location_placeholder.text = location_label.text; time_label.text = str(state.get("time", "")); update_notebook(state.get("notebook", {}))
 	var slice: Dictionary = state.get("slice_state", {}); if slice.get("ending_reached", false): end_label.text = str(slice.get("ending_title", "LEAD DISCOVERED")) + "\n\n" + str(slice.get("ending_text", "")); end_panel.visible = true
 	update_combat(state.get("combat", null))
 

@@ -1,0 +1,150 @@
+{
+  "seed": 6001,
+  "endpoint": "http://127.0.0.1:8090",
+  "turns": [
+    {
+      "prompt": "look around",
+      "response": "Rain falls over a dark house. Wheel ruts cross the mud; a front window, mailbox, locked front door, broken gate, covered woodpile, and paths around either side remain within reach. Rain ticks against the dark front window.",
+      "status": "resolved",
+      "location": "exterior",
+      "clues": 0,
+      "encounter_outcome": null,
+      "ending_reached": false
+    },
+    {
+      "prompt": "ask Guillermo to inspect the mailbox",
+      "response": "Guillermo can reach into the mailbox, but at his Early communication tier Armand must inspect whatever he retrieves. Armand follows Guillermo and looks for himself: Several deliveries have accumulated untouched.",
+      "status": "resolved",
+      "location": "exterior",
+      "clues": 1,
+      "encounter_outcome": null,
+      "ending_reached": false
+    },
+    {
+      "prompt": "circle the house",
+      "response": "Circling the house reveals a kitchen door and an ajar outer cellar door. Both routes are reachable from the rain-dark side path. Wet leaves stir beside the house.",
+      "status": "resolved",
+      "location": "exterior",
+      "clues": 1,
+      "encounter_outcome": null,
+      "ending_reached": false
+    },
+    {
+      "prompt": "go to kitchen",
+      "response": "Armand enters Kitchen. Rotting food and standing green water sour the kitchen. A half-prepared meal sits on the stove beside a knife block; dishes, a dry cloth, pantry shelves, tea tin, dusty cat dish, and bolted back door remain. Rain freckles the kitchen window.",
+      "status": "resolved",
+      "location": "kitchen",
+      "clues": 1,
+      "encounter_outcome": null,
+      "ending_reached": false
+    },
+    {
+      "prompt": "investigate the unfinished meal",
+      "response": "The food has long gone bad. The smell of woodsmoke drifts in from deeper in the house.",
+      "status": "resolved",
+      "location": "kitchen",
+      "clues": 2,
+      "encounter_outcome": null,
+      "ending_reached": false
+    },
+    {
+      "prompt": "go to living room",
+      "response": "Armand enters Living Room. Books lie face-down before a disturbed bookcase and cold hearth. Two teacups, a pipe rack, dusty chess game, straight river print, empty decanter, clean glass, and pulled-back rug occupy the displaced room. Rain whispers against the living-room glass.",
+      "status": "resolved",
+      "location": "living_room",
+      "clues": 2,
+      "encounter_outcome": null,
+      "ending_reached": false
+    },
+    {
+      "prompt": "go to bedroom",
+      "response": "Armand enters Bedroom. The searched bedroom has open drawers, scattered clothes, a made bed, open closet, packed suitcase, face-down photograph, opened boxes, wardrobe, bedside novel, dry wash-stand, polished shoes, and drawn curtains. Rain is muffled by the drawn curtains.",
+      "status": "resolved",
+      "location": "bedroom",
+      "clues": 2,
+      "encounter_outcome": null,
+      "ending_reached": false
+    },
+    {
+      "prompt": "examine the family photograph",
+      "response": "The photograph shows a woman on a station platform. An upstairs floorboard settles somewhere beyond the room.",
+      "status": "resolved",
+      "location": "bedroom",
+      "clues": 3,
+      "encounter_outcome": null,
+      "ending_reached": false
+    },
+    {
+      "prompt": "go to living room",
+      "response": "Armand enters Living Room. Books lie face-down before a disturbed bookcase and cold hearth. Two teacups, a pipe rack, dusty chess game, straight river print, empty decanter, clean glass, and pulled-back rug occupy the displaced room. Wind moves through the cold chimney while smoke smells stronger toward the study.",
+      "status": "resolved",
+      "location": "living_room",
+      "clues": 3,
+      "encounter_outcome": null,
+      "ending_reached": false
+    },
+    {
+      "prompt": "go to Callum study",
+      "response": "Armand enters Callum's Study. A dark stain marks the floor near a scratched writing desk. Papers, a cold scorched hearth, fire-irons, oil lamp, disturbed shelves, wastebasket, desk calendar, framed front page, heavy painting, chair, rug, window, and paneled wall fill the room. Rain traces the study window. A cellar door shifts below; footsteps follow under the floorboards. Guillermo goes rigid and stares toward the sound.",
+      "status": "resolved",
+      "location": "callum_study",
+      "clues": 3,
+      "encounter_outcome": null,
+      "ending_reached": false
+    },
+    {
+      "prompt": "sneak out through the living room",
+      "response": "Armand uses the warning to avoid open contact. The footsteps pass without becoming a fight. Wind breathes through the chimney; the impossible woodsmoke smell is strongest here.",
+      "status": "resolved",
+      "location": "callum_study",
+      "clues": 3,
+      "encounter_outcome": "stealth",
+      "ending_reached": false
+    },
+    {
+      "prompt": "go to living room",
+      "response": "Armand enters Living Room. Books lie face-down before a disturbed bookcase and cold hearth. Two teacups, a pipe rack, dusty chess game, straight river print, empty decanter, clean glass, and pulled-back rug occupy the displaced room. Rain whispers against the living-room glass.",
+      "status": "resolved",
+      "location": "living_room",
+      "clues": 3,
+      "encounter_outcome": "stealth",
+      "ending_reached": false
+    },
+    {
+      "prompt": "go to Callum study",
+      "response": "Armand enters Callum's Study. A dark stain marks the floor near a scratched writing desk. Papers, a cold scorched hearth, fire-irons, oil lamp, disturbed shelves, wastebasket, desk calendar, framed front page, heavy painting, chair, rug, window, and paneled wall fill the room. Rain traces the study window.",
+      "status": "resolved",
+      "location": "callum_study",
+      "clues": 3,
+      "encounter_outcome": "stealth",
+      "ending_reached": false
+    },
+    {
+      "prompt": "examine the large painting",
+      "response": "Armand examines the large painting. It yields no additional evidence. The shifted painting and panel line expose a fixed iron safe.",
+      "status": "resolved",
+      "location": "callum_study",
+      "clues": 3,
+      "encounter_outcome": "stealth",
+      "ending_reached": false
+    },
+    {
+      "prompt": "use 08-10-83 on the safe",
+      "response": "Armand examines the concealed safe. It yields no additional evidence. The date 08-10-83 opens the safe.",
+      "status": "resolved",
+      "location": "callum_study",
+      "clues": 3,
+      "encounter_outcome": "stealth",
+      "ending_reached": false
+    },
+    {
+      "prompt": "take the burned note",
+      "response": "Armand examines the partially burned note. It yields no additional evidence. A partially burned note names Blackthorn Station and tomorrow's midnight meeting. Blackthorn Station. Midnight tomorrow. Armand has a direction, but not the name or purpose of whoever took Callum.",
+      "status": "resolved",
+      "location": "callum_study",
+      "clues": 4,
+      "encounter_outcome": "stealth",
+      "ending_reached": true
+    }
+  ]
+}
